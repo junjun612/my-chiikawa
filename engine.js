@@ -534,13 +534,14 @@
     };
   }
 
-  // A random look; `rand` defaults to Math.random.
+  // Generated friends always have ears; the maker can still remove them manually.
+  // `rand` defaults to Math.random.
   function randomLook(rand = Math.random) {
     const pick = (list) => list[Math.floor(rand() * list.length)];
     const parts = {};
     for (const c of CATS) {
       const list = PARTS[c.id] || [];
-      parts[c.id] = !list.length || (!c.required && rand() < 0.3) ? null : pick(list).id;
+      parts[c.id] = !list.length || (!c.required && c.id !== "ears" && rand() < 0.3) ? null : pick(list).id;
     }
     return { parts, bodyColor: pick(BODY_COLORS), sync: true };
   }

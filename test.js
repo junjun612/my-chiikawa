@@ -190,7 +190,7 @@
     const parts = {
       body: id("body", pick(P.body[jp])),
       face: id("face", pick([...P.face[ei], ...P.face[tf]])),
-      ears: r() < 0.95 ? id("ears", pick(P.ears[tf])) : null,
+      ears: id("ears", pick(P.ears[tf])),
       prop: r() < wear.prop ? id("prop", pick(P.prop[sn])) : null,
       deco: r() < wear.deco ? id("deco", pick(P.deco[sn])) : null,
       back: r() < wear.back ? id("back", pick(P.back[tf])) : null,
