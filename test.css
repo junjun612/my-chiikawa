@@ -159,5 +159,9 @@ button, input { font: inherit; color: inherit; }
 .seg button:focus-visible { outline: 3px dashed var(--pink-deep); outline-offset: 2px; }
 
 /* Text made from the user's input (may contain syllables Jua lacks). */
-.field input#nameIn, .owner, .cname { font-family: var(--name); }
-.field input#nameIn { font-size: 22px; }
+.owner, .cname { font-family: var(--name); }
+/* Both input fields share the body font (it has all 11,172 syllables). */
+.field input, .field input::placeholder { font-family: var(--body); }
+
+.btn.kakao { --fill: #fee500; width: 100%; }
+.btn:disabled { opacity: .7; cursor: progress; }

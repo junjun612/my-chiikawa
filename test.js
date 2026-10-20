@@ -259,9 +259,8 @@
     drawResult();
   };
 
-  // Save a portrait card: creature on its background + name and type underneath.
-  $("saveBtn").onclick = async () => {
-    try {
+  // Portrait result card (1080x1440): creature on its background + name and type underneath.
+  async function makeCard() {
       const allText = [profile.name, current.name, current.title, current.desc, "나만의 먼작귀 만들기의 · "].join("");
       await Promise.all([document.fonts.load('60px "MJ Cute"', allText), document.fonts.load('60px "MJ Round"', allText), document.fonts.load('30px "MJ Body"', allText)]);
       const art = await C.renderCanvas(current.look, { size: 1024, bg: current.look.bg });
@@ -304,13 +303,74 @@
       ctx.font = '28px "MJ Cute", sans-serif';
       ctx.fillStyle = "#c9a58a";
       ctx.fillText("나만의 먼작귀 만들기", W / 2, H - 30);
+      return cv;
+  }
+  const NO_SERVER = "이미지를 만들 수 없어요. 페이지를 로컬 서버로 열어 주세요. (예: python -m http.server)";
+  const cardBlob = async () => new Promise((res, rej) => makeCard().then((cv) => {
+    try { cv.toBlob((b) => (b ? res(b) : rej(new Error("toBlob"))), "image/jpeg", 0.9); } catch (e) { rej(e); } // throws if tainted (file://)
+  }, rej));
 
+  $("saveBtn").onclick = async () => {
+    try {
+      const cv = await makeCard();
       const a = document.createElement("a");
       a.href = cv.toDataURL("image/png"); // throws if the canvas is tainted (file://)
       a.download = `${current.name}.png`;
       document.body.appendChild(a); a.click(); a.remove();
     } catch (e) {
-      alert("이미지를 저장할 수 없어요. 페이지를 로컬 서버로 열어 주세요. (예: python -m http.server)");
+      alert(NO_SERVER);
+    }
+  };
+
+  // ---- Share ----------------------------------------------------------------
+  const SITE = window.SITE || {};
+  const siteUrl = SITE.url || location.href.split("#")[0].replace(/[^/]*$/, "");
+  const shareText = () => ({
+    title: `${profile.name}의 먼작귀는 '${current.name}'!`,
+    desc: `${current.title} 먼작귀 · 질문 8개로 나를 꼭 닮은 먼작귀를 만나 보세요 🌱`,
+  });
+  const kakaoReady = () => {
+    if (!SITE.kakaoKey || !window.Kakao) return false;
+    if (!Kakao.isInitialized()) Kakao.init(SITE.kakaoKey);
+    return true;
+  };
+  $("shareBtn").onclick = async () => {
+    const btn = $("shareBtn");
+    if (btn.disabled) return;
+    btn.disabled = true;
+    const label = btn.textContent;
+    btn.textContent = "공유 준비 중…";
+    try {
+      const blob = await cardBlob();
+      const file = new File([blob], `${current.name}.jpg`, { type: "image/jpeg" });
+      const { title, desc } = shareText();
+      if (kakaoReady()) {
+        // Kakao keeps uploaded images for up to 100 days.
+        const up = await Kakao.Share.uploadImage({ file: [file] });
+        Kakao.Share.sendDefault({
+          objectType: "feed",
+          content: {
+            title, description: desc, imageUrl: up.infos.original.url, imageWidth: 1080, imageHeight: 1440,
+            link: { mobileWebUrl: siteUrl, webUrl: siteUrl },
+          },
+          buttons: [{ title: "나도 만들어 보기", link: { mobileWebUrl: siteUrl, webUrl: siteUrl } }],
+        });
+      } else if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title, text: `${title}
+${desc}
+${siteUrl}` });
+      } else {
+        await navigator.clipboard.writeText(`${title}
+${desc}
+${siteUrl}`);
+        alert("공유 문구와 링크를 복사했어요! 카카오톡에 붙여 넣어 주세요.");
+      }
+    } catch (e) {
+      if (e && e.name === "AbortError") return; // user closed the share sheet
+      alert(location.protocol === "file:" ? NO_SERVER : "공유하지 못했어요. 잠시 후 다시 시도해 주세요.");
+    } finally {
+      btn.disabled = false;
+      btn.textContent = label;
     }
   };
 
