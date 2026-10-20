@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>먼작귀 꾸미기</title>
+<link rel="stylesheet" href="creature.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <section class="preview">
+    <div class="stage-wrap" id="stageWrap"><div class="stage" id="stage"></div></div>
+    <div class="swatches" id="swatches" aria-label="배경색"></div>
+  </section>
+  <section class="panel">
+    <h1>먼작귀 꾸미기 <a class="back-link" href="index.html">성향 테스트 하러 가기</a></h1>
+    <div class="color-row">
+      <span class="color-label">몸 색</span>
+      <div class="swatches" id="bodyColors" aria-label="몸 색"></div>
+      <label class="sync"><input type="checkbox" id="syncChk" checked> 귀·꼬리 몸 색 맞춤</label>
+    </div>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="grid" id="grid"></div>
+    <div class="actions">
+      <button id="randomBtn">랜덤</button>
+      <button id="saveBtn">PNG 저장</button>
+      <button id="editBtn" aria-pressed="false">배치 편집</button>
+    </div>
+    <div class="edit-tools" id="editTools" hidden>
+      <p class="hint">드래그: 이동 · 휠: 크기 · 방향키: 1px (Shift 5px)</p>
+      <button id="copyBtn">조정값 복사</button>
+      <button id="resetBtn">조정 초기화</button>
+      <textarea id="adjustOut" rows="6" readonly></textarea>
+    </div>
+  </section>
+</main>
+<script src="parts.js"></script>
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

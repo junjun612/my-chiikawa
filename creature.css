@@ -1,0 +1,47 @@
+/* Live character stage (engine.js mountStage). 512x512 logical px scaled by --scale. */
+:root { --scale: 1; }
+.stage-wrap { width: 100%; aspect-ratio: 1; position: relative; overflow: hidden; border-radius: 16px; box-shadow: 0 4px 14px rgba(80, 130, 170, .25); }
+.stage {
+  position: absolute; left: 0; top: 0; width: 512px; height: 512px;
+  transform-origin: 0 0; transform: scale(var(--scale));
+  background: #e7f3d2 center / cover no-repeat;
+  touch-action: none; user-select: none;
+}
+.stage img, .stage canvas { position: absolute; pointer-events: none; -webkit-user-drag: none; }
+
+/* Character group: one manga filter over all parts, idle mochi breathing, pop on change */
+.stage .chara { position: absolute; inset: 0; filter: url(#manga); z-index: 2; }
+.stage .squish {
+  position: absolute; inset: 0;
+  transform-origin: var(--foot-x) var(--foot-y);
+  animation: mochi 2.8s ease-in-out infinite;
+}
+.stage .squish.pop { animation: boing 0.55s cubic-bezier(.3, 1.6, .5, 1), mochi 2.8s ease-in-out 0.55s infinite; }
+.stage .squish img, .stage .squish canvas, .stage .blush { position: absolute; pointer-events: none; -webkit-user-drag: none; }
+.stage .blush { mix-blend-mode: multiply; }
+.stage .ground {
+  position: absolute; z-index: 1; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(70, 80, 70, .3), rgba(70, 80, 70, 0));
+  mix-blend-mode: multiply;
+  animation: ground 2.8s ease-in-out infinite;
+}
+.stage.editing .squish, .stage.editing .ground { animation: none; }
+
+@keyframes mochi {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.025, 0.975); }
+}
+@keyframes boing {
+  0% { transform: scale(1, 1); }
+  30% { transform: scale(1.1, 0.88); }
+  55% { transform: scale(0.95, 1.06); }
+  80% { transform: scale(1.02, 0.98); }
+  100% { transform: scale(1, 1); }
+}
+@keyframes ground {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(1.04); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage .squish, .stage .squish.pop, .stage .ground { animation: none; }
+}

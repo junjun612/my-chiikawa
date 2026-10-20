@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>나만의 먼작귀 만들기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
+<link rel="stylesheet" href="creature.css">
+<link rel="stylesheet" href="test.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Wobbly hand-drawn outlines for cards and buttons -->
+  <filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="3.2"/></filter>
+  <symbol id="star" viewBox="0 0 24 24"><path d="M12 2.5l2.6 6.2 6.7.5-5.1 4.4 1.6 6.5L12 16.6 6.2 20.1l1.6-6.5L2.7 9.2l6.7-.5z" fill="#ffe27a" stroke="#6b4a3a" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="spark" viewBox="0 0 24 24"><path d="M12 1c.6 6 4 9.6 11 11-7 1.4-10.4 5-11 11-.6-6-4-9.6-11-11 7-1.4 10.4-5 11-11z" fill="#ffd95e"/></symbol>
+</svg>
+
+<main class="page">
+  <!-- 1. Intro -->
+  <section class="screen on" id="intro">
+    <div class="parade" aria-hidden="true"><div class="parade-track" id="parade"></div></div>
+    <h1 class="title">
+      <svg class="spark s1"><use href="#spark"/></svg>
+      나만의 먼작귀<br>만들기
+      <svg class="spark s2"><use href="#spark"/></svg>
+    </h1>
+    <p class="card sketch intro-desc">작은 질문 여덟 개에 답하면<br>나를 꼭 닮은 먼작귀가 태어나요</p>
+    <button class="btn pink sketch big" id="startBtn">시작하기 <svg class="ico"><use href="#star"/></svg></button>
+  </section>
+
+  <!-- 2. Name / birthday -->
+  <section class="screen" id="info">
+    <div class="peek" id="peekStage" aria-hidden="true"></div>
+    <form class="card sketch form" id="infoForm" novalidate>
+      <h2 class="h2">너에 대해 알려 줘!</h2>
+      <label class="field">
+        <span>이름</span>
+        <input id="nameIn" maxlength="10" autocomplete="nickname" placeholder="예) 지민" required>
+      </label>
+      <label class="field">
+        <span>생년월일</span>
+        <input id="birthIn" type="date" min="1900-01-01" required>
+      </label>
+      <p class="err" id="infoErr" role="alert"></p>
+      <button class="btn pink sketch" type="submit">다음으로</button>
+    </form>
+    <button class="link" data-go="intro">처음으로</button>
+  </section>
+
+  <!-- 3. Quiz -->
+  <section class="screen" id="quiz">
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="card sketch qcard">
+      <p class="qnum" id="qNum"></p>
+      <div class="mini-wrap"><div class="mini" id="quizStage"></div></div>
+      <h2 class="h2 qtext" id="qText"></h2>
+      <div class="answers" id="answers"></div>
+    </div>
+    <button class="link" id="quizBack">이전 질문</button>
+  </section>
+
+  <!-- 4. Making... -->
+  <section class="screen" id="making">
+    <div class="making">
+      <div class="dough" aria-hidden="true"></div>
+      <p class="h2">먼작귀를 빚는 중…</p>
+      <p class="sub" id="makingSub">말랑말랑 반죽 중</p>
+    </div>
+  </section>
+
+  <!-- 5. Result -->
+  <section class="screen" id="result">
+    <p class="owner" id="owner"></p>
+    <div class="result-card sketch">
+      <div class="stage-wrap" id="resultWrap"><div class="stage" id="resultStage"></div></div>
+      <div class="result-text">
+        <p class="type" id="rType"></p>
+        <h2 class="cname" id="rName"></h2>
+        <p class="desc" id="rDesc"></p>
+        <ul class="tags" id="rTags"></ul>
+        <p class="birth" id="rBirth"></p>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn mint sketch" id="rerollBtn">랜덤으로 돌리기</button>
+      <button class="btn pink sketch" id="saveBtn">이미지 저장</button>
+    </div>
+    <div class="row small">
+      <a class="link" id="editLink" href="maker.html">직접 꾸미기</a>
+      <button class="link" data-go="intro" id="restartBtn">처음부터 다시</button>
+    </div>
+  </section>
+</main>
+
+<script src="parts.js"></script>
+<script src="engine.js"></script>
+<script src="quiz-data.js"></script>
+<script src="test.js"></script>
+</body>
+</html>
