@@ -1,3 +1,7 @@
+/* Self-hosted fonts with all 11,172 Hangul syllables (OFL, see fonts/). Dongle draws small,
+   so size-adjust brings it to the size the layout was designed with. */
+@font-face { font-family: "MJ Round"; src: url("fonts/Dongle-Bold.woff2") format("woff2"); font-display: swap; size-adjust: 150%; }
+@font-face { font-family: "MJ Body"; src: url("fonts/GowunDodum.woff2") format("woff2"); font-display: swap; }
 /* Personality test pages — soft picture-book look (see design/landing_mockup.png). */
 :root {
   --ink: #5a3d30;
@@ -7,8 +11,8 @@
   --pink-deep: #f59ab4;
   --mint: #c9eed9;
   --sky: #cfeaf8;
-  --round: "Jua", "Gowun Dodum", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --body: "Gowun Dodum", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --round: "MJ Round", "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --body: "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; min-height: 100%; }
