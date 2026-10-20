@@ -131,9 +131,9 @@ button, input { font: inherit; color: inherit; }
 .result-card .stage-wrap { border-radius: 22px 26px 20px 24px; box-shadow: none; }
 /* Zoom the result stage around the creature (values set by test.js). */
 #resultStage { transform: scale(var(--scale)) translate(var(--zx), var(--zy)) scale(var(--zoom)) translate(calc(-1 * var(--zx)), calc(-1 * var(--zy))); }
-.result-text { padding: 14px 8px 8px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.result-text { padding: 10px 8px 8px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
 .type { margin: 0; padding: 4px 14px; border-radius: 999px; background: var(--sky); font-family: var(--round); font-size: 16px; }
-.cname { margin: 2px 0 0; font-family: var(--round); font-weight: 400; font-size: 34px; }
+.cname { margin: -2px 0 -4px; font-family: var(--round); font-weight: 400; font-size: 34px; line-height: 1.05; }
 .desc { margin: 0; font-size: 16px; line-height: 1.6; color: var(--ink-soft); }
 .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 6px 0 0; padding: 0; list-style: none; }
 .tags li { padding: 3px 11px; border-radius: 999px; background: #fff; border: 2px solid var(--ink); font-size: 14px; }
@@ -152,16 +152,42 @@ button, input { font: inherit; color: inherit; }
   body { background-position: center 27%; }
 }
 
-/* Re-roll mode toggle */
-.seg { display: inline-flex; padding: 4px; gap: 4px; border-radius: 999px; background: #fff; border: 2.4px solid var(--ink); margin-bottom: -4px; }
-.seg button { border: 0; background: none; padding: 7px 16px; border-radius: 999px; cursor: pointer; font-family: var(--round); font-size: 16px; color: var(--ink-soft); }
-.seg button[aria-pressed="true"] { background: var(--mint); color: var(--ink); }
-.seg button:focus-visible { outline: 3px dashed var(--pink-deep); outline-offset: 2px; }
 
 /* Text made from the user's input (may contain syllables Jua lacks). */
 .owner, .cname { font-family: var(--name); }
 /* Both input fields share the body font (it has all 11,172 syllables). */
 .field input, .field input::placeholder { font-family: var(--body); }
 
-.btn.kakao { --fill: #fee500; width: 100%; }
 .btn:disabled { opacity: .7; cursor: progress; }
+
+/* Background picker under the result picture */
+.bg-pick { display: grid; grid-template-columns: repeat(8, 1fr); gap: 5px; padding: 10px 2px 0; }
+.bg-thumb { width: 100%; aspect-ratio: 1; padding: 0; border-radius: 11px 13px 10px 12px; cursor: pointer;
+  border: 2.2px solid rgba(90, 61, 48, .35); background: center / cover; transition: transform .15s; }
+.bg-thumb:hover { transform: translateY(-2px); }
+.bg-thumb.on { border-color: var(--ink); box-shadow: 0 0 0 3px var(--pink); transform: scale(1.08); }
+
+/* Re-roll / save / share icon buttons */
+.icon-row { display: flex; justify-content: center; gap: 22px; width: 100%; }
+.ibtn { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 0; border: 0; background: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.ibtn .disc { width: 66px; height: 66px; display: grid; place-items: center; border-radius: 47% 53% 50% 50% / 52% 48% 52% 48%;
+  box-shadow: 0 5px 0 rgba(90, 61, 48, .18); transition: transform .12s, box-shadow .12s; }
+.ibtn .disc.mint { --fill: var(--mint); }
+.ibtn .disc.pink { --fill: var(--pink); }
+.ibtn .disc.kakao { --fill: #fee500; }
+.ibtn svg { width: 32px; height: 32px; fill: none; stroke: var(--ink); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.ibtn svg .fill { fill: var(--ink); stroke: none; }
+.ibtn .lbl { font-family: var(--round); font-size: 16px; color: var(--ink); }
+.ibtn:hover .disc { transform: translateY(-2px) rotate(-4deg); }
+.ibtn:active .disc { transform: translateY(3px); box-shadow: 0 1px 0 rgba(90, 61, 48, .18); }
+.ibtn:focus-visible { outline: 3px dashed var(--pink-deep); outline-offset: 4px; border-radius: 12px; }
+.ibtn.busy .disc { animation: knead .5s ease-in-out infinite alternate; }
+
+/* Re-roll popup */
+.roll-pop { --fill: var(--cream); width: min(320px, 86vw); padding: 24px 20px 14px; border: 0; border-radius: 28px 32px 26px 30px;
+  display: none; flex-direction: column; gap: 12px; text-align: center; color: var(--ink); overflow: visible; }
+.roll-pop[open] { display: flex; animation: screenIn .3s cubic-bezier(.2, 1.3, .4, 1); }
+.roll-pop::backdrop { background: rgba(70, 60, 50, .35); }
+.roll-pop .h2 { margin-bottom: 4px; }
+.roll-pop .btn { flex-direction: column; gap: 0; min-height: 66px; line-height: 1.15; }
+.roll-pop .btn small { font-family: var(--body); font-size: 13px; color: var(--ink-soft); }

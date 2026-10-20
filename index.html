@@ -92,6 +92,7 @@
     <p class="owner" id="owner"></p>
     <div class="result-card sketch">
       <div class="stage-wrap" id="resultWrap"><div class="stage" id="resultStage"></div></div>
+      <div class="bg-pick" id="bgPick" role="radiogroup" aria-label="배경 고르기"></div>
       <div class="result-text">
         <p class="type" id="rType"></p>
         <h2 class="cname" id="rName"></h2>
@@ -100,21 +101,33 @@
         <p class="birth" id="rBirth"></p>
       </div>
     </div>
-    <div class="seg" id="rollMode" role="group" aria-label="돌리기 방식">
-      <button type="button" data-mode="mine" aria-pressed="true">내 성향대로</button>
-      <button type="button" data-mode="any" aria-pressed="false">완전 랜덤</button>
+    <div class="icon-row">
+      <button class="ibtn" id="rerollBtn" aria-haspopup="dialog">
+        <span class="disc mint sketch"><svg viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg></span>
+        <span class="lbl">다시</span>
+      </button>
+      <button class="ibtn" id="saveBtn">
+        <span class="disc pink sketch"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></svg></span>
+        <span class="lbl">저장</span>
+      </button>
+      <button class="ibtn" id="shareBtn">
+        <span class="disc kakao sketch"><svg viewBox="0 0 24 24"><path class="fill" d="M12 4.5c-4.7 0-8.5 3-8.5 6.6 0 2.3 1.5 4.3 3.8 5.5l-.9 3.3 3.8-2.5c.6.1 1.2.1 1.8.1 4.7 0 8.5-3 8.5-6.6S16.7 4.5 12 4.5z"/></svg></span>
+        <span class="lbl">공유</span>
+      </button>
     </div>
-    <div class="row">
-      <button class="btn mint sketch" id="rerollBtn">랜덤으로 돌리기</button>
-      <button class="btn pink sketch" id="saveBtn">이미지 저장</button>
-    </div>
-    <button class="btn kakao sketch" id="shareBtn">카카오톡으로 자랑하기</button>
     <div class="row small">
       <a class="link" id="editLink" href="maker.html">직접 꾸미기</a>
       <button class="link" data-go="intro" id="restartBtn">처음부터 다시</button>
     </div>
   </section>
 </main>
+
+<dialog class="roll-pop sketch" id="rollPop" aria-labelledby="rollTitle">
+  <p class="h2" id="rollTitle">어떻게 돌려 볼까?</p>
+  <button class="btn mint sketch" data-mode="mine">내 성향대로<small>나랑 닮은 친구 중에서</small></button>
+  <button class="btn pink sketch" data-mode="any">완전 랜덤<small>아무나 나와라!</small></button>
+  <button class="link" data-mode="">그만두기</button>
+</dialog>
 
 <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.8.4/kakao.min.js" integrity="sha384-BGX7Wb16GmRFagri4bLJV2DgipVZaU2AI812GZtHtHzzDQJnfHasDXN5houxv45w" crossorigin="anonymous"></script>
 <script src="config.js"></script>

@@ -108,6 +108,7 @@
     if (!name) { err.textContent = "이름을 알려 줘!"; $("nameIn").focus(); return; }
     if (!birth) { err.textContent = "생년월일을 숫자 8자리로 적어 줘! 예) 1998.04.12"; $("birthIn").focus(); return; }
     err.textContent = "";
+    bgPicked = false;
     Object.assign(profile, { name, birth, month: Number(birth.slice(5, 7)), answers: [], variant: 0 });
     renderQuestion(0);
     show("quiz");
@@ -229,35 +230,58 @@
     drawResult();
   }
 
-  function drawResult() {
+  function drawResult(bounce = true) {
     const { look } = current;
     $("resultStage").style.backgroundImage = `url("${C.bgImage(look.bg)}")`;
     view.setScene(look.bg);
     view.render(look);
-    view.pop();
+    if (bounce) view.pop();
+    renderBgPick();
     const p = new URLSearchParams({ ...Object.fromEntries(Object.entries(look.parts).filter(([, v]) => v)), bg: look.bg });
     if (look.bodyColor) p.set("color", look.bodyColor.slice(1));
     $("editLink").href = "maker.html#" + p.toString();
   }
 
-  // Re-roll mode: "mine" keeps the personality pools, "any" ignores them.
-  let rollMode = "mine";
-  document.querySelectorAll("#rollMode button").forEach((b) => {
-    b.onclick = () => {
-      rollMode = b.dataset.mode;
-      document.querySelectorAll("#rollMode button").forEach((x) => x.setAttribute("aria-pressed", x === b));
-    };
-  });
-  $("rerollBtn").onclick = () => {
-    if (rollMode === "mine") {
+  // Re-roll asks how: "mine" keeps the personality pools, "any" ignores them.
+  // A background the user picked by hand stays through re-rolls.
+  let bgPicked = false;
+  const pop = $("rollPop");
+  $("rerollBtn").onclick = () => pop.showModal();
+  pop.addEventListener("click", (e) => {
+    if (e.target === pop) return pop.close(); // backdrop
+    const b = e.target.closest("[data-mode]");
+    if (!b) return;
+    pop.close();
+    const mode = b.dataset.mode;
+    if (!mode) return;
+    const keepBg = bgPicked && current.look.bg;
+    if (mode === "mine") {
       profile.variant++;
       current.look = buildLook(current.code);
     } else {
       const bgs = Object.keys(C.BG_IMAGES);
       current.look = { ...C.randomLook(), bg: bgs[Math.floor(Math.random() * bgs.length)] };
     }
+    if (keepBg) current.look.bg = keepBg;
     drawResult();
-  };
+  });
+
+  function renderBgPick() {
+    const box = $("bgPick");
+    box.innerHTML = "";
+    for (const [id, label] of Object.entries(C.BG_IMAGES)) {
+      const on = id === current.look.bg;
+      const b = document.createElement("button");
+      b.className = "bg-thumb" + (on ? " on" : "");
+      b.style.backgroundImage = `url("backgrounds/${id}_thumb.jpg")`;
+      b.title = label;
+      b.setAttribute("role", "radio");
+      b.setAttribute("aria-checked", on);
+      b.setAttribute("aria-label", label);
+      b.onclick = () => { bgPicked = true; current.look.bg = id; drawResult(false); };
+      box.appendChild(b);
+    }
+  }
 
   // Portrait result card (1080x1440): creature on its background + name and type underneath.
   async function makeCard() {
@@ -338,8 +362,7 @@
     const btn = $("shareBtn");
     if (btn.disabled) return;
     btn.disabled = true;
-    const label = btn.textContent;
-    btn.textContent = "공유 준비 중…";
+    btn.classList.add("busy");
     try {
       const blob = await cardBlob();
       const file = new File([blob], `${current.name}.jpg`, { type: "image/jpeg" });
@@ -370,7 +393,7 @@ ${siteUrl}`);
       alert(location.protocol === "file:" ? NO_SERVER : "공유하지 못했어요. 잠시 후 다시 시도해 주세요.");
     } finally {
       btn.disabled = false;
-      btn.textContent = label;
+      btn.classList.remove("busy");
     }
   };
 
