@@ -10,7 +10,7 @@
 .stage img, .stage canvas { position: absolute; pointer-events: none; -webkit-user-drag: none; }
 
 /* Character group: one manga filter over all parts, idle mochi breathing, pop on change */
-.stage .chara { position: absolute; inset: 0; filter: url(#manga); z-index: 2; }
+.stage .chara { position: absolute; inset: 0; filter: url(#manga-meadow); z-index: 2; }
 .stage .squish {
   position: absolute; inset: 0;
   transform-origin: var(--foot-x) var(--foot-y);

@@ -28,6 +28,7 @@
 
   function renderStage() {
     stage.style.backgroundImage = `url("${bgImage(bg)}")`;
+    view.setScene(bg);
     view.render(look());
     if (editMode) $("adjustOut").value = JSON.stringify(allAdjust(), null, 2);
   }

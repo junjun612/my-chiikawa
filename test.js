@@ -51,16 +51,28 @@
     const peek = $("peekStage");
     if (!peek.firstChild) peek.appendChild(await sprite(C.randomLook(), 300));
   };
-  $("birthIn").max = new Date().toISOString().slice(0, 10);
+  // Birthday is typed on the number keypad; dots are inserted automatically (1998.04.12).
+  $("birthIn").addEventListener("input", (e) => {
+    const d = e.target.value.replace(/\D/g, "").slice(0, 8);
+    e.target.value = [d.slice(0, 4), d.slice(4, 6), d.slice(6, 8)].filter(Boolean).join(".");
+  });
+  // "YYYY.MM.DD" -> "YYYY-MM-DD" if it is a real past date, else null.
+  function parseBirth(text) {
+    const m = /^(\d{4})\.(\d{2})\.(\d{2})$/.exec(text);
+    if (!m) return null;
+    const [y, mo, d] = m.slice(1).map(Number);
+    const dt = new Date(y, mo - 1, d);
+    if (y < 1900 || dt > new Date() || dt.getMonth() !== mo - 1 || dt.getDate() !== d) return null;
+    return `${m[1]}-${m[2]}-${m[3]}`;
+  }
   ["nameIn", "birthIn"].forEach((id) => $(id).addEventListener("input", () => { $("infoErr").textContent = ""; }));
   $("infoForm").onsubmit = (e) => {
     e.preventDefault();
     const name = $("nameIn").value.trim();
-    const birth = $("birthIn").value;
+    const birth = parseBirth($("birthIn").value);
     const err = $("infoErr");
     if (!name) { err.textContent = "이름을 알려 줘!"; $("nameIn").focus(); return; }
-    const y = Number(birth.slice(0, 4));
-    if (!birth || y < 1900 || birth > $("birthIn").max) { err.textContent = "생년월일을 골라 줘!"; $("birthIn").focus(); return; }
+    if (!birth) { err.textContent = "생년월일을 숫자 8자리로 적어 줘! 예) 1998.04.12"; $("birthIn").focus(); return; }
     err.textContent = "";
     Object.assign(profile, { name, birth, month: Number(birth.slice(5, 7)), answers: [], variant: 0 });
     renderQuestion(0);
@@ -186,6 +198,7 @@
   function drawResult() {
     const { look } = current;
     $("resultStage").style.backgroundImage = `url("${C.bgImage(look.bg)}")`;
+    view.setScene(look.bg);
     view.render(look);
     view.pop();
     const p = new URLSearchParams({ ...Object.fromEntries(Object.entries(look.parts).filter(([, v]) => v)), bg: look.bg });

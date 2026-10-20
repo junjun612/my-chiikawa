@@ -215,28 +215,66 @@
     return `radial-gradient(closest-side, rgba(${color},${alpha}), rgba(${color},${alpha * 0.4}) 55%, rgba(${color},0))`;
   };
 
-  // SVG filter shared by the DOM stage and canvas rendering: warm brown ink, slightly softened
-  // lines and a soft shadow of the silhouette cast onto the background. k scales the radii.
-  function mangaFilter(id, k) {
+  // Scene lighting per background, like anime color grading:
+  //   tint  - ambient color multiplied over the character (1 = unchanged)
+  //   rim   - rim-light color/alpha on the outline facing the light
+  //   light - direction the light comes from ([x, y], -1..1)
+  //   shadow- cast/ground shadow color and opacity
+  const LIGHTS = {
+    meadow: { tint: [1, 1, 0.98], rim: ["#fffbe8", 0.35], light: [-1, -1], shadow: ["#3d4a3a", 0.22] },
+    sakura: { tint: [1, 0.97, 0.98], rim: ["#ffe6ef", 0.45], light: [-1, -1], shadow: ["#5a4050", 0.2] },
+    beach:  { tint: [1, 0.99, 0.95], rim: ["#ffffff", 0.5], light: [1, -1], shadow: ["#6a5a40", 0.24] },
+    snow:   { tint: [0.95, 0.98, 1.0], rim: ["#e8f6ff", 0.55], light: [-1, -1], shadow: ["#4a6080", 0.2] },
+    sunset: { tint: [1, 0.9, 0.8], rim: ["#ffb070", 0.8], light: [0.6, -1], shadow: ["#6a3a30", 0.28] },
+    dusk:   { tint: [0.8, 0.86, 0.89], rim: ["#bfe6ee", 0.45], light: [-0.6, -1], shadow: ["#14242a", 0.34] },
+    night:  { tint: [0.78, 0.81, 0.95], rim: ["#d4e0ff", 0.75], light: [1, -0.8], shadow: ["#101830", 0.36] },
+    room:   { tint: [1, 0.95, 0.88], rim: ["#fff0d0", 0.5], light: [-1, -0.8], shadow: ["#5a4030", 0.24] },
+  };
+  const lightOf = (bg) => LIGHTS[bg] || LIGHTS.meadow;
+  const filterId = (bg, k) => `manga-${LIGHTS[bg] ? bg : "meadow"}${k === 1 ? "" : `-${k}x`}`;
+
+  // SVG filter shared by the DOM stage and canvas rendering: warm brown ink, softened lines,
+  // the scene's ambient tint, a rim light toward the light and a shadow cast away from it.
+  // k scales the radii.
+  function mangaFilter(id, k, L) {
+    const [lx, ly] = L.light;
+    const n = Math.hypot(lx, ly) || 1;
+    const ux = lx / n, uy = ly / n;
+    const [tr, tg, tb] = L.tint;
     return `<filter id="${id}" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB">
       <feComponentTransfer in="SourceGraphic" result="ink">
         <feFuncR type="table" tableValues="0.27 1"/><feFuncG type="table" tableValues="0.18 1"/><feFuncB type="table" tableValues="0.15 1"/>
       </feComponentTransfer>
-      <feGaussianBlur in="ink" stdDeviation="${0.35 * k}" result="soft"/>
-      <feGaussianBlur in="SourceAlpha" stdDeviation="${3 * k}" result="blur"/>
-      <feOffset in="blur" dx="${5 * k}" dy="${6 * k}" result="off"/>
-      <feFlood flood-color="#3d4a3a" flood-opacity="0.22"/>
+      <feComponentTransfer in="ink" result="lit">
+        <feFuncR type="linear" slope="${tr}"/><feFuncG type="linear" slope="${tg}"/><feFuncB type="linear" slope="${tb}"/>
+      </feComponentTransfer>
+      <feGaussianBlur in="lit" stdDeviation="${0.35 * k}" result="soft"/>
+      <feMorphology in="SourceAlpha" operator="erode" radius="${4.5 * k}" result="inner"/>
+      <feOffset in="inner" dx="${-ux * 7 * k}" dy="${-uy * 7 * k}" result="away"/>
+      <feComposite in="inner" in2="away" operator="out" result="edge"/>
+      <feGaussianBlur in="edge" stdDeviation="${2 * k}" result="edgeSoft"/>
+      <feComposite in="edgeSoft" in2="inner" operator="in" result="edgeIn"/>
+      <feFlood flood-color="${L.rim[0]}" flood-opacity="${L.rim[1]}"/>
+      <feComposite in2="edgeIn" operator="in" result="rim"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="${2.2 * k}" result="blur"/>
+      <feOffset in="blur" dx="${-ux * 2.5 * k}" dy="${5.5 * k}" result="off"/>
+      <feFlood flood-color="${L.shadow[0]}" flood-opacity="${L.shadow[1]}"/>
       <feComposite in2="off" operator="in" result="shadow"/>
-      <feMerge><feMergeNode in="shadow"/><feMergeNode in="soft"/></feMerge>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="soft"/><feMergeNode in="rim"/></feMerge>
     </filter>`;
   }
   const FILTER_SCALES = [1, 2];
   function installFilters() {
-    if (document.getElementById("manga")) return;
-    const defs = FILTER_SCALES.map((k) => mangaFilter(k === 1 ? "manga" : `manga${k}x`, k)).join("");
+    if (document.getElementById("manga-meadow")) return;
+    const defs = Object.keys(LIGHTS).flatMap((bg) => FILTER_SCALES.map((k) => mangaFilter(filterId(bg, k), k, LIGHTS[bg]))).join("");
     document.body.insertAdjacentHTML("beforeend",
       `<svg width="0" height="0" style="position:absolute" aria-hidden="true">${defs}</svg>`);
   }
+  const groundGradient = (bg, a = 1) => {
+    const [c, o] = lightOf(bg).shadow;
+    const hex = c.slice(1).match(/../g).map((h) => parseInt(h, 16)).join(",");
+    return [`rgba(${hex},${(o * 1.35 * a).toFixed(3)})`, `rgba(${hex},0)`];
+  };
 
   // Render a look (+ optional background and ground shadow) to a square canvas.
   // size 1024 matches the "manga2x" filter; other sizes use the nearest filter.
@@ -253,7 +291,8 @@
     ctx.translate(LAYOUT.bodyCenterX * S, (LAYOUT.bodyBottomY + 1) * S);
     ctx.scale(1, 13 / (LAYOUT.bodyWidth * 0.42));
     let g = ctx.createRadialGradient(0, 0, 0, 0, 0, gr);
-    g.addColorStop(0, "rgba(70,80,70,0.3)"); g.addColorStop(1, "rgba(70,80,70,0)");
+    const [g0, g1] = groundGradient(bg);
+    g.addColorStop(0, g0); g.addColorStop(1, g1);
     ctx.globalCompositeOperation = "multiply";
     ctx.fillStyle = g; ctx.fillRect(-gr, -gr, gr * 2, gr * 2);
     ctx.restore();
@@ -282,7 +321,7 @@
       oc.restore();
     }
     const k = FILTER_SCALES.reduce((a, b) => (Math.abs(b - S) < Math.abs(a - S) ? b : a));
-    ctx.filter = `url(#${k === 1 ? "manga" : `manga${k}x`})`;
+    ctx.filter = `url(#${filterId(bg, k)})`;
     ctx.drawImage(off, 0, 0);
     ctx.filter = "none";
     return cv;
@@ -336,7 +375,14 @@
       void squish.offsetWidth;
       squish.classList.add("pop");
     }
-    return { render, pop };
+    // Apply a background's lighting to the character and its ground shadow.
+    function setScene(bg) {
+      chara.style.filter = `url(#${filterId(bg, 1)})`;
+      const [g0, g1] = groundGradient(bg);
+      ground.style.background = `radial-gradient(closest-side, ${g0}, ${g1})`;
+    }
+    setScene("meadow");
+    return { render, pop, setScene };
   }
 
   // Deterministic PRNG (mulberry32) and string hash, for seeded characters.
@@ -372,6 +418,6 @@
 
   window.Creature = {
     LAYOUT, BG_IMAGES, BODY_COLORS, CATS, PARTS, bgImage, findPart, computeLayout,
-    loadImg, renderCanvas, mountStage, installFilters, randomLook, hashString, rng,
+    LIGHTS, loadImg, renderCanvas, mountStage, installFilters, randomLook, hashString, rng,
   };
 })();
