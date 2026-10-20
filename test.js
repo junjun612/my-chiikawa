@@ -208,13 +208,25 @@
   let view = null;
   let current = null;
   function fitResult() {
+    const viewportHeight = window.visualViewport?.height || window.innerHeight;
+    document.documentElement.style.setProperty("--viewport-height", `${viewportHeight}px`);
+    const screen = $("result");
+    if (!screen.classList.contains("on")) return;
     const wrap = $("resultWrap");
     const st = $("resultStage");
     st.style.setProperty("--scale", wrap.clientWidth / C.LAYOUT.stageSize);
     st.style.setProperty("--zoom", ZOOM);
     st.style.setProperty("--zx", ZOOM_CX + "px");
     st.style.setProperty("--zy", ZOOM_CY + "px");
+    const layout = $("resultLayout");
+    const style = getComputedStyle(screen);
+    const top = parseFloat(style.paddingTop), bottom = parseFloat(style.paddingBottom);
+    const availableHeight = Math.max(1, screen.clientHeight - top - bottom);
+    layout.style.top = `${top + availableHeight / 2}px`;
+    layout.style.setProperty("--result-fit", Math.min(1, availableHeight / Math.max(1, layout.offsetHeight)));
   }
+  window.addEventListener("resize", fitResult);
+  window.visualViewport?.addEventListener("resize", fitResult);
 
   function finish() {
     show("making");
@@ -244,8 +256,11 @@
     show("result");
     if (!view) {
       view = C.mountStage($("resultStage"));
-      if (window.ResizeObserver) new ResizeObserver(fitResult).observe($("resultWrap"));
-      else window.addEventListener("resize", fitResult);
+      if (window.ResizeObserver) {
+        const resize = new ResizeObserver(fitResult);
+        resize.observe($("resultLayout"));
+        resize.observe($("result"));
+      }
     }
     fitResult();
     drawResult();
@@ -269,6 +284,7 @@
     const chip = document.createElement("i");
     chip.style.background = color;
     $("rBirth").append(chip, `${label} · ${name}`);
+    fitResult();
   }
 
   // Re-roll asks how: "mine" keeps the personality pools, "any" ignores them.
@@ -331,12 +347,20 @@
     }
   }
 
-  // Portrait result card (1080x1440): type/name at the top of the picture, body copy below.
+  // The card exports the picture and result details; the background picker stays in the UI.
   async function makeCard() {
-      const allText = [profile.name, current.name, current.title, current.desc, "나만의 먼작귀 만들기 · "].join("");
+      const result = { ...current, look: { ...current.look, parts: { ...current.look.parts } } };
+      const details = $("result").querySelector(".result-text").cloneNode(true);
+      const allText = [result.name, result.title, details.textContent, result.code].join("");
       await Promise.all([document.fonts.load('60px "Gamja Flower"', allText), document.fonts.load('30px "MJ Body"', allText)]);
-      const art = await C.renderCanvas(current.look, { size: 1024, bg: current.look.bg });
+      const art = await C.renderCanvas(result.look, { size: 1024, bg: result.look.bg });
       const W = 1080, H = 1440, M = 56, R = 48;
+      const pageStyle = getComputedStyle(document.querySelector(".page"));
+      const screenStyle = getComputedStyle($("result"));
+      const cardStyle = getComputedStyle($("result").querySelector(".result-card"));
+      const layoutWidth = parseFloat(pageStyle.maxWidth) - parseFloat(screenStyle.paddingLeft) - parseFloat(screenStyle.paddingRight)
+        - parseFloat(cardStyle.paddingLeft) - parseFloat(cardStyle.paddingRight);
+      const footer = window.ResultCardDetails.render(details, { width: W - 2 * M, layoutWidth });
       const cv = document.createElement("canvas");
       cv.width = W; cv.height = H;
       const ctx = cv.getContext("2d");
@@ -355,28 +379,25 @@
 
       ctx.textAlign = "center";
       ctx.font = '42px "Gamja Flower", sans-serif';
-      const type = `${current.title} 먼작귀 · ${current.code}`;
+      const type = `${result.title} 먼작귀 · ${result.code}`;
       const badgeWidth = Math.min(W - 2 * M - 48, ctx.measureText(type).width + 64);
       ctx.fillStyle = "#cfeaf8";
       roundRect((W - badgeWidth) / 2, M + 28, badgeWidth, 62, 31);
       ctx.fill();
       ctx.fillStyle = "#5a3d30";
       ctx.fillText(type, W / 2, M + 71, badgeWidth - 40);
-      const caption = CAPTION_COLORS[current.look.bg] || CAPTION_COLORS.meadow;
+      const caption = CAPTION_COLORS[result.look.bg] || CAPTION_COLORS.meadow;
       ctx.save();
       ctx.fillStyle = caption.ink;
       ctx.font = '84px "Gamja Flower", sans-serif';
       ctx.shadowColor = caption.shadow;
       ctx.shadowBlur = 7;
       ctx.shadowOffsetY = 5;
-      ctx.fillText(current.name, W / 2, M + 183);
+      ctx.fillText(result.name, W / 2, M + 183);
       ctx.restore();
-      ctx.fillStyle = "#7d6152";
-      ctx.font = '32px "MJ Body", sans-serif';
-      wrapText(ctx, current.desc, W / 2, W + 140, W - 2 * M - 40, 46);
-      ctx.font = '28px "Gamja Flower", sans-serif';
-      ctx.fillStyle = "#c9a58a";
-      ctx.fillText("나만의 먼작귀 만들기", W / 2, H - 30);
+      const footerScale = Math.min(1, (H - 2 * M - (W - 2 * M)) / footer.height);
+      const footerWidth = footer.width * footerScale, footerHeight = footer.height * footerScale;
+      ctx.drawImage(footer, (W - footerWidth) / 2, W - M, footerWidth, footerHeight);
       return cv;
   }
   const NO_SERVER = "이미지를 만들 수 없어요. 페이지를 로컬 서버로 열어주세요. (예: python -m http.server)";
@@ -443,16 +464,6 @@
       btn.classList.remove("busy");
     }
   };
-
-  function wrapText(ctx, text, x, y, maxW, lh) {
-    let line = "";
-    for (const word of text.split(" ")) {
-      const test = line ? line + " " + word : word;
-      if (ctx.measureText(test).width > maxW && line) { ctx.fillText(line, x, y); line = word; y += lh; }
-      else line = test;
-    }
-    if (line) ctx.fillText(line, x, y);
-  }
 
   buildParade().catch(console.error).finally(() => {
     const warm = () => C.preloadAssets();

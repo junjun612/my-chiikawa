@@ -70,19 +70,101 @@
     el("bgPick").querySelector('[aria-label="바닷가"]').click();
     report("바다 이름은 청록색", el("resultWrap").style.getPropertyValue("--caption-ink") === "#286b80");
 
-    let imageUrl, imageName;
-    const original = win.HTMLAnchorElement.prototype.click;
-    win.HTMLAnchorElement.prototype.click = function () {
-      if (this.download) { imageUrl = this.href; imageName = this.download; }
-      else original.call(this);
-    };
-    try { el("saveBtn").click(); await until(() => imageUrl); }
-    finally { win.HTMLAnchorElement.prototype.click = original; }
+    async function captureCard() {
+      let imageUrl, imageName;
+      const text = [], fills = [];
+      const original = win.HTMLAnchorElement.prototype.click;
+      const originalText = win.CanvasRenderingContext2D.prototype.fillText;
+      const originalFill = win.CanvasRenderingContext2D.prototype.fill;
+      win.HTMLAnchorElement.prototype.click = function () {
+        if (this.download) { imageUrl = this.href; imageName = this.download; }
+        else original.call(this);
+      };
+      win.CanvasRenderingContext2D.prototype.fillText = function (value, x, y, ...rest) {
+        if (this.canvas.width === 968) text.push({ value, y, center: x + this.measureText(value).width / 2 });
+        return originalText.call(this, value, x, y, ...rest);
+      };
+      win.CanvasRenderingContext2D.prototype.fill = function (...args) {
+        if (this.canvas.width === 968) fills.push(this.fillStyle);
+        return originalFill.apply(this, args);
+      };
+      try { el("saveBtn").click(); await until(() => imageUrl); }
+      finally {
+        win.HTMLAnchorElement.prototype.click = original;
+        win.CanvasRenderingContext2D.prototype.fillText = originalText;
+        win.CanvasRenderingContext2D.prototype.fill = originalFill;
+      }
+      return { imageUrl, imageName, text, fills };
+    }
+    const { imageUrl, imageName, text, fills } = await captureCard();
     const saved = document.getElementById("saved");
     saved.src = imageUrl;
     await saved.decode();
     report("실제 저장 카드 생성 · 1080×1440 PNG", imageUrl.startsWith("data:image/png") && saved.naturalWidth === 1080 && saved.naturalHeight === 1440);
     report("저장 파일명에 새 별명 반영", imageName === `${el("rName").textContent}.png`);
+    const sentences = [...el("rDesc").children].map((span) => span.textContent);
+    const descriptionRows = text.filter((run) => sentences.includes(run.value));
+    report("저장 설명도 화면처럼 문장별 두 줄", descriptionRows.length === 2 && descriptionRows[0].y < descriptionRows[1].y);
+    report("저장 설명의 두 문장 모두 가운데 정렬", descriptionRows.length === 2 && Math.abs(descriptionRows[0].center - descriptionRows[1].center) < 1);
+    report("저장 이미지에 성향 태그 4개 모두 포함", [...el("rTags").children].every((tag) => text.some((run) => run.value === tag.textContent)));
+    report("저장 이미지에 탄생 컬러 안내와 색상 칩 포함", text.some((run) => run.value === el("rBirth").textContent) && fills.includes("#e2f5e9"));
+    report("저장 하단에 배경 선택 목록·별도 로고 없음", !text.some((run) => Object.values(win.Creature.BG_IMAGES).includes(run.value) || run.value === "나만의 먼작귀 만들기"));
+
+    reroll("any");
+    const updatedLabel = el("rBirth").textContent;
+    const expectedFill = doc.createElement("canvas").getContext("2d");
+    expectedFill.fillStyle = el("rBirth").querySelector("i").style.background;
+    const randomCard = await captureCard();
+    report("랜덤 색상도 저장 안내·색상 칩에 그대로 반영", randomCard.text.some((run) => run.value === updatedLabel) && randomCard.fills.includes(expectedFill.fillStyle));
+
+    // Capture the real share handler locally without uploading or sending a message.
+    const originalKakao = win.Kakao, originalKey = win.SITE.kakaoKey;
+    let uploadedFile, sharedFeed;
+    win.Kakao = {
+      isInitialized: () => true,
+      Share: {
+        uploadImage: async ({ file }) => {
+          uploadedFile = file[0];
+          return { infos: { original: { url: "https://example.test/card.jpg" } } };
+        },
+        sendDefault: (feed) => { sharedFeed = feed; },
+      },
+    };
+    win.SITE.kakaoKey = "local-share-test";
+    try { el("shareBtn").click(); await until(() => sharedFeed); }
+    finally { win.Kakao = originalKakao; win.SITE.kakaoKey = originalKey; }
+    const jpegUrl = URL.createObjectURL(uploadedFile);
+    try {
+      const jpeg = new Image(), png = new Image();
+      jpeg.src = jpegUrl; png.src = randomCard.imageUrl;
+      await Promise.all([jpeg.decode(), png.decode()]);
+      report("카카오톡도 같은 1080×1440 카드 이미지를 사용", uploadedFile.type === "image/jpeg" && jpeg.naturalWidth === 1080 && jpeg.naturalHeight === 1440 && sharedFeed.content.imageWidth === 1080 && sharedFeed.content.imageHeight === 1440);
+      const footerPixels = (image) => {
+        const canvas = document.createElement("canvas");
+        canvas.width = 1080; canvas.height = 416;
+        const ctx = canvas.getContext("2d");
+        ctx.drawImage(image, 0, 1024, 1080, 416, 0, 0, 1080, 416);
+        return ctx.getImageData(0, 0, 1080, 416).data;
+      };
+      const a = footerPixels(png), b = footerPixels(jpeg);
+      let difference = 0;
+      for (let i = 0; i < a.length; i++) if (i % 4 !== 3) difference += Math.abs(a[i] - b[i]);
+      report("PNG와 카카오톡 JPEG 하단 배치 일치", difference / (a.length / 4 * 3) < 5);
+    } finally { URL.revokeObjectURL(jpegUrl); }
+
+    const backgroundStyle = win.getComputedStyle(doc.body, "::before");
+    report("안전 영역까지 고정 배경을 사용하는 viewport 설정", doc.querySelector('meta[name="viewport"]').content.includes("viewport-fit=cover") && backgroundStyle.position === "fixed" && backgroundStyle.backgroundImage.includes("page_bg.webp") && parseFloat(backgroundStyle.height) >= win.innerHeight);
+    const dimensions = [[393, 640], [390, 568], [320, 480], [844, 390]];
+    for (const [width, height] of dimensions) {
+      frame.style.width = `${width}px`; frame.style.height = `${height}px`;
+      await new Promise((resolve) => win.requestAnimationFrame(() => win.requestAnimationFrame(resolve)));
+      const bounds = el("resultLayout").getBoundingClientRect();
+      const controls = el("shareBtn").getBoundingClientRect();
+      report(`${width}×${height}에서 결과·버튼 모두 한 화면에 표시`, bounds.top >= 0 && bounds.bottom <= win.innerHeight + 1 && bounds.left >= 0 && bounds.right <= win.innerWidth + 1 && controls.bottom <= win.innerHeight + 1 && doc.documentElement.scrollHeight <= win.innerHeight + 1);
+    }
+    const containedCard = await captureCard();
+    report("화면을 축소해도 저장 이미지 해상도·배치 유지", containedCard.imageUrl === randomCard.imageUrl);
+    frame.style.width = "390px"; frame.style.height = "844px";
 
     reroll("restart");
     report("다시 메뉴에서 처음부터 다시", el("intro").classList.contains("on") && !el("nameIn").value && !el("birthIn").value);

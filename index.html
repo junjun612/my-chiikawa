@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>나만의 먼작귀 만들기</title>
 <meta name="description" content="질문 8개로 만나는 나를 닮은 먼작귀">
 <meta name="theme-color" content="#bfe3f6">
@@ -25,7 +25,7 @@
 <link rel="preload" href="design/page_bg.webp" as="image" fetchpriority="high">
 <link rel="stylesheet" href="fonts.css?v=20261020k">
 <link rel="stylesheet" href="creature.css?v=20261020k">
-<link rel="stylesheet" href="test.css?v=20261020m">
+<link rel="stylesheet" href="test.css?v=20261020q">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -90,34 +90,36 @@
 
   <!-- 5. Result -->
   <section class="screen" id="result">
-    <div class="result-card sketch">
-      <div class="bg-pick" id="bgPick" role="radiogroup" aria-label="배경 고르기"></div>
-      <div class="stage-wrap" id="resultWrap">
-        <div class="stage" id="resultStage"></div>
-        <div class="result-caption">
-          <p class="type" id="rType"></p>
-          <h2 class="cname" id="rName"></h2>
+    <div class="result-layout" id="resultLayout">
+      <div class="result-card sketch">
+        <div class="bg-pick" id="bgPick" role="radiogroup" aria-label="배경 고르기"></div>
+        <div class="stage-wrap" id="resultWrap">
+          <div class="stage" id="resultStage"></div>
+          <div class="result-caption">
+            <p class="type" id="rType"></p>
+            <h2 class="cname" id="rName"></h2>
+          </div>
+        </div>
+        <div class="result-text">
+          <p class="desc" id="rDesc"></p>
+          <ul class="tags" id="rTags"></ul>
+          <p class="birth" id="rBirth"></p>
         </div>
       </div>
-      <div class="result-text">
-        <p class="desc" id="rDesc"></p>
-        <ul class="tags" id="rTags"></ul>
-        <p class="birth" id="rBirth"></p>
+      <div class="icon-row">
+        <button class="ibtn" id="rerollBtn" aria-haspopup="dialog">
+          <span class="disc mint sketch"><svg viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg></span>
+          <span class="lbl">다시</span>
+        </button>
+        <button class="ibtn" id="saveBtn">
+          <span class="disc pink sketch"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></svg></span>
+          <span class="lbl">저장</span>
+        </button>
+        <button class="ibtn" id="shareBtn">
+          <span class="disc kakao sketch"><svg viewBox="0 0 24 24"><path class="fill" d="M12 4.5c-4.7 0-8.5 3-8.5 6.6 0 2.3 1.5 4.3 3.8 5.5l-.9 3.3 3.8-2.5c.6.1 1.2.1 1.8.1 4.7 0 8.5-3 8.5-6.6S16.7 4.5 12 4.5z"/></svg></span>
+          <span class="lbl">공유</span>
+        </button>
       </div>
-    </div>
-    <div class="icon-row">
-      <button class="ibtn" id="rerollBtn" aria-haspopup="dialog">
-        <span class="disc mint sketch"><svg viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg></span>
-        <span class="lbl">다시</span>
-      </button>
-      <button class="ibtn" id="saveBtn">
-        <span class="disc pink sketch"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></svg></span>
-        <span class="lbl">저장</span>
-      </button>
-      <button class="ibtn" id="shareBtn">
-        <span class="disc kakao sketch"><svg viewBox="0 0 24 24"><path class="fill" d="M12 4.5c-4.7 0-8.5 3-8.5 6.6 0 2.3 1.5 4.3 3.8 5.5l-.9 3.3 3.8-2.5c.6.1 1.2.1 1.8.1 4.7 0 8.5-3 8.5-6.6S16.7 4.5 12 4.5z"/></svg></span>
-        <span class="lbl">공유</span>
-      </button>
     </div>
   </section>
 </main>
@@ -137,7 +139,8 @@
 <script src="engine.js?v=20261020k"></script>
 <script src="quiz-data.js?v=20261020k"></script>
 <script src="naming.js?v=20261020l"></script>
-<script src="test.js?v=20261020l"></script>
+<script src="result-card.js?v=20261020o"></script>
+<script src="test.js?v=20261020q"></script>
 <script src="no-zoom.js?v=20261020k"></script>
 </body>
 </html>
