@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>먼작귀 꾸미기</title>
 <meta name="description" content="귀·표정·소품을 골라 나만의 먼작귀를 꾸며보세요">
 <meta name="theme-color" content="#bfe3f6">
@@ -21,42 +21,85 @@
 <meta name="twitter:description" content="귀·표정·소품을 골라 나만의 먼작귀를 꾸며보세요">
 <meta name="twitter:image" content="https://junjun612.github.io/my-chiikawa/design/og.jpg">
 <link rel="preload" href="fonts/GamjaFlower.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/GowunDodum.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="design/page_bg.webp" as="image">
 <link rel="preload" href="backgrounds/meadow.webp?v=20261020k" as="image">
 <link rel="stylesheet" href="fonts.css?v=20261020k">
 <link rel="stylesheet" href="creature.css?v=20261020k">
-<link rel="stylesheet" href="style.css?v=20261020k">
+<link rel="stylesheet" href="test.css?v=20261020s">
+<link rel="stylesheet" href="style.css?v=20261020s">
 </head>
 <body>
-<main class="app">
-  <section class="preview">
-    <div class="stage-wrap" id="stageWrap"><div class="stage" id="stage"></div></div>
-    <div class="swatches" id="swatches" aria-label="배경 고르기"></div>
-  </section>
-  <section class="panel">
-    <h1>먼작귀 꾸미기 <a class="back-link" href="index.html">성향 테스트하러 가기</a></h1>
-    <div class="color-row">
-      <span class="color-label">몸 색</span>
-      <div class="swatches" id="bodyColors" aria-label="몸 색"></div>
-      <label class="sync"><input type="checkbox" id="syncChk" checked> 귀·꼬리를 몸 색에 맞추기</label>
-    </div>
-    <div class="tabs" id="tabs" role="tablist"></div>
-    <div class="grid" id="grid"></div>
-    <div class="actions">
-      <button id="randomBtn">랜덤</button>
-      <button id="saveBtn">PNG 저장</button>
-      <button id="editBtn" aria-pressed="false">배치 편집</button>
-    </div>
-    <div class="edit-tools" id="editTools" hidden>
-      <p class="hint">드래그: 이동 · 휠: 크기 조절 · 방향 키: 1px 이동 (Shift + 방향 키: 5px 이동)</p>
-      <button id="copyBtn">조정값 복사</button>
-      <button id="resetBtn">조정 초기화</button>
-      <textarea id="adjustOut" rows="6" readonly></textarea>
-    </div>
-  </section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="3.2"/></filter>
+  <symbol id="shuffle" viewBox="0 0 24 24"><path d="M4 6h3c4 0 6 12 10 12h3M16 14l4 4-4 3M4 18h3c1.5 0 2.8-1.8 4-4M13 9c1.2-1.8 2.5-3 4-3h3M16 3l4 3-4 4"/></symbol>
+  <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 18v3h16v-3"/></symbol>
+  <symbol id="adjust" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M9 3v8M16 13v8"/></symbol>
+</svg>
+<main class="app" id="makerApp">
+  <header class="maker-header">
+    <a class="back-link" href="index.html" aria-label="첫 화면으로 돌아가기">← <span>처음으로</span></a>
+    <div><h1>내맘대로 꾸미기</h1><p>하나씩 골라 나만의 친구로!</p></div>
+    <span class="header-flower" aria-hidden="true">✿</span>
+  </header>
+  <div class="maker-workspace">
+    <section class="preview card sketch" aria-label="캐릭터 미리보기">
+      <div class="stage-wrap" id="stageWrap"><div class="stage" id="stage" role="img" aria-label="꾸미고 있는 먼작귀"></div></div>
+      <p class="preview-note" id="previewNote">아래에서 마음에 드는 파츠를 골라줘!</p>
+    </section>
+    <section class="panel card sketch" aria-label="꾸미기 도구">
+      <div class="mode-tabs" id="modeTabs" role="tablist" aria-label="꾸미기 메뉴">
+        <button id="mode-parts" type="button" role="tab" aria-selected="true" aria-controls="partsPanel" data-view="parts">파츠</button>
+        <button id="mode-colors" type="button" role="tab" aria-selected="false" aria-controls="colorsPanel" tabindex="-1" data-view="colors">몸 색</button>
+        <button id="mode-backgrounds" type="button" role="tab" aria-selected="false" aria-controls="backgroundsPanel" tabindex="-1" data-view="backgrounds">배경</button>
+      </div>
+      <section class="editor-view" id="partsPanel" role="tabpanel" aria-labelledby="mode-parts">
+        <div class="tabs" id="tabs" role="tablist" aria-label="파츠 종류"></div>
+        <div class="category-heading"><h2 id="categoryTitle">몸통 고르기</h2><span id="partCount"></span></div>
+        <div class="grid" id="grid" role="tabpanel"></div>
+      </section>
+      <section class="editor-view" id="colorsPanel" role="tabpanel" aria-labelledby="mode-colors" hidden>
+        <div class="view-heading"><h2>어떤 색으로 물들일까?</h2><p>좋아하는 파스텔 색을 골라줘.</p></div>
+        <div class="swatches colors" id="bodyColors" role="radiogroup" aria-label="몸 색"></div>
+        <label class="sync"><input type="checkbox" id="syncChk" checked><span>귀·꼬리도 같은 색으로</span></label>
+      </section>
+      <section class="editor-view" id="backgroundsPanel" role="tabpanel" aria-labelledby="mode-backgrounds" hidden>
+        <div class="view-heading"><h2>어디로 놀러 갈까?</h2><p>배경을 고르면 분위기도 달라져!</p></div>
+        <div class="swatches scenes" id="swatches" role="radiogroup" aria-label="배경 고르기"></div>
+      </section>
+      <section class="edit-tools" id="editTools" aria-label="파츠 위치와 크기" hidden>
+        <div class="tabs" id="editTabs" role="tablist" aria-label="조절할 파츠 종류"></div>
+        <div id="editPartPanel" role="tabpanel">
+          <div class="view-heading"><h2 id="editPartName">위치와 크기</h2><p id="editHint">버튼을 누르거나 캐릭터 위에서 드래그해줘.</p></div>
+          <div class="edit-controls">
+            <div class="move-pad" role="group" aria-label="파츠 이동">
+              <button type="button" data-move="0,-4" aria-label="위로 이동">↑</button>
+              <button type="button" data-move="-4,0" aria-label="왼쪽으로 이동">←</button>
+              <span aria-hidden="true">이동</span>
+              <button type="button" data-move="4,0" aria-label="오른쪽으로 이동">→</button>
+              <button type="button" data-move="0,4" aria-label="아래로 이동">↓</button>
+            </div>
+            <div class="size-controls">
+              <label for="sizeRange">크기 <output id="sizeValue" for="sizeRange">100%</output></label>
+              <input id="sizeRange" type="range" min="10" max="300" step="1" value="100">
+              <div class="size-buttons"><button type="button" id="smallerBtn" aria-label="파츠 크기 줄이기">−</button><button type="button" id="biggerBtn" aria-label="파츠 크기 키우기">＋</button></div>
+            </div>
+          </div>
+          <button class="reset-part" id="resetBtn" type="button">이 파츠 초기화</button>
+        </div>
+        <details class="advanced"><summary>고급 조정값</summary><button id="copyBtn" type="button">조정값 복사</button><label class="sr-only" for="adjustOut">파츠 조정값 JSON</label><textarea id="adjustOut" rows="4" readonly></textarea></details>
+      </section>
+    </section>
+  </div>
+  <footer class="actions">
+    <button class="btn mint sketch" id="randomBtn" type="button"><svg aria-hidden="true"><use href="#shuffle"/></svg><span>랜덤</span></button>
+    <button class="btn pink sketch" id="saveBtn" type="button"><svg aria-hidden="true"><use href="#download"/></svg><span>이미지 저장</span></button>
+    <button class="btn lavender sketch" id="editBtn" type="button" aria-pressed="false" aria-controls="editTools"><svg aria-hidden="true"><use href="#adjust"/></svg><span>위치·크기</span></button>
+  </footer>
+  <p class="sr-only" id="makerStatus" role="status" aria-live="polite" aria-atomic="true"></p>
 </main>
 <script src="parts.js?v=20261020k"></script>
 <script src="engine.js?v=20261020k"></script>
-<script src="app.js?v=20261020k"></script>
-<script src="no-zoom.js?v=20261020k"></script>
+<script src="app.js?v=20261020s"></script>
 </body>
 </html>

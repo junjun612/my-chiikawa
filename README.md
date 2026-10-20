@@ -43,7 +43,7 @@ python -m http.server
 
 `python3 tools/validate_parts.py`는 파츠 개수, 파일 경로, WebP 형식, 투명도, 해상도와 마스크 정렬을 검사합니다. 생성 메타데이터를 다시 적용하려면 `node tools/merge_parts.js`를 실행합니다.
 
-로컬 서버 실행 후 `/tests/rendering.html`에서 필터 미지원 환경, 라이팅 강도, 화면·저장 일치, 손·소품 겹침과 귀 색상을 확인할 수 있습니다. `/tests/flow.html`은 실제 8문항 진행, 이름만 다시 짓기, 랜덤 몸 색 변경, 배경 유지, PNG 카드 생성과 처음부터 다시 기능을 검증합니다. `/tests/catalog.html`은 모든 파츠를 포함한 192개 조합을 8개 배경에 합성해 시각 검수용 목록을 만듭니다.
+로컬 서버 실행 후 `/tests/rendering.html`에서 필터 미지원 환경, 라이팅 강도, 화면·저장 일치, 손·소품 겹침과 귀 색상을 확인할 수 있습니다. `/tests/flow.html`은 실제 8문항 진행, 이름만 다시 짓기, 랜덤 몸 색 변경, 배경 유지, PNG 카드 생성과 처음부터 다시 기능을 검증합니다. `/tests/maker.html`은 메이커의 모바일·가로 화면 배치, 터치·키보드 조작, 파츠·색·배경 선택과 PNG 저장을 검증합니다. `/tests/catalog.html`은 모든 파츠를 포함한 192개 조합을 8개 배경에 합성해 시각 검수용 목록을 만듭니다.
 
 `node --test tests/naming.test.js`는 별명 재현성, 발음 필터, 입력 예외, 성향별 다양성과 중복 방지를 검증합니다.
 
