@@ -1,9 +1,9 @@
 * { box-sizing: border-box; }
-body { margin: 0; touch-action: manipulation; -webkit-text-size-adjust: 100%; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; background: #f6fbff; color: #4a5a68; }
+body { margin: 0; touch-action: manipulation; font-family: var(--body); background: #f6fbff; color: #4a5a68; word-break: keep-all; overflow-wrap: break-word; }
 .app { display: flex; flex-wrap: wrap; gap: 24px; max-width: 1100px; margin: 0 auto; padding: 20px; }
 .preview { flex: 1 1 360px; min-width: 0; max-width: 512px; }
 .panel { flex: 1 1 360px; min-width: 0; }
-h1 { font-size: 20px; margin: 0 0 12px; }
+h1 { font-family: var(--font); font-size: 24px; font-weight: 400; margin: 0 0 12px; }
 
 .stage.editing { cursor: move; }
 .stage .active { outline: 2px dashed #e0558a; outline-offset: 1px; }
@@ -22,7 +22,7 @@ h1 { font-size: 20px; margin: 0 0 12px; }
 .cell.on { border-color: #e0558a; background: #fff0f6; }
 
 .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-button { font: inherit; }
+button { font: inherit; font-family: var(--font); }
 .actions button, .edit-tools button { padding: 8px 16px; border: 0; border-radius: 10px; background: #ffb3cc; color: #fff; cursor: pointer; }
 .actions button[aria-pressed="true"] { background: #e0558a; }
 .edit-tools { margin-top: 12px; }
@@ -40,3 +40,4 @@ button { font: inherit; }
 .swatches { flex-wrap: wrap; }
 .swatch.scene { background-size: cover; background-position: center; border-radius: 10px; width: 44px; height: 44px; }
 .back-link { margin-left: 8px; font-size: 13px; font-weight: normal; color: #e0558a; }
+.tabs button, .actions button, .edit-tools button { font-family: var(--font); }

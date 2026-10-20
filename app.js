@@ -1,6 +1,6 @@
 // Maker page (maker.html): pick parts, colors and background; edit-mode placement tuning.
 (() => {
-  const { LAYOUT, BG_IMAGES, BODY_COLORS, CATS, PARTS, bgImage, findPart, renderCanvas, mountStage, randomLook } = window.Creature;
+  const { LAYOUT, BG_IMAGES, BODY_COLORS, CATS, PARTS, bgImage, assetUrl, findPart, renderCanvas, mountStage, randomLook } = window.Creature;
   const STORE_KEY = "my-chiikawa-adjust";
   const DEFAULT_BG = "meadow";
 
@@ -11,7 +11,7 @@
   let activeCat = CATS.length ? CATS[0].id : null;
   let editMode = false;
   let bg = DEFAULT_BG;
-  let bodyColor = null; // null = original color of the body part
+  let bodyColor = BODY_COLORS[0];
   let sync = true;
   let stored = {};
   try { stored = JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch (e) { stored = {}; }
@@ -62,7 +62,7 @@
     if (!cat.required) addCell(null, "없음");
     for (const p of PARTS[cat.id] || []) {
       const im = document.createElement("img");
-      im.src = p.src; im.alt = p.label || p.id; im.title = p.label || ""; im.loading = "lazy";
+      im.src = assetUrl(p.src); im.alt = p.label || p.id; im.title = p.label || ""; im.loading = "lazy";
       addCell(p.id, im);
     }
   }
@@ -73,7 +73,7 @@
     for (const id of Object.keys(BG_IMAGES)) {
       const b = document.createElement("button");
       b.className = "swatch scene" + (id === bg ? " on" : "");
-      b.style.backgroundImage = `url("backgrounds/${id}_thumb.jpg")`;
+      b.style.backgroundImage = `url("${assetUrl(`backgrounds/${id}_thumb.webp`)}")`;
       b.title = BG_IMAGES[id];
       b.setAttribute("aria-label", BG_IMAGES[id]);
       b.onclick = () => { bg = id; writeHash(); renderSwatches(); renderStage(); };
@@ -81,7 +81,7 @@
     }
     const cbox = $("bodyColors");
     cbox.innerHTML = "";
-    for (const col of [null, ...BODY_COLORS]) {
+    for (const col of BODY_COLORS) {
       const b = document.createElement("button");
       b.className = "swatch" + (col === bodyColor ? " on" : "") + (col ? "" : " original");
       if (col) b.style.background = col;
@@ -117,7 +117,7 @@
     const b = p.get("bg");
     bg = BG_IMAGES[b] ? b : DEFAULT_BG;
     const col = p.get("color");
-    bodyColor = col && /^[0-9a-f]{6}$/i.test(col) ? "#" + col.toLowerCase() : null;
+    bodyColor = col && /^[0-9a-f]{6}$/i.test(col) ? "#" + col.toLowerCase() : BODY_COLORS[0];
     sync = p.get("sync") !== "0";
     if (!any) {
       for (const c of CATS) {
@@ -147,7 +147,7 @@
       a.download = "my-creature.png";
       document.body.appendChild(a); a.click(); a.remove();
     } catch (e) {
-      alert("이미지를 저장할 수 없습니다. 페이지를 로컬 서버로 열어 주세요. (예: python -m http.server)");
+      alert("이미지를 저장할 수 없어요. 페이지를 로컬 서버로 열어주세요. (예: python -m http.server)");
     }
   }
 
@@ -221,4 +221,6 @@
   readHash();
   renderTabs(); renderGrid(); renderSwatches(); fitStage(); renderStage();
   writeHash();
+  if (window.requestIdleCallback) window.requestIdleCallback(() => window.Creature.preloadAssets(), { timeout: 1200 });
+  else setTimeout(() => window.Creature.preloadAssets(), 300);
 })();

@@ -1,0 +1,57 @@
+{
+  "id": "body_21",
+  "label": "배동글 모찌",
+  "src": "parts/body/body_21.webp",
+  "fill": "parts/body/body_21_fill.webp",
+  "line": "parts/body/body_21_line.webp",
+  "arms": "parts/body/body_21_arms.webp",
+  "w": 289,
+  "h": 260,
+  "color": "#fff9eb",
+  "anchors": {
+    "top": [
+      149.0,
+      5.0
+    ],
+    "headW": 236.98,
+    "earL": [
+      69.52,
+      44.0,
+      -15.0
+    ],
+    "earR": [
+      228.48,
+      54.0,
+      15.0
+    ],
+    "prop": [
+      144.89,
+      181.59,
+      94.1
+    ],
+    "face": [
+      144.89,
+      119.6,
+      164.73
+    ],
+    "tail": [
+      239.87,
+      192.4
+    ],
+    "sideL": [
+      49.13,
+      111.8
+    ],
+    "sideR": [
+      239.87,
+      111.8
+    ],
+    "center": [
+      144.5,
+      130.0
+    ],
+    "H": 249.0,
+    "W": 277.0
+  },
+  "sourceCell": 5
+}

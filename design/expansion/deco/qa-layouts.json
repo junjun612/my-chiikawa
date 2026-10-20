@@ -1,0 +1,6604 @@
+[
+  {
+    "id": "deco_19",
+    "look": {
+      "parts": {
+        "body": "body_01",
+        "face": "face_01",
+        "ears": "ears_01",
+        "deco": "deco_19",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_01",
+          "label": "곰",
+          "src": "parts/ears/ears_01.webp",
+          "w": 288,
+          "h": 104,
+          "color": "#ffffff",
+          "line": "parts/ears/ears_01_line.webp",
+          "fill": "parts/ears/ears_01_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_01_L.webp",
+            "w": 111,
+            "h": 103,
+            "color": "#ffffff",
+            "line": "parts/ears/ears_01_L_line.webp",
+            "fill": "parts/ears/ears_01_L_fill.webp",
+            "root": [
+              55,
+              97
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_01_R.webp",
+            "w": 111,
+            "h": 102,
+            "color": "#ffffff",
+            "line": "parts/ears/ears_01_R_line.webp",
+            "fill": "parts/ears/ears_01_R_fill.webp",
+            "root": [
+              55,
+              96
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_01_L.webp",
+          "w": 111,
+          "h": 103,
+          "color": "#ffffff",
+          "line": "parts/ears/ears_01_L_line.webp",
+          "fill": "parts/ears/ears_01_L_fill.webp",
+          "root": [
+            55,
+            97
+          ]
+        },
+        "w": 66.87968785799309,
+        "h": 62.05953017453413,
+        "x": 170.72417557013657,
+        "y": 246.8792147965897,
+        "ox": 33.13858407378036,
+        "oy": 36.10298104910762,
+        "rot": -15,
+        "z": 10,
+        "tint": "#f9f5e9"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_01",
+          "label": "곰",
+          "src": "parts/ears/ears_01.webp",
+          "w": 288,
+          "h": 104,
+          "color": "#ffffff",
+          "line": "parts/ears/ears_01_line.webp",
+          "fill": "parts/ears/ears_01_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_01_L.webp",
+            "w": 111,
+            "h": 103,
+            "color": "#ffffff",
+            "line": "parts/ears/ears_01_L_line.webp",
+            "fill": "parts/ears/ears_01_L_fill.webp",
+            "root": [
+              55,
+              97
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_01_R.webp",
+            "w": 111,
+            "h": 102,
+            "color": "#ffffff",
+            "line": "parts/ears/ears_01_R_line.webp",
+            "fill": "parts/ears/ears_01_R_fill.webp",
+            "root": [
+              55,
+              96
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_01_R.webp",
+          "w": 111,
+          "h": 102,
+          "color": "#ffffff",
+          "line": "parts/ears/ears_01_R_line.webp",
+          "fill": "parts/ears/ears_01_R_fill.webp",
+          "root": [
+            55,
+            96
+          ]
+        },
+        "w": 66.87968785799309,
+        "h": 61.45701046410176,
+        "x": 275.84435361167965,
+        "y": 245.57343275251267,
+        "ox": 33.13858407378036,
+        "oy": 35.7173684344309,
+        "rot": 16.1,
+        "z": 10,
+        "tint": "#f9f5e9"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_01",
+          "label": "기본 모찌",
+          "src": "parts/body/body_01.webp",
+          "w": 674,
+          "h": 619,
+          "color": "#f9f5e9",
+          "line": "parts/body/body_01_line.webp",
+          "fill": "parts/body/body_01_fill.webp",
+          "anchors": {
+            "top": [
+              338.5,
+              5
+            ],
+            "headW": 565,
+            "earL": [
+              152.04999999999998,
+              62,
+              -15
+            ],
+            "earR": [
+              524.95,
+              56,
+              16.1
+            ],
+            "prop": [
+              338.5,
+              414.08636660146783,
+              220.8
+            ],
+            "face": [
+              338.5,
+              290.76,
+              384.53999999999996
+            ],
+            "tail": [
+              552.18,
+              454.92
+            ],
+            "sideL": [
+              120.08,
+              260.36
+            ],
+            "sideR": [
+              556.92,
+              260.36
+            ],
+            "center": [
+              338.5,
+              309
+            ],
+            "H": 608,
+            "W": 663
+          },
+          "arms": "parts/body/body_01_arms.webp"
+        },
+        "img": {
+          "id": "body_01",
+          "label": "기본 모찌",
+          "src": "parts/body/body_01.webp",
+          "w": 674,
+          "h": 619,
+          "color": "#f9f5e9",
+          "line": "parts/body/body_01_line.webp",
+          "fill": "parts/body/body_01_fill.webp",
+          "anchors": {
+            "top": [
+              338.5,
+              5
+            ],
+            "headW": 565,
+            "earL": [
+              152.04999999999998,
+              62,
+              -15
+            ],
+            "earR": [
+              524.95,
+              56,
+              16.1
+            ],
+            "prop": [
+              338.5,
+              414.08636660146783,
+              220.8
+            ],
+            "face": [
+              338.5,
+              290.76,
+              384.53999999999996
+            ],
+            "tail": [
+              552.18,
+              454.92
+            ],
+            "sideL": [
+              120.08,
+              260.36
+            ],
+            "sideR": [
+              556.92,
+              260.36
+            ],
+            "center": [
+              338.5,
+              309
+            ],
+            "H": 608,
+            "W": 663
+          },
+          "arms": "parts/body/body_01_arms.webp"
+        },
+        "w": 190,
+        "h": 174.49554896142433,
+        "x": 161,
+        "y": 265.50445103857567,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_19",
+          "label": "딸기 모자",
+          "src": "parts/deco/deco_19.webp",
+          "w": 220,
+          "h": 193,
+          "kind": "hat",
+          "fit": 0.76,
+          "bot": 0.18
+        },
+        "img": {
+          "id": "deco_19",
+          "label": "딸기 모자",
+          "src": "parts/deco/deco_19.webp",
+          "w": 220,
+          "h": 193,
+          "kind": "hat",
+          "fit": 0.76,
+          "bot": 0.18
+        },
+        "w": 84.73323442136498,
+        "h": 74.33415565147018,
+        "x": 214.05623145400597,
+        "y": 214.1755179390343,
+        "ox": 42.36661721068249,
+        "oy": 74.33415565147018,
+        "rot": 0,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 187.22981246290806,
+        "y": 340.33024201780415,
+        "w": 45.59708724035607,
+        "h": 31.917961068249245,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 281.8995465875371,
+        "y": 340.8976885459941,
+        "w": 44.090877151335306,
+        "h": 30.86361400593471,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_01",
+          "label": "기본",
+          "src": "parts/face/face_01.webp",
+          "w": 335,
+          "h": 120,
+          "cheeks": [
+            [
+              52.3,
+              81.9,
+              33.3
+            ],
+            [
+              285.5,
+              82,
+              32.2
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_01",
+          "label": "기본",
+          "src": "parts/face/face_01.webp",
+          "w": 335,
+          "h": 120,
+          "cheeks": [
+            [
+              52.3,
+              81.9,
+              33.3
+            ],
+            [
+              285.5,
+              82,
+              32.2
+            ]
+          ]
+        },
+        "w": 134.91454005934716,
+        "h": 48.327596439169135,
+        "x": 188.96557863501488,
+        "y": 323.30563798219583,
+        "ox": 67.45727002967358,
+        "oy": 24.163798219584567,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_20",
+    "look": {
+      "parts": {
+        "body": "body_02",
+        "face": "face_02",
+        "ears": "ears_02",
+        "deco": "deco_20",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_02",
+          "label": "햄스터",
+          "src": "parts/ears/ears_02.webp",
+          "w": 293,
+          "h": 111,
+          "color": "#fef8e8",
+          "line": "parts/ears/ears_02_line.webp",
+          "fill": "parts/ears/ears_02_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_02_L.webp",
+            "w": 114,
+            "h": 111,
+            "color": "#fef8e8",
+            "line": "parts/ears/ears_02_L_line.webp",
+            "fill": "parts/ears/ears_02_L_fill.webp",
+            "root": [
+              57,
+              105
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_02_R.webp",
+            "w": 115,
+            "h": 110,
+            "color": "#fef8e7",
+            "line": "parts/ears/ears_02_R_line.webp",
+            "fill": "parts/ears/ears_02_R_fill.webp",
+            "root": [
+              57,
+              104
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_02_L.webp",
+          "w": 114,
+          "h": 111,
+          "color": "#fef8e8",
+          "line": "parts/ears/ears_02_L_line.webp",
+          "fill": "parts/ears/ears_02_L_fill.webp",
+          "root": [
+            57,
+            105
+          ]
+        },
+        "w": 68.13000950576034,
+        "h": 66.33711451876665,
+        "x": 168.5271827471198,
+        "y": 245.2706616819767,
+        "ox": 34.06500475288017,
+        "oy": 38.86996331802327,
+        "rot": -10.6,
+        "z": 10,
+        "tint": "#fdf5de"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_02",
+          "label": "햄스터",
+          "src": "parts/ears/ears_02.webp",
+          "w": 293,
+          "h": 111,
+          "color": "#fef8e8",
+          "line": "parts/ears/ears_02_line.webp",
+          "fill": "parts/ears/ears_02_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_02_L.webp",
+            "w": 114,
+            "h": 111,
+            "color": "#fef8e8",
+            "line": "parts/ears/ears_02_L_line.webp",
+            "fill": "parts/ears/ears_02_L_fill.webp",
+            "root": [
+              57,
+              105
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_02_R.webp",
+            "w": 115,
+            "h": 110,
+            "color": "#fef8e7",
+            "line": "parts/ears/ears_02_R_line.webp",
+            "fill": "parts/ears/ears_02_R_fill.webp",
+            "root": [
+              57,
+              104
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_02_R.webp",
+          "w": 115,
+          "h": 110,
+          "color": "#fef8e7",
+          "line": "parts/ears/ears_02_R_line.webp",
+          "fill": "parts/ears/ears_02_R_fill.webp",
+          "root": [
+            57,
+            104
+          ]
+        },
+        "w": 68.72764116809158,
+        "h": 65.73948285643542,
+        "x": 272.3740577471198,
+        "y": 247.7312709458687,
+        "ox": 34.06500475288017,
+        "oy": 38.487479054131285,
+        "rot": 13.7,
+        "z": 10,
+        "tint": "#fdf5de"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_02",
+          "label": "몽실",
+          "src": "parts/body/body_02.webp",
+          "w": 640,
+          "h": 579,
+          "color": "#fdf5de",
+          "line": "parts/body/body_02_line.webp",
+          "fill": "parts/body/body_02_fill.webp",
+          "anchors": {
+            "top": [
+              315,
+              17
+            ],
+            "headW": 530,
+            "earL": [
+              140.1,
+              54,
+              -10.6
+            ],
+            "earR": [
+              489.9,
+              61,
+              13.7
+            ],
+            "prop": [
+              315,
+              396.1025081357686,
+              202.4
+            ],
+            "face": [
+              315,
+              271.96,
+              363.65999999999997
+            ],
+            "tail": [
+              496.94,
+              425.32
+            ],
+            "sideL": [
+              108.64,
+              243.56
+            ],
+            "sideR": [
+              524.36,
+              243.56
+            ],
+            "center": [
+              315,
+              289
+            ],
+            "H": 568,
+            "W": 629
+          },
+          "arms": "parts/body/body_02_arms.webp"
+        },
+        "img": {
+          "id": "body_02",
+          "label": "몽실",
+          "src": "parts/body/body_02.webp",
+          "w": 640,
+          "h": 579,
+          "color": "#fdf5de",
+          "line": "parts/body/body_02_line.webp",
+          "fill": "parts/body/body_02_fill.webp",
+          "anchors": {
+            "top": [
+              315,
+              17
+            ],
+            "headW": 530,
+            "earL": [
+              140.1,
+              54,
+              -10.6
+            ],
+            "earR": [
+              489.9,
+              61,
+              13.7
+            ],
+            "prop": [
+              315,
+              396.1025081357686,
+              202.4
+            ],
+            "face": [
+              315,
+              271.96,
+              363.65999999999997
+            ],
+            "tail": [
+              496.94,
+              425.32
+            ],
+            "sideL": [
+              108.64,
+              243.56
+            ],
+            "sideR": [
+              524.36,
+              243.56
+            ],
+            "center": [
+              315,
+              289
+            ],
+            "H": 568,
+            "W": 629
+          },
+          "arms": "parts/body/body_02_arms.webp"
+        },
+        "w": 190,
+        "h": 171.890625,
+        "x": 161,
+        "y": 268.109375,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_20",
+          "label": "푸딩 모자",
+          "src": "parts/deco/deco_20.webp",
+          "w": 210,
+          "h": 183,
+          "kind": "hat",
+          "fit": 0.7,
+          "bot": 0.16
+        },
+        "img": {
+          "id": "deco_20",
+          "label": "푸딩 모자",
+          "src": "parts/deco/deco_20.webp",
+          "w": 210,
+          "h": 183,
+          "kind": "hat",
+          "fit": 0.7,
+          "bot": 0.16
+        },
+        "w": 77.09843749999999,
+        "h": 67.18578124999999,
+        "x": 215.96640625,
+        "y": 224.85646875000003,
+        "ox": 38.549218749999994,
+        "oy": 67.18578124999999,
+        "rot": 0,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 190.30824323529413,
+        "y": 341.2443320294118,
+        "w": 44.184689999999996,
+        "h": 30.929282999999995,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 272.9098686764706,
+        "y": 340.94270814705885,
+        "w": 45.27567,
+        "h": 31.692968999999998,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_02",
+          "label": "행복",
+          "src": "parts/face/face_02.webp",
+          "w": 317,
+          "h": 116,
+          "cheeks": [
+            [
+              53.5,
+              77.6,
+              32.4
+            ],
+            [
+              260.8,
+              77.8,
+              33.2
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_02",
+          "label": "행복",
+          "src": "parts/face/face_02.webp",
+          "w": 317,
+          "h": 116,
+          "cheeks": [
+            [
+              53.5,
+              77.6,
+              32.4
+            ],
+            [
+              260.8,
+              77.8,
+              33.2
+            ]
+          ]
+        },
+        "w": 127.14730147058822,
+        "h": 46.52708823529411,
+        "x": 190.9419742647059,
+        "y": 325.58395588235294,
+        "ox": 63.57365073529411,
+        "oy": 23.263544117647054,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_21",
+    "look": {
+      "parts": {
+        "body": "body_03",
+        "face": "face_03",
+        "ears": "ears_03",
+        "deco": "deco_21",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_03",
+          "label": "토끼",
+          "src": "parts/ears/ears_03.webp",
+          "w": 229,
+          "h": 215,
+          "color": "#fef8e0",
+          "line": "parts/ears/ears_03_line.webp",
+          "fill": "parts/ears/ears_03_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_03_L.webp",
+            "w": 96,
+            "h": 213,
+            "color": "#fef8e0",
+            "line": "parts/ears/ears_03_L_line.webp",
+            "fill": "parts/ears/ears_03_L_fill.webp",
+            "root": [
+              47.5,
+              208
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_03_R.webp",
+            "w": 95,
+            "h": 215,
+            "color": "#fef9e7",
+            "line": "parts/ears/ears_03_R_line.webp",
+            "fill": "parts/ears/ears_03_R_fill.webp",
+            "root": [
+              46.5,
+              209
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_03_L.webp",
+          "w": 96,
+          "h": 213,
+          "color": "#fef8e0",
+          "line": "parts/ears/ears_03_L_line.webp",
+          "fill": "parts/ears/ears_03_L_fill.webp",
+          "root": [
+            47.5,
+            208
+          ]
+        },
+        "w": 58.82562465413038,
+        "h": 130.51935470135177,
+        "x": 173.79123468607696,
+        "y": 199.1264631848615,
+        "ox": 29.106428865324926,
+        "oy": 80.46855239146251,
+        "rot": -17.9,
+        "z": 10,
+        "tint": "#fef6de"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_03",
+          "label": "토끼",
+          "src": "parts/ears/ears_03.webp",
+          "w": 229,
+          "h": 215,
+          "color": "#fef8e0",
+          "line": "parts/ears/ears_03_line.webp",
+          "fill": "parts/ears/ears_03_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_03_L.webp",
+            "w": 96,
+            "h": 213,
+            "color": "#fef8e0",
+            "line": "parts/ears/ears_03_L_line.webp",
+            "fill": "parts/ears/ears_03_L_fill.webp",
+            "root": [
+              47.5,
+              208
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_03_R.webp",
+            "w": 95,
+            "h": 215,
+            "color": "#fef9e7",
+            "line": "parts/ears/ears_03_R_line.webp",
+            "fill": "parts/ears/ears_03_R_fill.webp",
+            "root": [
+              46.5,
+              209
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_03_R.webp",
+          "w": 95,
+          "h": 215,
+          "color": "#fef9e7",
+          "line": "parts/ears/ears_03_R_line.webp",
+          "fill": "parts/ears/ears_03_R_fill.webp",
+          "root": [
+            46.5,
+            209
+          ]
+        },
+        "w": 58.21285773064985,
+        "h": 131.74488854831282,
+        "x": 276.16942217030515,
+        "y": 194.2196859540751,
+        "ox": 28.4936619418444,
+        "oy": 80.64012713003707,
+        "rot": 18.1,
+        "z": 10,
+        "tint": "#fef6de"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_03",
+          "label": "털뭉치",
+          "src": "parts/body/body_03.webp",
+          "w": 642,
+          "h": 610,
+          "color": "#fef6de",
+          "line": "parts/body/body_03_line.webp",
+          "fill": "parts/body/body_03_fill.webp",
+          "anchors": {
+            "top": [
+              313.5,
+              6
+            ],
+            "headW": 521,
+            "earL": [
+              141.57,
+              68,
+              -17.9
+            ],
+            "earR": [
+              485.43,
+              52,
+              18.1
+            ],
+            "prop": [
+              313.5,
+              448.26,
+              227.51999999999998
+            ],
+            "face": [
+              313.5,
+              286.53,
+              360.17999999999995
+            ],
+            "tail": [
+              527.52,
+              448.26
+            ],
+            "sideL": [
+              128.12,
+              256.58
+            ],
+            "sideR": [
+              526.88,
+              256.58
+            ],
+            "center": [
+              313.5,
+              304.5
+            ],
+            "H": 599,
+            "W": 632
+          }
+        },
+        "img": {
+          "id": "body_03",
+          "label": "털뭉치",
+          "src": "parts/body/body_03.webp",
+          "w": 642,
+          "h": 610,
+          "color": "#fef6de",
+          "line": "parts/body/body_03_line.webp",
+          "fill": "parts/body/body_03_fill.webp",
+          "anchors": {
+            "top": [
+              313.5,
+              6
+            ],
+            "headW": 521,
+            "earL": [
+              141.57,
+              68,
+              -17.9
+            ],
+            "earR": [
+              485.43,
+              52,
+              18.1
+            ],
+            "prop": [
+              313.5,
+              448.26,
+              227.51999999999998
+            ],
+            "face": [
+              313.5,
+              286.53,
+              360.17999999999995
+            ],
+            "tail": [
+              527.52,
+              448.26
+            ],
+            "sideL": [
+              128.12,
+              256.58
+            ],
+            "sideR": [
+              526.88,
+              256.58
+            ],
+            "center": [
+              313.5,
+              304.5
+            ],
+            "H": 599,
+            "W": 632
+          }
+        },
+        "w": 189.99999999999997,
+        "h": 180.52959501557632,
+        "x": 161,
+        "y": 259.4704049844237,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_21",
+          "label": "데이지 핀",
+          "src": "parts/deco/deco_21.webp",
+          "w": 160,
+          "h": 152,
+          "kind": "side"
+        },
+        "img": {
+          "id": "deco_21",
+          "label": "데이지 핀",
+          "src": "parts/deco/deco_21.webp",
+          "w": 160,
+          "h": 152,
+          "kind": "side"
+        },
+        "w": 58.33541111534595,
+        "h": 55.418640559578655,
+        "x": 262.7747009843831,
+        "y": 242.3831795864296,
+        "ox": 29.167705557672974,
+        "oy": 36.02211636372613,
+        "rot": 22,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 186.02138757559098,
+        "y": 333.0141206523731,
+        "w": 37.70108411214952,
+        "h": 26.390758878504666,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 283.5531417262232,
+        "y": 332.65215856331315,
+        "w": 38.5089644859813,
+        "h": 26.95627514018691,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_03",
+          "label": "울먹",
+          "src": "parts/face/face_03.webp",
+          "w": 336,
+          "h": 158,
+          "cheeks": [
+            [
+              44.5,
+              83.9,
+              28
+            ],
+            [
+              291.8,
+              83.7,
+              28.6
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_03",
+          "label": "울먹",
+          "src": "parts/face/face_03.webp",
+          "w": 336,
+          "h": 158,
+          "cheeks": [
+            [
+              44.5,
+              83.9,
+              28
+            ],
+            [
+              291.8,
+              83.7,
+              28.6
+            ]
+          ]
+        },
+        "w": 133.06264980758655,
+        "h": 62.5711269928532,
+        "x": 187.24904892798241,
+        "y": 312.9834396188382,
+        "ox": 66.53132490379328,
+        "oy": 31.2855634964266,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_22",
+    "look": {
+      "parts": {
+        "body": "body_04",
+        "face": "face_04",
+        "ears": "ears_04",
+        "deco": "deco_22",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_04",
+          "label": "고양이",
+          "src": "parts/ears/ears_04.webp",
+          "w": 295,
+          "h": 114,
+          "color": "#ffffff",
+          "line": "parts/ears/ears_04_line.webp",
+          "fill": "parts/ears/ears_04_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_04_L.webp",
+            "w": 113,
+            "h": 114,
+            "color": "#ffffff",
+            "line": "parts/ears/ears_04_L_line.webp",
+            "fill": "parts/ears/ears_04_L_fill.webp",
+            "root": [
+              56.5,
+              108
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_04_R.webp",
+            "w": 112,
+            "h": 112,
+            "color": "#ffffff",
+            "line": "parts/ears/ears_04_R_line.webp",
+            "fill": "parts/ears/ears_04_R_fill.webp",
+            "root": [
+              56,
+              106
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_04_L.webp",
+          "w": 113,
+          "h": 114,
+          "color": "#ffffff",
+          "line": "parts/ears/ears_04_L_line.webp",
+          "fill": "parts/ears/ears_04_L_fill.webp",
+          "root": [
+            56.5,
+            108
+          ]
+        },
+        "w": 69.12489470903735,
+        "h": 69.73661944097573,
+        "x": 172.68411980966044,
+        "y": 236.26279254642068,
+        "ox": 34.562447354518675,
+        "oy": 40.96108805059417,
+        "rot": -8,
+        "z": 10,
+        "tint": "#fdf7e9"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_04",
+          "label": "고양이",
+          "src": "parts/ears/ears_04.webp",
+          "w": 295,
+          "h": 114,
+          "color": "#ffffff",
+          "line": "parts/ears/ears_04_line.webp",
+          "fill": "parts/ears/ears_04_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_04_L.webp",
+            "w": 113,
+            "h": 114,
+            "color": "#ffffff",
+            "line": "parts/ears/ears_04_L_line.webp",
+            "fill": "parts/ears/ears_04_L_fill.webp",
+            "root": [
+              56.5,
+              108
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_04_R.webp",
+            "w": 112,
+            "h": 112,
+            "color": "#ffffff",
+            "line": "parts/ears/ears_04_R_line.webp",
+            "fill": "parts/ears/ears_04_R_fill.webp",
+            "root": [
+              56,
+              106
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_04_R.webp",
+          "w": 112,
+          "h": 112,
+          "color": "#ffffff",
+          "line": "parts/ears/ears_04_R_line.webp",
+          "fill": "parts/ears/ears_04_R_fill.webp",
+          "root": [
+            56,
+            106
+          ]
+        },
+        "w": 68.51316997709897,
+        "h": 68.51316997709897,
+        "x": 271.0640120263759,
+        "y": 237.04580020330184,
+        "ox": 34.256584988549484,
+        "oy": 40.17808039371304,
+        "rot": 14.4,
+        "z": 10,
+        "tint": "#fdf7e9"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_04",
+          "label": "구름 몽실",
+          "src": "parts/body/body_04.webp",
+          "w": 670,
+          "h": 634,
+          "color": "#fdf7e9",
+          "line": "parts/body/body_04_line.webp",
+          "fill": "parts/body/body_04_fill.webp",
+          "anchors": {
+            "top": [
+              336,
+              17
+            ],
+            "headW": 524,
+            "earL": [
+              163.07999999999998,
+              60,
+              -8
+            ],
+            "earR": [
+              508.92,
+              60,
+              14.4
+            ],
+            "prop": [
+              336,
+              437.83621240324345,
+              216
+            ],
+            "face": [
+              336,
+              297.81,
+              374.09999999999997
+            ],
+            "tail": [
+              532.74,
+              466.02
+            ],
+            "sideL": [
+              135.44,
+              266.65999999999997
+            ],
+            "sideR": [
+              532.56,
+              266.65999999999997
+            ],
+            "center": [
+              336,
+              316.5
+            ],
+            "H": 623,
+            "W": 659
+          },
+          "arms": "parts/body/body_04_arms.webp"
+        },
+        "img": {
+          "id": "body_04",
+          "label": "구름 몽실",
+          "src": "parts/body/body_04.webp",
+          "w": 670,
+          "h": 634,
+          "color": "#fdf7e9",
+          "line": "parts/body/body_04_line.webp",
+          "fill": "parts/body/body_04_fill.webp",
+          "anchors": {
+            "top": [
+              336,
+              17
+            ],
+            "headW": 524,
+            "earL": [
+              163.07999999999998,
+              60,
+              -8
+            ],
+            "earR": [
+              508.92,
+              60,
+              14.4
+            ],
+            "prop": [
+              336,
+              437.83621240324345,
+              216
+            ],
+            "face": [
+              336,
+              297.81,
+              374.09999999999997
+            ],
+            "tail": [
+              532.74,
+              466.02
+            ],
+            "sideL": [
+              135.44,
+              266.65999999999997
+            ],
+            "sideR": [
+              532.56,
+              266.65999999999997
+            ],
+            "center": [
+              336,
+              316.5
+            ],
+            "H": 623,
+            "W": 659
+          },
+          "arms": "parts/body/body_04_arms.webp"
+        },
+        "w": 190,
+        "h": 179.7910447761194,
+        "x": 161,
+        "y": 260.2089552238806,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_22",
+          "label": "체크 리본",
+          "src": "parts/deco/deco_22.webp",
+          "w": 185,
+          "h": 135,
+          "kind": "side"
+        },
+        "img": {
+          "id": "deco_22",
+          "label": "체크 리본",
+          "src": "parts/deco/deco_22.webp",
+          "w": 185,
+          "h": 135,
+          "kind": "side"
+        },
+        "w": 67.33559986811757,
+        "h": 49.13678909295066,
+        "x": 259.3935433495233,
+        "y": 248.81840052241787,
+        "ox": 33.667799934058785,
+        "oy": 31.938912910417926,
+        "rot": 22,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 204.59669113257243,
+        "y": 333.2294632484635,
+        "w": 44.489982089552235,
+        "h": 31.142987462686563,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 265.8058886742757,
+        "y": 333.50535789288847,
+        "w": 44.489982089552235,
+        "h": 31.142987462686563,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_04",
+          "label": "엉엉",
+          "src": "parts/face/face_04.webp",
+          "w": 360,
+          "h": 178,
+          "cheeks": [
+            [
+              105.3,
+              99.5,
+              33.2
+            ],
+            [
+              260.6,
+              100.2,
+              33.2
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_04",
+          "label": "엉엉",
+          "src": "parts/face/face_04.webp",
+          "w": 360,
+          "h": 178,
+          "cheeks": [
+            [
+              105.3,
+              99.5,
+              33.2
+            ],
+            [
+              260.6,
+              100.2,
+              33.2
+            ]
+          ]
+        },
+        "w": 141.8886742756804,
+        "h": 70.15606672519753,
+        "x": 185.33924495171203,
+        "y": 309.58450395083406,
+        "ox": 70.9443371378402,
+        "oy": 35.07803336259877,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_23",
+    "look": {
+      "parts": {
+        "body": "body_06",
+        "face": "face_05",
+        "ears": "ears_05",
+        "deco": "deco_23",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_05",
+          "label": "여우",
+          "src": "parts/ears/ears_05.webp",
+          "w": 317,
+          "h": 141,
+          "color": "#febe7d",
+          "line": "parts/ears/ears_05_line.webp",
+          "fill": "parts/ears/ears_05_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_05_L.webp",
+            "w": 137,
+            "h": 141,
+            "color": "#febe7d",
+            "line": "parts/ears/ears_05_L_line.webp",
+            "fill": "parts/ears/ears_05_L_fill.webp",
+            "root": [
+              68,
+              135
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_05_R.webp",
+            "w": 135,
+            "h": 139,
+            "color": "#febe7d",
+            "line": "parts/ears/ears_05_R_line.webp",
+            "fill": "parts/ears/ears_05_R_fill.webp",
+            "root": [
+              66.5,
+              133
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_05_L.webp",
+          "w": 137,
+          "h": 141,
+          "color": "#febe7d",
+          "line": "parts/ears/ears_05_L_line.webp",
+          "fill": "parts/ears/ears_05_L_fill.webp",
+          "root": [
+            68,
+            135
+          ]
+        },
+        "w": 80.64215394745621,
+        "h": 82.99666939117756,
+        "x": 168.8644139273253,
+        "y": 241.5636373755492,
+        "ox": 40.02676254326293,
+        "oy": 49.58609524477162,
+        "rot": -17.7,
+        "z": 10,
+        "tint": "#fdf8e9"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_05",
+          "label": "여우",
+          "src": "parts/ears/ears_05.webp",
+          "w": 317,
+          "h": 141,
+          "color": "#febe7d",
+          "line": "parts/ears/ears_05_line.webp",
+          "fill": "parts/ears/ears_05_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_05_L.webp",
+            "w": 137,
+            "h": 141,
+            "color": "#febe7d",
+            "line": "parts/ears/ears_05_L_line.webp",
+            "fill": "parts/ears/ears_05_L_fill.webp",
+            "root": [
+              68,
+              135
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_05_R.webp",
+            "w": 135,
+            "h": 139,
+            "color": "#febe7d",
+            "line": "parts/ears/ears_05_R_line.webp",
+            "fill": "parts/ears/ears_05_R_fill.webp",
+            "root": [
+              66.5,
+              133
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_05_R.webp",
+          "w": 135,
+          "h": 139,
+          "color": "#febe7d",
+          "line": "parts/ears/ears_05_R_line.webp",
+          "fill": "parts/ears/ears_05_R_fill.webp",
+          "root": [
+            66.5,
+            133
+          ]
+        },
+        "w": 79.46489622559554,
+        "h": 81.81941166931688,
+        "x": 263.9650042775444,
+        "y": 241.3010395367914,
+        "ox": 39.14381925186743,
+        "oy": 48.832650302780785,
+        "rot": 18.3,
+        "z": 10,
+        "tint": "#fdf8e9"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_06",
+          "label": "볼빵빵",
+          "src": "parts/body/body_06.webp",
+          "w": 748,
+          "h": 655,
+          "color": "#fdf8e9",
+          "line": "parts/body/body_06_line.webp",
+          "fill": "parts/body/body_06_fill.webp",
+          "anchors": {
+            "top": [
+              374,
+              5
+            ],
+            "headW": 562,
+            "earL": [
+              188.54,
+              69,
+              -17.7
+            ],
+            "earR": [
+              559.46,
+              65,
+              18.3
+            ],
+            "prop": [
+              374,
+              448.0101432935465,
+              221.4
+            ],
+            "face": [
+              374,
+              307.68,
+              416.44
+            ],
+            "tail": [
+              563.68,
+              481.56
+            ],
+            "sideL": [
+              126.08,
+              275.48
+            ],
+            "sideR": [
+              622.92,
+              275.48
+            ],
+            "center": [
+              374,
+              327
+            ],
+            "H": 644,
+            "W": 738
+          },
+          "arms": "parts/body/body_06_arms.webp"
+        },
+        "img": {
+          "id": "body_06",
+          "label": "볼빵빵",
+          "src": "parts/body/body_06.webp",
+          "w": 748,
+          "h": 655,
+          "color": "#fdf8e9",
+          "line": "parts/body/body_06_line.webp",
+          "fill": "parts/body/body_06_fill.webp",
+          "anchors": {
+            "top": [
+              374,
+              5
+            ],
+            "headW": 562,
+            "earL": [
+              188.54,
+              69,
+              -17.7
+            ],
+            "earR": [
+              559.46,
+              65,
+              18.3
+            ],
+            "prop": [
+              374,
+              448.0101432935465,
+              221.4
+            ],
+            "face": [
+              374,
+              307.68,
+              416.44
+            ],
+            "tail": [
+              563.68,
+              481.56
+            ],
+            "sideL": [
+              126.08,
+              275.48
+            ],
+            "sideR": [
+              622.92,
+              275.48
+            ],
+            "center": [
+              374,
+              327
+            ],
+            "H": 644,
+            "W": 738
+          },
+          "arms": "parts/body/body_06_arms.webp"
+        },
+        "w": 190,
+        "h": 166.37700534759358,
+        "x": 161,
+        "y": 273.6229946524064,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_23",
+          "label": "별 리본",
+          "src": "parts/deco/deco_23.webp",
+          "w": 180,
+          "h": 136,
+          "kind": "side"
+        },
+        "img": {
+          "id": "deco_23",
+          "label": "별 리본",
+          "src": "parts/deco/deco_23.webp",
+          "w": 180,
+          "h": 136,
+          "kind": "side"
+        },
+        "w": 63.04215100563913,
+        "h": 47.63184742648289,
+        "x": 259.81054214423926,
+        "y": 262.444646766369,
+        "ox": 31.521075502819563,
+        "oy": 30.960700827213884,
+        "rot": 22,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 192.08386134004405,
+        "y": 345.4388383265178,
+        "w": 41.68853903743315,
+        "h": 29.181977326203203,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 277.10364391318024,
+        "y": 345.33587455174586,
+        "w": 41.42130481283422,
+        "h": 28.994913368983955,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_05",
+          "label": "놀람",
+          "src": "parts/face/face_05.webp",
+          "w": 321,
+          "h": 115,
+          "cheeks": [
+            [
+              50.9,
+              78.5,
+              31.2
+            ],
+            [
+              266.9,
+              78,
+              31
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_05",
+          "label": "놀람",
+          "src": "parts/face/face_05.webp",
+          "w": 321,
+          "h": 115,
+          "cheeks": [
+            [
+              50.9,
+              78.5,
+              31.2
+            ],
+            [
+              266.9,
+              78,
+              31
+            ]
+          ]
+        },
+        "w": 126.1502736709657,
+        "h": 45.1940232777603,
+        "x": 192.92486316451715,
+        "y": 329.1799937087134,
+        "ox": 63.07513683548285,
+        "oy": 22.59701163888015,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_24",
+    "look": {
+      "parts": {
+        "body": "body_07",
+        "face": "face_06",
+        "ears": "ears_06",
+        "deco": "deco_24",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_06",
+          "label": "쥐",
+          "src": "parts/ears/ears_06.webp",
+          "w": 360,
+          "h": 158,
+          "color": "#ddddde",
+          "line": "parts/ears/ears_06_line.webp",
+          "fill": "parts/ears/ears_06_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_06_L.webp",
+            "w": 158,
+            "h": 157,
+            "color": "#dddddd",
+            "line": "parts/ears/ears_06_L_line.webp",
+            "fill": "parts/ears/ears_06_L_fill.webp",
+            "root": [
+              78.5,
+              151
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_06_R.webp",
+            "w": 158,
+            "h": 157,
+            "color": "#dedede",
+            "line": "parts/ears/ears_06_R_line.webp",
+            "fill": "parts/ears/ears_06_R_fill.webp",
+            "root": [
+              78,
+              151
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_06_L.webp",
+          "w": 158,
+          "h": 157,
+          "color": "#dddddd",
+          "line": "parts/ears/ears_06_L_line.webp",
+          "fill": "parts/ears/ears_06_L_fill.webp",
+          "root": [
+            78.5,
+            151
+          ]
+        },
+        "w": 97.10132747636398,
+        "h": 96.48676211258953,
+        "x": 154.36745349714593,
+        "y": 218.64157453307843,
+        "ox": 48.243381056294766,
+        "oy": 58.06413556941057,
+        "rot": -15.9,
+        "z": 10,
+        "tint": "#f5dfb9"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_06",
+          "label": "쥐",
+          "src": "parts/ears/ears_06.webp",
+          "w": 360,
+          "h": 158,
+          "color": "#ddddde",
+          "line": "parts/ears/ears_06_line.webp",
+          "fill": "parts/ears/ears_06_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_06_L.webp",
+            "w": 158,
+            "h": 157,
+            "color": "#dddddd",
+            "line": "parts/ears/ears_06_L_line.webp",
+            "fill": "parts/ears/ears_06_L_fill.webp",
+            "root": [
+              78.5,
+              151
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_06_R.webp",
+            "w": 158,
+            "h": 157,
+            "color": "#dedede",
+            "line": "parts/ears/ears_06_R_line.webp",
+            "fill": "parts/ears/ears_06_R_fill.webp",
+            "root": [
+              78,
+              151
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_06_R.webp",
+          "w": 158,
+          "h": 157,
+          "color": "#dedede",
+          "line": "parts/ears/ears_06_R_line.webp",
+          "fill": "parts/ears/ears_06_R_fill.webp",
+          "root": [
+            78,
+            151
+          ]
+        },
+        "w": 97.10132747636398,
+        "h": 96.48676211258953,
+        "x": 260.06214467098044,
+        "y": 217.5288366121414,
+        "ox": 47.936098374407536,
+        "oy": 58.06413556941057,
+        "rot": 17.2,
+        "z": 10,
+        "tint": "#f5dfb9"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_07",
+          "label": "흰 배",
+          "src": "parts/body/body_07.webp",
+          "w": 683,
+          "h": 652,
+          "color": "#f5dfb9",
+          "line": "parts/body/body_07_line.webp",
+          "fill": "parts/body/body_07_fill.webp",
+          "anchors": {
+            "top": [
+              339,
+              6
+            ],
+            "headW": 574,
+            "earL": [
+              149.57999999999998,
+              65,
+              -15.9
+            ],
+            "earR": [
+              528.4200000000001,
+              61,
+              17.2
+            ],
+            "prop": [
+              339,
+              437.67963147886496,
+              298.40000000000003
+            ],
+            "face": [
+              339,
+              306.27,
+              386.85999999999996
+            ],
+            "tail": [
+              547.92,
+              479.34
+            ],
+            "sideL": [
+              121.52,
+              274.21999999999997
+            ],
+            "sideR": [
+              556.48,
+              274.21999999999997
+            ],
+            "center": [
+              339,
+              325.5
+            ],
+            "H": 641,
+            "W": 672
+          },
+          "arms": "parts/body/body_07_arms.webp"
+        },
+        "img": {
+          "id": "body_07",
+          "label": "흰 배",
+          "src": "parts/body/body_07.webp",
+          "w": 683,
+          "h": 652,
+          "color": "#f5dfb9",
+          "line": "parts/body/body_07_line.webp",
+          "fill": "parts/body/body_07_fill.webp",
+          "anchors": {
+            "top": [
+              339,
+              6
+            ],
+            "headW": 574,
+            "earL": [
+              149.57999999999998,
+              65,
+              -15.9
+            ],
+            "earR": [
+              528.4200000000001,
+              61,
+              17.2
+            ],
+            "prop": [
+              339,
+              437.67963147886496,
+              298.40000000000003
+            ],
+            "face": [
+              339,
+              306.27,
+              386.85999999999996
+            ],
+            "tail": [
+              547.92,
+              479.34
+            ],
+            "sideL": [
+              121.52,
+              274.21999999999997
+            ],
+            "sideR": [
+              556.48,
+              274.21999999999997
+            ],
+            "center": [
+              339,
+              325.5
+            ],
+            "H": 641,
+            "W": 672
+          },
+          "arms": "parts/body/body_07_arms.webp"
+        },
+        "w": 190,
+        "h": 181.37628111273793,
+        "x": 161,
+        "y": 258.62371888726204,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_24",
+          "label": "튤립",
+          "src": "parts/deco/deco_24.webp",
+          "w": 152,
+          "h": 185,
+          "kind": "top",
+          "sink": 0.22
+        },
+        "img": {
+          "id": "deco_24",
+          "label": "튤립",
+          "src": "parts/deco/deco_24.webp",
+          "w": 152,
+          "h": 185,
+          "kind": "top",
+          "sink": 0.22
+        },
+        "w": 65.38975470560207,
+        "h": 79.58621460879199,
+        "x": 222.6096614466133,
+        "y": 198.21557837380988,
+        "ox": 32.694877352801036,
+        "oy": 62.077247394857764,
+        "rot": 0,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 189.79389096546376,
+        "y": 330.0754393936784,
+        "w": 42.820814055636895,
+        "h": 29.974569838945825,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 279.96149120661437,
+        "y": 329.43732530186884,
+        "w": 40.645788579795024,
+        "h": 28.452052005856515,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_06",
+          "label": "졸림",
+          "src": "parts/face/face_06.webp",
+          "w": 321,
+          "h": 134,
+          "cheeks": [
+            [
+              50.2,
+              70.1,
+              31.5
+            ],
+            [
+              273,
+              66.6,
+              29.9
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_06",
+          "label": "졸림",
+          "src": "parts/face/face_06.webp",
+          "w": 321,
+          "h": 134,
+          "cheeks": [
+            [
+              50.2,
+              70.1,
+              31.5
+            ],
+            [
+              273,
+              66.6,
+              29.9
+            ]
+          ]
+        },
+        "w": 128.34249590905176,
+        "h": 53.57599517698734,
+        "x": 191.13329084488845,
+        "y": 317.0352820601154,
+        "ox": 64.17124795452588,
+        "oy": 26.78799758849367,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_25",
+    "look": {
+      "parts": {
+        "body": "body_08",
+        "face": "face_07",
+        "ears": "ears_07",
+        "deco": "deco_25",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_07",
+          "label": "돼지",
+          "src": "parts/ears/ears_07.webp",
+          "w": 324,
+          "h": 118,
+          "color": "#fed4d3",
+          "line": "parts/ears/ears_07_line.webp",
+          "fill": "parts/ears/ears_07_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_07_L.webp",
+            "w": 130,
+            "h": 118,
+            "color": "#fed4d3",
+            "line": "parts/ears/ears_07_L_line.webp",
+            "fill": "parts/ears/ears_07_L_fill.webp",
+            "root": [
+              64.5,
+              112
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_07_R.webp",
+            "w": 130,
+            "h": 118,
+            "color": "#fed4d3",
+            "line": "parts/ears/ears_07_R_line.webp",
+            "fill": "parts/ears/ears_07_R_fill.webp",
+            "root": [
+              64.5,
+              112
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_07_L.webp",
+          "w": 130,
+          "h": 118,
+          "color": "#fed4d3",
+          "line": "parts/ears/ears_07_L_line.webp",
+          "fill": "parts/ears/ears_07_L_fill.webp",
+          "root": [
+            64.5,
+            112
+          ]
+        },
+        "w": 77.2998516942261,
+        "h": 70.16448076860524,
+        "x": 169.23583704690176,
+        "y": 243.415041459059,
+        "ox": 38.35261872521219,
+        "oy": 41.337582229096924,
+        "rot": -16.4,
+        "z": 10,
+        "tint": "#fdf8ea"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_07",
+          "label": "돼지",
+          "src": "parts/ears/ears_07.webp",
+          "w": 324,
+          "h": 118,
+          "color": "#fed4d3",
+          "line": "parts/ears/ears_07_line.webp",
+          "fill": "parts/ears/ears_07_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_07_L.webp",
+            "w": 130,
+            "h": 118,
+            "color": "#fed4d3",
+            "line": "parts/ears/ears_07_L_line.webp",
+            "fill": "parts/ears/ears_07_L_fill.webp",
+            "root": [
+              64.5,
+              112
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_07_R.webp",
+            "w": 130,
+            "h": 118,
+            "color": "#fed4d3",
+            "line": "parts/ears/ears_07_R_line.webp",
+            "fill": "parts/ears/ears_07_R_fill.webp",
+            "root": [
+              64.5,
+              112
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_07_R.webp",
+          "w": 130,
+          "h": 118,
+          "color": "#fed4d3",
+          "line": "parts/ears/ears_07_R_line.webp",
+          "fill": "parts/ears/ears_07_R_fill.webp",
+          "root": [
+            64.5,
+            112
+          ]
+        },
+        "w": 77.2998516942261,
+        "h": 70.16448076860524,
+        "x": 266.0589255026739,
+        "y": 243.6998990302734,
+        "ox": 38.35261872521219,
+        "oy": 41.337582229096924,
+        "rot": 16.4,
+        "z": 10,
+        "tint": "#fdf8ea"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_08",
+          "label": "하트 배",
+          "src": "parts/body/body_08.webp",
+          "w": 667,
+          "h": 597,
+          "color": "#fdf8ea",
+          "line": "parts/body/body_08_line.webp",
+          "fill": "parts/body/body_08_fill.webp",
+          "anchors": {
+            "top": [
+              333.5,
+              8
+            ],
+            "headW": 515,
+            "earL": [
+              163.54999999999998,
+              52,
+              -16.4
+            ],
+            "earR": [
+              503.45000000000005,
+              53,
+              16.4
+            ],
+            "prop": [
+              333.5,
+              419.5165441176471,
+              228
+            ],
+            "face": [
+              333.5,
+              280.41999999999996,
+              376.41999999999996
+            ],
+            "tail": [
+              537.16,
+              438.64
+            ],
+            "sideL": [
+              124.96000000000001,
+              251.12
+            ],
+            "sideR": [
+              539.04,
+              251.12
+            ],
+            "center": [
+              333.5,
+              298
+            ],
+            "H": 586,
+            "W": 656
+          },
+          "arms": "parts/body/body_08_arms.webp"
+        },
+        "img": {
+          "id": "body_08",
+          "label": "하트 배",
+          "src": "parts/body/body_08.webp",
+          "w": 667,
+          "h": 597,
+          "color": "#fdf8ea",
+          "line": "parts/body/body_08_line.webp",
+          "fill": "parts/body/body_08_fill.webp",
+          "anchors": {
+            "top": [
+              333.5,
+              8
+            ],
+            "headW": 515,
+            "earL": [
+              163.54999999999998,
+              52,
+              -16.4
+            ],
+            "earR": [
+              503.45000000000005,
+              53,
+              16.4
+            ],
+            "prop": [
+              333.5,
+              419.5165441176471,
+              228
+            ],
+            "face": [
+              333.5,
+              280.41999999999996,
+              376.41999999999996
+            ],
+            "tail": [
+              537.16,
+              438.64
+            ],
+            "sideL": [
+              124.96000000000001,
+              251.12
+            ],
+            "sideR": [
+              539.04,
+              251.12
+            ],
+            "center": [
+              333.5,
+              298
+            ],
+            "H": 586,
+            "W": 656
+          },
+          "arms": "parts/body/body_08_arms.webp"
+        },
+        "w": 190,
+        "h": 170.0599700149925,
+        "x": 161,
+        "y": 269.9400299850075,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_25",
+          "label": "수련 모자",
+          "src": "parts/deco/deco_25.webp",
+          "w": 220,
+          "h": 160,
+          "kind": "hat",
+          "fit": 0.82,
+          "bot": 0.18
+        },
+        "img": {
+          "id": "deco_25",
+          "label": "수련 모자",
+          "src": "parts/deco/deco_25.webp",
+          "w": 220,
+          "h": 160,
+          "kind": "hat",
+          "fit": 0.82,
+          "bot": 0.18
+        },
+        "w": 84.20674662668665,
+        "h": 61.24127027395393,
+        "x": 213.89662668665667,
+        "y": 232.01036390895464,
+        "ox": 42.103373313343326,
+        "oy": 61.24127027395393,
+        "rot": 0,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 187.59705984654732,
+        "y": 348.0920890307787,
+        "w": 43.74824347826086,
+        "h": 30.6237704347826,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 281.47134117647056,
+        "y": 347.77140667783755,
+        "w": 43.071026086956515,
+        "h": 30.14971826086956,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_07",
+          "label": "화남",
+          "src": "parts/face/face_07.webp",
+          "w": 336,
+          "h": 143,
+          "cheeks": [
+            [
+              51.2,
+              105.6,
+              32.3
+            ],
+            [
+              286,
+              104.2,
+              31.8
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_07",
+          "label": "화남",
+          "src": "parts/face/face_07.webp",
+          "w": 336,
+          "h": 143,
+          "cheeks": [
+            [
+              51.2,
+              105.6,
+              32.3
+            ],
+            [
+              286,
+              104.2,
+              31.8
+            ]
+          ]
+        },
+        "w": 133.85002557544755,
+        "h": 56.965933503836304,
+        "x": 189.07498721227623,
+        "y": 321.3368233530294,
+        "ox": 66.92501278772377,
+        "oy": 28.482966751918152,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_26",
+    "look": {
+      "parts": {
+        "body": "body_09",
+        "face": "face_08",
+        "ears": "ears_08",
+        "deco": "deco_26",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_08",
+          "label": "양",
+          "src": "parts/ears/ears_08.webp",
+          "w": 360,
+          "h": 117,
+          "color": "#f9e9d3",
+          "line": "parts/ears/ears_08_line.webp",
+          "fill": "parts/ears/ears_08_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_08_L.webp",
+            "w": 146,
+            "h": 117,
+            "color": "#f9e9d3",
+            "line": "parts/ears/ears_08_L_line.webp",
+            "fill": "parts/ears/ears_08_L_fill.webp",
+            "root": [
+              72,
+              111
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_08_R.webp",
+            "w": 146,
+            "h": 117,
+            "color": "#f9e9d2",
+            "line": "parts/ears/ears_08_R_line.webp",
+            "fill": "parts/ears/ears_08_R_fill.webp",
+            "root": [
+              72,
+              112
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_08_L.webp",
+          "w": 146,
+          "h": 117,
+          "color": "#f9e9d3",
+          "line": "parts/ears/ears_08_L_line.webp",
+          "fill": "parts/ears/ears_08_L_fill.webp",
+          "root": [
+            72,
+            111
+          ]
+        },
+        "w": 88.08565944259668,
+        "h": 70.58919284098502,
+        "x": 160.73479446604895,
+        "y": 240.73220103169626,
+        "ox": 43.43950328676001,
+        "oy": 41.557124811000406,
+        "rot": -20.2,
+        "z": 10,
+        "tint": "#c8a27f"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_08",
+          "label": "양",
+          "src": "parts/ears/ears_08.webp",
+          "w": 360,
+          "h": 117,
+          "color": "#f9e9d3",
+          "line": "parts/ears/ears_08_line.webp",
+          "fill": "parts/ears/ears_08_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_08_L.webp",
+            "w": 146,
+            "h": 117,
+            "color": "#f9e9d3",
+            "line": "parts/ears/ears_08_L_line.webp",
+            "fill": "parts/ears/ears_08_L_fill.webp",
+            "root": [
+              72,
+              111
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_08_R.webp",
+            "w": 146,
+            "h": 117,
+            "color": "#f9e9d2",
+            "line": "parts/ears/ears_08_R_line.webp",
+            "fill": "parts/ears/ears_08_R_fill.webp",
+            "root": [
+              72,
+              112
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_08_R.webp",
+          "w": 146,
+          "h": 117,
+          "color": "#f9e9d2",
+          "line": "parts/ears/ears_08_R_line.webp",
+          "fill": "parts/ears/ears_08_R_fill.webp",
+          "root": [
+            72,
+            112
+          ]
+        },
+        "w": 88.08565944259668,
+        "h": 70.58919284098502,
+        "x": 264.11934502784675,
+        "y": 239.06145886682083,
+        "ox": 43.43950328676001,
+        "oy": 42.16045124553874,
+        "rot": 20.6,
+        "z": 10,
+        "tint": "#c8a27f"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_09",
+          "label": "밤색 머리",
+          "src": "parts/body/body_09.webp",
+          "w": 712,
+          "h": 655,
+          "color": "#c8a27f",
+          "line": "parts/body/body_09_line.webp",
+          "fill": "parts/body/body_09_fill.webp",
+          "anchors": {
+            "top": [
+              355.5,
+              8
+            ],
+            "headW": 587,
+            "earL": [
+              161.79,
+              64,
+              -20.2
+            ],
+            "earR": [
+              549.21,
+              60,
+              20.6
+            ],
+            "prop": [
+              355.5,
+              436.9884580125643,
+              212.8
+            ],
+            "face": [
+              355.5,
+              307.68,
+              405.41999999999996
+            ],
+            "tail": [
+              572.72,
+              481.56
+            ],
+            "sideL": [
+              122.32000000000001,
+              275.48
+            ],
+            "sideR": [
+              589.68,
+              275.48
+            ],
+            "center": [
+              355.5,
+              327
+            ],
+            "H": 644,
+            "W": 702
+          },
+          "arms": "parts/body/body_09_arms.webp"
+        },
+        "img": {
+          "id": "body_09",
+          "label": "밤색 머리",
+          "src": "parts/body/body_09.webp",
+          "w": 712,
+          "h": 655,
+          "color": "#c8a27f",
+          "line": "parts/body/body_09_line.webp",
+          "fill": "parts/body/body_09_fill.webp",
+          "anchors": {
+            "top": [
+              355.5,
+              8
+            ],
+            "headW": 587,
+            "earL": [
+              161.79,
+              64,
+              -20.2
+            ],
+            "earR": [
+              549.21,
+              60,
+              20.6
+            ],
+            "prop": [
+              355.5,
+              436.9884580125643,
+              212.8
+            ],
+            "face": [
+              355.5,
+              307.68,
+              405.41999999999996
+            ],
+            "tail": [
+              572.72,
+              481.56
+            ],
+            "sideL": [
+              122.32000000000001,
+              275.48
+            ],
+            "sideR": [
+              589.68,
+              275.48
+            ],
+            "center": [
+              355.5,
+              327
+            ],
+            "H": 644,
+            "W": 702
+          },
+          "arms": "parts/body/body_09_arms.webp"
+        },
+        "w": 190,
+        "h": 174.78932584269663,
+        "x": 161,
+        "y": 265.2106741573034,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_26",
+          "label": "라벤더 베레모",
+          "src": "parts/deco/deco_26.webp",
+          "w": 220,
+          "h": 168,
+          "kind": "hat",
+          "fit": 0.82,
+          "bot": 0.17
+        },
+        "img": {
+          "id": "deco_26",
+          "label": "라벤더 베레모",
+          "src": "parts/deco/deco_26.webp",
+          "w": 220,
+          "h": 168,
+          "kind": "hat",
+          "fit": 0.82,
+          "bot": 0.17
+        },
+        "w": 89.91323033707863,
+        "h": 68.6610122574055,
+        "x": 210.90995786516856,
+        "y": 219.13511133810016,
+        "ox": 44.956615168539315,
+        "oy": 68.6610122574055,
+        "rot": 0,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 186.50840198281563,
+        "y": 344.3692933509584,
+        "w": 44.82396404494381,
+        "h": 31.37677483146066,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 278.9055760740252,
+        "y": 344.24308527428957,
+        "w": 45.64391460674156,
+        "h": 31.95074022471909,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_08",
+          "label": "반짝",
+          "src": "parts/face/face_08.webp",
+          "w": 342,
+          "h": 139,
+          "cheeks": [
+            [
+              54.2,
+              101.2,
+              32.8
+            ],
+            [
+              285.1,
+              101.6,
+              33.4
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_08",
+          "label": "반짝",
+          "src": "parts/face/face_08.webp",
+          "w": 342,
+          "h": 139,
+          "cheeks": [
+            [
+              54.2,
+              101.2,
+              32.8
+            ],
+            [
+              285.1,
+              101.6,
+              33.4
+            ]
+          ]
+        },
+        "w": 137.46230006609383,
+        "h": 55.86918043621943,
+        "x": 187.13542300066098,
+        "y": 319.3817019167218,
+        "ox": 68.73115003304692,
+        "oy": 27.934590218109715,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_27",
+    "look": {
+      "parts": {
+        "body": "body_10",
+        "face": "face_09",
+        "ears": "ears_09",
+        "deco": "deco_27",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_09",
+          "label": "너구리",
+          "src": "parts/ears/ears_09.webp",
+          "w": 332,
+          "h": 136,
+          "color": "#fef6e7",
+          "line": "parts/ears/ears_09_line.webp",
+          "fill": "parts/ears/ears_09_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_09_L.webp",
+            "w": 136,
+            "h": 132,
+            "color": "#bda089",
+            "tintRegion": "coat",
+            "line": "parts/ears/ears_09_L_line.webp",
+            "fill": "parts/ears/ears_09_L_fill.webp",
+            "root": [
+              67,
+              126
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_09_R.webp",
+            "w": 136,
+            "h": 135,
+            "color": "#bda089",
+            "tintRegion": "coat",
+            "line": "parts/ears/ears_09_R_line.webp",
+            "fill": "parts/ears/ears_09_R_fill.webp",
+            "root": [
+              67.5,
+              129
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_09_L.webp",
+          "w": 136,
+          "h": 132,
+          "color": "#bda089",
+          "tintRegion": "coat",
+          "line": "parts/ears/ears_09_L_line.webp",
+          "fill": "parts/ears/ears_09_L_fill.webp",
+          "root": [
+            67,
+            126
+          ]
+        },
+        "w": 82.55591054313099,
+        "h": 80.12779552715655,
+        "x": 163.05936393885963,
+        "y": 232.05609569640166,
+        "ox": 40.670926517571885,
+        "oy": 47.63961661341853,
+        "rot": -17.3,
+        "z": 10,
+        "tint": "#c9a487"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_09",
+          "label": "너구리",
+          "src": "parts/ears/ears_09.webp",
+          "w": 332,
+          "h": 136,
+          "color": "#fef6e7",
+          "line": "parts/ears/ears_09_line.webp",
+          "fill": "parts/ears/ears_09_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_09_L.webp",
+            "w": 136,
+            "h": 132,
+            "color": "#bda089",
+            "tintRegion": "coat",
+            "line": "parts/ears/ears_09_L_line.webp",
+            "fill": "parts/ears/ears_09_L_fill.webp",
+            "root": [
+              67,
+              126
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_09_R.webp",
+            "w": 136,
+            "h": 135,
+            "color": "#bda089",
+            "tintRegion": "coat",
+            "line": "parts/ears/ears_09_R_line.webp",
+            "fill": "parts/ears/ears_09_R_fill.webp",
+            "root": [
+              67.5,
+              129
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_09_R.webp",
+          "w": 136,
+          "h": 135,
+          "color": "#bda089",
+          "tintRegion": "coat",
+          "line": "parts/ears/ears_09_R_line.webp",
+          "fill": "parts/ears/ears_09_R_fill.webp",
+          "root": [
+            67.5,
+            129
+          ]
+        },
+        "w": 82.55591054313099,
+        "h": 81.94888178913737,
+        "x": 263.3533599353068,
+        "y": 229.57663091750297,
+        "ox": 40.97444089456869,
+        "oy": 48.805111821086264,
+        "rot": 15.8,
+        "z": 10,
+        "tint": "#c9a487"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_10",
+          "label": "점박이",
+          "src": "parts/body/body_10.webp",
+          "w": 723,
+          "h": 672,
+          "color": "#c9a487",
+          "line": "parts/body/body_10_line.webp",
+          "fill": "parts/body/body_10_fill.webp",
+          "anchors": {
+            "top": [
+              354,
+              5
+            ],
+            "headW": 580,
+            "earL": [
+              162.6,
+              62,
+              -17.3
+            ],
+            "earR": [
+              545.4,
+              57,
+              15.8
+            ],
+            "prop": [
+              354,
+              484.14409065433654,
+              218.4
+            ],
+            "face": [
+              354,
+              316.14,
+              409.47999999999996
+            ],
+            "tail": [
+              596.3199999999999,
+              494.88
+            ],
+            "sideL": [
+              136.92000000000002,
+              283.03999999999996
+            ],
+            "sideR": [
+              585.08,
+              283.03999999999996
+            ],
+            "center": [
+              354,
+              336
+            ],
+            "H": 662,
+            "W": 712
+          },
+          "arms": "parts/body/body_10_arms.webp"
+        },
+        "img": {
+          "id": "body_10",
+          "label": "점박이",
+          "src": "parts/body/body_10.webp",
+          "w": 723,
+          "h": 672,
+          "color": "#c9a487",
+          "line": "parts/body/body_10_line.webp",
+          "fill": "parts/body/body_10_fill.webp",
+          "anchors": {
+            "top": [
+              354,
+              5
+            ],
+            "headW": 580,
+            "earL": [
+              162.6,
+              62,
+              -17.3
+            ],
+            "earR": [
+              545.4,
+              57,
+              15.8
+            ],
+            "prop": [
+              354,
+              484.14409065433654,
+              218.4
+            ],
+            "face": [
+              354,
+              316.14,
+              409.47999999999996
+            ],
+            "tail": [
+              596.3199999999999,
+              494.88
+            ],
+            "sideL": [
+              136.92000000000002,
+              283.03999999999996
+            ],
+            "sideR": [
+              585.08,
+              283.03999999999996
+            ],
+            "center": [
+              354,
+              336
+            ],
+            "H": 662,
+            "W": 712
+          },
+          "arms": "parts/body/body_10_arms.webp"
+        },
+        "w": 190,
+        "h": 176.59751037344398,
+        "x": 161,
+        "y": 263.40248962655596,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_27",
+          "label": "만두 모자",
+          "src": "parts/deco/deco_27.webp",
+          "w": 210,
+          "h": 151,
+          "kind": "hat",
+          "fit": 0.73,
+          "bot": 0.15
+        },
+        "img": {
+          "id": "deco_27",
+          "label": "만두 모자",
+          "src": "parts/deco/deco_27.webp",
+          "w": 210,
+          "h": 151,
+          "kind": "hat",
+          "fit": 0.73,
+          "bot": 0.15
+        },
+        "w": 77.88686030428768,
+        "h": 56.004361456892575,
+        "x": 215.08561549100972,
+        "y": 226.97890272014752,
+        "ox": 38.94343015214384,
+        "oy": 56.004361456892575,
+        "rot": 0,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 187.4288277276056,
+        "y": 332.11267792042963,
+        "w": 53.963007468879674,
+        "h": 37.77410522821577,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 264.02367586038565,
+        "y": 330.2188953868685,
+        "w": 57.08932780082988,
+        "h": 39.96252946058091,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_09",
+          "label": "하트",
+          "src": "parts/face/face_09.webp",
+          "w": 334,
+          "h": 140,
+          "cheeks": [
+            [
+              67.9,
+              81.3,
+              39.7
+            ],
+            [
+              263.4,
+              79.3,
+              42
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_09",
+          "label": "하트",
+          "src": "parts/face/face_09.webp",
+          "w": 334,
+          "h": 140,
+          "cheeks": [
+            [
+              67.9,
+              81.3,
+              39.7
+            ],
+            [
+              263.4,
+              79.3,
+              42
+            ]
+          ]
+        },
+        "w": 133.52825970222113,
+        "h": 55.96992921649987,
+        "x": 187.26491579204298,
+        "y": 318.4971930680986,
+        "ox": 66.76412985111057,
+        "oy": 27.984964608249935,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_28",
+    "look": {
+      "parts": {
+        "body": "body_11",
+        "face": "face_10",
+        "ears": "ears_10",
+        "deco": "deco_28",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_10",
+          "label": "판다",
+          "src": "parts/ears/ears_10.webp",
+          "w": 307,
+          "h": 115,
+          "L": {
+            "src": "parts/ears/ears_10_L.webp",
+            "w": 121,
+            "h": 112,
+            "root": [
+              60.5,
+              107
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_10_R.webp",
+            "w": 121,
+            "h": 115,
+            "root": [
+              60,
+              110
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_10_L.webp",
+          "w": 121,
+          "h": 112,
+          "root": [
+            60.5,
+            107
+          ]
+        },
+        "w": 72.55069168956204,
+        "h": 67.15435924984256,
+        "x": 172.3639874885523,
+        "y": 252.32583921327821,
+        "ox": 36.27534584478102,
+        "oy": 39.980827453388414,
+        "rot": -18.3,
+        "z": 10,
+        "tint": null
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_10",
+          "label": "판다",
+          "src": "parts/ears/ears_10.webp",
+          "w": 307,
+          "h": 115,
+          "L": {
+            "src": "parts/ears/ears_10_L.webp",
+            "w": 121,
+            "h": 112,
+            "root": [
+              60.5,
+              107
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_10_R.webp",
+            "w": 121,
+            "h": 115,
+            "root": [
+              60,
+              110
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_10_R.webp",
+          "w": 121,
+          "h": 115,
+          "root": [
+            60,
+            110
+          ]
+        },
+        "w": 72.55069168956204,
+        "h": 68.95313672974905,
+        "x": 267.13178373520344,
+        "y": 250.92128829280477,
+        "ox": 35.975549598129945,
+        "oy": 41.13204504052856,
+        "rot": 18.1,
+        "z": 10,
+        "tint": null
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_11",
+          "label": "줄무늬",
+          "src": "parts/body/body_11.webp",
+          "w": 750,
+          "h": 679,
+          "color": "#f8e9c6",
+          "line": "parts/body/body_11_line.webp",
+          "fill": "parts/body/body_11_fill.webp",
+          "anchors": {
+            "top": [
+              374.5,
+              5
+            ],
+            "headW": 565,
+            "earL": [
+              188.04999999999998,
+              96,
+              -18.3
+            ],
+            "earR": [
+              560.95,
+              95,
+              18.1
+            ],
+            "prop": [
+              374.5,
+              458.5383967883596,
+              233.60000000000002
+            ],
+            "face": [
+              374.5,
+              318.9,
+              421.65999999999997
+            ],
+            "tail": [
+              593.54,
+              499.8
+            ],
+            "sideL": [
+              138.24,
+              285.4
+            ],
+            "sideR": [
+              610.76,
+              285.4
+            ],
+            "center": [
+              374.5,
+              339
+            ],
+            "H": 670,
+            "W": 739
+          },
+          "arms": "parts/body/body_11_arms.webp"
+        },
+        "img": {
+          "id": "body_11",
+          "label": "줄무늬",
+          "src": "parts/body/body_11.webp",
+          "w": 750,
+          "h": 679,
+          "color": "#f8e9c6",
+          "line": "parts/body/body_11_line.webp",
+          "fill": "parts/body/body_11_fill.webp",
+          "anchors": {
+            "top": [
+              374.5,
+              5
+            ],
+            "headW": 565,
+            "earL": [
+              188.04999999999998,
+              96,
+              -18.3
+            ],
+            "earR": [
+              560.95,
+              95,
+              18.1
+            ],
+            "prop": [
+              374.5,
+              458.5383967883596,
+              233.60000000000002
+            ],
+            "face": [
+              374.5,
+              318.9,
+              421.65999999999997
+            ],
+            "tail": [
+              593.54,
+              499.8
+            ],
+            "sideL": [
+              138.24,
+              285.4
+            ],
+            "sideR": [
+              610.76,
+              285.4
+            ],
+            "center": [
+              374.5,
+              339
+            ],
+            "H": 670,
+            "W": 739
+          },
+          "arms": "parts/body/body_11_arms.webp"
+        },
+        "w": 190.00000000000003,
+        "h": 172.01333333333335,
+        "x": 161,
+        "y": 267.9866666666667,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_28",
+          "label": "네잎클로버",
+          "src": "parts/deco/deco_28.webp",
+          "w": 161,
+          "h": 175,
+          "kind": "side"
+        },
+        "img": {
+          "id": "deco_28",
+          "label": "네잎클로버",
+          "src": "parts/deco/deco_28.webp",
+          "w": 161,
+          "h": 175,
+          "kind": "side"
+        },
+        "w": 57.43796289588096,
+        "h": 62.432568365087995,
+        "x": 262.57985188539294,
+        "y": 254.8668305626928,
+        "ox": 28.71898144794048,
+        "oy": 40.581169437307196,
+        "rot": 22,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 190.1221532862745,
+        "y": 347.0697712690196,
+        "w": 38.3204608,
+        "h": 26.82432256,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 281.9547405803921,
+        "y": 345.9625417160784,
+        "w": 39.6697728,
+        "h": 27.768840959999995,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_10",
+          "label": "어지러움",
+          "src": "parts/face/face_10.webp",
+          "w": 323,
+          "h": 125,
+          "cheeks": [
+            [
+              44.1,
+              92,
+              28.4
+            ],
+            [
+              277.2,
+              90.4,
+              29.4
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_10",
+          "label": "어지러움",
+          "src": "parts/face/face_10.webp",
+          "w": 323,
+          "h": 125,
+          "cheeks": [
+            [
+              44.1,
+              92,
+              28.4
+            ],
+            [
+              277.2,
+              90.4,
+              29.4
+            ]
+          ]
+        },
+        "w": 128.18464,
+        "h": 49.607058823529414,
+        "x": 191.78101333333333,
+        "y": 323.971137254902,
+        "ox": 64.09232,
+        "oy": 24.803529411764707,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_29",
+    "look": {
+      "parts": {
+        "body": "body_12",
+        "face": "face_11",
+        "ears": "ears_11",
+        "deco": "deco_29",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_11",
+          "label": "코알라",
+          "src": "parts/ears/ears_11.webp",
+          "w": 343,
+          "h": 163,
+          "color": "#d4d2d1",
+          "line": "parts/ears/ears_11_line.webp",
+          "fill": "parts/ears/ears_11_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_11_L.webp",
+            "w": 156,
+            "h": 162,
+            "color": "#d4d2d2",
+            "line": "parts/ears/ears_11_L_line.webp",
+            "fill": "parts/ears/ears_11_L_fill.webp",
+            "root": [
+              78,
+              156
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_11_R.webp",
+            "w": 155,
+            "h": 162,
+            "color": "#d4d2d1",
+            "line": "parts/ears/ears_11_R_line.webp",
+            "fill": "parts/ears/ears_11_R_fill.webp",
+            "root": [
+              77,
+              157
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_11_L.webp",
+          "w": 156,
+          "h": 162,
+          "color": "#d4d2d2",
+          "line": "parts/ears/ears_11_L_line.webp",
+          "fill": "parts/ears/ears_11_L_fill.webp",
+          "root": [
+            78,
+            156
+          ]
+        },
+        "w": 95.73883631090365,
+        "h": 99.42109924593841,
+        "x": 153.68286104682738,
+        "y": 217.930252295127,
+        "ox": 47.869418155451825,
+        "oy": 59.94724058236583,
+        "rot": -14.5,
+        "z": 10,
+        "tint": "#e6ded4"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_11",
+          "label": "코알라",
+          "src": "parts/ears/ears_11.webp",
+          "w": 343,
+          "h": 163,
+          "color": "#d4d2d1",
+          "line": "parts/ears/ears_11_line.webp",
+          "fill": "parts/ears/ears_11_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_11_L.webp",
+            "w": 156,
+            "h": 162,
+            "color": "#d4d2d2",
+            "line": "parts/ears/ears_11_L_line.webp",
+            "fill": "parts/ears/ears_11_L_fill.webp",
+            "root": [
+              78,
+              156
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_11_R.webp",
+            "w": 155,
+            "h": 162,
+            "color": "#d4d2d1",
+            "line": "parts/ears/ears_11_R_line.webp",
+            "fill": "parts/ears/ears_11_R_fill.webp",
+            "root": [
+              77,
+              157
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_11_R.webp",
+          "w": 155,
+          "h": 162,
+          "color": "#d4d2d1",
+          "line": "parts/ears/ears_11_R_line.webp",
+          "fill": "parts/ears/ears_11_R_fill.webp",
+          "root": [
+            77,
+            157
+          ]
+        },
+        "w": 95.12512582173119,
+        "h": 99.42109924593841,
+        "x": 261.29742623685456,
+        "y": 216.23392072333348,
+        "ox": 47.25570766627936,
+        "oy": 60.560951071538284,
+        "rot": 14.2,
+        "z": 10,
+        "tint": "#e6ded4"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_12",
+          "label": "가슴 털",
+          "src": "parts/body/body_12.webp",
+          "w": 702,
+          "h": 666,
+          "color": "#e6ded4",
+          "line": "parts/body/body_12_line.webp",
+          "fill": "parts/body/body_12_fill.webp",
+          "anchors": {
+            "top": [
+              347.5,
+              5
+            ],
+            "headW": 599,
+            "earL": [
+              149.82999999999998,
+              67,
+              -14.5
+            ],
+            "earR": [
+              545.1700000000001,
+              63,
+              14.2
+            ],
+            "prop": [
+              347.5,
+              492.75482205728423,
+              318.32
+            ],
+            "face": [
+              347.5,
+              312.78999999999996,
+              400.2
+            ],
+            "tail": [
+              562.12,
+              490.18
+            ],
+            "sideL": [
+              117.72,
+              279.94
+            ],
+            "sideR": [
+              583.28,
+              279.94
+            ],
+            "center": [
+              347.5,
+              332.5
+            ],
+            "H": 657,
+            "W": 692
+          },
+          "arms": "parts/body/body_12_arms.webp"
+        },
+        "img": {
+          "id": "body_12",
+          "label": "가슴 털",
+          "src": "parts/body/body_12.webp",
+          "w": 702,
+          "h": 666,
+          "color": "#e6ded4",
+          "line": "parts/body/body_12_line.webp",
+          "fill": "parts/body/body_12_fill.webp",
+          "anchors": {
+            "top": [
+              347.5,
+              5
+            ],
+            "headW": 599,
+            "earL": [
+              149.82999999999998,
+              67,
+              -14.5
+            ],
+            "earR": [
+              545.1700000000001,
+              63,
+              14.2
+            ],
+            "prop": [
+              347.5,
+              492.75482205728423,
+              318.32
+            ],
+            "face": [
+              347.5,
+              312.78999999999996,
+              400.2
+            ],
+            "tail": [
+              562.12,
+              490.18
+            ],
+            "sideL": [
+              117.72,
+              279.94
+            ],
+            "sideR": [
+              583.28,
+              279.94
+            ],
+            "center": [
+              347.5,
+              332.5
+            ],
+            "H": 657,
+            "W": 692
+          },
+          "arms": "parts/body/body_12_arms.webp"
+        },
+        "w": 190,
+        "h": 180.25641025641028,
+        "x": 161,
+        "y": 259.7435897435897,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_29",
+          "label": "초승달 핀",
+          "src": "parts/deco/deco_29.webp",
+          "w": 170,
+          "h": 158,
+          "kind": "side"
+        },
+        "img": {
+          "id": "deco_29",
+          "label": "초승달 핀",
+          "src": "parts/deco/deco_29.webp",
+          "w": 170,
+          "h": 158,
+          "kind": "side"
+        },
+        "w": 62.07681597979426,
+        "h": 57.6949230871029,
+        "x": 264.13961907563,
+        "y": 242.8495820446651,
+        "ox": 31.03840798989713,
+        "oy": 37.501700006616886,
+        "rot": 22,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 194.1716024803084,
+        "y": 353.4388467236467,
+        "w": 40.6356923076923,
+        "h": 28.44498461538461,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 273.72468241997655,
+        "y": 352.37365879001163,
+        "w": 42.41435897435897,
+        "h": 29.690051282051275,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_11",
+          "label": "충격",
+          "src": "parts/face/face_11.webp",
+          "w": 304,
+          "h": 190,
+          "cheeks": [
+            [
+              51.2,
+              152.8,
+              29.7
+            ],
+            [
+              251.1,
+              151.7,
+              31
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_11",
+          "label": "충격",
+          "src": "parts/face/face_11.webp",
+          "w": 304,
+          "h": 190,
+          "cheeks": [
+            [
+              51.2,
+              152.8,
+              29.7
+            ],
+            [
+              251.1,
+              151.7,
+              31
+            ]
+          ]
+        },
+        "w": 122.33363499245851,
+        "h": 76.45852187028657,
+        "x": 193.8858890564773,
+        "y": 306.1725909167085,
+        "ox": 61.16681749622926,
+        "oy": 38.22926093514329,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_30",
+    "look": {
+      "parts": {
+        "body": "body_13",
+        "face": "face_12",
+        "ears": "ears_12",
+        "deco": "deco_30",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_12",
+          "label": "다람쥐",
+          "src": "parts/ears/ears_12.webp",
+          "w": 293,
+          "h": 142,
+          "color": "#f29f67",
+          "line": "parts/ears/ears_12_line.webp",
+          "fill": "parts/ears/ears_12_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_12_L.webp",
+            "w": 112,
+            "h": 138,
+            "color": "#f19f67",
+            "line": "parts/ears/ears_12_L_line.webp",
+            "fill": "parts/ears/ears_12_L_fill.webp",
+            "root": [
+              55.5,
+              132
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_12_R.webp",
+            "w": 109,
+            "h": 142,
+            "color": "#ed9962",
+            "line": "parts/ears/ears_12_R_line.webp",
+            "fill": "parts/ears/ears_12_R_fill.webp",
+            "root": [
+              53.5,
+              136
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_12_L.webp",
+          "w": 112,
+          "h": 138,
+          "color": "#f19f67",
+          "line": "parts/ears/ears_12_L_line.webp",
+          "fill": "parts/ears/ears_12_L_fill.webp",
+          "root": [
+            55.5,
+            132
+          ]
+        },
+        "w": 66.40225325035217,
+        "h": 81.8170620406125,
+        "x": 169.85303105964783,
+        "y": 236.6046359333138,
+        "ox": 32.904687994594155,
+        "oy": 48.80565613900884,
+        "rot": -18.7,
+        "z": 10,
+        "tint": "#fdf8e8"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_12",
+          "label": "다람쥐",
+          "src": "parts/ears/ears_12.webp",
+          "w": 293,
+          "h": 142,
+          "color": "#f29f67",
+          "line": "parts/ears/ears_12_line.webp",
+          "fill": "parts/ears/ears_12_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_12_L.webp",
+            "w": 112,
+            "h": 138,
+            "color": "#f19f67",
+            "line": "parts/ears/ears_12_L_line.webp",
+            "fill": "parts/ears/ears_12_L_fill.webp",
+            "root": [
+              55.5,
+              132
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_12_R.webp",
+            "w": 109,
+            "h": 142,
+            "color": "#ed9962",
+            "line": "parts/ears/ears_12_R_line.webp",
+            "fill": "parts/ears/ears_12_R_fill.webp",
+            "root": [
+              53.5,
+              136
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_12_R.webp",
+          "w": 109,
+          "h": 142,
+          "color": "#ed9962",
+          "line": "parts/ears/ears_12_R_line.webp",
+          "fill": "parts/ears/ears_12_R_fill.webp",
+          "root": [
+            53.5,
+            136
+          ]
+        },
+        "w": 64.6236214668606,
+        "h": 84.18857108526792,
+        "x": 276.7305797405291,
+        "y": 235.6153819667093,
+        "ox": 31.718933472266436,
+        "oy": 50.32342192758832,
+        "rot": 19.4,
+        "z": 10,
+        "tint": "#fdf8e8"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_13",
+          "label": "양말 발",
+          "src": "parts/body/body_13.webp",
+          "w": 719,
+          "h": 639,
+          "color": "#fdf8e8",
+          "line": "parts/body/body_13_line.webp",
+          "fill": "parts/body/body_13_fill.webp",
+          "anchors": {
+            "top": [
+              358,
+              6
+            ],
+            "headW": 606,
+            "earL": [
+              158.01999999999998,
+              54,
+              -18.7
+            ],
+            "earR": [
+              557.98,
+              56,
+              19.4
+            ],
+            "prop": [
+              358,
+              464.86594016565476,
+              212.7
+            ],
+            "face": [
+              358,
+              300.15999999999997,
+              407.15999999999997
+            ],
+            "tail": [
+              571.74,
+              469.71999999999997
+            ],
+            "sideL": [
+              135.44,
+              268.76
+            ],
+            "sideR": [
+              590.56,
+              268.76
+            ],
+            "center": [
+              358,
+              319
+            ],
+            "H": 628,
+            "W": 709
+          },
+          "arms": "parts/body/body_13_arms.webp"
+        },
+        "img": {
+          "id": "body_13",
+          "label": "양말 발",
+          "src": "parts/body/body_13.webp",
+          "w": 719,
+          "h": 639,
+          "color": "#fdf8e8",
+          "line": "parts/body/body_13_line.webp",
+          "fill": "parts/body/body_13_fill.webp",
+          "anchors": {
+            "top": [
+              358,
+              6
+            ],
+            "headW": 606,
+            "earL": [
+              158.01999999999998,
+              54,
+              -18.7
+            ],
+            "earR": [
+              557.98,
+              56,
+              19.4
+            ],
+            "prop": [
+              358,
+              464.86594016565476,
+              212.7
+            ],
+            "face": [
+              358,
+              300.15999999999997,
+              407.15999999999997
+            ],
+            "tail": [
+              571.74,
+              469.71999999999997
+            ],
+            "sideL": [
+              135.44,
+              268.76
+            ],
+            "sideR": [
+              590.56,
+              268.76
+            ],
+            "center": [
+              358,
+              319
+            ],
+            "H": 628,
+            "W": 709
+          },
+          "arms": "parts/body/body_13_arms.webp"
+        },
+        "w": 190,
+        "h": 168.8595271210014,
+        "x": 161,
+        "y": 271.1404728789986,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_30",
+          "label": "구름 핀",
+          "src": "parts/deco/deco_30.webp",
+          "w": 180,
+          "h": 125,
+          "kind": "side"
+        },
+        "img": {
+          "id": "deco_30",
+          "label": "구름 핀",
+          "src": "parts/deco/deco_30.webp",
+          "w": 180,
+          "h": 125,
+          "kind": "side"
+        },
+        "w": 63.49715467064925,
+        "h": 44.095246299061984,
+        "x": 263.4894616076517,
+        "y": 260.5959480419101,
+        "ox": 31.748577335324626,
+        "oy": 28.661910094390286,
+        "rot": 22,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 189.53197113638225,
+        "y": 335.81216014399087,
+        "w": 40.36490236439498,
+        "h": 28.25543165507648,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 279.7354160517058,
+        "y": 332.6430875955166,
+        "w": 41.99580751043114,
+        "h": 29.397065257301797,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_12",
+          "label": "냠냠",
+          "src": "parts/face/face_12.webp",
+          "w": 321,
+          "h": 121,
+          "cheeks": [
+            [
+              45.7,
+              59.2,
+              29.7
+            ],
+            [
+              273.4,
+              52.7,
+              30.9
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_12",
+          "label": "냠냠",
+          "src": "parts/face/face_12.webp",
+          "w": 321,
+          "h": 121,
+          "cheeks": [
+            [
+              45.7,
+              59.2,
+              29.7
+            ],
+            [
+              273.4,
+              52.7,
+              30.9
+            ]
+          ]
+        },
+        "w": 128.3138607543156,
+        "h": 48.36753006626851,
+        "x": 191.44668575636098,
+        "y": 326.2757620878671,
+        "ox": 64.1569303771578,
+        "oy": 24.183765033134254,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_31",
+    "look": {
+      "parts": {
+        "body": "body_14",
+        "face": "face_13",
+        "ears": "ears_13",
+        "deco": "deco_31",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_13",
+          "label": "박쥐",
+          "src": "parts/ears/ears_13.webp",
+          "w": 335,
+          "h": 185,
+          "color": "#fadef4",
+          "line": "parts/ears/ears_13_line.webp",
+          "fill": "parts/ears/ears_13_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_13_L.webp",
+            "w": 138,
+            "h": 185,
+            "color": "#fadef4",
+            "line": "parts/ears/ears_13_L_line.webp",
+            "fill": "parts/ears/ears_13_L_fill.webp",
+            "root": [
+              68,
+              179
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_13_R.webp",
+            "w": 138,
+            "h": 185,
+            "color": "#fadef4",
+            "line": "parts/ears/ears_13_R_line.webp",
+            "fill": "parts/ears/ears_13_R_fill.webp",
+            "root": [
+              68.5,
+              179
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_13_L.webp",
+          "w": 138,
+          "h": 185,
+          "color": "#fadef4",
+          "line": "parts/ears/ears_13_L_line.webp",
+          "fill": "parts/ears/ears_13_L_fill.webp",
+          "root": [
+            68,
+            179
+          ]
+        },
+        "w": 88.10541502945513,
+        "h": 118.11233174238549,
+        "x": 158.61759466457488,
+        "y": 191.53877790354525,
+        "ox": 43.41426247828224,
+        "oy": 71.76122209645476,
+        "rot": -19.3,
+        "z": 10,
+        "tint": "#f9ce97"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_13",
+          "label": "박쥐",
+          "src": "parts/ears/ears_13.webp",
+          "w": 335,
+          "h": 185,
+          "color": "#fadef4",
+          "line": "parts/ears/ears_13_line.webp",
+          "fill": "parts/ears/ears_13_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_13_L.webp",
+            "w": 138,
+            "h": 185,
+            "color": "#fadef4",
+            "line": "parts/ears/ears_13_L_line.webp",
+            "fill": "parts/ears/ears_13_L_fill.webp",
+            "root": [
+              68,
+              179
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_13_R.webp",
+            "w": 138,
+            "h": 185,
+            "color": "#fadef4",
+            "line": "parts/ears/ears_13_R_line.webp",
+            "fill": "parts/ears/ears_13_R_fill.webp",
+            "root": [
+              68.5,
+              179
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_13_R.webp",
+          "w": 138,
+          "h": 185,
+          "color": "#fadef4",
+          "line": "parts/ears/ears_13_R_line.webp",
+          "fill": "parts/ears/ears_13_R_fill.webp",
+          "root": [
+            68.5,
+            179
+          ]
+        },
+        "w": 88.10541502945513,
+        "h": 118.11233174238549,
+        "x": 265.9632292892094,
+        "y": 191.53877790354525,
+        "ox": 43.7334849965049,
+        "oy": 71.76122209645476,
+        "rot": 19.5,
+        "z": 10,
+        "tint": "#f9ce97"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_14",
+          "label": "흰 입가",
+          "src": "parts/body/body_14.webp",
+          "w": 700,
+          "h": 719,
+          "color": "#f9ce97",
+          "line": "parts/body/body_14_line.webp",
+          "fill": "parts/body/body_14_fill.webp",
+          "anchors": {
+            "top": [
+              349.5,
+              6
+            ],
+            "headW": 601,
+            "earL": [
+              151.17,
+              68,
+              -19.3
+            ],
+            "earR": [
+              547.83,
+              68,
+              19.5
+            ],
+            "prop": [
+              349.5,
+              481.28406961472626,
+              235.20000000000002
+            ],
+            "face": [
+              349.5,
+              338.22999999999996,
+              400.2
+            ],
+            "tail": [
+              573.26,
+              529.66
+            ],
+            "sideL": [
+              118.56,
+              302.78
+            ],
+            "sideR": [
+              581.44,
+              302.78
+            ],
+            "center": [
+              349.5,
+              359.5
+            ],
+            "H": 709,
+            "W": 691
+          },
+          "arms": "parts/body/body_14_arms.webp"
+        },
+        "img": {
+          "id": "body_14",
+          "label": "흰 입가",
+          "src": "parts/body/body_14.webp",
+          "w": 700,
+          "h": 719,
+          "color": "#f9ce97",
+          "line": "parts/body/body_14_line.webp",
+          "fill": "parts/body/body_14_fill.webp",
+          "anchors": {
+            "top": [
+              349.5,
+              6
+            ],
+            "headW": 601,
+            "earL": [
+              151.17,
+              68,
+              -19.3
+            ],
+            "earR": [
+              547.83,
+              68,
+              19.5
+            ],
+            "prop": [
+              349.5,
+              481.28406961472626,
+              235.20000000000002
+            ],
+            "face": [
+              349.5,
+              338.22999999999996,
+              400.2
+            ],
+            "tail": [
+              573.26,
+              529.66
+            ],
+            "sideL": [
+              118.56,
+              302.78
+            ],
+            "sideR": [
+              581.44,
+              302.78
+            ],
+            "center": [
+              349.5,
+              359.5
+            ],
+            "H": 709,
+            "W": 691
+          },
+          "arms": "parts/body/body_14_arms.webp"
+        },
+        "w": 189.99999999999997,
+        "h": 195.15714285714284,
+        "x": 161,
+        "y": 244.84285714285716,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_31",
+          "label": "병아리",
+          "src": "parts/deco/deco_31.webp",
+          "w": 190,
+          "h": 138,
+          "kind": "top",
+          "sink": 0.18
+        },
+        "img": {
+          "id": "deco_31",
+          "label": "병아리",
+          "src": "parts/deco/deco_31.webp",
+          "w": 190,
+          "h": 138,
+          "kind": "top",
+          "sink": 0.18
+        },
+        "w": 84.91318984722848,
+        "h": 61.67379052061858,
+        "x": 213.40769079067147,
+        "y": 195.89892034452134,
+        "ox": 42.45659492361424,
+        "oy": 50.572508226907246,
+        "rot": 0,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 189.5830944537815,
+        "y": 328.073235697479,
+        "w": 40.06573714285713,
+        "h": 28.04601599999999,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 277.2813754621849,
+        "y": 327.256827697479,
+        "w": 42.39833142857142,
+        "h": 29.67883199999999,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_13",
+          "label": "윙크",
+          "src": "parts/face/face_13.webp",
+          "w": 324,
+          "h": 116,
+          "cheeks": [
+            [
+              47.4,
+              71.5,
+              29.2
+            ],
+            [
+              267.6,
+              71.5,
+              30.9
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_13",
+          "label": "윙크",
+          "src": "parts/face/face_13.webp",
+          "w": 324,
+          "h": 116,
+          "cheeks": [
+            [
+              47.4,
+              71.5,
+              29.2
+            ],
+            [
+              267.6,
+              71.5,
+              30.9
+            ]
+          ]
+        },
+        "w": 130.7544201680672,
+        "h": 46.813310924369745,
+        "x": 190.4870756302521,
+        "y": 313.24148739495797,
+        "ox": 65.3772100840336,
+        "oy": 23.406655462184872,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_32",
+    "look": {
+      "parts": {
+        "body": "body_15",
+        "face": "face_14",
+        "ears": "ears_14",
+        "deco": "deco_32",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_14",
+          "label": "사막여우",
+          "src": "parts/ears/ears_14.webp",
+          "w": 366,
+          "h": 284,
+          "color": "#fef6df",
+          "line": "parts/ears/ears_14_line.webp",
+          "fill": "parts/ears/ears_14_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_14_L.webp",
+            "w": 168,
+            "h": 284,
+            "color": "#fef6df",
+            "line": "parts/ears/ears_14_L_line.webp",
+            "fill": "parts/ears/ears_14_L_fill.webp",
+            "root": [
+              84,
+              278
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_14_R.webp",
+            "w": 167,
+            "h": 283,
+            "color": "#fef6df",
+            "line": "parts/ears/ears_14_R_line.webp",
+            "fill": "parts/ears/ears_14_R_fill.webp",
+            "root": [
+              83.5,
+              278
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_14_L.webp",
+          "w": 168,
+          "h": 284,
+          "color": "#fef6df",
+          "line": "parts/ears/ears_14_L_line.webp",
+          "fill": "parts/ears/ears_14_L_fill.webp",
+          "root": [
+            84,
+            278
+          ]
+        },
+        "w": 112.17891373801918,
+        "h": 189.63578274760383,
+        "x": 149.29945041575863,
+        "y": 127.29180669868607,
+        "ox": 56.08945686900959,
+        "oy": 117.36051118210862,
+        "rot": -19.8,
+        "z": 10,
+        "tint": "#fef5dd"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_14",
+          "label": "사막여우",
+          "src": "parts/ears/ears_14.webp",
+          "w": 366,
+          "h": 284,
+          "color": "#fef6df",
+          "line": "parts/ears/ears_14_line.webp",
+          "fill": "parts/ears/ears_14_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_14_L.webp",
+            "w": 168,
+            "h": 284,
+            "color": "#fef6df",
+            "line": "parts/ears/ears_14_L_line.webp",
+            "fill": "parts/ears/ears_14_L_fill.webp",
+            "root": [
+              84,
+              278
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_14_R.webp",
+            "w": 167,
+            "h": 283,
+            "color": "#fef6df",
+            "line": "parts/ears/ears_14_R_line.webp",
+            "fill": "parts/ears/ears_14_R_fill.webp",
+            "root": [
+              83.5,
+              278
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_14_R.webp",
+          "w": 167,
+          "h": 283,
+          "color": "#fef6df",
+          "line": "parts/ears/ears_14_R_line.webp",
+          "fill": "parts/ears/ears_14_R_fill.webp",
+          "root": [
+            83.5,
+            278
+          ]
+        },
+        "w": 111.5111821086262,
+        "h": 188.96805111821087,
+        "x": 249.91179305164715,
+        "y": 126.42228423925691,
+        "ox": 55.7555910543131,
+        "oy": 117.6008945686901,
+        "rot": 20.2,
+        "z": 10,
+        "tint": "#fef5dd"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_15",
+          "label": "달걀 몽실",
+          "src": "parts/body/body_15.webp",
+          "w": 604,
+          "h": 687,
+          "color": "#fef5dd",
+          "line": "parts/body/body_15_line.webp",
+          "fill": "parts/body/body_15_fill.webp",
+          "anchors": {
+            "top": [
+              300.5,
+              6
+            ],
+            "headW": 483,
+            "earL": [
+              141.10999999999999,
+              66,
+              -19.8
+            ],
+            "earR": [
+              459.89,
+              64,
+              20.2
+            ],
+            "prop": [
+              300.5,
+              473.90141173358035,
+              212
+            ],
+            "face": [
+              300.5,
+              323.19,
+              326.53999999999996
+            ],
+            "tail": [
+              498.98,
+              505.98
+            ],
+            "sideL": [
+              116.88,
+              289.34
+            ],
+            "sideR": [
+              485.12,
+              289.34
+            ],
+            "center": [
+              300.5,
+              343.5
+            ],
+            "H": 677,
+            "W": 593
+          },
+          "arms": "parts/body/body_15_arms.webp"
+        },
+        "img": {
+          "id": "body_15",
+          "label": "달걀 몽실",
+          "src": "parts/body/body_15.webp",
+          "w": 604,
+          "h": 687,
+          "color": "#fef5dd",
+          "line": "parts/body/body_15_line.webp",
+          "fill": "parts/body/body_15_fill.webp",
+          "anchors": {
+            "top": [
+              300.5,
+              6
+            ],
+            "headW": 483,
+            "earL": [
+              141.10999999999999,
+              66,
+              -19.8
+            ],
+            "earR": [
+              459.89,
+              64,
+              20.2
+            ],
+            "prop": [
+              300.5,
+              473.90141173358035,
+              212
+            ],
+            "face": [
+              300.5,
+              323.19,
+              326.53999999999996
+            ],
+            "tail": [
+              498.98,
+              505.98
+            ],
+            "sideL": [
+              116.88,
+              289.34
+            ],
+            "sideR": [
+              485.12,
+              289.34
+            ],
+            "center": [
+              300.5,
+              343.5
+            ],
+            "H": 677,
+            "W": 593
+          },
+          "arms": "parts/body/body_15_arms.webp"
+        },
+        "w": 190,
+        "h": 216.10927152317882,
+        "x": 161,
+        "y": 223.8907284768212,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_32",
+          "label": "조개 핀",
+          "src": "parts/deco/deco_32.webp",
+          "w": 170,
+          "h": 141,
+          "kind": "side"
+        },
+        "img": {
+          "id": "deco_32",
+          "label": "조개 핀",
+          "src": "parts/deco/deco_32.webp",
+          "w": 170,
+          "h": 141,
+          "kind": "side"
+        },
+        "w": 67.54105431309904,
+        "h": 56.01934504792332,
+        "x": 259.36204734676176,
+        "y": 211.86987604997563,
+        "ox": 33.77052715654952,
+        "oy": 36.412574281150164,
+        "rot": 22,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 195.1366906895208,
+        "y": 327.2336793533308,
+        "w": 38.27654304635761,
+        "h": 26.793580132450327,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 276.11275917413326,
+        "y": 325.84190913907287,
+        "w": 39.9633059602649,
+        "h": 27.974314172185426,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_14",
+          "label": "걱정",
+          "src": "parts/face/face_14.webp",
+          "w": 307,
+          "h": 148,
+          "cheeks": [
+            [
+              45.4,
+              113.5,
+              29.5
+            ],
+            [
+              259.8,
+              111.4,
+              30.8
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_14",
+          "label": "걱정",
+          "src": "parts/face/face_14.webp",
+          "w": 307,
+          "h": 148,
+          "cheeks": [
+            [
+              45.4,
+              113.5,
+              29.5
+            ],
+            [
+              259.8,
+              111.4,
+              30.8
+            ]
+          ]
+        },
+        "w": 117.15751460849239,
+        "h": 56.47984417608102,
+        "x": 196.94938839111802,
+        "y": 297.3165348656019,
+        "ox": 58.578757304246196,
+        "oy": 28.23992208804051,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_33",
+    "look": {
+      "parts": {
+        "body": "body_16",
+        "face": "face_15",
+        "ears": "ears_15",
+        "deco": "deco_33",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_15",
+          "label": "짧은 토끼",
+          "src": "parts/ears/ears_15.webp",
+          "w": 226,
+          "h": 138,
+          "color": "#fefaeb",
+          "line": "parts/ears/ears_15_line.webp",
+          "fill": "parts/ears/ears_15_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_15_L.webp",
+            "w": 91,
+            "h": 137,
+            "color": "#fefaea",
+            "line": "parts/ears/ears_15_L_line.webp",
+            "fill": "parts/ears/ears_15_L_fill.webp",
+            "root": [
+              45,
+              131
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_15_R.webp",
+            "w": 90,
+            "h": 137,
+            "color": "#fefaeb",
+            "line": "parts/ears/ears_15_R_line.webp",
+            "fill": "parts/ears/ears_15_R_fill.webp",
+            "root": [
+              44.5,
+              132
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_15_L.webp",
+          "w": 91,
+          "h": 137,
+          "color": "#fefaea",
+          "line": "parts/ears/ears_15_L_line.webp",
+          "fill": "parts/ears/ears_15_L_fill.webp",
+          "root": [
+            45,
+            131
+          ]
+        },
+        "w": 57.52291135133178,
+        "h": 86.6004269794775,
+        "x": 183.50325292546262,
+        "y": 224.58466237910872,
+        "ox": 28.445395723186042,
+        "oy": 51.63155383710747,
+        "rot": -14.3,
+        "z": 10,
+        "tint": "#dfe6ed"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_15",
+          "label": "짧은 토끼",
+          "src": "parts/ears/ears_15.webp",
+          "w": 226,
+          "h": 138,
+          "color": "#fefaeb",
+          "line": "parts/ears/ears_15_line.webp",
+          "fill": "parts/ears/ears_15_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_15_L.webp",
+            "w": 91,
+            "h": 137,
+            "color": "#fefaea",
+            "line": "parts/ears/ears_15_L_line.webp",
+            "fill": "parts/ears/ears_15_L_fill.webp",
+            "root": [
+              45,
+              131
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_15_R.webp",
+            "w": 90,
+            "h": 137,
+            "color": "#fefaeb",
+            "line": "parts/ears/ears_15_R_line.webp",
+            "fill": "parts/ears/ears_15_R_fill.webp",
+            "root": [
+              44.5,
+              132
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_15_R.webp",
+          "w": 90,
+          "h": 137,
+          "color": "#fefaeb",
+          "line": "parts/ears/ears_15_R_line.webp",
+          "fill": "parts/ears/ears_15_R_fill.webp",
+          "root": [
+            44.5,
+            132
+          ]
+        },
+        "w": 56.890791446372084,
+        "h": 86.6004269794775,
+        "x": 273.5436372022668,
+        "y": 223.95254247414906,
+        "ox": 28.1293357707062,
+        "oy": 52.26367374206716,
+        "rot": 17.2,
+        "z": 10,
+        "tint": "#dfe6ed"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_16",
+          "label": "배 동그라미",
+          "src": "parts/body/body_16.webp",
+          "w": 703,
+          "h": 709,
+          "color": "#dfe6ed",
+          "line": "parts/body/body_16_line.webp",
+          "fill": "parts/body/body_16_fill.webp",
+          "anchors": {
+            "top": [
+              354.5,
+              5
+            ],
+            "headW": 503,
+            "earL": [
+              188.51,
+              103,
+              -14.3
+            ],
+            "earR": [
+              520.49,
+              103,
+              17.2
+            ],
+            "prop": [
+              354.5,
+              516.9820958231621,
+              318.32
+            ],
+            "face": [
+              354.5,
+              333.06,
+              389.17999999999995
+            ],
+            "tail": [
+              567.12,
+              521.52
+            ],
+            "sideL": [
+              140.72,
+              298.15999999999997
+            ],
+            "sideR": [
+              561.28,
+              298.15999999999997
+            ],
+            "center": [
+              354.5,
+              354
+            ],
+            "H": 698,
+            "W": 692
+          },
+          "arms": "parts/body/body_16_arms.webp"
+        },
+        "img": {
+          "id": "body_16",
+          "label": "배 동그라미",
+          "src": "parts/body/body_16.webp",
+          "w": 703,
+          "h": 709,
+          "color": "#dfe6ed",
+          "line": "parts/body/body_16_line.webp",
+          "fill": "parts/body/body_16_fill.webp",
+          "anchors": {
+            "top": [
+              354.5,
+              5
+            ],
+            "headW": 503,
+            "earL": [
+              188.51,
+              103,
+              -14.3
+            ],
+            "earR": [
+              520.49,
+              103,
+              17.2
+            ],
+            "prop": [
+              354.5,
+              516.9820958231621,
+              318.32
+            ],
+            "face": [
+              354.5,
+              333.06,
+              389.17999999999995
+            ],
+            "tail": [
+              567.12,
+              521.52
+            ],
+            "sideL": [
+              140.72,
+              298.15999999999997
+            ],
+            "sideR": [
+              561.28,
+              298.15999999999997
+            ],
+            "center": [
+              354.5,
+              354
+            ],
+            "H": 698,
+            "W": 692
+          },
+          "arms": "parts/body/body_16_arms.webp"
+        },
+        "w": 190,
+        "h": 191.62162162162164,
+        "x": 161,
+        "y": 248.37837837837833,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_33",
+          "label": "종이배 모자",
+          "src": "parts/deco/deco_33.webp",
+          "w": 220,
+          "h": 147,
+          "kind": "hat",
+          "fit": 0.83,
+          "bot": 0.16
+        },
+        "img": {
+          "id": "deco_33",
+          "label": "종이배 모자",
+          "src": "parts/deco/deco_33.webp",
+          "w": 220,
+          "h": 147,
+          "kind": "hat",
+          "fit": 0.83,
+          "bot": 0.16
+        },
+        "w": 78.98459459459458,
+        "h": 52.77607002457002,
+        "x": 217.31851351351355,
+        "y": 218.08230835380834,
+        "ox": 39.49229729729729,
+        "oy": 52.77607002457002,
+        "rot": 0,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 192.87209612584724,
+        "y": 329.86630643126097,
+        "w": 39.32766315789473,
+        "h": 27.52936421052631,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 280.34332149610907,
+        "y": 328.00934046021257,
+        "w": 40.39057297297296,
+        "h": 28.273401081081072,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_15",
+          "label": "멍",
+          "src": "parts/face/face_15.webp",
+          "w": 318,
+          "h": 96,
+          "cheeks": [
+            [
+              45.7,
+              61.4,
+              29.6
+            ],
+            [
+              270.9,
+              57.6,
+              30.4
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_15",
+          "label": "멍",
+          "src": "parts/face/face_15.webp",
+          "w": 318,
+          "h": 96,
+          "cheeks": [
+            [
+              45.7,
+              61.4,
+              29.6
+            ],
+            [
+              270.9,
+              57.6,
+              30.4
+            ]
+          ]
+        },
+        "w": 124.26666220399964,
+        "h": 37.514464061584796,
+        "x": 194.677479708811,
+        "y": 319.6373625638022,
+        "ox": 62.13333110199982,
+        "oy": 18.757232030792398,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_34",
+    "look": {
+      "parts": {
+        "body": "body_01",
+        "face": "face_16",
+        "ears": "ears_16",
+        "deco": "deco_34",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_16",
+          "label": "짝짝이 토끼",
+          "src": "parts/ears/ears_16.webp",
+          "w": 302,
+          "h": 247,
+          "color": "#fef1c6",
+          "line": "parts/ears/ears_16_line.webp",
+          "fill": "parts/ears/ears_16_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_16_L.webp",
+            "w": 111,
+            "h": 244,
+            "color": "#fef1c6",
+            "line": "parts/ears/ears_16_L_line.webp",
+            "fill": "parts/ears/ears_16_L_fill.webp",
+            "root": [
+              55.5,
+              238
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_16_R.webp",
+            "w": 155,
+            "h": 161,
+            "color": "#fef1c6",
+            "line": "parts/ears/ears_16_R_line.webp",
+            "fill": "parts/ears/ears_16_R_fill.webp",
+            "root": [
+              76.5,
+              155
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_16_L.webp",
+          "w": 111,
+          "h": 244,
+          "color": "#fef1c6",
+          "line": "parts/ears/ears_16_L_line.webp",
+          "fill": "parts/ears/ears_16_L_fill.webp",
+          "root": [
+            55.5,
+            238
+          ]
+        },
+        "w": 66.87968785799309,
+        "h": 147.01480934549832,
+        "x": 170.42291571492038,
+        "y": 192.50783612717265,
+        "ox": 33.439843928996545,
+        "oy": 90.47435971852471,
+        "rot": -15,
+        "z": 10,
+        "tint": "#f9f5e9"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_16",
+          "label": "짝짝이 토끼",
+          "src": "parts/ears/ears_16.webp",
+          "w": 302,
+          "h": 247,
+          "color": "#fef1c6",
+          "line": "parts/ears/ears_16_line.webp",
+          "fill": "parts/ears/ears_16_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_16_L.webp",
+            "w": 111,
+            "h": 244,
+            "color": "#fef1c6",
+            "line": "parts/ears/ears_16_L_line.webp",
+            "fill": "parts/ears/ears_16_L_fill.webp",
+            "root": [
+              55.5,
+              238
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_16_R.webp",
+            "w": 155,
+            "h": 161,
+            "color": "#fef1c6",
+            "line": "parts/ears/ears_16_R_line.webp",
+            "fill": "parts/ears/ears_16_R_fill.webp",
+            "root": [
+              76.5,
+              155
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_16_R.webp",
+          "w": 155,
+          "h": 161,
+          "color": "#fef1c6",
+          "line": "parts/ears/ears_16_R_line.webp",
+          "fill": "parts/ears/ears_16_R_fill.webp",
+          "root": [
+            76.5,
+            155
+          ]
+        },
+        "w": 93.39055511701739,
+        "h": 97.0056733796116,
+        "x": 262.8901798373837,
+        "y": 222.8222884865864,
+        "ox": 46.09275784807632,
+        "oy": 58.468512700357195,
+        "rot": 16.1,
+        "z": 10,
+        "tint": "#f9f5e9"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_01",
+          "label": "기본 모찌",
+          "src": "parts/body/body_01.webp",
+          "w": 674,
+          "h": 619,
+          "color": "#f9f5e9",
+          "line": "parts/body/body_01_line.webp",
+          "fill": "parts/body/body_01_fill.webp",
+          "anchors": {
+            "top": [
+              338.5,
+              5
+            ],
+            "headW": 565,
+            "earL": [
+              152.04999999999998,
+              62,
+              -15
+            ],
+            "earR": [
+              524.95,
+              56,
+              16.1
+            ],
+            "prop": [
+              338.5,
+              414.08636660146783,
+              220.8
+            ],
+            "face": [
+              338.5,
+              290.76,
+              384.53999999999996
+            ],
+            "tail": [
+              552.18,
+              454.92
+            ],
+            "sideL": [
+              120.08,
+              260.36
+            ],
+            "sideR": [
+              556.92,
+              260.36
+            ],
+            "center": [
+              338.5,
+              309
+            ],
+            "H": 608,
+            "W": 663
+          },
+          "arms": "parts/body/body_01_arms.webp"
+        },
+        "img": {
+          "id": "body_01",
+          "label": "기본 모찌",
+          "src": "parts/body/body_01.webp",
+          "w": 674,
+          "h": 619,
+          "color": "#f9f5e9",
+          "line": "parts/body/body_01_line.webp",
+          "fill": "parts/body/body_01_fill.webp",
+          "anchors": {
+            "top": [
+              338.5,
+              5
+            ],
+            "headW": 565,
+            "earL": [
+              152.04999999999998,
+              62,
+              -15
+            ],
+            "earR": [
+              524.95,
+              56,
+              16.1
+            ],
+            "prop": [
+              338.5,
+              414.08636660146783,
+              220.8
+            ],
+            "face": [
+              338.5,
+              290.76,
+              384.53999999999996
+            ],
+            "tail": [
+              552.18,
+              454.92
+            ],
+            "sideL": [
+              120.08,
+              260.36
+            ],
+            "sideR": [
+              556.92,
+              260.36
+            ],
+            "center": [
+              338.5,
+              309
+            ],
+            "H": 608,
+            "W": 663
+          },
+          "arms": "parts/body/body_01_arms.webp"
+        },
+        "w": 190,
+        "h": 174.49554896142433,
+        "x": 161,
+        "y": 265.50445103857567,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_34",
+          "label": "도토리 모자",
+          "src": "parts/deco/deco_34.webp",
+          "w": 179,
+          "h": 205,
+          "kind": "hat",
+          "fit": 0.65,
+          "bot": 0.18
+        },
+        "img": {
+          "id": "deco_34",
+          "label": "도토리 모자",
+          "src": "parts/deco/deco_34.webp",
+          "w": 179,
+          "h": 205,
+          "kind": "hat",
+          "fit": 0.65,
+          "bot": 0.18
+        },
+        "w": 72.46921364985164,
+        "h": 82.99546814647813,
+        "x": 220.1882418397626,
+        "y": 205.51420544402635,
+        "ox": 36.23460682492582,
+        "oy": 82.99546814647813,
+        "rot": 0,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 193.40366290801188,
+        "y": 339.74668629080116,
+        "w": 41.626169732937676,
+        "h": 29.138318813056372,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 279.8134053412463,
+        "y": 338.805103620178,
+        "w": 41.90002611275964,
+        "h": 29.330018278931746,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_16",
+          "label": "깔깔",
+          "src": "parts/face/face_16.webp",
+          "w": 327,
+          "h": 114,
+          "cheeks": [
+            [
+              58.7,
+              74,
+              30.4
+            ],
+            [
+              273.6,
+              71.9,
+              30.6
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_16",
+          "label": "깔깔",
+          "src": "parts/face/face_16.webp",
+          "w": 327,
+          "h": 114,
+          "cheeks": [
+            [
+              58.7,
+              74,
+              30.4
+            ],
+            [
+              273.6,
+              71.9,
+              30.6
+            ]
+          ]
+        },
+        "w": 131.6927002967359,
+        "h": 45.91121661721068,
+        "x": 190.5764985163205,
+        "y": 324.51382789317506,
+        "ox": 65.84635014836795,
+        "oy": 22.95560830860534,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_35",
+    "look": {
+      "parts": {
+        "body": "body_02",
+        "face": "face_17",
+        "ears": "ears_17",
+        "deco": "deco_35",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_17",
+          "label": "갈색 곰",
+          "src": "parts/ears/ears_17.webp",
+          "w": 315,
+          "h": 124,
+          "color": "#caa586",
+          "line": "parts/ears/ears_17_line.webp",
+          "fill": "parts/ears/ears_17_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_17_L.webp",
+            "w": 128,
+            "h": 122,
+            "color": "#cea98b",
+            "line": "parts/ears/ears_17_L_line.webp",
+            "fill": "parts/ears/ears_17_L_fill.webp",
+            "root": [
+              64,
+              117
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_17_R.webp",
+            "w": 127,
+            "h": 124,
+            "color": "#cca687",
+            "line": "parts/ears/ears_17_R_line.webp",
+            "fill": "parts/ears/ears_17_R_fill.webp",
+            "root": [
+              63,
+              118
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_17_L.webp",
+          "w": 128,
+          "h": 122,
+          "color": "#cea98b",
+          "line": "parts/ears/ears_17_L_line.webp",
+          "fill": "parts/ears/ears_17_L_fill.webp",
+          "root": [
+            64,
+            117
+          ]
+        },
+        "w": 76.49685277839758,
+        "h": 72.9110628044102,
+        "x": 164.3437611108012,
+        "y": 240.4657031168336,
+        "ox": 38.24842638919879,
+        "oy": 43.67492188316637,
+        "rot": -10.6,
+        "z": 10,
+        "tint": "#fdf5de"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_17",
+          "label": "갈색 곰",
+          "src": "parts/ears/ears_17.webp",
+          "w": 315,
+          "h": 124,
+          "color": "#caa586",
+          "line": "parts/ears/ears_17_line.webp",
+          "fill": "parts/ears/ears_17_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_17_L.webp",
+            "w": 128,
+            "h": 122,
+            "color": "#cea98b",
+            "line": "parts/ears/ears_17_L_line.webp",
+            "fill": "parts/ears/ears_17_L_fill.webp",
+            "root": [
+              64,
+              117
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_17_R.webp",
+            "w": 127,
+            "h": 124,
+            "color": "#cca687",
+            "line": "parts/ears/ears_17_R_line.webp",
+            "fill": "parts/ears/ears_17_R_fill.webp",
+            "root": [
+              63,
+              118
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_17_R.webp",
+          "w": 127,
+          "h": 124,
+          "color": "#cca687",
+          "line": "parts/ears/ears_17_R_line.webp",
+          "fill": "parts/ears/ears_17_R_fill.webp",
+          "root": [
+            63,
+            118
+          ]
+        },
+        "w": 75.89922111606636,
+        "h": 74.10632612907266,
+        "x": 268.7882677731324,
+        "y": 242.37649125138088,
+        "ox": 37.65079472686756,
+        "oy": 43.842258748619116,
+        "rot": 13.7,
+        "z": 10,
+        "tint": "#fdf5de"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_02",
+          "label": "몽실",
+          "src": "parts/body/body_02.webp",
+          "w": 640,
+          "h": 579,
+          "color": "#fdf5de",
+          "line": "parts/body/body_02_line.webp",
+          "fill": "parts/body/body_02_fill.webp",
+          "anchors": {
+            "top": [
+              315,
+              17
+            ],
+            "headW": 530,
+            "earL": [
+              140.1,
+              54,
+              -10.6
+            ],
+            "earR": [
+              489.9,
+              61,
+              13.7
+            ],
+            "prop": [
+              315,
+              396.1025081357686,
+              202.4
+            ],
+            "face": [
+              315,
+              271.96,
+              363.65999999999997
+            ],
+            "tail": [
+              496.94,
+              425.32
+            ],
+            "sideL": [
+              108.64,
+              243.56
+            ],
+            "sideR": [
+              524.36,
+              243.56
+            ],
+            "center": [
+              315,
+              289
+            ],
+            "H": 568,
+            "W": 629
+          },
+          "arms": "parts/body/body_02_arms.webp"
+        },
+        "img": {
+          "id": "body_02",
+          "label": "몽실",
+          "src": "parts/body/body_02.webp",
+          "w": 640,
+          "h": 579,
+          "color": "#fdf5de",
+          "line": "parts/body/body_02_line.webp",
+          "fill": "parts/body/body_02_fill.webp",
+          "anchors": {
+            "top": [
+              315,
+              17
+            ],
+            "headW": 530,
+            "earL": [
+              140.1,
+              54,
+              -10.6
+            ],
+            "earR": [
+              489.9,
+              61,
+              13.7
+            ],
+            "prop": [
+              315,
+              396.1025081357686,
+              202.4
+            ],
+            "face": [
+              315,
+              271.96,
+              363.65999999999997
+            ],
+            "tail": [
+              496.94,
+              425.32
+            ],
+            "sideL": [
+              108.64,
+              243.56
+            ],
+            "sideR": [
+              524.36,
+              243.56
+            ],
+            "center": [
+              315,
+              289
+            ],
+            "H": 568,
+            "W": 629
+          },
+          "arms": "parts/body/body_02_arms.webp"
+        },
+        "w": 190,
+        "h": 171.890625,
+        "x": 161,
+        "y": 268.109375,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_35",
+          "label": "하트 간호 모자",
+          "src": "parts/deco/deco_35.webp",
+          "w": 220,
+          "h": 151,
+          "kind": "hat",
+          "fit": 0.78,
+          "bot": 0.16
+        },
+        "img": {
+          "id": "deco_35",
+          "label": "하트 간호 모자",
+          "src": "parts/deco/deco_35.webp",
+          "w": 220,
+          "h": 151,
+          "kind": "hat",
+          "fit": 0.78,
+          "bot": 0.16
+        },
+        "w": 85.9096875,
+        "h": 58.96528551136364,
+        "x": 211.56078125,
+        "y": 233.0769644886364,
+        "ox": 42.95484375,
+        "oy": 58.96528551136364,
+        "rot": 0,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 191.04224816176472,
+        "y": 342.3036254779411,
+        "w": 38.866162499999994,
+        "h": 27.206313749999996,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 275.095839632353,
+        "y": 339.5729667132353,
+        "w": 43.230082499999995,
+        "h": 30.261057749999996,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_17",
+          "label": "의기양양",
+          "src": "parts/face/face_17.webp",
+          "w": 308,
+          "h": 103,
+          "cheeks": [
+            [
+              44.2,
+              69.1,
+              28.5
+            ],
+            [
+              259.2,
+              66.1,
+              31.7
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_17",
+          "label": "의기양양",
+          "src": "parts/face/face_17.webp",
+          "w": 308,
+          "h": 103,
+          "cheeks": [
+            [
+              44.2,
+              69.1,
+              28.5
+            ],
+            [
+              259.2,
+              66.1,
+              31.7
+            ]
+          ]
+        },
+        "w": 123.53744117647057,
+        "h": 41.31284558823529,
+        "x": 192.74690441176472,
+        "y": 328.1910772058823,
+        "ox": 61.76872058823528,
+        "oy": 20.656422794117645,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  },
+  {
+    "id": "deco_36",
+    "look": {
+      "parts": {
+        "body": "body_03",
+        "face": "face_18",
+        "ears": "ears_18",
+        "deco": "deco_36",
+        "prop": null,
+        "back": null
+      },
+      "bodyColor": null,
+      "sync": true
+    },
+    "layers": [
+      {
+        "key": "ears.L",
+        "cat": "ears",
+        "part": {
+          "id": "ears_18",
+          "label": "하늘 고양이",
+          "src": "parts/ears/ears_18.webp",
+          "w": 334,
+          "h": 139,
+          "color": "#c4e2f8",
+          "line": "parts/ears/ears_18_line.webp",
+          "fill": "parts/ears/ears_18_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_18_L.webp",
+            "w": 131,
+            "h": 137,
+            "color": "#c4e2f8",
+            "line": "parts/ears/ears_18_L_line.webp",
+            "fill": "parts/ears/ears_18_L_fill.webp",
+            "root": [
+              65,
+              131
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_18_R.webp",
+            "w": 131,
+            "h": 139,
+            "color": "#c4e2f8",
+            "line": "parts/ears/ears_18_R_line.webp",
+            "fill": "parts/ears/ears_18_R_fill.webp",
+            "root": [
+              65,
+              133
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_18_L.webp",
+          "w": 131,
+          "h": 137,
+          "color": "#c4e2f8",
+          "line": "parts/ears/ears_18_L_line.webp",
+          "fill": "parts/ears/ears_18_L_fill.webp",
+          "root": [
+            65,
+            131
+          ]
+        },
+        "w": 80.27246697594875,
+        "h": 83.94906851683189,
+        "x": 163.06781352516776,
+        "y": 229.54421326643472,
+        "ox": 39.82985002623411,
+        "oy": 50.050802309889264,
+        "rot": -17.9,
+        "z": 10,
+        "tint": "#fef6de"
+      },
+      {
+        "key": "ears.R",
+        "cat": "ears",
+        "part": {
+          "id": "ears_18",
+          "label": "하늘 고양이",
+          "src": "parts/ears/ears_18.webp",
+          "w": 334,
+          "h": 139,
+          "color": "#c4e2f8",
+          "line": "parts/ears/ears_18_line.webp",
+          "fill": "parts/ears/ears_18_fill.webp",
+          "L": {
+            "src": "parts/ears/ears_18_L.webp",
+            "w": 131,
+            "h": 137,
+            "color": "#c4e2f8",
+            "line": "parts/ears/ears_18_L_line.webp",
+            "fill": "parts/ears/ears_18_L_fill.webp",
+            "root": [
+              65,
+              131
+            ]
+          },
+          "R": {
+            "src": "parts/ears/ears_18_R.webp",
+            "w": 131,
+            "h": 139,
+            "color": "#c4e2f8",
+            "line": "parts/ears/ears_18_R_line.webp",
+            "fill": "parts/ears/ears_18_R_fill.webp",
+            "root": [
+              65,
+              133
+            ]
+          }
+        },
+        "img": {
+          "src": "parts/ears/ears_18_R.webp",
+          "w": 131,
+          "h": 139,
+          "color": "#c4e2f8",
+          "line": "parts/ears/ears_18_R_line.webp",
+          "fill": "parts/ears/ears_18_R_fill.webp",
+          "root": [
+            65,
+            133
+          ]
+        },
+        "w": 80.27246697594875,
+        "h": 85.17460236379294,
+        "x": 264.8332340859154,
+        "y": 224.02466911216783,
+        "ox": 39.82985002623411,
+        "oy": 50.83514397194434,
+        "rot": 18.1,
+        "z": 10,
+        "tint": "#fef6de"
+      },
+      {
+        "key": "body",
+        "cat": "body",
+        "part": {
+          "id": "body_03",
+          "label": "털뭉치",
+          "src": "parts/body/body_03.webp",
+          "w": 642,
+          "h": 610,
+          "color": "#fef6de",
+          "line": "parts/body/body_03_line.webp",
+          "fill": "parts/body/body_03_fill.webp",
+          "anchors": {
+            "top": [
+              313.5,
+              6
+            ],
+            "headW": 521,
+            "earL": [
+              141.57,
+              68,
+              -17.9
+            ],
+            "earR": [
+              485.43,
+              52,
+              18.1
+            ],
+            "prop": [
+              313.5,
+              448.26,
+              227.51999999999998
+            ],
+            "face": [
+              313.5,
+              286.53,
+              360.17999999999995
+            ],
+            "tail": [
+              527.52,
+              448.26
+            ],
+            "sideL": [
+              128.12,
+              256.58
+            ],
+            "sideR": [
+              526.88,
+              256.58
+            ],
+            "center": [
+              313.5,
+              304.5
+            ],
+            "H": 599,
+            "W": 632
+          }
+        },
+        "img": {
+          "id": "body_03",
+          "label": "털뭉치",
+          "src": "parts/body/body_03.webp",
+          "w": 642,
+          "h": 610,
+          "color": "#fef6de",
+          "line": "parts/body/body_03_line.webp",
+          "fill": "parts/body/body_03_fill.webp",
+          "anchors": {
+            "top": [
+              313.5,
+              6
+            ],
+            "headW": 521,
+            "earL": [
+              141.57,
+              68,
+              -17.9
+            ],
+            "earR": [
+              485.43,
+              52,
+              18.1
+            ],
+            "prop": [
+              313.5,
+              448.26,
+              227.51999999999998
+            ],
+            "face": [
+              313.5,
+              286.53,
+              360.17999999999995
+            ],
+            "tail": [
+              527.52,
+              448.26
+            ],
+            "sideL": [
+              128.12,
+              256.58
+            ],
+            "sideR": [
+              526.88,
+              256.58
+            ],
+            "center": [
+              313.5,
+              304.5
+            ],
+            "H": 599,
+            "W": 632
+          }
+        },
+        "w": 189.99999999999997,
+        "h": 180.52959501557632,
+        "x": 161,
+        "y": 259.4704049844237,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 20,
+        "tint": null
+      },
+      {
+        "key": "deco",
+        "cat": "deco",
+        "part": {
+          "id": "deco_36",
+          "label": "살구 나비 핀",
+          "src": "parts/deco/deco_36.webp",
+          "w": 180,
+          "h": 144,
+          "kind": "side"
+        },
+        "img": {
+          "id": "deco_36",
+          "label": "살구 나비 핀",
+          "src": "parts/deco/deco_36.webp",
+          "w": 180,
+          "h": 144,
+          "kind": "side"
+        },
+        "w": 65.6273375047642,
+        "h": 52.501870003811355,
+        "x": 259.12873778967395,
+        "y": 244.27908044767835,
+        "ox": 32.8136687523821,
+        "oy": 34.126215502477386,
+        "rot": 22,
+        "z": 30,
+        "tint": null
+      },
+      {
+        "key": "blush.0",
+        "cat": "face",
+        "type": "blush",
+        "x": 187.93416316657508,
+        "y": 345.4891400916254,
+        "w": 40.52866542056074,
+        "h": 28.370065794392517,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "blush.1",
+        "cat": "face",
+        "type": "blush",
+        "x": 277.1376211105003,
+        "y": 343.3565735165842,
+        "w": 42.54836635514018,
+        "h": 29.783856448598126,
+        "ox": 0,
+        "oy": 0,
+        "rot": 0,
+        "z": 35
+      },
+      {
+        "key": "face",
+        "cat": "face",
+        "part": {
+          "id": "face_18",
+          "label": "결의",
+          "src": "parts/face/face_18.webp",
+          "w": 323,
+          "h": 148,
+          "cheeks": [
+            [
+              46.4,
+              112.9,
+              30.1
+            ],
+            [
+              274.2,
+              109.3,
+              31.6
+            ]
+          ]
+        },
+        "img": {
+          "id": "face_18",
+          "label": "결의",
+          "src": "parts/face/face_18.webp",
+          "w": 323,
+          "h": 148,
+          "cheeks": [
+            [
+              46.4,
+              112.9,
+              30.1
+            ],
+            [
+              274.2,
+              109.3,
+              31.6
+            ]
+          ]
+        },
+        "w": 127.91439252336446,
+        "h": 58.61092908191312,
+        "x": 189.8231775700935,
+        "y": 314.96353857430825,
+        "ox": 63.95719626168223,
+        "oy": 29.30546454095656,
+        "rot": 0,
+        "z": 40,
+        "tint": null
+      }
+    ]
+  }
+]

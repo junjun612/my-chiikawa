@@ -1,0 +1,128 @@
+[
+  {
+    "id": "prop_19",
+    "label": "딸기우유",
+    "src": "parts/prop/prop_19.webp",
+    "w": 235,
+    "h": 245.0
+  },
+  {
+    "id": "prop_20",
+    "label": "별 쿠키",
+    "src": "parts/prop/prop_20.webp",
+    "w": 246,
+    "h": 240.0
+  },
+  {
+    "id": "prop_21",
+    "label": "마카롱",
+    "src": "parts/prop/prop_21.webp",
+    "w": 251,
+    "h": 208.0
+  },
+  {
+    "id": "prop_22",
+    "label": "붕어빵",
+    "src": "parts/prop/prop_22.webp",
+    "w": 253,
+    "h": 197.0
+  },
+  {
+    "id": "prop_23",
+    "label": "롤케이크",
+    "src": "parts/prop/prop_23.webp",
+    "w": 258,
+    "h": 247.0
+  },
+  {
+    "id": "prop_24",
+    "label": "멜론빵",
+    "src": "parts/prop/prop_24.webp",
+    "w": 271,
+    "h": 220.0
+  },
+  {
+    "id": "prop_25",
+    "label": "찐만두",
+    "src": "parts/prop/prop_25.webp",
+    "w": 262,
+    "h": 213.0
+  },
+  {
+    "id": "prop_26",
+    "label": "수박 조각",
+    "src": "parts/prop/prop_26.webp",
+    "w": 240,
+    "h": 229.0
+  },
+  {
+    "id": "prop_27",
+    "label": "딸기 케이크",
+    "src": "parts/prop/prop_27.webp",
+    "w": 249,
+    "h": 248.0
+  },
+  {
+    "id": "prop_28",
+    "label": "꿀단지",
+    "src": "parts/prop/prop_28.webp",
+    "w": 243,
+    "h": 242.0
+  },
+  {
+    "id": "prop_29",
+    "label": "체리",
+    "src": "parts/prop/prop_29.webp",
+    "w": 258,
+    "h": 231.0
+  },
+  {
+    "id": "prop_30",
+    "label": "튤립",
+    "src": "parts/prop/prop_30.webp",
+    "w": 216,
+    "h": 240.0
+  },
+  {
+    "id": "prop_31",
+    "label": "미니 카메라",
+    "src": "parts/prop/prop_31.webp",
+    "w": 262,
+    "h": 205.0
+  },
+  {
+    "id": "prop_32",
+    "label": "조개 진주",
+    "src": "parts/prop/prop_32.webp",
+    "w": 260,
+    "h": 243.0
+  },
+  {
+    "id": "prop_33",
+    "label": "리본 선물",
+    "src": "parts/prop/prop_33.webp",
+    "w": 250,
+    "h": 242.0
+  },
+  {
+    "id": "prop_34",
+    "label": "곰 인형",
+    "src": "parts/prop/prop_34.webp",
+    "w": 229,
+    "h": 258.0
+  },
+  {
+    "id": "prop_35",
+    "label": "레몬 에이드",
+    "src": "parts/prop/prop_35.webp",
+    "w": 202,
+    "h": 264.0
+  },
+  {
+    "id": "prop_36",
+    "label": "딸기 샌드",
+    "src": "parts/prop/prop_36.webp",
+    "w": 243,
+    "h": 244.0
+  }
+]

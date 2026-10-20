@@ -1,0 +1,123 @@
+[
+  {
+    "key": "faces",
+    "labels": [
+      "빙긋",
+      "두근",
+      "수줍",
+      "눈웃음",
+      "우쭐",
+      "오물오물",
+      "졸꾸",
+      "볼콕",
+      "설렘",
+      "쿨쿨",
+      "헤헤",
+      "뽀뽀",
+      "갸웃",
+      "뿌듯",
+      "까꿍",
+      "찡긋"
+    ],
+    "prompt": "Use case: precise-object-edit. Expand the supplied face sprite into a coordinated 4x4 expression sheet while preserving its exact drawing style. Produce ONE production sprite-sheet PNG: exactly 4 columns by 4 rows, 16 equally sized square cells, pure transparent background. Each cell contains ONE clearly separated modular asset centered within its cell with at least 15% empty padding; no touching between cells, no grid lines, labels, letters, numbers, shadows, scene, or watermark. Square sheet, use generous resolution so the 16 crops remain crisp. Row-major order is mandatory. Match the supplied existing sprites closely: Chiikawa-inspired impossibly cute, very simple flat hand-drawn doodles with slightly wobbly thick dark charcoal/black crayon-like outlines, soft milky pastels, matte/off-white interiors, tiny imperfect details. Preserve this established drawing style; no glossy 3D, anime rendering, vector-perfect lines, gradients or detailed textures. Each asset is ONLY two eyes, a tiny cute mouth, and two soft pink cheeks, floating on transparency. NO head shape, skin-colored face oval, ears, body, hands, food, or surrounding symbols. Keep eye spacing, expression-group size and cheek positions consistent; each group about 2.5 times wider than tall. Expressions by row-major cell: (1) warm little smile, round black eyes white twinkles and w-mouth; (2) lovestruck sparkly eyes, tiny shy smile; (3) bashful downcast eyes, tiny curled mouth and blush; (4) happy crescent eyes and tiny open pink mouth; (5) quietly proud sleepy-smile eyes and little w; (6) softly puffed cheeks, dot eyes, tiny chewing mouth; (7) drowsy half-closed eyes, tiny contented mouth; (8) bright round eyes and very small heartlike mouth; (9) starry delighted eyes with blush; (10) peacefully sleeping closed arc eyes, small 3-shaped mouth; (11) giggly squeezed eyes and small happy open mouth; (12) cute dot eyes and kissy 3-shaped lips; (13) curious asymmetric gentle round eyes, small o mouth; (14) pleased gentle closed eyes and w-mouth; (15) playful wide twinkly eyes and tiny smile; (16) one wink, one twinkling black eye, tiny w-mouth. All MUST be irresistibly sweet, never scary, harsh, mean or distorted. Eye whites only as tiny highlights, not large white discs.",
+    "references": [
+      "/Users/junjun/Documents/GitHub/my-chiikawa/parts/face/face_01.webp"
+    ],
+    "mode": "built-in image_gen",
+    "grid": [
+      4,
+      4
+    ]
+  },
+  {
+    "key": "props",
+    "labels": [
+      "딸기우유",
+      "별 쿠키",
+      "마카롱",
+      "붕어빵",
+      "롤케이크",
+      "멜론빵",
+      "찐만두",
+      "수박 조각",
+      "딸기 케이크",
+      "꿀단지",
+      "체리",
+      "튤립",
+      "미니 카메라",
+      "조개 진주",
+      "리본 선물",
+      "곰 인형"
+    ],
+    "prompt": "Use case: precise-object-edit. Expand the supplied handheld prop into a matching cute 4x4 sheet of new little props. Produce ONE production sprite-sheet PNG: exactly 4 columns by 4 rows, 16 equally sized square cells, pure transparent background. Each cell contains ONE clearly separated modular asset centered within its cell with at least 15% empty padding; no touching between cells, no grid lines, labels, letters, numbers, shadows, scene, or watermark. Square sheet, use generous resolution so the 16 crops remain crisp. Row-major order is mandatory. Match the supplied existing sprites closely: Chiikawa-inspired impossibly cute, very simple flat hand-drawn doodles with slightly wobbly thick dark charcoal/black crayon-like outlines, soft milky pastels, matte/off-white interiors, tiny imperfect details. Preserve this established drawing style; no glossy 3D, anime rendering, vector-perfect lines, gradients or detailed textures. Each object should be compact, rounded and front-facing, with no hand/arm/character holding it. About as wide as tall or a little wider, no tall thin stems. Row-major cells: 1 small squat pastel-pink strawberry milk carton without writing; 2 plump rounded five-point butter star cookie; 3 small lavender macaron with cream; 4 tiny friendly golden fish-shaped pastry; 5 little vanilla roll cake with pink spiral; 6 round minty-cream melon bun; 7 plump steamed dumpling; 8 small rounded triangular watermelon slice; 9 compact strawberry cream cake slice; 10 tiny round honey jar with simple flower emblem, no letters; 11 two plump red cherries on short stems; 12 one small pink tulip bloom with a very short green stem and leaves; 13 tiny pastel-blue toy camera; 14 pink scallop shell with one pearl; 15 small cream gift box with pink ribbon; 16 tiny soft round white teddy-bear plush. Every prop drawn simply with the SAME warm charming ink as the reference. No text, packaging letters, photorealism or human parts.",
+    "references": [
+      "/Users/junjun/Documents/GitHub/my-chiikawa/parts/prop/prop_01.webp"
+    ],
+    "mode": "built-in image_gen",
+    "grid": [
+      4,
+      4
+    ]
+  },
+  {
+    "key": "backs",
+    "labels": [
+      "양털 방울 꼬리",
+      "하트 솜 꼬리",
+      "물방울 꼬리",
+      "솜사탕 말림 꼬리",
+      "하트 끝 꼬리",
+      "별 끝 꼬리",
+      "포근한 여우 꼬리",
+      "짧은 줄무늬 꼬리",
+      "작은 천사 날개",
+      "동글 나비 날개",
+      "구름 날개",
+      "꽃잎 날개",
+      "동그란 구름 후드",
+      "벚꽃 꽃잎 후드",
+      "별 쿠션",
+      "미니 담요 망토"
+    ],
+    "prompt": "Use case: precise-object-edit. Expand the supplied fluffy tail into a matching cute 4x4 modular back-accessory sprite sheet. Produce ONE production sprite-sheet PNG: exactly 4 columns by 4 rows, 16 equally sized square cells, pure transparent background. Each cell contains ONE clearly separated modular asset centered within its cell with at least 15% empty padding; no touching between cells, no grid lines, labels, letters, numbers, shadows, scene, or watermark. Square sheet, use generous resolution so the 16 crops remain crisp. Row-major order is mandatory. Match the supplied existing sprites closely: Chiikawa-inspired impossibly cute, very simple flat hand-drawn doodles with slightly wobbly thick dark charcoal/black crayon-like outlines, soft milky pastels, matte/off-white interiors, tiny imperfect details. Preserve this established drawing style; no glossy 3D, anime rendering, vector-perfect lines, gradients or detailed textures. NO body, face, ears or full character. 1-8 are ONE small detached tail each with its attachment root at the lower-left, curving softly up/right and fitting a tiny round creature: 1 little fluffy cream sheep pompom tail; 2 softly heart-shaped white cotton puff tail; 3 short plump pale-cream teardrop tail; 4 round curled cotton-candy tail, white; 5 tiny curved white tail ending in a pastel-pink heart; 6 short curled white tail ending in a rounded pale-yellow star; 7 short very plump cream fox tail with white tip; 8 little softly curved raccoon tail with only two pale beige rings. 9-12 are detached symmetric LEFT AND RIGHT wing PAIRS, with a broad clear transparent gap between the pair halves: 9 two small white angel wings with just two rounded feather lobes; 10 two rounded pale-lavender butterfly wings; 11 two puffy tiny cloud wings; 12 two soft pink petal wings. 13-16 are detached behind-the-body accessories: 13 fluffy cream cloud-shaped circular ruff with a genuinely transparent open center; 14 very soft pale-pink five-petal round flower ruff with a transparent center; 15 a pale-yellow plump rounded star-shaped cushion seen flat from the front, no face; 16 a small pale-blue cape spread flat with rounded bottom and a tiny top collar, no ribbon strings. All silhouettes gentle and compact. NO dinosaur or dragon tail, spikes, sharp horns, scary bat features or metallic detail.",
+    "references": [
+      "/Users/junjun/Documents/GitHub/my-chiikawa/parts/back/back_01.webp"
+    ],
+    "mode": "built-in image_gen",
+    "grid": [
+      4,
+      4
+    ]
+  },
+  {
+    "key": "extras",
+    "labels": [
+      "하트 콩눈",
+      "콩눈 미소",
+      "레몬 에이드",
+      "딸기 샌드",
+      "backup_face_1",
+      "backup_face_2",
+      "backup_face_3",
+      "backup_face_4",
+      "backup_prop_1",
+      "backup_prop_2",
+      "backup_prop_3",
+      "backup_prop_4",
+      "backup_prop_5",
+      "backup_prop_6",
+      "backup_prop_7",
+      "backup_prop_8"
+    ],
+    "prompt": "Use case: precise-object-edit. Create a coordinated 4x4 mixed sprite sheet that extends the two supplied modular face/prop references. Produce ONE production sprite-sheet PNG: exactly 4 columns by 4 rows, 16 equally sized square cells, pure transparent background. Each cell contains ONE clearly separated modular asset centered within its cell with at least 15% empty padding; no touching between cells, no grid lines, labels, letters, numbers, shadows, scene, or watermark. Square sheet, use generous resolution so the 16 crops remain crisp. Row-major order is mandatory. Match the supplied existing sprites closely: Chiikawa-inspired impossibly cute, very simple flat hand-drawn doodles with slightly wobbly thick dark charcoal/black crayon-like outlines, soft milky pastels, matte/off-white interiors, tiny imperfect details. Preserve this established drawing style; no glossy 3D, anime rendering, vector-perfect lines, gradients or detailed textures. Mandatory row-major content: cell1 ONLY a face expression with two tiny rounded heart eyes, soft pink cheeks and a little w-mouth, no head/body; cell2 ONLY a face expression with cute small glossy black bead eyes, tiny smiling mouth and soft blush, no head/body; cell3 one small round glass of pastel lemon cream soda with a SHORT straw, no text or hands; cell4 one compact strawberry-and-cream sandwich triangle with soft rounded bread and one visible strawberry. Cells5-8 four alternate sweet expression-only eye/mouth/blush groups (giggly, shy, delighted, calm), all no face skin/head/ears/body. Cells9-16 eight alternate compact handheld props: round peach, little sunflower bloom, milk pudding, small blue bell, tiny pastel umbrella folded short, strawberry jam jar no text, soft heart cushion, small round clover cookie. Keep all sprites isolated on transparency and within their own cell; no hand, body or character appears anywhere.",
+    "references": [
+      "/Users/junjun/Documents/GitHub/my-chiikawa/parts/face/face_01.webp",
+      "/Users/junjun/Documents/GitHub/my-chiikawa/parts/prop/prop_01.webp"
+    ],
+    "mode": "built-in image_gen",
+    "grid": [
+      4,
+      4
+    ]
+  }
+]

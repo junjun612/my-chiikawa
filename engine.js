@@ -13,17 +13,20 @@
     bodyBottomY: 440,
     sheetBodyW: 313,   // body width the 3x3 part sheets were drawn for
     earSink: 0.36,     // fraction of ear height hidden behind the head
-    faceScale: 1.2, propScale: 1.0, tailScale: 0.8,
+    faceScale: 1.2, propScale: 1.0, tailScale: 0.8, decoScale: 0.7,
     z: { back: 5, ears: 10, body: 20, deco: 30, blush: 35, face: 40, prop: 50, arms: 55 },
     blush: { spread: 1.7, color: "255,128,150", alpha: 0.42 },
   };
-  // Illustrated backgrounds (backgrounds/<id>.jpg + <id>_thumb.jpg).
+  const LIGHTING_STRENGTH = 0.35;
+  const ASSET_VERSION = "20261020k";
+  const assetUrl = (src) => /[?&]v=/.test(src) ? src : `${src}${src.includes("?") ? "&" : "?"}v=${ASSET_VERSION}`;
+  // Illustrated backgrounds (backgrounds/<id>.webp + <id>_thumb.webp).
   const BG_IMAGES = { meadow: "풀밭", dusk: "저녁 들판", sunset: "노을 꽃밭", beach: "바닷가",
     night: "별밤", sakura: "벚꽃", snow: "눈밭", room: "아늑한 방" };
-  const bgImage = (b) => `backgrounds/${BG_IMAGES[b] ? b : "meadow"}.jpg`;
-  // Natural animal-like tones: whites, creams, browns, grays and one soft pink.
-  const BODY_COLORS = ["#ffffff", "#fff8ec", "#fbefd9", "#f3e2c7", "#ead2b0", "#d9b48f", "#b98c6a",
-    "#8f6a52", "#ece8e3", "#cfc9c2", "#f9e4de"];
+  const bgImage = (b) => assetUrl(`backgrounds/${BG_IMAGES[b] ? b : "meadow"}.webp`);
+  // Milky pastels: snow, ivory, lemon, mint, sky, blush, lavender, peach and pistachio.
+  const BODY_COLORS = ["#ffffff", "#fffaf0", "#fff4c7", "#e2f5e9", "#dff1fa", "#fbe5ec",
+    "#eee5fa", "#ffe9da", "#edf5d9", "#f5edf3", "#e8f6f3"];
   const SYNC_CATS = ["ears", "back"]; // follow the body color when sync is on
 
   const CATS = window.PART_CATEGORIES || [];
@@ -61,7 +64,13 @@
         if (!half) return;
         const [ax, ay, deg] = anchors[i];
         const [px, py] = P([ax, ay]);
-        put(cat + "." + side, cat, part, half, s, half.root[0], half.root[1] - sink * half.h, px, py, deg || 0);
+        // Floppy ears attach at their upper inner corner instead of the bottom.
+        // Their own attachment settings keep the hanging tip and outline visible.
+        const hidden = half.sink ?? sink;
+        const [dx, dy] = half.offset || [0, 0];
+        put(cat + "." + side, cat, part, half, s, half.root[0], half.root[1] - hidden * half.h,
+          px + dx * s, py + dy * s, half.rotation ?? deg ?? 0);
+        if (half.z != null) out[out.length - 1].z = half.z;
       });
     };
 
@@ -82,7 +91,7 @@
         // Fit the width to the hands, but keep tall props (wands) from towering over the face.
         const ps = Math.min(size / part.w, (size * 1.25) / part.h);
         put("prop", "prop", part, part, ps, part.w / 2, part.h / 2, px, py);
-        // Redraw the arm strokes above the prop so the hands hold it.
+        // Filled hand cutouts cover the prop, then their ink outlines sit on top.
         if (body.arms) put("arms", "body", body, { src: body.arms, w: body.w, h: body.h }, S, 0, 0, left, top);
       } else if (c.id === "deco") {
         placeDeco(part, put, pair, { A, S, U, H, crown, P });
@@ -112,10 +121,11 @@
   }
 
   function placeDeco(part, put, pair, { A, S, U, H, crown, P }) {
+    U *= LAYOUT.decoScale;
     const [tx, ty] = crown;
     if (part.kind === "hat") {
-      const s = (part.fit * A.headW * S) / part.w;
-      put("deco", "deco", part, part, s, part.w / 2, part.h, tx, ty + part.bot * H);
+      const s = (part.fit * A.headW * S * LAYOUT.decoScale) / part.w;
+      put("deco", "deco", part, part, s, part.w / 2, part.h, tx, ty + part.bot * H * LAYOUT.decoScale);
     } else if (part.kind === "halo") {
       put("deco", "deco", part, part, U, part.w / 2, part.h, tx, ty - 0.04 * H);
     } else if (part.kind === "pair") {
@@ -151,28 +161,54 @@
     return col && col.toLowerCase() !== (img.color || "").toLowerCase() ? col : null;
   }
 
-  const imgCache = {};
+  const imgCache = new Map();
   function loadImg(src) {
-    return imgCache[src] || (imgCache[src] = new Promise((res, rej) => {
+    if (imgCache.has(src)) {
+      const cached = imgCache.get(src);
+      imgCache.delete(src); imgCache.set(src, cached);
+      return cached;
+    }
+    const pending = new Promise((res, rej) => {
       const im = new Image();
-      im.onload = () => res(im); im.onerror = rej; im.src = src;
-    }));
+      im.decoding = "async";
+      im.onload = () => res(im);
+      im.onerror = () => { if (imgCache.get(src) === pending) imgCache.delete(src); rej(new Error(`Image unavailable: ${src}`)); };
+      im.src = assetUrl(src);
+    });
+    if (imgCache.size >= 96) imgCache.delete(imgCache.keys().next().value);
+    imgCache.set(src, pending);
+    return pending;
   }
 
   // Body and ears are drawn into a canvas: optional recolor (fill mask painted with the
   // color, line layer on top) plus soft mochi shading (warm shade toward the bottom and rim).
   // Canvas display also works under file://.
-  const canvasCache = {};
+  const canvasCache = new Map();
   function layerCanvas(img, col, shade) {
     const key = img.src + "|" + col + "|" + shade;
-    if (canvasCache[key]) return canvasCache[key];
-    const cv = canvasCache[key] = document.createElement("canvas");
-    const { w, h } = img;
-    cv.width = w; cv.height = h;
-    const srcs = col ? [img.fill, img.line] : [img.src];
+    if (canvasCache.has(key)) return canvasCache.get(key);
+    const cv = document.createElement("canvas");
+    if (canvasCache.size >= 96) canvasCache.delete(canvasCache.keys().next().value);
+    canvasCache.set(key, cv);
+    const coat = col && img.tintRegion === "coat";
+    const srcs = col && !coat ? [img.fill, img.line] : [img.src];
     cv.ready = Promise.all(srcs.map(loadImg)).then((ims) => {
+      // Metadata stays in original design coordinates; raster assets are at most 384px.
+      const w = cv.width = ims[0].naturalWidth, h = cv.height = ims[0].naturalHeight;
       const ctx = cv.getContext("2d");
-      if (col) {
+      if (coat) {
+        // The raccoon ear masks selected different regions on each side. Select
+        // the brown coat consistently and retain the white inner-ear accents.
+        ctx.drawImage(ims[0], 0, 0, w, h);
+        const image = ctx.getImageData(0, 0, w, h), target = rgb(col);
+        for (let i = 0; i < image.data.length; i += 4) {
+          const [r, g, b, a] = image.data.subarray(i, i + 4);
+          if (a && r > 90 && b < 215 && r - b > 10 && r >= g && g >= b) {
+            image.data[i] = target[0]; image.data[i + 1] = target[1]; image.data[i + 2] = target[2];
+          }
+        }
+        ctx.putImageData(image, 0, 0);
+      } else if (col) {
         ctx.drawImage(ims[0], 0, 0, w, h);
         ctx.globalCompositeOperation = "source-in";
         ctx.fillStyle = col;
@@ -196,11 +232,11 @@
     // Warm shade toward the bottom and the rim, multiplied over everything.
     let g = t.createRadialGradient(w * 0.45, h * 0.38, m * 0.2, w * 0.5, h * 0.45, m * 0.62);
     g.addColorStop(0, "rgba(255,255,255,0)");
-    g.addColorStop(1, "rgba(222,184,174,0.45)");
+    g.addColorStop(1, `rgba(222,184,174,${0.45 * LIGHTING_STRENGTH})`);
     t.fillStyle = g; t.fillRect(0, 0, w, h);
     g = t.createLinearGradient(0, h * 0.55, 0, h);
     g.addColorStop(0, "rgba(255,255,255,0)");
-    g.addColorStop(1, "rgba(226,190,178,0.35)");
+    g.addColorStop(1, `rgba(226,190,178,${0.35 * LIGHTING_STRENGTH})`);
     t.fillStyle = g; t.fillRect(0, 0, w, h);
     t.globalCompositeOperation = "destination-in";
     t.drawImage(cv, 0, 0);
@@ -210,10 +246,57 @@
   }
 
   const SHADED = (l) => l.key === "body" || l.cat === "ears";
-  const blushGradient = () => {
-    const { color, alpha } = LAYOUT.blush;
-    return `radial-gradient(closest-side, rgba(${color},${alpha}), rgba(${color},${alpha * 0.4}) 55%, rgba(${color},0))`;
-  };
+
+  const handMasks = new Map();
+  function convexHull(points) {
+    points.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+    const cross = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+    const half = (list) => {
+      const out = [];
+      for (const point of list) {
+        while (out.length > 1 && cross(out[out.length - 2], out[out.length - 1], point) <= 0) out.pop();
+        out.push(point);
+      }
+      return out;
+    };
+    return [...half(points).slice(0, -1), ...half(points.slice().reverse()).slice(0, -1)];
+  }
+
+  function handsOverProp(arms, bodyImage) {
+    let mask = handMasks.get(arms.src);
+    if (!mask) {
+      const stroke = document.createElement("canvas");
+      const w = stroke.width = arms.naturalWidth, h = stroke.height = arms.naturalHeight;
+      const ctx = stroke.getContext("2d");
+      ctx.drawImage(arms, 0, 0);
+      const pixels = ctx.getImageData(0, 0, w, h), points = [[], []];
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+        const i = (y * w + x) * 4, value = Math.max(pixels.data[i], pixels.data[i + 1], pixels.data[i + 2]);
+        // Remove the pale matte baked around the extracted arm strokes.
+        pixels.data[i + 3] *= Math.max(0, Math.min(1, (220 - value) / 100));
+        if (pixels.data[i + 3] > 80) points[x < w / 2 ? 0 : 1].push([x, y]);
+      }
+      ctx.putImageData(pixels, 0, 0);
+      mask = { stroke, hulls: points.filter((p) => p.length > 2).map(convexHull) };
+      handMasks.set(arms.src, mask);
+    }
+    const out = document.createElement("canvas");
+    out.width = arms.naturalWidth; out.height = arms.naturalHeight;
+    const ctx = out.getContext("2d");
+    ctx.save();
+    ctx.beginPath();
+    for (const hull of mask.hulls) {
+      ctx.moveTo(...hull[0]);
+      for (const point of hull.slice(1)) ctx.lineTo(...point);
+      ctx.closePath();
+    }
+    ctx.clip();
+    // Use the actual recolored/shaded body pixels, so the hands match the body.
+    ctx.drawImage(bodyImage, 0, 0, out.width, out.height);
+    ctx.restore();
+    ctx.drawImage(mask.stroke, 0, 0);
+    return out;
+  }
 
   // Scene lighting per background, like anime color grading:
   //   tint  - ambient color multiplied over the character (1 = unchanged)
@@ -231,109 +314,123 @@
     room:   { tint: [1, 0.95, 0.88], rim: ["#fff0d0", 0.5], light: [-1, -0.8], shadow: ["#5a4030", 0.24] },
   };
   const lightOf = (bg) => LIGHTS[bg] || LIGHTS.meadow;
-  const filterId = (bg, k) => `manga-${LIGHTS[bg] ? bg : "meadow"}${k === 1 ? "" : `-${k}x`}`;
-
-  // SVG filter shared by the DOM stage and canvas rendering: warm brown ink, softened lines,
-  // the scene's ambient tint, a rim light toward the light and a shadow cast away from it.
-  // k scales the radii.
-  function mangaFilter(id, k, L) {
-    const [lx, ly] = L.light;
-    const n = Math.hypot(lx, ly) || 1;
-    const ux = lx / n, uy = ly / n;
-    const [tr, tg, tb] = L.tint;
-    return `<filter id="${id}" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB">
-      <feComponentTransfer in="SourceGraphic" result="ink">
-        <feFuncR type="table" tableValues="0.27 1"/><feFuncG type="table" tableValues="0.18 1"/><feFuncB type="table" tableValues="0.15 1"/>
-      </feComponentTransfer>
-      <feComponentTransfer in="ink" result="lit">
-        <feFuncR type="linear" slope="${tr}"/><feFuncG type="linear" slope="${tg}"/><feFuncB type="linear" slope="${tb}"/>
-      </feComponentTransfer>
-      <feGaussianBlur in="lit" stdDeviation="${0.35 * k}" result="soft"/>
-      <feMorphology in="SourceAlpha" operator="erode" radius="${4.5 * k}" result="inner"/>
-      <feOffset in="inner" dx="${-ux * 7 * k}" dy="${-uy * 7 * k}" result="away"/>
-      <feComposite in="inner" in2="away" operator="out" result="edge"/>
-      <feGaussianBlur in="edge" stdDeviation="${2 * k}" result="edgeSoft"/>
-      <feComposite in="edgeSoft" in2="inner" operator="in" result="edgeIn"/>
-      <feFlood flood-color="${L.rim[0]}" flood-opacity="${L.rim[1]}"/>
-      <feComposite in2="edgeIn" operator="in" result="rim"/>
-      <feGaussianBlur in="SourceAlpha" stdDeviation="${2.2 * k}" result="blur"/>
-      <feOffset in="blur" dx="${-ux * 2.5 * k}" dy="${5.5 * k}" result="off"/>
-      <feFlood flood-color="${L.shadow[0]}" flood-opacity="${L.shadow[1]}"/>
-      <feComposite in2="off" operator="in" result="shadow"/>
-      <feMerge><feMergeNode in="shadow"/><feMergeNode in="soft"/><feMergeNode in="rim"/></feMerge>
-    </filter>`;
-  }
-  const FILTER_SCALES = [1, 2];
-  function installFilters() {
-    if (document.getElementById("manga-meadow")) return;
-    const defs = Object.keys(LIGHTS).flatMap((bg) => FILTER_SCALES.map((k) => mangaFilter(filterId(bg, k), k, LIGHTS[bg]))).join("");
-    document.body.insertAdjacentHTML("beforeend",
-      `<svg width="0" height="0" style="position:absolute" aria-hidden="true">${defs}</svg>`);
-  }
-  const groundGradient = (bg, a = 1) => {
-    const [c, o] = lightOf(bg).shadow;
-    const hex = c.slice(1).match(/../g).map((h) => parseInt(h, 16)).join(",");
-    return [`rgba(${hex},${(o * 1.35 * a).toFixed(3)})`, `rgba(${hex},0)`];
+  const rgb = (hex) => hex.slice(1).match(/../g).map((h) => parseInt(h, 16));
+  const groundGradient = (bg) => {
+    const [c, opacity] = lightOf(bg).shadow;
+    return [`rgba(${rgb(c)},${(opacity * 1.35 * LIGHTING_STRENGTH).toFixed(3)})`, `rgba(${rgb(c)},0)`];
   };
 
-  // Render a look (+ optional background and ground shadow) to a square canvas.
-  // size 1024 matches the "manga2x" filter; other sizes use the nearest filter.
+  // Canvas pixels and native shadows work in Safari too. Both the preview and export
+  // use this path, without CSS/SVG filters or CanvasRenderingContext2D.filter.
+  function lightCharacter(source, bg) {
+    const size = source.width, scale = size / LAYOUT.stageSize;
+    const ctx = source.getContext("2d");
+    const pixels = ctx.getImageData(0, 0, size, size);
+    const data = pixels.data;
+    const alpha = new Uint8Array(size * size);
+    for (let i = 0; i < alpha.length; i++) alpha[i] = data[i * 4 + 3];
+    const L = lightOf(bg), rimColor = rgb(L.rim[0]);
+    const norm = Math.hypot(...L.light) || 1;
+    const ux = L.light[0] / norm, uy = L.light[1] / norm;
+    const dx = Math.round(ux * 5 * scale), dy = Math.round(uy * 5 * scale);
+    const ink = [0.27, 0.18, 0.15];
+    for (let y = 0; y < size; y++) {
+      for (let x = 0; x < size; x++) {
+        const at = y * size + x, i = at * 4;
+        if (!alpha[at]) continue;
+        const nx = x + dx, ny = y + dy;
+        const neighbor = nx >= 0 && nx < size && ny >= 0 && ny < size ? alpha[ny * size + nx] / 255 : 0;
+        // Preserve ink outlines while catching the inner edge facing the light.
+        const brightness = (data[i] + data[i + 1] + data[i + 2]) / (3 * 255);
+        const rim = (1 - neighbor) * L.rim[1] * brightness;
+        for (let c = 0; c < 3; c++) {
+          const original = data[i + c];
+          const toned = (ink[c] * 255 + (1 - ink[c]) * original) * L.tint[c];
+          const lit = toned * (1 - rim) + rimColor[c] * rim;
+          data[i + c] = original + (lit - original) * LIGHTING_STRENGTH;
+        }
+      }
+    }
+    ctx.putImageData(pixels, 0, 0);
+    const out = document.createElement("canvas");
+    out.width = out.height = size;
+    const target = out.getContext("2d");
+    target.shadowColor = `rgba(${rgb(L.shadow[0])},${L.shadow[1] * LIGHTING_STRENGTH})`;
+    target.shadowBlur = 2.2 * scale;
+    target.shadowOffsetX = -ux * 2.5 * scale;
+    target.shadowOffsetY = 5.5 * scale;
+    target.drawImage(source, 0, 0);
+    return out;
+  }
+
+  async function renderCharacter(layers, size, bg, isCurrent) {
+    const scale = size / LAYOUT.stageSize;
+    // Resolve every layer first, so a render never shows half-loaded parts.
+    const images = await Promise.all(layers.map((l) => l.type === "blush" ? null :
+      l.tint || SHADED(l) ? layerCanvas(l.img, l.tint, SHADED(l)).ready : loadImg(l.img.src)));
+    if (isCurrent && !isCurrent()) return null;
+    const bodyImage = images[layers.findIndex((l) => l.key === "body")];
+    const off = document.createElement("canvas");
+    off.width = off.height = size;
+    const ctx = off.getContext("2d");
+    layers.forEach((l, i) => {
+      ctx.save();
+      if (l.type === "blush") {
+        const { color, alpha } = LAYOUT.blush;
+        const radius = l.w / 2 * scale;
+        ctx.globalCompositeOperation = "multiply";
+        ctx.translate((l.x + l.w / 2) * scale, (l.y + l.h / 2) * scale);
+        ctx.scale(1, l.h / l.w);
+        const g = ctx.createRadialGradient(0, 0, 0, 0, 0, radius);
+        g.addColorStop(0, `rgba(${color},${alpha})`);
+        g.addColorStop(0.55, `rgba(${color},${alpha * 0.4})`);
+        g.addColorStop(1, `rgba(${color},0)`);
+        ctx.fillStyle = g;
+        ctx.fillRect(-radius, -radius, radius * 2, radius * 2);
+      } else {
+        ctx.translate((l.x + l.ox) * scale, (l.y + l.oy) * scale);
+        ctx.rotate(l.rot * Math.PI / 180);
+        const image = l.key === "arms" ? handsOverProp(images[i], bodyImage) : images[i];
+        ctx.drawImage(image, -l.ox * scale, -l.oy * scale, l.w * scale, l.h * scale);
+      }
+      ctx.restore();
+    });
+    return lightCharacter(off, bg);
+  }
+
+  // Export and live preview share the same character renderer and scene lighting.
   async function renderCanvas(look, { size = 1024, bg = "meadow", background = true, adjust } = {}) {
-    installFilters();
-    const S = size / LAYOUT.stageSize;
     const cv = document.createElement("canvas");
     cv.width = cv.height = size;
-    const ctx = cv.getContext("2d");
-    if (background) ctx.drawImage(await loadImg(bgImage(bg)), 0, 0, size, size);
-    // Ground shadow
-    const gr = LAYOUT.bodyWidth * 0.42 * S;
+    const ctx = cv.getContext("2d"), scale = size / LAYOUT.stageSize;
+    const [character, scene] = await Promise.all([
+      renderCharacter(computeLayout(look, adjust), size, bg),
+      background ? loadImg(bgImage(bg)) : null,
+    ]);
+    if (scene) ctx.drawImage(scene, 0, 0, size, size);
+    const radius = LAYOUT.bodyWidth * 0.42 * scale;
     ctx.save();
-    ctx.translate(LAYOUT.bodyCenterX * S, (LAYOUT.bodyBottomY + 1) * S);
+    ctx.translate(LAYOUT.bodyCenterX * scale, (LAYOUT.bodyBottomY + 1) * scale);
     ctx.scale(1, 13 / (LAYOUT.bodyWidth * 0.42));
-    let g = ctx.createRadialGradient(0, 0, 0, 0, 0, gr);
+    const g = ctx.createRadialGradient(0, 0, 0, 0, 0, radius);
     const [g0, g1] = groundGradient(bg);
     g.addColorStop(0, g0); g.addColorStop(1, g1);
     ctx.globalCompositeOperation = "multiply";
-    ctx.fillStyle = g; ctx.fillRect(-gr, -gr, gr * 2, gr * 2);
+    ctx.fillStyle = g; ctx.fillRect(-radius, -radius, radius * 2, radius * 2);
     ctx.restore();
-
-    const off = document.createElement("canvas");
-    off.width = off.height = size;
-    const oc = off.getContext("2d");
-    for (const l of computeLayout(look, adjust)) {
-      oc.save();
-      if (l.type === "blush") {
-        const { color, alpha } = LAYOUT.blush;
-        const rx = (l.w / 2) * S;
-        oc.globalCompositeOperation = "multiply";
-        oc.translate((l.x + l.w / 2) * S, (l.y + l.h / 2) * S);
-        oc.scale(1, l.h / l.w);
-        g = oc.createRadialGradient(0, 0, 0, 0, 0, rx);
-        g.addColorStop(0, `rgba(${color},${alpha})`); g.addColorStop(0.55, `rgba(${color},${alpha * 0.4})`);
-        g.addColorStop(1, `rgba(${color},0)`);
-        oc.fillStyle = g; oc.fillRect(-rx, -rx, rx * 2, rx * 2);
-      } else {
-        const src = l.tint || SHADED(l) ? await layerCanvas(l.img, l.tint, SHADED(l)).ready : await loadImg(l.img.src);
-        oc.translate((l.x + l.ox) * S, (l.y + l.oy) * S);
-        oc.rotate((l.rot * Math.PI) / 180);
-        oc.drawImage(src, -l.ox * S, -l.oy * S, l.w * S, l.h * S);
-      }
-      oc.restore();
-    }
-    const k = FILTER_SCALES.reduce((a, b) => (Math.abs(b - S) < Math.abs(a - S) ? b : a));
-    ctx.filter = `url(#${filterId(bg, k)})`;
-    ctx.drawImage(off, 0, 0);
-    ctx.filter = "none";
+    ctx.drawImage(character, 0, 0);
     return cv;
   }
 
-  // Live DOM stage (512 logical px, scale it with CSS): ground shadow + character group with
-  // the manga filter, idle breathing and a "boing" pop. Returns { render(look), pop(), layers }.
+  // Keep the breathing/pop animation on one composited canvas. Editing uses outline
+  // overlays in original layout coordinates, independent of the raster resolution.
   function mountStage(stage, { adjust, isActive } = {}) {
-    installFilters();
     const ground = Object.assign(document.createElement("div"), { className: "ground" });
     const chara = Object.assign(document.createElement("div"), { className: "chara" });
     const squish = Object.assign(document.createElement("div"), { className: "squish" });
+    const canvas = Object.assign(document.createElement("canvas"), { className: "character-art", width: 1024, height: 1024 });
+    canvas.setAttribute("aria-hidden", "true");
+    squish.appendChild(canvas);
     chara.appendChild(squish);
     stage.append(ground, chara);
     stage.style.setProperty("--foot-x", LAYOUT.bodyCenterX + "px");
@@ -342,47 +439,72 @@
       left: LAYOUT.bodyCenterX - LAYOUT.bodyWidth * 0.42 + "px", top: LAYOUT.bodyBottomY - 12 + "px",
       width: LAYOUT.bodyWidth * 0.84 + "px", height: "26px",
     });
-
-    const els = {};
-    function render(look) {
-      const seen = new Set();
-      for (const l of computeLayout(look, adjust)) {
-        seen.add(l.key);
-        let want = null;
-        if (l.type === "blush") want = "DIV";
-        else if (l.tint || SHADED(l)) want = layerCanvas(l.img, l.tint, SHADED(l));
-        let el = els[l.key];
-        const ok = el && (want === "DIV" ? el.tagName === "DIV" : want ? el === want : el.tagName === "IMG");
-        if (el && !ok) { el.remove(); el = null; }
-        if (!el) {
-          if (want === "DIV") el = Object.assign(document.createElement("div"), { className: "blush" });
-          else el = want || Object.assign(document.createElement("img"), { alt: "", draggable: false });
-          els[l.key] = el;
-          squish.appendChild(el);
-        }
-        if (want === "DIV") el.style.background = blushGradient();
-        else if (!want && el.dataset.src !== l.img.src) { el.src = l.img.src; el.dataset.src = l.img.src; }
-        Object.assign(el.style, {
-          left: l.x + "px", top: l.y + "px", width: l.w + "px", height: l.h + "px", zIndex: l.z,
-          transformOrigin: `${l.ox}px ${l.oy}px`, transform: l.rot ? `rotate(${l.rot}deg)` : "",
+    let scene = "meadow", revision = 0;
+    async function render(look) {
+      const ticket = ++revision, layers = computeLayout(look, adjust);
+      stage.dataset.render = "pending";
+      squish.querySelectorAll(".active").forEach((el) => el.remove());
+      if (isActive) for (const l of layers.filter(isActive)) {
+        const outline = Object.assign(document.createElement("div"), { className: "active" });
+        Object.assign(outline.style, {
+          position: "absolute", pointerEvents: "none", left: l.x + "px", top: l.y + "px",
+          width: l.w + "px", height: l.h + "px", transformOrigin: `${l.ox}px ${l.oy}px`,
+          transform: l.rot ? `rotate(${l.rot}deg)` : "",
         });
-        if (isActive) el.classList.toggle("active", isActive(l));
+        squish.appendChild(outline);
       }
-      for (const k in els) if (!seen.has(k)) { els[k].remove(); delete els[k]; }
+      try {
+        const art = await renderCharacter(layers, canvas.width, scene, () => ticket === revision);
+        if (ticket !== revision) return;
+        const ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(art, 0, 0);
+        stage.dataset.render = "ready";
+      } catch (error) {
+        if (ticket === revision) stage.dataset.render = "error";
+        console.error(error);
+      }
     }
     function pop() {
       squish.classList.remove("pop");
       void squish.offsetWidth;
       squish.classList.add("pop");
     }
-    // Apply a background's lighting to the character and its ground shadow.
     function setScene(bg) {
-      chara.style.filter = `url(#${filterId(bg, 1)})`;
+      scene = bg;
       const [g0, g1] = groundGradient(bg);
       ground.style.background = `radial-gradient(closest-side, ${g0}, ${g1})`;
     }
     setScene("meadow");
     return { render, pop, setScene };
+  }
+
+  // Warm the HTTP cache in four lanes without retaining every decoded sprite in
+  // memory. The larger catalog stays light on mobile; visible images decode on demand.
+  let preloadPromise;
+  function preloadAssets() {
+    if (preloadPromise) return preloadPromise;
+    const sources = new Set(Object.keys(BG_IMAGES).flatMap((id) => [bgImage(id), `backgrounds/${id}_thumb.webp`]));
+    function collect(value) {
+      if (!value || typeof value !== "object") return;
+      for (const [key, item] of Object.entries(value)) {
+        if (["src", "fill", "line", "arms"].includes(key) && typeof item === "string") sources.add(item);
+        else if (typeof item === "object") collect(item);
+      }
+    }
+    collect(PARTS);
+    const queue = [...sources];
+    preloadPromise = Promise.all(Array.from({ length: 4 }, async () => {
+      while (queue.length) {
+        const src = queue.shift();
+        try {
+          const response = await fetch(assetUrl(src), { cache: "force-cache" });
+          if (!response.ok) throw new Error(`Image unavailable: ${src}`);
+          await response.arrayBuffer();
+        } catch (error) { console.warn(error.message); }
+      }
+    }));
+    return preloadPromise;
   }
 
   // Deterministic PRNG (mulberry32) and string hash, for seeded characters.
@@ -413,11 +535,11 @@
       const list = PARTS[c.id] || [];
       parts[c.id] = !list.length || (!c.required && rand() < 0.3) ? null : pick(list).id;
     }
-    return { parts, bodyColor: rand() < 0.5 ? null : pick(BODY_COLORS), sync: true };
+    return { parts, bodyColor: pick(BODY_COLORS), sync: true };
   }
 
   window.Creature = {
     LAYOUT, BG_IMAGES, BODY_COLORS, CATS, PARTS, bgImage, findPart, computeLayout,
-    LIGHTS, loadImg, renderCanvas, mountStage, installFilters, randomLook, hashString, rng,
+    LIGHTS, LIGHTING_STRENGTH, assetUrl, loadImg, renderCanvas, mountStage, preloadAssets, randomLook, hashString, rng,
   };
 })();

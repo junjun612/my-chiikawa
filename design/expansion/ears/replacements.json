@@ -1,0 +1,128 @@
+[
+  {
+    "id": "ears_07",
+    "label": "돼지",
+    "src": "parts/ears/ears_07.webp",
+    "w": 324,
+    "h": 118,
+    "color": "#fed4d3",
+    "line": "parts/ears/ears_07_line.webp",
+    "fill": "parts/ears/ears_07_fill.webp",
+    "L": {
+      "src": "parts/ears/ears_07_L.webp",
+      "w": 130,
+      "h": 118,
+      "color": "#fed4d3",
+      "line": "parts/ears/ears_07_L_line.webp",
+      "fill": "parts/ears/ears_07_L_fill.webp",
+      "root": [
+        109,
+        66
+      ],
+      "sink": 0,
+      "rotation": -15,
+      "offset": [
+        8,
+        6
+      ]
+    },
+    "R": {
+      "src": "parts/ears/ears_07_R.webp",
+      "w": 130,
+      "h": 118,
+      "color": "#fed4d3",
+      "line": "parts/ears/ears_07_R_line.webp",
+      "fill": "parts/ears/ears_07_R_fill.webp",
+      "root": [
+        22,
+        67
+      ],
+      "sink": 0,
+      "rotation": 15,
+      "offset": [
+        -8,
+        6
+      ]
+    }
+  },
+  {
+    "id": "ears_08",
+    "label": "양",
+    "src": "parts/ears/ears_08.webp",
+    "w": 360,
+    "h": 117,
+    "color": "#f9e9d3",
+    "line": "parts/ears/ears_08_line.webp",
+    "fill": "parts/ears/ears_08_fill.webp",
+    "L": {
+      "src": "parts/ears/ears_08_L.webp",
+      "w": 146,
+      "h": 117,
+      "color": "#f9e9d3",
+      "line": "parts/ears/ears_08_L_line.webp",
+      "fill": "parts/ears/ears_08_L_fill.webp",
+      "root": [
+        129,
+        56
+      ],
+      "sink": 0,
+      "rotation": 0,
+      "offset": [
+        8,
+        6
+      ]
+    },
+    "R": {
+      "src": "parts/ears/ears_08_R.webp",
+      "w": 146,
+      "h": 117,
+      "color": "#f9e9d2",
+      "line": "parts/ears/ears_08_R_line.webp",
+      "fill": "parts/ears/ears_08_R_fill.webp",
+      "root": [
+        17,
+        56
+      ],
+      "sink": 0,
+      "rotation": 0,
+      "offset": [
+        -8,
+        6
+      ]
+    }
+  },
+  {
+    "id": "ears_12",
+    "label": "아기 수달",
+    "src": "parts/ears/ears_12.webp",
+    "color": "#fbf5e2",
+    "L": {
+      "src": "parts/ears/ears_12_L.webp",
+      "w": 113,
+      "h": 115,
+      "root": [
+        56.5,
+        111
+      ],
+      "color": "#fbf5e2",
+      "fill": "parts/ears/ears_12_L_fill.webp",
+      "line": "parts/ears/ears_12_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_12_R.webp",
+      "w": 114,
+      "h": 115,
+      "root": [
+        57.0,
+        111
+      ],
+      "color": "#fbf5e2",
+      "fill": "parts/ears/ears_12_R_fill.webp",
+      "line": "parts/ears/ears_12_R_line.webp"
+    },
+    "w": 264,
+    "h": 115,
+    "fill": "parts/ears/ears_12_fill.webp",
+    "line": "parts/ears/ears_12_line.webp"
+  }
+]

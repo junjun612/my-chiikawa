@@ -1,0 +1,22 @@
+[
+  {
+    "id": "back_12",
+    "label": "하트 쿠션",
+    "kind": "around",
+    "fit": 1.25,
+    "fy": 0.16,
+    "src": "parts/back/back_12.webp",
+    "w": 280,
+    "h": 223
+  },
+  {
+    "id": "back_13",
+    "label": "망토",
+    "kind": "around",
+    "fit": 1.17,
+    "fy": 0.48,
+    "src": "parts/back/back_13.webp",
+    "w": 364,
+    "h": 232
+  }
+]

@@ -1,0 +1,650 @@
+[
+  {
+    "id": "ears_19",
+    "label": "솜사탕 곰",
+    "src": "parts/ears/ears_19.webp",
+    "color": "#fbf3de",
+    "L": {
+      "src": "parts/ears/ears_19_L.webp",
+      "w": 120,
+      "h": 115,
+      "root": [
+        60.0,
+        111
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_19_L_fill.webp",
+      "line": "parts/ears/ears_19_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_19_R.webp",
+      "w": 120,
+      "h": 115,
+      "root": [
+        60.0,
+        111
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_19_R_fill.webp",
+      "line": "parts/ears/ears_19_R_line.webp"
+    },
+    "w": 277,
+    "h": 115,
+    "fill": "parts/ears/ears_19_fill.webp",
+    "line": "parts/ears/ears_19_line.webp"
+  },
+  {
+    "id": "ears_20",
+    "label": "동글 아기 고양이",
+    "src": "parts/ears/ears_20.webp",
+    "color": "#fbf3dd",
+    "L": {
+      "src": "parts/ears/ears_20_L.webp",
+      "w": 115,
+      "h": 117,
+      "root": [
+        57.5,
+        113
+      ],
+      "color": "#fbf3dd",
+      "fill": "parts/ears/ears_20_L_fill.webp",
+      "line": "parts/ears/ears_20_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_20_R.webp",
+      "w": 114,
+      "h": 117,
+      "root": [
+        57.0,
+        113
+      ],
+      "color": "#fbf3dd",
+      "fill": "parts/ears/ears_20_R_fill.webp",
+      "line": "parts/ears/ears_20_R_line.webp"
+    },
+    "w": 266,
+    "h": 117,
+    "fill": "parts/ears/ears_20_fill.webp",
+    "line": "parts/ears/ears_20_line.webp"
+  },
+  {
+    "id": "ears_21",
+    "label": "통통 토끼",
+    "src": "parts/ears/ears_21.webp",
+    "color": "#fbf3de",
+    "L": {
+      "src": "parts/ears/ears_21_L.webp",
+      "w": 103,
+      "h": 160,
+      "root": [
+        51.5,
+        156
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_21_L_fill.webp",
+      "line": "parts/ears/ears_21_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_21_R.webp",
+      "w": 102,
+      "h": 160,
+      "root": [
+        51.0,
+        156
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_21_R_fill.webp",
+      "line": "parts/ears/ears_21_R_line.webp"
+    },
+    "w": 242,
+    "h": 160,
+    "fill": "parts/ears/ears_21_fill.webp",
+    "line": "parts/ears/ears_21_line.webp"
+  },
+  {
+    "id": "ears_22",
+    "label": "말랑 강아지",
+    "src": "parts/ears/ears_22.webp",
+    "color": "#fbf3de",
+    "L": {
+      "src": "parts/ears/ears_22_L.webp",
+      "w": 124,
+      "h": 128,
+      "root": [
+        110,
+        44
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_22_L_fill.webp",
+      "line": "parts/ears/ears_22_L_line.webp",
+      "sink": 0,
+      "rotation": 0,
+      "offset": [
+        8,
+        6
+      ]
+    },
+    "R": {
+      "src": "parts/ears/ears_22_R.webp",
+      "w": 125,
+      "h": 127,
+      "root": [
+        14,
+        44
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_22_R_fill.webp",
+      "line": "parts/ears/ears_22_R_line.webp",
+      "sink": 0,
+      "rotation": 0,
+      "offset": [
+        -8,
+        6
+      ]
+    },
+    "w": 286,
+    "h": 128,
+    "fill": "parts/ears/ears_22_fill.webp",
+    "line": "parts/ears/ears_22_line.webp"
+  },
+  {
+    "id": "ears_23",
+    "label": "폭신 아기 양",
+    "src": "parts/ears/ears_23.webp",
+    "color": "#fcf6e3",
+    "L": {
+      "src": "parts/ears/ears_23_L.webp",
+      "w": 131,
+      "h": 120,
+      "root": [
+        65.5,
+        116
+      ],
+      "color": "#fcf6e3",
+      "fill": "parts/ears/ears_23_L_fill.webp",
+      "line": "parts/ears/ears_23_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_23_R.webp",
+      "w": 131,
+      "h": 122,
+      "root": [
+        65.5,
+        118
+      ],
+      "color": "#fcf6e3",
+      "fill": "parts/ears/ears_23_R_fill.webp",
+      "line": "parts/ears/ears_23_R_line.webp"
+    },
+    "w": 299,
+    "h": 122,
+    "fill": "parts/ears/ears_23_fill.webp",
+    "line": "parts/ears/ears_23_line.webp"
+  },
+  {
+    "id": "ears_24",
+    "label": "크림 여우",
+    "src": "parts/ears/ears_24.webp",
+    "color": "#fbf3de",
+    "L": {
+      "src": "parts/ears/ears_24_L.webp",
+      "w": 114,
+      "h": 139,
+      "root": [
+        57.0,
+        135
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_24_L_fill.webp",
+      "line": "parts/ears/ears_24_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_24_R.webp",
+      "w": 115,
+      "h": 140,
+      "root": [
+        57.5,
+        136
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_24_R_fill.webp",
+      "line": "parts/ears/ears_24_R_line.webp"
+    },
+    "w": 266,
+    "h": 140,
+    "fill": "parts/ears/ears_24_fill.webp",
+    "line": "parts/ears/ears_24_line.webp"
+  },
+  {
+    "id": "ears_25",
+    "label": "동글 생쥐",
+    "src": "parts/ears/ears_25.webp",
+    "color": "#fbf3de",
+    "L": {
+      "src": "parts/ears/ears_25_L.webp",
+      "w": 123,
+      "h": 120,
+      "root": [
+        61.5,
+        116
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_25_L_fill.webp",
+      "line": "parts/ears/ears_25_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_25_R.webp",
+      "w": 122,
+      "h": 122,
+      "root": [
+        61.0,
+        118
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_25_R_fill.webp",
+      "line": "parts/ears/ears_25_R_line.webp"
+    },
+    "w": 282,
+    "h": 122,
+    "fill": "parts/ears/ears_25_fill.webp",
+    "line": "parts/ears/ears_25_line.webp"
+  },
+  {
+    "id": "ears_26",
+    "label": "복슬 알파카",
+    "src": "parts/ears/ears_26.webp",
+    "color": "#fbf3dd",
+    "L": {
+      "src": "parts/ears/ears_26_L.webp",
+      "w": 112,
+      "h": 147,
+      "root": [
+        56.0,
+        143
+      ],
+      "color": "#fbf3dd",
+      "fill": "parts/ears/ears_26_L_fill.webp",
+      "line": "parts/ears/ears_26_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_26_R.webp",
+      "w": 114,
+      "h": 147,
+      "root": [
+        57.0,
+        143
+      ],
+      "color": "#fbf3dd",
+      "fill": "parts/ears/ears_26_R_fill.webp",
+      "line": "parts/ears/ears_26_R_line.webp"
+    },
+    "w": 263,
+    "h": 147,
+    "fill": "parts/ears/ears_26_fill.webp",
+    "line": "parts/ears/ears_26_line.webp"
+  },
+  {
+    "id": "ears_27",
+    "label": "꾸벅 토끼",
+    "src": "parts/ears/ears_27.webp",
+    "color": "#fbf3dd",
+    "L": {
+      "src": "parts/ears/ears_27_L.webp",
+      "w": 94,
+      "h": 173,
+      "root": [
+        47.0,
+        169
+      ],
+      "color": "#fbf3dd",
+      "fill": "parts/ears/ears_27_L_fill.webp",
+      "line": "parts/ears/ears_27_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_27_R.webp",
+      "w": 115,
+      "h": 144,
+      "root": [
+        57.5,
+        140
+      ],
+      "color": "#fbf3dd",
+      "fill": "parts/ears/ears_27_R_fill.webp",
+      "line": "parts/ears/ears_27_R_line.webp"
+    },
+    "w": 246,
+    "h": 173,
+    "fill": "parts/ears/ears_27_fill.webp",
+    "line": "parts/ears/ears_27_line.webp"
+  },
+  {
+    "id": "ears_28",
+    "label": "살구 고양이",
+    "src": "parts/ears/ears_28.webp",
+    "color": "#fbf3de",
+    "L": {
+      "src": "parts/ears/ears_28_L.webp",
+      "w": 118,
+      "h": 120,
+      "root": [
+        59.0,
+        116
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_28_L_fill.webp",
+      "line": "parts/ears/ears_28_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_28_R.webp",
+      "w": 118,
+      "h": 120,
+      "root": [
+        59.0,
+        116
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_28_R_fill.webp",
+      "line": "parts/ears/ears_28_R_line.webp"
+    },
+    "w": 273,
+    "h": 120,
+    "fill": "parts/ears/ears_28_fill.webp",
+    "line": "parts/ears/ears_28_line.webp"
+  },
+  {
+    "id": "ears_29",
+    "label": "아기 양",
+    "src": "parts/ears/ears_29.webp",
+    "color": "#fbf3de",
+    "L": {
+      "src": "parts/ears/ears_29_L.webp",
+      "w": 132,
+      "h": 110,
+      "root": [
+        66.0,
+        106
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_29_L_fill.webp",
+      "line": "parts/ears/ears_29_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_29_R.webp",
+      "w": 132,
+      "h": 110,
+      "root": [
+        66.0,
+        106
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_29_R_fill.webp",
+      "line": "parts/ears/ears_29_R_line.webp"
+    },
+    "w": 301,
+    "h": 110,
+    "fill": "parts/ears/ears_29_fill.webp",
+    "line": "parts/ears/ears_29_line.webp"
+  },
+  {
+    "id": "ears_30",
+    "label": "코코 스패니얼",
+    "src": "parts/ears/ears_30.webp",
+    "color": "#fbf3de",
+    "L": {
+      "src": "parts/ears/ears_30_L.webp",
+      "w": 126,
+      "h": 160,
+      "root": [
+        113,
+        53
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_30_L_fill.webp",
+      "line": "parts/ears/ears_30_L_line.webp",
+      "sink": 0,
+      "rotation": 0,
+      "offset": [
+        8,
+        6
+      ]
+    },
+    "R": {
+      "src": "parts/ears/ears_30_R.webp",
+      "w": 124,
+      "h": 160,
+      "root": [
+        12,
+        53
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_30_R_fill.webp",
+      "line": "parts/ears/ears_30_R_line.webp",
+      "sink": 0,
+      "rotation": 0,
+      "offset": [
+        -8,
+        6
+      ]
+    },
+    "w": 287,
+    "h": 160,
+    "fill": "parts/ears/ears_30_fill.webp",
+    "line": "parts/ears/ears_30_line.webp"
+  },
+  {
+    "id": "ears_31",
+    "label": "밤톨 다람쥐",
+    "src": "parts/ears/ears_31.webp",
+    "color": "#fbf3de",
+    "L": {
+      "src": "parts/ears/ears_31_L.webp",
+      "w": 116,
+      "h": 127,
+      "root": [
+        58.0,
+        123
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_31_L_fill.webp",
+      "line": "parts/ears/ears_31_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_31_R.webp",
+      "w": 114,
+      "h": 127,
+      "root": [
+        57.0,
+        123
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_31_R_fill.webp",
+      "line": "parts/ears/ears_31_R_line.webp"
+    },
+    "w": 267,
+    "h": 127,
+    "fill": "parts/ears/ears_31_fill.webp",
+    "line": "parts/ears/ears_31_line.webp"
+  },
+  {
+    "id": "ears_32",
+    "label": "구름 코알라",
+    "src": "parts/ears/ears_32.webp",
+    "color": "#fbf3de",
+    "L": {
+      "src": "parts/ears/ears_32_L.webp",
+      "w": 126,
+      "h": 126,
+      "root": [
+        63.0,
+        122
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_32_L_fill.webp",
+      "line": "parts/ears/ears_32_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_32_R.webp",
+      "w": 127,
+      "h": 127,
+      "root": [
+        63.5,
+        123
+      ],
+      "color": "#fbf3de",
+      "fill": "parts/ears/ears_32_R_fill.webp",
+      "line": "parts/ears/ears_32_R_line.webp"
+    },
+    "w": 290,
+    "h": 127,
+    "fill": "parts/ears/ears_32_fill.webp",
+    "line": "parts/ears/ears_32_line.webp"
+  },
+  {
+    "id": "ears_33",
+    "label": "졸린 멍멍이",
+    "src": "parts/ears/ears_33.webp",
+    "color": "#fcf6e3",
+    "L": {
+      "src": "parts/ears/ears_33_L.webp",
+      "w": 125,
+      "h": 117,
+      "root": [
+        104,
+        66
+      ],
+      "color": "#fcf6e3",
+      "fill": "parts/ears/ears_33_L_fill.webp",
+      "line": "parts/ears/ears_33_L_line.webp",
+      "sink": 0,
+      "rotation": -25,
+      "offset": [
+        8,
+        6
+      ]
+    },
+    "R": {
+      "src": "parts/ears/ears_33_R.webp",
+      "w": 122,
+      "h": 117,
+      "root": [
+        18,
+        66
+      ],
+      "color": "#fcf6e3",
+      "fill": "parts/ears/ears_33_R_fill.webp",
+      "line": "parts/ears/ears_33_R_line.webp",
+      "sink": 0,
+      "rotation": 25,
+      "offset": [
+        -8,
+        6
+      ]
+    },
+    "w": 284,
+    "h": 117,
+    "fill": "parts/ears/ears_33_fill.webp",
+    "line": "parts/ears/ears_33_line.webp"
+  },
+  {
+    "id": "ears_34",
+    "label": "폭 접힌 토끼",
+    "src": "parts/ears/ears_34.webp",
+    "color": "#fcf6e3",
+    "L": {
+      "src": "parts/ears/ears_34_L.webp",
+      "w": 129,
+      "h": 156,
+      "root": [
+        64.5,
+        152
+      ],
+      "color": "#fcf6e3",
+      "fill": "parts/ears/ears_34_L_fill.webp",
+      "line": "parts/ears/ears_34_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_34_R.webp",
+      "w": 128,
+      "h": 158,
+      "root": [
+        64.0,
+        154
+      ],
+      "color": "#fcf6e3",
+      "fill": "parts/ears/ears_34_R_fill.webp",
+      "line": "parts/ears/ears_34_R_line.webp"
+    },
+    "w": 294,
+    "h": 158,
+    "fill": "parts/ears/ears_34_fill.webp",
+    "line": "parts/ears/ears_34_line.webp"
+  },
+  {
+    "id": "ears_35",
+    "label": "아기 사슴",
+    "src": "parts/ears/ears_35.webp",
+    "color": "#fcf5e3",
+    "L": {
+      "src": "parts/ears/ears_35_L.webp",
+      "w": 111,
+      "h": 162,
+      "root": [
+        55.5,
+        158
+      ],
+      "color": "#fcf5e3",
+      "fill": "parts/ears/ears_35_L_fill.webp",
+      "line": "parts/ears/ears_35_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_35_R.webp",
+      "w": 111,
+      "h": 161,
+      "root": [
+        55.5,
+        157
+      ],
+      "color": "#fcf5e3",
+      "fill": "parts/ears/ears_35_R_fill.webp",
+      "line": "parts/ears/ears_35_R_line.webp"
+    },
+    "w": 259,
+    "h": 162,
+    "fill": "parts/ears/ears_35_fill.webp",
+    "line": "parts/ears/ears_35_line.webp"
+  },
+  {
+    "id": "ears_36",
+    "label": "아기 돼지",
+    "src": "parts/ears/ears_36.webp",
+    "color": "#fcf6e3",
+    "L": {
+      "src": "parts/ears/ears_36_L.webp",
+      "w": 130,
+      "h": 113,
+      "root": [
+        65.0,
+        109
+      ],
+      "color": "#fcf6e3",
+      "fill": "parts/ears/ears_36_L_fill.webp",
+      "line": "parts/ears/ears_36_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_36_R.webp",
+      "w": 130,
+      "h": 114,
+      "root": [
+        65.0,
+        110
+      ],
+      "color": "#fcf6e3",
+      "fill": "parts/ears/ears_36_R_fill.webp",
+      "line": "parts/ears/ears_36_R_line.webp"
+    },
+    "w": 297,
+    "h": 114,
+    "fill": "parts/ears/ears_36_fill.webp",
+    "line": "parts/ears/ears_36_line.webp"
+  }
+]

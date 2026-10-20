@@ -1,9 +1,3 @@
-/* Self-hosted fonts (OFL, see fonts/). Jua is the cute UI font but only has 2,367 Hangul
-   syllables, so anything built from the user's name uses Dongle (all 11,172) instead.
-   Dongle draws small; size-adjust brings it to the layout size. */
-@font-face { font-family: "MJ Cute"; src: url("fonts/Jua.woff2") format("woff2"); font-display: swap; }
-@font-face { font-family: "MJ Round"; src: url("fonts/Dongle-Bold.woff2") format("woff2"); font-display: swap; size-adjust: 150%; }
-@font-face { font-family: "MJ Body"; src: url("fonts/GowunDodum.woff2") format("woff2"); font-display: swap; }
 /* Personality test pages — soft picture-book look (see design/landing_mockup.png). */
 :root {
   --ink: #5a3d30;
@@ -13,27 +7,20 @@
   --pink-deep: #f59ab4;
   --mint: #c9eed9;
   --sky: #cfeaf8;
-  --round: "MJ Cute", "MJ Round", "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --name: "MJ Round", "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --body: "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --lavender: #e5d9f7;
+  --round: var(--font);
+  --name: var(--font);
 }
 * { box-sizing: border-box; }
-/* Background fills the whole screen including notch / home-bar safe areas. A fixed layer is
-   used because iOS ignores background-attachment: fixed; the html gradient covers overscroll. */
-html { margin: 0; min-height: 100%; background: linear-gradient(#bfe3f6 0 45%, #cfe8a0 55%); -webkit-text-size-adjust: 100%; }
-body { margin: 0; min-height: 100%; font-family: var(--body); color: var(--ink); background: transparent; touch-action: manipulation; }
-body::before {
-  content: ""; position: fixed; z-index: -1; pointer-events: none;
-  top: calc(-1 * env(safe-area-inset-top)); bottom: calc(-1 * env(safe-area-inset-bottom)); left: 0; right: 0;
-  background: #bfe3f6 url("design/page_bg.jpg") center top / cover no-repeat;
-}
+html, body { margin: 0; min-height: 100%; }
+body { font-family: var(--body); color: var(--ink); background: #bfe3f6 url("design/page_bg.webp") center top / cover no-repeat fixed; touch-action: manipulation; word-break: keep-all; overflow-wrap: break-word; }
 button, input { font: inherit; color: inherit; }
 
 .page { max-width: 460px; margin: 0 auto; min-height: 100vh; min-height: 100dvh; position: relative; overflow-x: hidden; }
 .screen {
   display: none; min-height: 100vh; min-height: 100dvh;
   flex-direction: column; align-items: center; justify-content: center;
-  padding: calc(28px + env(safe-area-inset-top)) calc(22px + env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) calc(22px + env(safe-area-inset-left));
+  padding: 28px 22px;
   gap: 18px; text-align: center;
 }
 .screen.on { display: flex; animation: screenIn .45s cubic-bezier(.2, 1.3, .4, 1); }
@@ -57,8 +44,8 @@ button, input { font: inherit; color: inherit; }
 .spark.s1 { left: -18px; top: 10px; }
 .spark.s2 { right: -14px; bottom: 6px; width: 22px; height: 22px; animation-delay: .6s; }
 @keyframes twinkle { 50% { transform: scale(.6) rotate(20deg); opacity: .6; } }
-.intro-desc { margin: 0; font-size: 15px; line-height: 1.6; color: var(--ink-soft); }
-.h2 { margin: 0; font-family: var(--round); font-weight: 400; font-size: 21px; line-height: 1.35; }
+.intro-desc { margin: 0; font-size: 15px; line-height: 1.6; color: var(--ink-soft); text-wrap: balance; }
+.h2 { margin: 0; font-family: var(--round); font-weight: 400; font-size: 21px; line-height: 1.35; text-wrap: balance; }
 .sub { margin: 0; color: var(--ink-soft); }
 
 .btn {
@@ -71,6 +58,8 @@ button, input { font: inherit; color: inherit; }
 .btn.big { min-height: 64px; min-width: 240px; font-size: 22px; }
 .btn.pink { --fill: var(--pink); }
 .btn.mint { --fill: var(--mint); }
+.btn.sky { --fill: var(--sky); }
+.btn.lavender { --fill: var(--lavender); }
 .btn:hover { transform: translateY(-2px) rotate(-1deg); }
 .btn:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(90, 61, 48, .18); }
 .btn:focus-visible, .link:focus-visible, .answer:focus-visible, input:focus-visible { outline: 3px dashed var(--pink-deep); outline-offset: 4px; }
@@ -96,7 +85,7 @@ button, input { font: inherit; color: inherit; }
   background: #fff; font-family: var(--body); font-size: 16px; outline: none;
 }
 .field input:focus { border-color: var(--pink-deep); box-shadow: 0 0 0 4px rgba(245, 154, 180, .25); }
-.err { min-height: 1.2em; margin: 0; color: #d0587a; font-size: 12px; text-align: center; }
+.err { min-height: 1.2em; margin: 0; color: #d0587a; font-size: 12px; line-height: 1.5; text-align: center; white-space: pre-line; }
 .form .btn { align-self: center; min-width: 200px; }
 
 /* Quiz */
@@ -109,11 +98,11 @@ button, input { font: inherit; color: inherit; }
 .mini-wrap { width: 170px; height: 168px; position: relative; }
 .mini { position: absolute; inset: 0; }
 .mini canvas { width: 100%; height: 100%; animation: hop 1.4s ease-in-out infinite; }
-.qtext { min-height: 2.7em; display: flex; align-items: center; justify-content: center; }
+.qtext { width: 100%; min-height: 2.7em; display: flex; align-items: center; justify-content: center; }
 .answers { width: 100%; display: flex; flex-direction: column; gap: 12px; margin-top: 4px; }
 .answer {
   width: 100%; min-height: 62px; padding: 12px 18px; border-radius: 22px 26px 20px 24px; cursor: pointer;
-  --fill: #fff; font-size: 15px; line-height: 1.4; color: var(--ink);
+  --fill: #fff; font-size: 15px; line-height: 1.4; color: var(--ink); text-wrap: pretty;
   box-shadow: 0 4px 0 rgba(90, 61, 48, .12); transition: transform .12s, background .15s;
 }
 .answer:hover { --fill: #fff3f7; transform: translateY(-2px); }
@@ -129,17 +118,20 @@ button, input { font: inherit; color: inherit; }
 @keyframes knead { from { transform: scale(1.12, .86); } to { transform: scale(.92, 1.08) translateY(-14px); } }
 
 /* Result */
-.owner { margin: 0; font-family: var(--round); font-size: 17px; color: var(--ink-soft); }
 .result-card { width: 100%; --fill: var(--cream); border-radius: 30px 34px 28px 36px / 34px 28px 36px 30px; padding: 12px; box-shadow: 0 6px 0 rgba(90, 61, 48, .08); }
 .result-card .stage-wrap { border-radius: 22px 26px 20px 24px; box-shadow: none; }
+.result-caption { position: absolute; z-index: 3; top: 14px; left: 10px; right: 10px; display: flex; flex-direction: column; align-items: center; gap: 5px; pointer-events: none; }
+.result-caption .type { max-width: 100%; word-break: keep-all; }
+.result-caption .cname { margin: 0; font-size: 34px; line-height: 1.1; color: var(--caption-ink, var(--ink)); text-shadow: 0 2px 3px var(--caption-shadow, #fff8ea); transition: color .2s, text-shadow .2s; }
 /* Zoom the result stage around the creature (values set by test.js). */
 #resultStage { transform: scale(var(--scale)) translate(var(--zx), var(--zy)) scale(var(--zoom)) translate(calc(-1 * var(--zx)), calc(-1 * var(--zy))); }
 .result-text { padding: 10px 8px 8px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
 .type { margin: 0; padding: 4px 14px; border-radius: 999px; background: var(--sky); font-family: var(--round); font-size: 14px; }
 .cname { margin: -2px 0 -4px; font-family: var(--round); font-weight: 400; font-size: 30px; line-height: 1.05; }
-.desc { margin: 0; font-size: 14px; line-height: 1.6; color: var(--ink-soft); }
+.desc { margin: 0; font-size: 14px; line-height: 1.65; color: var(--ink-soft); word-break: keep-all; overflow-wrap: break-word; text-wrap: balance; }
+.desc .sentence { display: block; }
 .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 6px 0 0; padding: 0; list-style: none; }
-.tags li { padding: 3px 11px; border-radius: 999px; background: #fff; border: 2px solid var(--ink); font-size: 12px; }
+.tags li { padding: 3px 11px; border-radius: 999px; background: #fff; border: 2px solid var(--ink); font-size: 12px; white-space: nowrap; }
 .birth { margin: 4px 0 0; font-size: 12px; color: var(--ink-soft); display: flex; align-items: center; gap: 6px; }
 .birth i { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--ink); display: inline-block; }
 .row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; width: 100%; }
@@ -152,19 +144,18 @@ button, input { font: inherit; color: inherit; }
 
 /* Wide screens: keep the horizon (35% down the portrait art) near the middle of the view. */
 @media (min-aspect-ratio: 3/4) {
-  body::before { background-position: center 27%; }
+  body { background-position: center 27%; }
 }
 
 
-/* Text made from the user's input (may contain syllables Jua lacks). */
-.owner, .cname { font-family: var(--name); }
-/* Both input fields use the name font (cute, and has all 11,172 syllables). */
+/* Gamja Flower for names and inputs; body copy keeps Gowun Dodum. */
+.cname { font-family: var(--name); }
 .field input, .field input::placeholder { font-family: var(--name); font-size: 19px; }
 
 .btn:disabled { opacity: .7; cursor: progress; }
 
-/* Background picker under the result picture */
-.bg-pick { display: grid; grid-template-columns: repeat(8, 1fr); gap: 5px; padding: 10px 2px 0; }
+/* Background picker above the result picture */
+.bg-pick { display: grid; grid-template-columns: repeat(8, 1fr); gap: 5px; padding: 0 2px 12px; }
 .bg-thumb { width: 100%; aspect-ratio: 1; padding: 0; border-radius: 11px 13px 10px 12px; cursor: pointer;
   border: 2.2px solid rgba(90, 61, 48, .35); background: center / cover; transition: transform .15s; }
 .bg-thumb:hover { transform: translateY(-2px); }

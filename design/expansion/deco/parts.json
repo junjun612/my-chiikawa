@@ -1,0 +1,164 @@
+[
+  {
+    "id": "deco_19",
+    "label": "딸기 모자",
+    "src": "parts/deco/deco_19.webp",
+    "w": 220,
+    "h": 193,
+    "kind": "hat",
+    "fit": 0.76,
+    "bot": 0.18
+  },
+  {
+    "id": "deco_20",
+    "label": "푸딩 모자",
+    "src": "parts/deco/deco_20.webp",
+    "w": 210,
+    "h": 183,
+    "kind": "hat",
+    "fit": 0.7,
+    "bot": 0.16
+  },
+  {
+    "id": "deco_21",
+    "label": "데이지 핀",
+    "src": "parts/deco/deco_21.webp",
+    "w": 160,
+    "h": 152,
+    "kind": "side"
+  },
+  {
+    "id": "deco_22",
+    "label": "체크 리본",
+    "src": "parts/deco/deco_22.webp",
+    "w": 185,
+    "h": 135,
+    "kind": "side"
+  },
+  {
+    "id": "deco_23",
+    "label": "별 리본",
+    "src": "parts/deco/deco_23.webp",
+    "w": 180,
+    "h": 136,
+    "kind": "side"
+  },
+  {
+    "id": "deco_24",
+    "label": "튤립",
+    "src": "parts/deco/deco_24.webp",
+    "w": 152,
+    "h": 185,
+    "kind": "top",
+    "sink": 0.22
+  },
+  {
+    "id": "deco_25",
+    "label": "수련 모자",
+    "src": "parts/deco/deco_25.webp",
+    "w": 220,
+    "h": 160,
+    "kind": "hat",
+    "fit": 0.82,
+    "bot": 0.18
+  },
+  {
+    "id": "deco_26",
+    "label": "라벤더 베레모",
+    "src": "parts/deco/deco_26.webp",
+    "w": 220,
+    "h": 168,
+    "kind": "hat",
+    "fit": 0.82,
+    "bot": 0.17
+  },
+  {
+    "id": "deco_27",
+    "label": "만두 모자",
+    "src": "parts/deco/deco_27.webp",
+    "w": 210,
+    "h": 151,
+    "kind": "hat",
+    "fit": 0.73,
+    "bot": 0.15
+  },
+  {
+    "id": "deco_28",
+    "label": "네잎클로버",
+    "src": "parts/deco/deco_28.webp",
+    "w": 161,
+    "h": 175,
+    "kind": "side"
+  },
+  {
+    "id": "deco_29",
+    "label": "초승달 핀",
+    "src": "parts/deco/deco_29.webp",
+    "w": 170,
+    "h": 158,
+    "kind": "side"
+  },
+  {
+    "id": "deco_30",
+    "label": "구름 핀",
+    "src": "parts/deco/deco_30.webp",
+    "w": 180,
+    "h": 125,
+    "kind": "side"
+  },
+  {
+    "id": "deco_31",
+    "label": "병아리",
+    "src": "parts/deco/deco_31.webp",
+    "w": 190,
+    "h": 138,
+    "kind": "top",
+    "sink": 0.18
+  },
+  {
+    "id": "deco_32",
+    "label": "조개 핀",
+    "src": "parts/deco/deco_32.webp",
+    "w": 170,
+    "h": 141,
+    "kind": "side"
+  },
+  {
+    "id": "deco_33",
+    "label": "종이배 모자",
+    "src": "parts/deco/deco_33.webp",
+    "w": 220,
+    "h": 147,
+    "kind": "hat",
+    "fit": 0.83,
+    "bot": 0.16
+  },
+  {
+    "id": "deco_34",
+    "label": "도토리 모자",
+    "src": "parts/deco/deco_34.webp",
+    "w": 179,
+    "h": 205,
+    "kind": "hat",
+    "fit": 0.65,
+    "bot": 0.18
+  },
+  {
+    "id": "deco_35",
+    "label": "하트 간호 모자",
+    "src": "parts/deco/deco_35.webp",
+    "w": 220,
+    "h": 151,
+    "kind": "hat",
+    "fit": 0.78,
+    "bot": 0.16
+  },
+  {
+    "id": "deco_36",
+    "label": "살구 나비 핀",
+    "src": "parts/deco/deco_36.webp",
+    "w": 180,
+    "h": 144,
+    "kind": "side"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "catalog_parts": 206,
+  "counts": {
+    "body": 30,
+    "ears": 36,
+    "deco": 36,
+    "face": 36,
+    "prop": 36,
+    "back": 32
+  },
+  "runtime_part_images": 636,
+  "asset_version": "20261020k",
+  "validation": {
+    "parts_files": "pass",
+    "rendering": "pass",
+    "quiz_flow_and_saved_png": "pass",
+    "random_composites": 192,
+    "ear_body_composites": 216,
+    "random_layout_bounds": 5000,
+    "layout_errors": 0
+  },
+  "runtime_image_bytes": 11531920,
+  "references": [
+    "random-review.json",
+    "ears/attachment-browser-review.jpg",
+    "ears/attachment-browser-proof.png",
+    "saved-card-proof.png",
+    "review/clipping-fix-report.json",
+    "ears/boundary-audit.json",
+    "back/boundary-repair.json"
+  ]
+}

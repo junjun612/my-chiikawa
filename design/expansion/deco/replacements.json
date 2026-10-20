@@ -1,0 +1,12 @@
+[
+  {
+    "id": "deco_06",
+    "label": "분홍 수면 모자",
+    "kind": "hat",
+    "fit": 0.85,
+    "bot": 0.18,
+    "src": "parts/deco/deco_06.webp",
+    "w": 220,
+    "h": 147
+  }
+]

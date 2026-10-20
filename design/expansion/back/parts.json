@@ -1,0 +1,284 @@
+[
+  {
+    "id": "back_18",
+    "label": "양털 방울 꼬리",
+    "kind": "tail",
+    "root": [
+      29.7,
+      145.2
+    ],
+    "src": "parts/back/back_18.webp",
+    "w": 198,
+    "h": 191,
+    "fill": "parts/back/back_18_fill.webp",
+    "line": "parts/back/back_18_line.webp",
+    "color": "#fcfaf3"
+  },
+  {
+    "id": "back_19",
+    "label": "하트 솜 꼬리",
+    "kind": "tail",
+    "root": [
+      29.7,
+      141.4
+    ],
+    "src": "parts/back/back_19.webp",
+    "w": 198,
+    "h": 186,
+    "fill": "parts/back/back_19_fill.webp",
+    "line": "parts/back/back_19_line.webp",
+    "color": "#fcfbf8"
+  },
+  {
+    "id": "back_20",
+    "label": "물방울 꼬리",
+    "kind": "tail",
+    "root": [
+      23.8,
+      161.0
+    ],
+    "src": "parts/back/back_20.webp",
+    "w": 198,
+    "h": 194,
+    "fill": "parts/back/back_20_fill.webp",
+    "line": "parts/back/back_20_line.webp",
+    "color": "#fcf5e4"
+  },
+  {
+    "id": "back_21",
+    "label": "솜사탕 말림 꼬리",
+    "kind": "tail",
+    "root": [
+      28.8,
+      151.2
+    ],
+    "src": "parts/back/back_21.webp",
+    "w": 192,
+    "h": 199,
+    "fill": "parts/back/back_21_fill.webp",
+    "line": "parts/back/back_21_line.webp",
+    "color": "#fcfbf6"
+  },
+  {
+    "id": "back_22",
+    "label": "하트 끝 꼬리",
+    "kind": "tail",
+    "root": [
+      23.8,
+      140.3
+    ],
+    "src": "parts/back/back_22.webp",
+    "w": 198,
+    "h": 169,
+    "fill": "parts/back/back_22_fill.webp",
+    "line": "parts/back/back_22_line.webp",
+    "color": "#fcfbf6"
+  },
+  {
+    "id": "back_23",
+    "label": "별 끝 꼬리",
+    "kind": "tail",
+    "root": [
+      23.8,
+      163.5
+    ],
+    "src": "parts/back/back_23.webp",
+    "w": 198,
+    "h": 197,
+    "fill": "parts/back/back_23_fill.webp",
+    "line": "parts/back/back_23_line.webp",
+    "color": "#fcfbf7"
+  },
+  {
+    "id": "back_24",
+    "label": "포근 여우 꼬리",
+    "kind": "tail",
+    "root": [
+      23.8,
+      155.2
+    ],
+    "src": "parts/back/back_24.webp",
+    "w": 198,
+    "h": 187,
+    "fill": "parts/back/back_24_fill.webp",
+    "line": "parts/back/back_24_line.webp",
+    "color": "#fcecd5"
+  },
+  {
+    "id": "back_25",
+    "label": "짧은 줄무늬 꼬리",
+    "kind": "tail",
+    "root": [
+      23.8,
+      163.5
+    ],
+    "src": "parts/back/back_25.webp",
+    "w": 198,
+    "h": 197,
+    "fill": "parts/back/back_25_fill.webp",
+    "line": "parts/back/back_25_line.webp",
+    "color": "#fcedd7"
+  },
+  {
+    "id": "back_26",
+    "label": "작은 천사 날개",
+    "kind": "wings",
+    "L": {
+      "src": "parts/back/back_26_L.webp",
+      "w": 125,
+      "h": 130,
+      "root": [
+        119,
+        80.6
+      ],
+      "fill": "parts/back/back_26_L_fill.webp",
+      "line": "parts/back/back_26_L_line.webp",
+      "color": "#fcfaf6"
+    },
+    "R": {
+      "src": "parts/back/back_26_R.webp",
+      "w": 123,
+      "h": 130,
+      "root": [
+        6,
+        80.6
+      ],
+      "fill": "parts/back/back_26_R_fill.webp",
+      "line": "parts/back/back_26_R_line.webp",
+      "color": "#fcfbf6"
+    },
+    "src": "parts/back/back_26.webp",
+    "w": 290,
+    "h": 130,
+    "fill": "parts/back/back_26_fill.webp",
+    "line": "parts/back/back_26_line.webp",
+    "color": "#fcfbf6"
+  },
+  {
+    "id": "back_27",
+    "label": "동글 나비 날개",
+    "kind": "wings",
+    "L": {
+      "src": "parts/back/back_27_L.webp",
+      "w": 122,
+      "h": 157,
+      "root": [
+        116,
+        87.9
+      ]
+    },
+    "R": {
+      "src": "parts/back/back_27_R.webp",
+      "w": 125,
+      "h": 157,
+      "root": [
+        6,
+        87.9
+      ]
+    },
+    "src": "parts/back/back_27.webp",
+    "w": 289,
+    "h": 157
+  },
+  {
+    "id": "back_28",
+    "label": "구름 날개",
+    "kind": "wings",
+    "L": {
+      "src": "parts/back/back_28_L.webp",
+      "w": 123,
+      "h": 117,
+      "root": [
+        117,
+        72.5
+      ],
+      "fill": "parts/back/back_28_L_fill.webp",
+      "line": "parts/back/back_28_L_line.webp",
+      "color": "#fcfaf5"
+    },
+    "R": {
+      "src": "parts/back/back_28_R.webp",
+      "w": 125,
+      "h": 117,
+      "root": [
+        6,
+        72.5
+      ],
+      "fill": "parts/back/back_28_R_fill.webp",
+      "line": "parts/back/back_28_R_line.webp",
+      "color": "#fcfaf5"
+    },
+    "src": "parts/back/back_28.webp",
+    "w": 290,
+    "h": 117,
+    "fill": "parts/back/back_28_fill.webp",
+    "line": "parts/back/back_28_line.webp",
+    "color": "#fcfaf5"
+  },
+  {
+    "id": "back_29",
+    "label": "꽃잎 날개",
+    "kind": "wings",
+    "L": {
+      "src": "parts/back/back_29_L.webp",
+      "w": 122,
+      "h": 162,
+      "root": [
+        116,
+        100.4
+      ]
+    },
+    "R": {
+      "src": "parts/back/back_29_R.webp",
+      "w": 122,
+      "h": 163,
+      "root": [
+        6,
+        101.1
+      ]
+    },
+    "src": "parts/back/back_29.webp",
+    "w": 286,
+    "h": 163
+  },
+  {
+    "id": "back_30",
+    "label": "동그란 구름 후드",
+    "kind": "around",
+    "fit": 1.23,
+    "fy": 0.45,
+    "src": "parts/back/back_30.webp",
+    "w": 284,
+    "h": 258
+  },
+  {
+    "id": "back_31",
+    "label": "벚꽃 후드",
+    "kind": "around",
+    "fit": 1.25,
+    "fy": 0.45,
+    "src": "parts/back/back_31.webp",
+    "w": 284,
+    "h": 275
+  },
+  {
+    "id": "back_32",
+    "label": "별 쿠션",
+    "kind": "around",
+    "fit": 1.26,
+    "fy": 0.49,
+    "src": "parts/back/back_32.webp",
+    "w": 284,
+    "h": 261
+  },
+  {
+    "id": "back_33",
+    "label": "미니 담요 망토",
+    "kind": "around",
+    "fit": 1.26,
+    "fy": 0.53,
+    "src": "parts/back/back_33.webp",
+    "w": 284,
+    "h": 196
+  }
+]

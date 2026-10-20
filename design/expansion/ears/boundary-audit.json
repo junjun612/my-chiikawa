@@ -1,0 +1,1451 @@
+{
+  "parts": 36,
+  "halves": 72,
+  "checks": [
+    {
+      "id": "ears_01_L",
+      "raster": [
+        111,
+        103
+      ],
+      "design": [
+        111,
+        103
+      ],
+      "root": [
+        55,
+        97
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_01_R",
+      "raster": [
+        111,
+        102
+      ],
+      "design": [
+        111,
+        102
+      ],
+      "root": [
+        55,
+        96
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_02_L",
+      "raster": [
+        114,
+        111
+      ],
+      "design": [
+        114,
+        111
+      ],
+      "root": [
+        57,
+        105
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_02_R",
+      "raster": [
+        115,
+        110
+      ],
+      "design": [
+        115,
+        110
+      ],
+      "root": [
+        57,
+        104
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_03_L",
+      "raster": [
+        96,
+        213
+      ],
+      "design": [
+        96,
+        213
+      ],
+      "root": [
+        47.5,
+        208
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_03_R",
+      "raster": [
+        95,
+        215
+      ],
+      "design": [
+        95,
+        215
+      ],
+      "root": [
+        46.5,
+        209
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_04_L",
+      "raster": [
+        113,
+        114
+      ],
+      "design": [
+        113,
+        114
+      ],
+      "root": [
+        56.5,
+        108
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_04_R",
+      "raster": [
+        112,
+        112
+      ],
+      "design": [
+        112,
+        112
+      ],
+      "root": [
+        56,
+        106
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_05_L",
+      "raster": [
+        137,
+        141
+      ],
+      "design": [
+        137,
+        141
+      ],
+      "root": [
+        68,
+        135
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_05_R",
+      "raster": [
+        135,
+        139
+      ],
+      "design": [
+        135,
+        139
+      ],
+      "root": [
+        66.5,
+        133
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_06_L",
+      "raster": [
+        158,
+        157
+      ],
+      "design": [
+        158,
+        157
+      ],
+      "root": [
+        78.5,
+        151
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_06_R",
+      "raster": [
+        158,
+        157
+      ],
+      "design": [
+        158,
+        157
+      ],
+      "root": [
+        78,
+        151
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_07_L",
+      "raster": [
+        130,
+        118
+      ],
+      "design": [
+        130,
+        118
+      ],
+      "root": [
+        109,
+        66
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_07_R",
+      "raster": [
+        130,
+        118
+      ],
+      "design": [
+        130,
+        118
+      ],
+      "root": [
+        22,
+        67
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_08_L",
+      "raster": [
+        146,
+        117
+      ],
+      "design": [
+        146,
+        117
+      ],
+      "root": [
+        129,
+        56
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_08_R",
+      "raster": [
+        146,
+        117
+      ],
+      "design": [
+        146,
+        117
+      ],
+      "root": [
+        17,
+        56
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_09_L",
+      "raster": [
+        136,
+        132
+      ],
+      "design": [
+        136,
+        132
+      ],
+      "root": [
+        67,
+        126
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_09_R",
+      "raster": [
+        136,
+        135
+      ],
+      "design": [
+        136,
+        135
+      ],
+      "root": [
+        67.5,
+        129
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_10_L",
+      "raster": [
+        121,
+        112
+      ],
+      "design": [
+        121,
+        112
+      ],
+      "root": [
+        60.5,
+        107
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_10_R",
+      "raster": [
+        121,
+        115
+      ],
+      "design": [
+        121,
+        115
+      ],
+      "root": [
+        60,
+        110
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_11_L",
+      "raster": [
+        156,
+        162
+      ],
+      "design": [
+        156,
+        162
+      ],
+      "root": [
+        78,
+        156
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_11_R",
+      "raster": [
+        155,
+        162
+      ],
+      "design": [
+        155,
+        162
+      ],
+      "root": [
+        77,
+        157
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_12_L",
+      "raster": [
+        113,
+        115
+      ],
+      "design": [
+        113,
+        115
+      ],
+      "root": [
+        56.5,
+        111
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_12_R",
+      "raster": [
+        114,
+        115
+      ],
+      "design": [
+        114,
+        115
+      ],
+      "root": [
+        57,
+        111
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_13_L",
+      "raster": [
+        138,
+        185
+      ],
+      "design": [
+        138,
+        185
+      ],
+      "root": [
+        68,
+        179
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_13_R",
+      "raster": [
+        138,
+        185
+      ],
+      "design": [
+        138,
+        185
+      ],
+      "root": [
+        68.5,
+        179
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_14_L",
+      "raster": [
+        168,
+        284
+      ],
+      "design": [
+        168,
+        284
+      ],
+      "root": [
+        84,
+        278
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_14_R",
+      "raster": [
+        167,
+        283
+      ],
+      "design": [
+        167,
+        283
+      ],
+      "root": [
+        83.5,
+        278
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_15_L",
+      "raster": [
+        91,
+        137
+      ],
+      "design": [
+        91,
+        137
+      ],
+      "root": [
+        45,
+        131
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_15_R",
+      "raster": [
+        90,
+        137
+      ],
+      "design": [
+        90,
+        137
+      ],
+      "root": [
+        44.5,
+        132
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_16_L",
+      "raster": [
+        111,
+        244
+      ],
+      "design": [
+        111,
+        244
+      ],
+      "root": [
+        55.5,
+        238
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_16_R",
+      "raster": [
+        155,
+        161
+      ],
+      "design": [
+        155,
+        161
+      ],
+      "root": [
+        76.5,
+        155
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_17_L",
+      "raster": [
+        128,
+        122
+      ],
+      "design": [
+        128,
+        122
+      ],
+      "root": [
+        64,
+        117
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_17_R",
+      "raster": [
+        127,
+        124
+      ],
+      "design": [
+        127,
+        124
+      ],
+      "root": [
+        63,
+        118
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_18_L",
+      "raster": [
+        131,
+        137
+      ],
+      "design": [
+        131,
+        137
+      ],
+      "root": [
+        65,
+        131
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_18_R",
+      "raster": [
+        131,
+        139
+      ],
+      "design": [
+        131,
+        139
+      ],
+      "root": [
+        65,
+        133
+      ],
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "ears_19_L",
+      "raster": [
+        120,
+        115
+      ],
+      "design": [
+        120,
+        115
+      ],
+      "root": [
+        60,
+        111
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_19_R",
+      "raster": [
+        120,
+        115
+      ],
+      "design": [
+        120,
+        115
+      ],
+      "root": [
+        60,
+        111
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_20_L",
+      "raster": [
+        115,
+        117
+      ],
+      "design": [
+        115,
+        117
+      ],
+      "root": [
+        57.5,
+        113
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_20_R",
+      "raster": [
+        114,
+        117
+      ],
+      "design": [
+        114,
+        117
+      ],
+      "root": [
+        57,
+        113
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_21_L",
+      "raster": [
+        103,
+        160
+      ],
+      "design": [
+        103,
+        160
+      ],
+      "root": [
+        51.5,
+        156
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_21_R",
+      "raster": [
+        102,
+        160
+      ],
+      "design": [
+        102,
+        160
+      ],
+      "root": [
+        51,
+        156
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_22_L",
+      "raster": [
+        124,
+        128
+      ],
+      "design": [
+        124,
+        128
+      ],
+      "root": [
+        110,
+        44
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_22_R",
+      "raster": [
+        125,
+        127
+      ],
+      "design": [
+        125,
+        127
+      ],
+      "root": [
+        14,
+        44
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_23_L",
+      "raster": [
+        131,
+        120
+      ],
+      "design": [
+        131,
+        120
+      ],
+      "root": [
+        65.5,
+        116
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_23_R",
+      "raster": [
+        131,
+        122
+      ],
+      "design": [
+        131,
+        122
+      ],
+      "root": [
+        65.5,
+        118
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_24_L",
+      "raster": [
+        114,
+        139
+      ],
+      "design": [
+        114,
+        139
+      ],
+      "root": [
+        57,
+        135
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_24_R",
+      "raster": [
+        115,
+        140
+      ],
+      "design": [
+        115,
+        140
+      ],
+      "root": [
+        57.5,
+        136
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_25_L",
+      "raster": [
+        123,
+        120
+      ],
+      "design": [
+        123,
+        120
+      ],
+      "root": [
+        61.5,
+        116
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_25_R",
+      "raster": [
+        122,
+        122
+      ],
+      "design": [
+        122,
+        122
+      ],
+      "root": [
+        61,
+        118
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_26_L",
+      "raster": [
+        112,
+        147
+      ],
+      "design": [
+        112,
+        147
+      ],
+      "root": [
+        56,
+        143
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_26_R",
+      "raster": [
+        114,
+        147
+      ],
+      "design": [
+        114,
+        147
+      ],
+      "root": [
+        57,
+        143
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_27_L",
+      "raster": [
+        94,
+        173
+      ],
+      "design": [
+        94,
+        173
+      ],
+      "root": [
+        47,
+        169
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_27_R",
+      "raster": [
+        115,
+        144
+      ],
+      "design": [
+        115,
+        144
+      ],
+      "root": [
+        57.5,
+        140
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_28_L",
+      "raster": [
+        118,
+        120
+      ],
+      "design": [
+        118,
+        120
+      ],
+      "root": [
+        59,
+        116
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_28_R",
+      "raster": [
+        118,
+        120
+      ],
+      "design": [
+        118,
+        120
+      ],
+      "root": [
+        59,
+        116
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_29_L",
+      "raster": [
+        132,
+        110
+      ],
+      "design": [
+        132,
+        110
+      ],
+      "root": [
+        66,
+        106
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_29_R",
+      "raster": [
+        132,
+        110
+      ],
+      "design": [
+        132,
+        110
+      ],
+      "root": [
+        66,
+        106
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_30_L",
+      "raster": [
+        126,
+        160
+      ],
+      "design": [
+        126,
+        160
+      ],
+      "root": [
+        113,
+        53
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_30_R",
+      "raster": [
+        124,
+        160
+      ],
+      "design": [
+        124,
+        160
+      ],
+      "root": [
+        12,
+        53
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_31_L",
+      "raster": [
+        116,
+        127
+      ],
+      "design": [
+        116,
+        127
+      ],
+      "root": [
+        58,
+        123
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_31_R",
+      "raster": [
+        114,
+        127
+      ],
+      "design": [
+        114,
+        127
+      ],
+      "root": [
+        57,
+        123
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_32_L",
+      "raster": [
+        126,
+        126
+      ],
+      "design": [
+        126,
+        126
+      ],
+      "root": [
+        63,
+        122
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_32_R",
+      "raster": [
+        127,
+        127
+      ],
+      "design": [
+        127,
+        127
+      ],
+      "root": [
+        63.5,
+        123
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_33_L",
+      "raster": [
+        125,
+        117
+      ],
+      "design": [
+        125,
+        117
+      ],
+      "root": [
+        104,
+        66
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_33_R",
+      "raster": [
+        122,
+        117
+      ],
+      "design": [
+        122,
+        117
+      ],
+      "root": [
+        18,
+        66
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_34_L",
+      "raster": [
+        129,
+        156
+      ],
+      "design": [
+        129,
+        156
+      ],
+      "root": [
+        64.5,
+        152
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_34_R",
+      "raster": [
+        128,
+        158
+      ],
+      "design": [
+        128,
+        158
+      ],
+      "root": [
+        64,
+        154
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_35_L",
+      "raster": [
+        111,
+        162
+      ],
+      "design": [
+        111,
+        162
+      ],
+      "root": [
+        55.5,
+        158
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_35_R",
+      "raster": [
+        111,
+        161
+      ],
+      "design": [
+        111,
+        161
+      ],
+      "root": [
+        55.5,
+        157
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_36_L",
+      "raster": [
+        130,
+        113
+      ],
+      "design": [
+        130,
+        113
+      ],
+      "root": [
+        65,
+        109
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    },
+    {
+      "id": "ears_36_R",
+      "raster": [
+        130,
+        114
+      ],
+      "design": [
+        130,
+        114
+      ],
+      "root": [
+        65,
+        110
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "edge_nonzero_alpha": 0,
+      "saturated_dust_pixels": 0
+    }
+  ],
+  "issues": []
+}

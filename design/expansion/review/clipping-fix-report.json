@@ -1,0 +1,53 @@
+{
+  "identified_from_user_screenshot": "body_29",
+  "root_cause": "Generated silhouettes crossed the exact 4x4 cell boundaries. Cropping to the nominal cell removed source ink. Transparent padding alone could not recover it.",
+  "fix": "Expand each source cell by 24 pixels, select the complete largest alpha component, assert it is more than 2 pixels inside the expanded source crop, and regenerate src/fill/line/arms and all anchors. Existing source art, pose and hand placement retained.",
+  "changed_assets": [
+    [
+      "body_20",
+      [
+        "src",
+        "fill",
+        "line",
+        "arms"
+      ],
+      295,
+      298,
+      237,
+      237
+    ],
+    [
+      "body_29",
+      [
+        "src",
+        "fill",
+        "line",
+        "arms"
+      ],
+      292,
+      299,
+      254,
+      254
+    ],
+    [
+      "body_31",
+      [
+        "src",
+        "fill",
+        "line",
+        "arms"
+      ],
+      299,
+      302,
+      255,
+      257
+    ]
+  ],
+  "reviewed_count": 19,
+  "part_count_preserved": 19,
+  "metadata": [
+    "design/expansion/body/parts.json",
+    "design/expansion/body/replacements.json"
+  ],
+  "comparison": "design/expansion/review/clipping-before-after.jpg"
+}

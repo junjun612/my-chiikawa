@@ -1,0 +1,17 @@
+/* Gamja Flower (감자꽃마을), YoonDesign / Google Fonts. See fonts/OFL-GamjaFlower.txt. */
+@font-face {
+  font-family: "Gamja Flower";
+  src: url("fonts/GamjaFlower.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MJ Body";
+  src: url("fonts/GowunDodum.woff2") format("woff2");
+  font-display: swap;
+}
+:root {
+  --font: "Gamja Flower", "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --body: "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}

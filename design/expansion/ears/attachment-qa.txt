@@ -1,0 +1,30 @@
+Drooping-ear attachment correction, 2026-10-20
+
+Reported screenshots identify ears_22 (말랑 강아지) and ears_30 (코코 스패니얼).
+These sprites attach at their upper inner openings, whereas their original metadata
+used a bottom-center root and the generic 0.36-height sink. That hid their hanging
+lower sections and exposed disconnected ink ends above the head.
+
+Final correction uses each real inner attachment root, sink 0, a fixed ear rotation,
+and a small inward/downward offset. All corrected ears remain behind the body (z10).
+This hides the intentionally open root inside the head without hiding the dangling
+lower ear. Original images, outline style, design size, and pink interiors are kept.
+
+Corrected IDs: ears_07, ears_08, ears_22, ears_30, ears_33.
+The first two are legacy ears with the same upper-inner attachment structure.
+ears_27 and ears_34 have genuine lower roots and keep their original metadata.
+
+New-part metadata is persisted in parts.json; legacy metadata in replacements.json.
+attachment-fixes.json is the complete five-part QA snapshot. ATTACHMENTS in
+slice_ears.py reapplies these values during full regeneration or --metadata-only.
+replace_ears12.py preserves the other replacement entries when rerun.
+
+Visual QA: all 36 ear pairs on body_01 (round), body_03 (fluffy), body_15 (tall),
+body_19 (square), body_20 (flat), and body_31 (asymmetric). Saved in six
+all-ears-qa-body_XX.jpg sheets. Corrected five pairs are shown larger together in
+attachment-fixed-six-bodies.jpg. Geometry uses the engine scale, upper median,
+root, sink, offsets, rotations, tint masks, and layer order; lighting is omitted.
+
+Boundary audit: all 72 halves have valid roots and matching source/mask dimensions.
+The 38 new/replacement halves have transparent outer padding and no saturated
+red/yellow dust pixels. See boundary-audit.json. No new image generation was needed.

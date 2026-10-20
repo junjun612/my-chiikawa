@@ -5,7 +5,7 @@
   const $ = (id) => document.getElementById(id);
   const pad = (n) => String(n).padStart(2, "0");
 
-  const profile = { name: "", birth: "", month: 1, answers: [], variant: 0 };
+  const profile = { name: "", birth: "", month: 1, answers: [], variant: 0, nameVariant: 0 };
 
   function show(id) {
     document.querySelectorAll(".screen").forEach((s) => s.classList.toggle("on", s.id === id));
@@ -27,19 +27,37 @@
   }
   // Result zoom around the creature (stage px), shared by the live stage and the saved card.
   const ZOOM = 1.25, ZOOM_CX = 256, ZOOM_CY = 330;
+  const CAPTION_COLORS = {
+    meadow: { ink: "#84533f", shadow: "#fffbea" },
+    dusk: { ink: "#fff5dc", shadow: "#304b56" },
+    sunset: { ink: "#92513f", shadow: "#fff3dc" },
+    beach: { ink: "#286b80", shadow: "#f1fbff" },
+    night: { ink: "#fff1bf", shadow: "#293554" },
+    sakura: { ink: "#99596c", shadow: "#fff8f5" },
+    snow: { ink: "#4e7290", shadow: "#ffffff" },
+    room: { ink: "#855b46", shadow: "#fff8e8" },
+  };
 
   // ---- Intro parade -------------------------------------------------------
   async function buildParade() {
     const track = $("parade");
     const sprites = [];
-    for (let i = 0; i < 9; i++) sprites.push(await sprite(C.randomLook(), 256));
+    for (let i = 0; i < 3; i++) {
+      const batch = await Promise.allSettled(Array.from({ length: 3 }, () => sprite(C.randomLook(), 256)));
+      sprites.push(...batch.filter((result) => result.status === "fulfilled").map((result) => result.value));
+    }
+    // One unavailable image must not remove the whole parade.
+    if (!sprites.length) sprites.push(await sprite({ parts: { body: "body_01", face: "face_01" }, bodyColor: "#ffffff" }, 256));
+    const available = sprites.slice();
+    while (sprites.length < 9) sprites.push(available[sprites.length % available.length]);
+    const delays = sprites.map(() => `${(Math.random() * 0.9).toFixed(2)}s`);
     // Two identical halves so translateX(-50% -> 0) loops seamlessly.
     for (let k = 0; k < 2; k++) {
-      for (const s of sprites) {
+      for (const [i, s] of sprites.entries()) {
         const c = document.createElement("canvas");
         c.width = s.width; c.height = s.height;
         c.getContext("2d").drawImage(s, 0, 0);
-        c.style.animationDelay = `${(Math.random() * 0.9).toFixed(2)}s`;
+        c.style.animationDelay = delays[i];
         track.appendChild(c);
       }
     }
@@ -105,11 +123,11 @@
     const name = $("nameIn").value.trim();
     const birth = parseBirth($("birthIn").value);
     const err = $("infoErr");
-    if (!name) { err.textContent = "이름을 알려 줘!"; $("nameIn").focus(); return; }
-    if (!birth) { err.textContent = "생년월일을 숫자 8자리로 적어 줘! 예) 1998.04.12"; $("birthIn").focus(); return; }
+    if (!name) { err.textContent = "이름을 알려줘!"; $("nameIn").focus(); return; }
+    if (!birth) { err.textContent = "생년월일을 숫자 8자리로 적어줘!\n예: 1998.04.12"; $("birthIn").focus(); return; }
     err.textContent = "";
     bgPicked = false;
-    Object.assign(profile, { name, birth, month: Number(birth.slice(5, 7)), answers: [], variant: 0 });
+    Object.assign(profile, { name, birth, month: Number(birth.slice(5, 7)), answers: [], variant: 0, nameVariant: 0 });
     renderQuestion(0);
     show("quiz");
   };
@@ -183,10 +201,8 @@
     return { parts, bodyColor: Q.months[m][0], sync: true, bg: pick(bgs) };
   }
 
-  function creatureName() {
-    const syl = [...profile.name].filter((ch) => /[가-힣a-zA-Z]/.test(ch));
-    const base = syl.length ? syl[syl.length - 1] : "몽";
-    return base + Q.nameSuffix[C.hashString(profile.name + profile.birth) % Q.nameSuffix.length];
+  function creatureName(code, previous = "") {
+    return window.CreatureNames.generate({ name: profile.name, birth: profile.birth, code, variant: profile.nameVariant }, previous);
   }
 
   let view = null;
@@ -212,14 +228,19 @@
   function showResult() {
     const code = typeCode();
     const [title, desc] = Q.types[code];
-    current = { code, title, desc, name: creatureName(), look: buildLook(code) };
-    $("owner").textContent = `${profile.name}의 먼작귀`;
+    current = { code, title, desc, name: creatureName(code), look: buildLook(code) };
     $("rType").textContent = `${title} 먼작귀 · ${code}`;
     $("rName").textContent = current.name;
-    $("rDesc").textContent = desc;
+    $("rDesc").replaceChildren(...desc.split(/([.!?])\s+/).reduce((out, text, index, parts) => {
+      if (index % 2 === 0 && text) {
+        const sentence = document.createElement("span");
+        sentence.className = "sentence";
+        sentence.textContent = text + (parts[index + 1] || "");
+        out.push(sentence);
+      }
+      return out;
+    }, []));
     $("rTags").innerHTML = Q.axes.map((ax, i) => `<li>#${ax.tags[ax.letters.indexOf(code[i])]}</li>`).join("");
-    const [col, colName] = Q.months[profile.month];
-    $("rBirth").innerHTML = `<i style="background:${col}"></i>${profile.month}월생 탄생 컬러 · ${colName}`;
     show("result");
     if (!view) {
       view = C.mountStage($("resultStage"));
@@ -233,13 +254,21 @@
   function drawResult(bounce = true) {
     const { look } = current;
     $("resultStage").style.backgroundImage = `url("${C.bgImage(look.bg)}")`;
+    const caption = CAPTION_COLORS[look.bg] || CAPTION_COLORS.meadow;
+    $("resultWrap").style.setProperty("--caption-ink", caption.ink);
+    $("resultWrap").style.setProperty("--caption-shadow", caption.shadow);
     view.setScene(look.bg);
     view.render(look);
     if (bounce) view.pop();
     renderBgPick();
-    const p = new URLSearchParams({ ...Object.fromEntries(Object.entries(look.parts).filter(([, v]) => v)), bg: look.bg });
-    if (look.bodyColor) p.set("color", look.bodyColor.slice(1));
-    $("editLink").href = "maker.html#" + p.toString();
+    const color = look.bodyColor;
+    const birthColor = Q.months[profile.month];
+    const name = Q.months.slice(1).find(([hex]) => hex === color)?.[1] || "파스텔";
+    const label = color === birthColor[0] ? `${profile.month}월생 탄생 컬러` : "새로 뽑은 컬러";
+    $("rBirth").replaceChildren();
+    const chip = document.createElement("i");
+    chip.style.background = color;
+    $("rBirth").append(chip, `${label} · ${name}`);
   }
 
   // Re-roll asks how: "mine" keeps the personality pools, "any" ignores them.
@@ -254,13 +283,32 @@
     pop.close();
     const mode = b.dataset.mode;
     if (!mode) return;
+    if (mode === "name") {
+      profile.nameVariant++;
+      current.name = creatureName(current.code, current.name);
+      $("rName").textContent = current.name;
+      return;
+    }
+    if (mode === "restart") {
+      $("infoForm").reset();
+      $("infoErr").textContent = "";
+      Object.assign(profile, { name: "", birth: "", month: 1, answers: [], variant: 0, nameVariant: 0 });
+      bgPicked = false;
+      show("intro");
+      return;
+    }
     const keepBg = bgPicked && current.look.bg;
     if (mode === "mine") {
       profile.variant++;
       current.look = buildLook(current.code);
     } else {
       const bgs = Object.keys(C.BG_IMAGES);
+      const previousColor = current.look.bodyColor;
       current.look = { ...C.randomLook(), bg: bgs[Math.floor(Math.random() * bgs.length)] };
+      if (current.look.bodyColor === previousColor) {
+        const colors = C.BODY_COLORS.filter((color) => color !== previousColor);
+        current.look.bodyColor = colors[Math.floor(Math.random() * colors.length)];
+      }
     }
     if (keepBg) current.look.bg = keepBg;
     drawResult();
@@ -273,7 +321,7 @@
       const on = id === current.look.bg;
       const b = document.createElement("button");
       b.className = "bg-thumb" + (on ? " on" : "");
-      b.style.backgroundImage = `url("backgrounds/${id}_thumb.jpg")`;
+      b.style.backgroundImage = `url("${C.assetUrl(`backgrounds/${id}_thumb.webp`)}")`;
       b.title = label;
       b.setAttribute("role", "radio");
       b.setAttribute("aria-checked", on);
@@ -283,10 +331,10 @@
     }
   }
 
-  // Portrait result card (1080x1440): creature on its background + name and type underneath.
+  // Portrait result card (1080x1440): type/name at the top of the picture, body copy below.
   async function makeCard() {
-      const allText = [profile.name, current.name, current.title, current.desc, "나만의 먼작귀 만들기의 · "].join("");
-      await Promise.all([document.fonts.load('60px "MJ Cute"', allText), document.fonts.load('60px "MJ Round"', allText), document.fonts.load('30px "MJ Body"', allText)]);
+      const allText = [profile.name, current.name, current.title, current.desc, "나만의 먼작귀 만들기 · "].join("");
+      await Promise.all([document.fonts.load('60px "Gamja Flower"', allText), document.fonts.load('30px "MJ Body"', allText)]);
       const art = await C.renderCanvas(current.look, { size: 1024, bg: current.look.bg });
       const W = 1080, H = 1440, M = 56, R = 48;
       const cv = document.createElement("canvas");
@@ -306,30 +354,32 @@
       ctx.lineWidth = 6; ctx.strokeStyle = "#5a3d30"; ctx.stroke();
 
       ctx.textAlign = "center";
-      ctx.fillStyle = "#7d6152";
-      // Line 1 mixes the user's name (Dongle) and the fixed type title (Jua).
-      const owner = `${profile.name}의 먼작귀 · `;
-      ctx.font = '38px "MJ Round", sans-serif';
-      const ow = ctx.measureText(owner).width;
-      ctx.font = '38px "MJ Cute", sans-serif';
-      const tw = ctx.measureText(current.title).width;
-      ctx.textAlign = "left";
-      ctx.fillText(current.title, W / 2 - (ow + tw) / 2 + ow, W + 50);
-      ctx.font = '38px "MJ Round", sans-serif';
-      ctx.fillText(owner, W / 2 - (ow + tw) / 2, W + 50);
-      ctx.textAlign = "center";
+      ctx.font = '42px "Gamja Flower", sans-serif';
+      const type = `${current.title} 먼작귀 · ${current.code}`;
+      const badgeWidth = Math.min(W - 2 * M - 48, ctx.measureText(type).width + 64);
+      ctx.fillStyle = "#cfeaf8";
+      roundRect((W - badgeWidth) / 2, M + 28, badgeWidth, 62, 31);
+      ctx.fill();
       ctx.fillStyle = "#5a3d30";
-      ctx.font = '84px "MJ Round", sans-serif';
-      ctx.fillText(current.name, W / 2, W + 150);
+      ctx.fillText(type, W / 2, M + 71, badgeWidth - 40);
+      const caption = CAPTION_COLORS[current.look.bg] || CAPTION_COLORS.meadow;
+      ctx.save();
+      ctx.fillStyle = caption.ink;
+      ctx.font = '84px "Gamja Flower", sans-serif';
+      ctx.shadowColor = caption.shadow;
+      ctx.shadowBlur = 7;
+      ctx.shadowOffsetY = 5;
+      ctx.fillText(current.name, W / 2, M + 183);
+      ctx.restore();
       ctx.fillStyle = "#7d6152";
       ctx.font = '32px "MJ Body", sans-serif';
-      wrapText(ctx, current.desc, W / 2, W + 245, W - 2 * M - 40, 46);
-      ctx.font = '28px "MJ Cute", sans-serif';
+      wrapText(ctx, current.desc, W / 2, W + 140, W - 2 * M - 40, 46);
+      ctx.font = '28px "Gamja Flower", sans-serif';
       ctx.fillStyle = "#c9a58a";
       ctx.fillText("나만의 먼작귀 만들기", W / 2, H - 30);
       return cv;
   }
-  const NO_SERVER = "이미지를 만들 수 없어요. 페이지를 로컬 서버로 열어 주세요. (예: python -m http.server)";
+  const NO_SERVER = "이미지를 만들 수 없어요. 페이지를 로컬 서버로 열어주세요. (예: python -m http.server)";
   const cardBlob = async () => new Promise((res, rej) => makeCard().then((cv) => {
     try { cv.toBlob((b) => (b ? res(b) : rej(new Error("toBlob"))), "image/jpeg", 0.9); } catch (e) { rej(e); } // throws if tainted (file://)
   }, rej));
@@ -350,8 +400,8 @@
   const SITE = window.SITE || {};
   const siteUrl = SITE.url || location.href.split("#")[0].replace(/[^/]*$/, "");
   const shareText = () => ({
-    title: `${profile.name}의 먼작귀는 '${current.name}'!`,
-    desc: `${current.title} 먼작귀 · 질문 8개로 나를 꼭 닮은 먼작귀를 만나 보세요 🌱`,
+    title: `${profile.name}의 먼작귀는 ${current.name}!`,
+    desc: `${current.title} 먼작귀\n나를 꼭 닮은 먼작귀를 만나보세요 🌱`,
   });
   const kakaoReady = () => {
     if (!SITE.kakaoKey || !window.Kakao) return false;
@@ -367,6 +417,7 @@
       const blob = await cardBlob();
       const file = new File([blob], `${current.name}.jpg`, { type: "image/jpeg" });
       const { title, desc } = shareText();
+      const text = [title, desc, siteUrl].join("\n\n");
       if (kakaoReady()) {
         // Kakao keeps uploaded images for up to 100 days.
         const up = await Kakao.Share.uploadImage({ file: [file] });
@@ -376,16 +427,12 @@
             title, description: desc, imageUrl: up.infos.original.url, imageWidth: 1080, imageHeight: 1440,
             link: { mobileWebUrl: siteUrl, webUrl: siteUrl },
           },
-          buttons: [{ title: "나도 만들어 보기", link: { mobileWebUrl: siteUrl, webUrl: siteUrl } }],
+          buttons: [{ title: "나도 만들어보기", link: { mobileWebUrl: siteUrl, webUrl: siteUrl } }],
         });
       } else if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({ files: [file], title, text: `${title}
-${desc}
-${siteUrl}` });
+        await navigator.share({ files: [file], title, text });
       } else {
-        await navigator.clipboard.writeText(`${title}
-${desc}
-${siteUrl}`);
+        await navigator.clipboard.writeText(text);
         alert("공유 문구와 링크를 복사했어요! 카카오톡에 붙여 넣어 주세요.");
       }
     } catch (e) {
@@ -407,7 +454,9 @@ ${siteUrl}`);
     if (line) ctx.fillText(line, x, y);
   }
 
-  $("restartBtn").onclick = () => { $("infoForm").reset(); show("intro"); };
-
-  buildParade();
+  buildParade().catch(console.error).finally(() => {
+    const warm = () => C.preloadAssets();
+    if (window.requestIdleCallback) window.requestIdleCallback(warm, { timeout: 1200 });
+    else setTimeout(warm, 300);
+  });
 })();

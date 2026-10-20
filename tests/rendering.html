@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <base href="../">
+  <title>캐릭터 렌더링 검증</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="creature.css">
+  <style>
+    body { margin: 24px; font-family: var(--body); background: #fff8ea; color: #5a3d30; }
+    #samples { display: flex; gap: 16px; flex-wrap: wrap; }
+    figure { margin: 0; }
+    figure > canvas { width: 300px; height: 300px; border-radius: 20px; }
+    .stage-wrap { width: 300px; }
+    .stage { --scale: .5859375; }
+    .stage .squish, .stage .ground { animation: none; }
+    .pass { color: #26734a; } .fail { color: #b52b49; }
+  </style>
+</head>
+<body>
+  <h1>캐릭터 렌더링 검증</h1>
+  <p id="status">검증 중…</p>
+  <ul id="checks"></ul>
+  <div id="samples"></div>
+  <div class="stage-wrap"><div class="stage" id="live"></div></div>
+  <script>
+    // Simulate Safari versions without canvas filters. The entire renderer must
+    // work even if touching this property throws.
+    Object.defineProperty(CanvasRenderingContext2D.prototype, "filter", {
+      configurable: true,
+      get() { throw new Error("Canvas filters are unavailable"); },
+      set() { throw new Error("Canvas filters are unavailable"); },
+    });
+  </script>
+  <script src="parts.js"></script>
+  <script src="engine.js"></script>
+  <script src="quiz-data.js"></script>
+  <script src="tests/rendering.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "scope": "Initial visual audit before approved replacements. Global source files were not modified by this reviewer.",
+  "rendering": "Engine-equivalent body width 190, per-body anchors, ear sink 0.36 and per-ear rotation. Review omits lighting/shading to isolate shapes and uses face_01/prop_15 consistently.",
+  "recommended_replacements": [
+    {
+      "id": "ears_12",
+      "label": "다람쥐",
+      "reason": "Three finger-like tips on each ear read as small human hands raised above the head. This is the clearest mismatch with the user's strictly cute direction.",
+      "recommendation": "Replace with a rounded squirrel ear with a tiny soft fur tuft. Preserve the category count by replacing under the same ID."
+    },
+    {
+      "id": "body_03",
+      "label": "털뭉치",
+      "reason": "No drawn hands and no arms mask. Every handheld item floats in front of the tummy.",
+      "recommendation": "Replace the body with the same fluffy silhouette plus two short inward-facing C-shaped hands at x34%/66%, y69%. New body_27 demonstrates a compatible fluffy silhouette."
+    },
+    {
+      "id": "body_12",
+      "label": "가슴 털",
+      "reason": "Hands sit near the outer cheeks; the large scalloped white chest patch has a black outline. The item becomes oversized while still missing the hands, and chest ink competes with the item silhouette.",
+      "recommendation": "Replace or redraw with hands near the center, reduce chest patch to a small soft unoutlined spot, and place prop width near 33% of body width."
+    },
+    {
+      "id": "body_16",
+      "label": "배 동그라미",
+      "reason": "An outlined circular belly patch sits exactly behind the handheld item, producing duplicate concentric outlines. The separated outer hands cannot naturally hold the current centered prop.",
+      "recommendation": "Replace or redraw with a very pale unoutlined belly patch, hands at x34%/66%, y69%, and a prop width near 33% of body width."
+    },
+    {
+      "id": "body_07",
+      "label": "흰 배",
+      "reason": "Wide hand separation forces a large centered prop. A round prop then crowds the mouth; making the prop smaller prevents contact with both hands.",
+      "recommendation": "Second-priority redraw: retain the white belly and rounded silhouette, move hands inward. An anchor-only prop shrink does not solve hand contact."
+    }
+  ],
+  "optional_geometry_refinements": [
+    {
+      "id": "ears_14",
+      "label": "사막여우",
+      "recommendation": "Reduce the ear pair to 82–88% of current logical size to retain the large-ear character without overwhelming compact bodies. Scale half w/h/root together so bases stay attached; do not just shrink images around their centers."
+    },
+    {
+      "id": "ears_13",
+      "label": "박쥐",
+      "recommendation": "Keep as a playful fantasy ear. Optional 88–92% reduction softens the long sharp tips. This is a style preference, not a confirmed defect."
+    },
+    {
+      "id": "body_21",
+      "label": "배동글 모찌",
+      "recommendation": "The narrower pear-shaped crown makes round ears look farther apart than on the other new bodies. Optional anchors x=crownX±22%W (currently ±27.5%W), recompute each y from the silhouette, and reduce headW from 82%W to about 66–70%W for hats. Face and prop alignment currently remain natural."
+    }
+  ],
+  "keep": {
+    "existing_bodies": [
+      "body_01",
+      "body_02",
+      "body_04",
+      "body_06",
+      "body_08",
+      "body_09",
+      "body_10",
+      "body_11",
+      "body_13",
+      "body_14",
+      "body_15"
+    ],
+    "existing_ears": [
+      "ears_01",
+      "ears_02",
+      "ears_03",
+      "ears_04",
+      "ears_05",
+      "ears_06",
+      "ears_07",
+      "ears_08",
+      "ears_09",
+      "ears_10",
+      "ears_11",
+      "ears_15",
+      "ears_16",
+      "ears_17",
+      "ears_18"
+    ],
+    "notes": "Most existing silhouettes are cute. body_15's tall egg proportion still reads as cute and has naturally aligned face/hands; no need to remove merely for being taller. ears_09's earlier color mismatch is resolved by coat recoloring in current engine logic. New bodies' existing-ear joins and face/prop placement are otherwise natural in the 36-case stress contact sheet."
+  },
+  "evidence": [
+    "design/expansion/review/existing-body-raw.jpg",
+    "design/expansion/review/existing-ears-raw.jpg",
+    "design/expansion/review/existing-ears-on-new-body.jpg",
+    "design/expansion/review/existing-bodies-composed.jpg",
+    "design/expansion/review/new-body-stress-ears.jpg"
+  ],
+  "follow_up": {
+    "body_replacements_completed": [
+      "body_03",
+      "body_07",
+      "body_12",
+      "body_16"
+    ],
+    "replacement_metadata": "design/expansion/body/replacements.json",
+    "body21_crown_anchors_refined": true,
+    "new_body_metadata": "design/expansion/body/parts.json",
+    "validation": "144 body/prop combinations composed with current ear and face catalog and visually checked."
+  }
+}

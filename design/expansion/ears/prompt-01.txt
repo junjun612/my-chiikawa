@@ -1,0 +1,12 @@
+Use case: stylized-concept
+Asset type: production sprite atlas for a cute Korean character dress-up game.
+Primary request: a square 4 by 4 atlas containing exactly 16 separate PAIRS of adorable little animal EARS. Each cell has precisely one left ear and one right ear, isolated from one another by transparent space, and no head or connecting head outline. These ears will attach behind a round mochi creature.
+Input images: reference images 1 through 3 are only STYLE references: match their irregular thick black ink contours and flat creamy filling, not the black screen background. New variations, not replicas.
+Style/medium: Chiikawa inspired maximum cuteness, simple hand-drawn irregular soft thick black crayon/ink outlines, off-white vanilla outer fur and a tiny pale strawberry-pink inner ear. Rounded plush silhouettes, NO gradients, NO shine, NO shadows, NO gray fur.
+Layout: a perfectly regular 4x4 invisible grid, 16 equal square cells, clear wide transparent gutters. In each cell, the left and right ears are mirrored near-identical partners, vertically aligned on a shared baseline, generous blank gap between the pair. All ears are upright as if attached on the top of a round head. Lower roots of each ear open (no bottom outline) and ready to hide behind the head. Every silhouette comfortably inside its own cell with margin, and pairs must never overlap.
+Row1: small marshmallow bear pair; plump hamster ears with small pink ovals; round-tipped kitten ears; two short round capsule bunny ears.
+Row2: soft rounded puppy ears bent outward just at tip; tiny teddy bear ears with a small pink crescent; cozy rounded triangular fox ears without orange fur; stubby oval polar bear ears.
+Row3: small chubby mouse ears; round alpaca ears with fluffy tufts; two round-tipped narrow bunny ears with one soft bent tip; plush kitten ears with one small inner stroke.
+Row4: baby lamb ears pointing gently upward-outward; pillowy floppy spaniel ears; round squirrel ears with a single tiny tuft; soft rounded koala ears with subtle scallops.
+Avoid: faces, eyes, mouths, head, body, arms, human hands, feet, hats, labels, letters, numbers, cell borders, background colors, checkerboard drawn into image, any elements touching adjacent cells, sharp scary shapes, realistic anatomy, excessive fur detail.
+Background: actually transparent alpha everywhere outside the ear silhouettes. Keep the ear interiors solid creamy white.

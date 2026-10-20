@@ -1,0 +1,230 @@
+[
+  {
+    "id": "body_03",
+    "label": "보송 털뭉치",
+    "src": "parts/body/body_03.webp",
+    "fill": "parts/body/body_03_fill.webp",
+    "line": "parts/body/body_03_line.webp",
+    "arms": "parts/body/body_03_arms.webp",
+    "w": 303,
+    "h": 282,
+    "color": "#fff9eb",
+    "anchors": {
+      "top": [
+        152.5,
+        6.0
+      ],
+      "headW": 248.46,
+      "earL": [
+        69.17,
+        49.0,
+        -15.0
+      ],
+      "earR": [
+        235.82,
+        49.0,
+        15.0
+      ],
+      "prop": [
+        150.03,
+        192.12,
+        62.13
+      ],
+      "face": [
+        150.03,
+        129.72,
+        172.71
+      ],
+      "tail": [
+        251.49,
+        208.68
+      ],
+      "sideL": [
+        51.51,
+        121.26
+      ],
+      "sideR": [
+        251.49,
+        121.26
+      ],
+      "center": [
+        151.5,
+        141.0
+      ],
+      "H": 271.0,
+      "W": 292.0
+    },
+    "sourceCell": 2
+  },
+  {
+    "id": "body_07",
+    "label": "우유 구름떡",
+    "src": "parts/body/body_07.webp",
+    "fill": "parts/body/body_07_fill.webp",
+    "line": "parts/body/body_07_line.webp",
+    "arms": "parts/body/body_07_arms.webp",
+    "w": 304,
+    "h": 279,
+    "color": "#fff9eb",
+    "anchors": {
+      "top": [
+        158.0,
+        5.0
+      ],
+      "headW": 249.28,
+      "earL": [
+        74.4,
+        45.0,
+        -15.0
+      ],
+      "earR": [
+        241.6,
+        57.0,
+        15.0
+      ],
+      "prop": [
+        146.02,
+        192.6,
+        71.67
+      ],
+      "face": [
+        146.02,
+        128.34,
+        173.28
+      ],
+      "tail": [
+        252.32,
+        206.46
+      ],
+      "sideL": [
+        51.68,
+        119.97
+      ],
+      "sideR": [
+        252.32,
+        119.97
+      ],
+      "center": [
+        152.0,
+        139.5
+      ],
+      "H": 269.0,
+      "W": 293.0
+    },
+    "sourceCell": 14
+  },
+  {
+    "id": "body_12",
+    "label": "하트 밀크푸딩",
+    "src": "parts/body/body_12.webp",
+    "fill": "parts/body/body_12_fill.webp",
+    "line": "parts/body/body_12_line.webp",
+    "arms": "parts/body/body_12_arms.webp",
+    "w": 302,
+    "h": 274,
+    "color": "#fff9eb",
+    "anchors": {
+      "top": [
+        152.0,
+        5.0
+      ],
+      "headW": 247.64,
+      "earL": [
+        68.95,
+        41.0,
+        -15.0
+      ],
+      "earR": [
+        235.05,
+        40.0,
+        15.0
+      ],
+      "prop": [
+        148.5,
+        185.01,
+        68.34
+      ],
+      "face": [
+        148.5,
+        126.04,
+        172.14
+      ],
+      "tail": [
+        250.66,
+        202.76
+      ],
+      "sideL": [
+        51.34,
+        117.82
+      ],
+      "sideR": [
+        250.66,
+        117.82
+      ],
+      "center": [
+        151.0,
+        137.0
+      ],
+      "H": 263.0,
+      "W": 292.0
+    },
+    "sourceCell": 6
+  },
+  {
+    "id": "body_16",
+    "label": "몽실 구름배",
+    "src": "parts/body/body_16.webp",
+    "fill": "parts/body/body_16_fill.webp",
+    "line": "parts/body/body_16_line.webp",
+    "arms": "parts/body/body_16_arms.webp",
+    "w": 305,
+    "h": 294,
+    "color": "#fff9eb",
+    "anchors": {
+      "top": [
+        147.5,
+        5.0
+      ],
+      "headW": 250.1,
+      "earL": [
+        63.62,
+        68.0,
+        -15.0
+      ],
+      "earR": [
+        231.38,
+        56.0,
+        15.0
+      ],
+      "prop": [
+        150.24,
+        203.76,
+        71.96
+      ],
+      "face": [
+        150.24,
+        135.24,
+        173.85
+      ],
+      "tail": [
+        253.15,
+        217.56
+      ],
+      "sideL": [
+        51.85,
+        126.42
+      ],
+      "sideR": [
+        253.15,
+        126.42
+      ],
+      "center": [
+        152.5,
+        147.0
+      ],
+      "H": 284.0,
+      "W": 294.0
+    },
+    "sourceCell": 11
+  }
+]

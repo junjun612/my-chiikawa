@@ -9,8 +9,9 @@
 }
 .stage img, .stage canvas { position: absolute; pointer-events: none; -webkit-user-drag: none; }
 
-/* Character group: one manga filter over all parts, idle mochi breathing, pop on change */
-.stage .chara { position: absolute; inset: 0; filter: url(#manga-meadow); z-index: 2; }
+/* Character lighting is baked into the canvas for consistent Safari/Chrome output. */
+.stage .chara { position: absolute; inset: 0; z-index: 2; }
+.stage .character-art { left: 0; top: 0; width: 512px; height: 512px; }
 .stage .squish {
   position: absolute; inset: 0;
   transform-origin: var(--foot-x) var(--foot-y);

@@ -2,41 +2,42 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>먼작귀 꾸미기</title>
-<meta name="description" content="귀·표정·소품을 골라 나만의 먼작귀를 꾸며 보세요">
+<meta name="description" content="귀·표정·소품을 골라 나만의 먼작귀를 꾸며보세요">
 <meta name="theme-color" content="#bfe3f6">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="design/icon-512.png">
 <link rel="apple-touch-icon" href="design/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="먼작귀 꾸미기">
-<meta property="og:description" content="귀·표정·소품을 골라 나만의 먼작귀를 꾸며 보세요">
+<meta property="og:description" content="귀·표정·소품을 골라 나만의 먼작귀를 꾸며보세요">
 <meta property="og:url" content="https://junjun612.github.io/my-chiikawa/maker.html">
 <meta property="og:image" content="https://junjun612.github.io/my-chiikawa/design/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="먼작귀 꾸미기">
-<meta name="twitter:description" content="귀·표정·소품을 골라 나만의 먼작귀를 꾸며 보세요">
+<meta name="twitter:description" content="귀·표정·소품을 골라 나만의 먼작귀를 꾸며보세요">
 <meta name="twitter:image" content="https://junjun612.github.io/my-chiikawa/design/og.jpg">
-<link rel="stylesheet" href="creature.css?v=20261020e">
-<link rel="stylesheet" href="style.css?v=20261020e">
+<link rel="preload" href="fonts/GamjaFlower.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="backgrounds/meadow.webp?v=20261020k" as="image">
+<link rel="stylesheet" href="fonts.css?v=20261020k">
+<link rel="stylesheet" href="creature.css?v=20261020k">
+<link rel="stylesheet" href="style.css?v=20261020k">
 </head>
 <body>
 <main class="app">
   <section class="preview">
     <div class="stage-wrap" id="stageWrap"><div class="stage" id="stage"></div></div>
-    <div class="swatches" id="swatches" aria-label="배경색"></div>
+    <div class="swatches" id="swatches" aria-label="배경 고르기"></div>
   </section>
   <section class="panel">
-    <h1>먼작귀 꾸미기 <a class="back-link" href="index.html">성향 테스트 하러 가기</a></h1>
+    <h1>먼작귀 꾸미기 <a class="back-link" href="index.html">성향 테스트하러 가기</a></h1>
     <div class="color-row">
       <span class="color-label">몸 색</span>
       <div class="swatches" id="bodyColors" aria-label="몸 색"></div>
-      <label class="sync"><input type="checkbox" id="syncChk" checked> 귀·꼬리 몸 색 맞춤</label>
+      <label class="sync"><input type="checkbox" id="syncChk" checked> 귀·꼬리를 몸 색에 맞추기</label>
     </div>
     <div class="tabs" id="tabs" role="tablist"></div>
     <div class="grid" id="grid"></div>
@@ -46,16 +47,16 @@
       <button id="editBtn" aria-pressed="false">배치 편집</button>
     </div>
     <div class="edit-tools" id="editTools" hidden>
-      <p class="hint">드래그: 이동 · 휠: 크기 · 방향키: 1px (Shift 5px)</p>
+      <p class="hint">드래그: 이동 · 휠: 크기 조절 · 방향 키: 1px 이동 (Shift + 방향 키: 5px 이동)</p>
       <button id="copyBtn">조정값 복사</button>
       <button id="resetBtn">조정 초기화</button>
       <textarea id="adjustOut" rows="6" readonly></textarea>
     </div>
   </section>
 </main>
-<script src="parts.js?v=20261020e"></script>
-<script src="engine.js?v=20261020e"></script>
-<script src="app.js?v=20261020e"></script>
-<script src="no-zoom.js?v=20261020e"></script>
+<script src="parts.js?v=20261020k"></script>
+<script src="engine.js?v=20261020k"></script>
+<script src="app.js?v=20261020k"></script>
+<script src="no-zoom.js?v=20261020k"></script>
 </body>
 </html>
