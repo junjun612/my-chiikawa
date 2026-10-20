@@ -51,19 +51,53 @@
     const peek = $("peekStage");
     if (!peek.firstChild) peek.appendChild(await sprite(C.randomLook(), 300));
   };
-  // Birthday is typed on the number keypad; dots are inserted automatically (1998.04.12).
-  $("birthIn").addEventListener("input", (e) => {
-    const d = e.target.value.replace(/\D/g, "").slice(0, 8);
-    e.target.value = [d.slice(0, 4), d.slice(4, 6), d.slice(6, 8)].filter(Boolean).join(".");
+  // Birthday: digits only, dots inserted automatically (1998.04.12). Separators the user types
+  // ("-", "/", ".", space) close a part, so "1998-4-12" also works.
+  //   mode "type":   while typing forward; a dot appears as soon as a part is complete
+  //   mode "delete": while deleting; never re-adds a trailing dot
+  //   mode "final":  on paste / blur / submit; short month and day are zero-padded
+  const birthIn = $("birthIn");
+  const SLOTS = [4, 2, 2];
+  function birthParts(raw, mode) {
+    const groups = raw.split(/\D+/).filter(Boolean);
+    const closed = /\D$/.test(raw.trim()) || mode === "final";
+    const out = [];
+    groups.forEach((g, gi) => {
+      const last = gi === groups.length - 1;
+      while (g && out.length < 3) {
+        const need = SLOTS[out.length];
+        if (g.length >= need) { out.push(g.slice(0, need)); g = g.slice(need); }
+        else { out.push(out.length && (!last || closed) ? g.padStart(need, "0") : g); g = ""; }
+      }
+    });
+    return out;
+  }
+  function formatBirth(mode) {
+    if (mode !== "final" && birthIn.selectionStart !== birthIn.value.length) return; // editing mid-text
+    const out = birthParts(birthIn.value, mode);
+    let v = out.join(".");
+    const done = out.length && out[out.length - 1].length === SLOTS[out.length - 1];
+    if (mode === "type" && done && out.length < 3) v += ".";
+    if (v !== birthIn.value) birthIn.value = v;
+  }
+  let composing = false;
+  birthIn.addEventListener("compositionstart", () => { composing = true; });
+  birthIn.addEventListener("compositionend", () => { composing = false; formatBirth("type"); });
+  birthIn.addEventListener("input", (e) => {
+    if (composing) return;
+    const t = e.inputType || "";
+    formatBirth(t.startsWith("delete") ? "delete" : t === "insertFromPaste" || t === "insertReplacementText" || !t ? "final" : "type");
   });
-  // "YYYY.MM.DD" -> "YYYY-MM-DD" if it is a real past date, else null.
+  ["change", "blur"].forEach((ev) => birthIn.addEventListener(ev, () => formatBirth("final")));
+
+  // "YYYY.MM.DD" (or any form birthParts understands) -> "YYYY-MM-DD" if it is a real past date.
   function parseBirth(text) {
-    const m = /^(\d{4})\.(\d{2})\.(\d{2})$/.exec(text);
-    if (!m) return null;
-    const [y, mo, d] = m.slice(1).map(Number);
+    const [ys = "", ms = "", ds = ""] = birthParts(text, "final");
+    if (ys.length !== 4 || ms.length !== 2 || ds.length !== 2) return null;
+    const [y, mo, d] = [ys, ms, ds].map(Number);
     const dt = new Date(y, mo - 1, d);
     if (y < 1900 || dt > new Date() || dt.getMonth() !== mo - 1 || dt.getDate() !== d) return null;
-    return `${m[1]}-${m[2]}-${m[3]}`;
+    return `${ys}-${ms}-${ds}`;
   }
   ["nameIn", "birthIn"].forEach((id) => $(id).addEventListener("input", () => { $("infoErr").textContent = ""; }));
   $("infoForm").onsubmit = (e) => {
