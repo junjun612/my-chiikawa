@@ -144,3 +144,9 @@ button, input { font: inherit; color: inherit; }
 @media (min-aspect-ratio: 3/4) {
   body { background-position: center 27%; }
 }
+
+/* Re-roll mode toggle */
+.seg { display: inline-flex; padding: 4px; gap: 4px; border-radius: 999px; background: #fff; border: 2.4px solid var(--ink); margin-bottom: -4px; }
+.seg button { border: 0; background: none; padding: 7px 16px; border-radius: 999px; cursor: pointer; font-family: var(--round); font-size: 16px; color: var(--ink-soft); }
+.seg button[aria-pressed="true"] { background: var(--mint); color: var(--ink); }
+.seg button:focus-visible { outline: 3px dashed var(--pink-deep); outline-offset: 2px; }

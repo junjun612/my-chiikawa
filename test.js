@@ -5,7 +5,7 @@
   const $ = (id) => document.getElementById(id);
   const pad = (n) => String(n).padStart(2, "0");
 
-  const profile = { name: "", birth: "", month: 1, answers: [] };
+  const profile = { name: "", birth: "", month: 1, answers: [], variant: 0 };
 
   function show(id) {
     document.querySelectorAll(".screen").forEach((s) => s.classList.toggle("on", s.id === id));
@@ -62,7 +62,7 @@
     const y = Number(birth.slice(0, 4));
     if (!birth || y < 1900 || birth > $("birthIn").max) { err.textContent = "생년월일을 골라 줘!"; $("birthIn").focus(); return; }
     err.textContent = "";
-    Object.assign(profile, { name, birth, month: Number(birth.slice(5, 7)), answers: [] });
+    Object.assign(profile, { name, birth, month: Number(birth.slice(5, 7)), answers: [], variant: 0 });
     renderQuestion(0);
     show("quiz");
   };
@@ -116,7 +116,7 @@
   }
 
   function buildLook(code) {
-    const r = C.rng(C.hashString(`${profile.name}|${profile.birth}|${code}`));
+    const r = C.rng(C.hashString(`${profile.name}|${profile.birth}|${code}`) + profile.variant * 7919);
     const pick = (list) => list[Math.floor(r() * list.length)];
     const id = (cat, n) => `${cat}_${pad(n)}`;
     const [ei, sn, tf, jp] = code;
@@ -193,10 +193,22 @@
     $("editLink").href = "maker.html#" + p.toString();
   }
 
-  // Re-roll ignores the personality: any parts, color and background.
+  // Re-roll mode: "mine" keeps the personality pools, "any" ignores them.
+  let rollMode = "mine";
+  document.querySelectorAll("#rollMode button").forEach((b) => {
+    b.onclick = () => {
+      rollMode = b.dataset.mode;
+      document.querySelectorAll("#rollMode button").forEach((x) => x.setAttribute("aria-pressed", x === b));
+    };
+  });
   $("rerollBtn").onclick = () => {
-    const bgs = Object.keys(C.BG_IMAGES);
-    current.look = { ...C.randomLook(), bg: bgs[Math.floor(Math.random() * bgs.length)] };
+    if (rollMode === "mine") {
+      profile.variant++;
+      current.look = buildLook(current.code);
+    } else {
+      const bgs = Object.keys(C.BG_IMAGES);
+      current.look = { ...C.randomLook(), bg: bgs[Math.floor(Math.random() * bgs.length)] };
+    }
     drawResult();
   };
 

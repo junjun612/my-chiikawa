@@ -21,8 +21,9 @@
   const BG_IMAGES = { meadow: "풀밭", dusk: "저녁 들판", sunset: "노을 꽃밭", beach: "바닷가",
     night: "별밤", sakura: "벚꽃", snow: "눈밭", room: "아늑한 방" };
   const bgImage = (b) => `backgrounds/${BG_IMAGES[b] ? b : "meadow"}.jpg`;
-  const BODY_COLORS = ["#ffffff", "#fff6e0", "#fff0b8", "#ffdbe4", "#ffdcc8", "#ffc9bd", "#d6f2e0",
-    "#d6ecfb", "#e6dcf7", "#e2e2e2", "#ecdcc4", "#c9a58a", "#9c7a64"];
+  // Natural animal-like tones: whites, creams, browns, grays and one soft pink.
+  const BODY_COLORS = ["#ffffff", "#fff8ec", "#fbefd9", "#f3e2c7", "#ead2b0", "#d9b48f", "#b98c6a",
+    "#8f6a52", "#ece8e3", "#cfc9c2", "#f9e4de"];
   const SYNC_CATS = ["ears", "back"]; // follow the body color when sync is on
 
   const CATS = window.PART_CATEGORIES || [];
