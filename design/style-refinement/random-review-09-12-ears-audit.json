@@ -1,0 +1,442 @@
+{
+  "reviewedPages": [
+    "09",
+    "10",
+    "11",
+    "12"
+  ],
+  "reviewedIndices": [
+    513,
+    768
+  ],
+  "reviewedCombinations": 256,
+  "method": "Every actual Canvas contact sheet viewed directly, followed by enlarged 32-case feature review and 20-case mouth review. Current-catalog geometric mouth intersections were used only to locate candidates, not as sole visual evidence.",
+  "priorityFindings": [
+    {
+      "index": 620,
+      "parts": {
+        "body": "body_29",
+        "ears": "ears_02",
+        "deco": null,
+        "face": "face_29",
+        "prop": "prop_18",
+        "back": "back_03"
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 702,
+      "parts": {
+        "body": "body_08",
+        "ears": "ears_19",
+        "deco": null,
+        "face": "face_29",
+        "prop": "prop_18",
+        "back": "back_21"
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 706,
+      "parts": {
+        "body": "body_27",
+        "ears": null,
+        "deco": "deco_12",
+        "face": "face_09",
+        "prop": "prop_18",
+        "back": "back_03"
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 719,
+      "parts": {
+        "body": "body_14",
+        "ears": null,
+        "deco": null,
+        "face": "face_10",
+        "prop": "prop_18",
+        "back": "back_01"
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 725,
+      "parts": {
+        "body": "body_12",
+        "ears": null,
+        "deco": "deco_27",
+        "face": "face_11",
+        "prop": "prop_35",
+        "back": "back_24"
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 738,
+      "parts": {
+        "body": "body_12",
+        "ears": null,
+        "deco": null,
+        "face": "face_11",
+        "prop": "prop_35",
+        "back": "back_24"
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 641,
+      "parts": {
+        "body": "body_07",
+        "ears": null,
+        "deco": "deco_31",
+        "face": "face_11",
+        "prop": "prop_33",
+        "back": null
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 597,
+      "parts": {
+        "body": "body_29",
+        "ears": null,
+        "deco": "deco_11",
+        "face": "face_17",
+        "prop": "prop_19",
+        "back": null
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 609,
+      "parts": {
+        "body": "body_08",
+        "ears": "ears_31",
+        "deco": "deco_04",
+        "face": "face_02",
+        "prop": "prop_19",
+        "back": null
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 547,
+      "parts": {
+        "body": "body_29",
+        "ears": null,
+        "deco": null,
+        "face": "face_13",
+        "prop": "prop_03",
+        "back": null
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 576,
+      "parts": {
+        "body": "body_29",
+        "ears": null,
+        "deco": "deco_22",
+        "face": "face_24",
+        "prop": "prop_16",
+        "back": "back_23"
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 572,
+      "parts": {
+        "body": "body_27",
+        "ears": null,
+        "deco": null,
+        "face": "face_26",
+        "prop": "prop_34",
+        "back": null
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 674,
+      "parts": {
+        "body": "body_29",
+        "ears": "ears_34",
+        "deco": null,
+        "face": "face_31",
+        "prop": "prop_21",
+        "back": "back_04"
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    },
+    {
+      "index": 670,
+      "parts": {
+        "body": "body_20",
+        "ears": "ears_07",
+        "deco": "deco_06",
+        "face": "face_11",
+        "prop": "prop_09",
+        "back": "back_07"
+      },
+      "reason": "Prop upper portion obscures the selected mouth, completely on indices706 and719; preserve mouth clearance and actual hand contact."
+    }
+  ],
+  "secondaryContacts": [
+    {
+      "index": 516,
+      "parts": {
+        "body": "body_11",
+        "ears": "ears_19",
+        "deco": "deco_24",
+        "face": "face_10",
+        "prop": "prop_29",
+        "back": "back_03"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 520,
+      "parts": {
+        "body": "body_14",
+        "ears": null,
+        "deco": null,
+        "face": "face_04",
+        "prop": "prop_14",
+        "back": "back_22"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 524,
+      "parts": {
+        "body": "body_09",
+        "ears": null,
+        "deco": "deco_17",
+        "face": "face_16",
+        "prop": "prop_27",
+        "back": "back_07"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 535,
+      "parts": {
+        "body": "body_11",
+        "ears": null,
+        "deco": "deco_25",
+        "face": "face_09",
+        "prop": "prop_10",
+        "back": "back_05"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 555,
+      "parts": {
+        "body": "body_20",
+        "ears": "ears_13",
+        "deco": null,
+        "face": "face_09",
+        "prop": "prop_23",
+        "back": "back_08"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 557,
+      "parts": {
+        "body": "body_07",
+        "ears": "ears_18",
+        "deco": "deco_22",
+        "face": "face_08",
+        "prop": "prop_32",
+        "back": null
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 607,
+      "parts": {
+        "body": "body_11",
+        "ears": "ears_25",
+        "deco": "deco_02",
+        "face": "face_18",
+        "prop": "prop_17",
+        "back": "back_07"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 629,
+      "parts": {
+        "body": "body_15",
+        "ears": "ears_03",
+        "deco": "deco_21",
+        "face": "face_31",
+        "prop": "prop_16",
+        "back": null
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 642,
+      "parts": {
+        "body": "body_06",
+        "ears": null,
+        "deco": null,
+        "face": "face_30",
+        "prop": "prop_06",
+        "back": "back_27"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 645,
+      "parts": {
+        "body": "body_15",
+        "ears": "ears_17",
+        "deco": "deco_01",
+        "face": "face_02",
+        "prop": "prop_36",
+        "back": "back_26"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 663,
+      "parts": {
+        "body": "body_14",
+        "ears": "ears_05",
+        "deco": null,
+        "face": "face_33",
+        "prop": "prop_03",
+        "back": "back_28"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 672,
+      "parts": {
+        "body": "body_10",
+        "ears": "ears_03",
+        "deco": null,
+        "face": "face_08",
+        "prop": "prop_15",
+        "back": "back_04"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 701,
+      "parts": {
+        "body": "body_09",
+        "ears": null,
+        "deco": null,
+        "face": "face_08",
+        "prop": "prop_29",
+        "back": null
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 718,
+      "parts": {
+        "body": "body_29",
+        "ears": "ears_06",
+        "deco": null,
+        "face": "face_18",
+        "prop": "prop_25",
+        "back": null
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 726,
+      "parts": {
+        "body": "body_14",
+        "ears": "ears_13",
+        "deco": null,
+        "face": "face_02",
+        "prop": "prop_35",
+        "back": "back_22"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 742,
+      "parts": {
+        "body": "body_14",
+        "ears": null,
+        "deco": null,
+        "face": "face_13",
+        "prop": "prop_15",
+        "back": "back_21"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 762,
+      "parts": {
+        "body": "body_27",
+        "ears": "ears_02",
+        "deco": "deco_04",
+        "face": "face_02",
+        "prop": "prop_23",
+        "back": null
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 765,
+      "parts": {
+        "body": "body_29",
+        "ears": "ears_32",
+        "deco": "deco_02",
+        "face": "face_34",
+        "prop": "prop_35",
+        "back": "back_19"
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    },
+    {
+      "index": 766,
+      "parts": {
+        "body": "body_14",
+        "ears": "ears_13",
+        "deco": "deco_10",
+        "face": "face_04",
+        "prop": "prop_01",
+        "back": null
+      },
+      "reason": "Partial lower mouth/lip contact or very tight clearance; smaller severity than complete mouth occlusion."
+    }
+  ],
+  "alreadyAddressedExcluded": {
+    "knownCheekPairs": [
+      "body24/prop04",
+      "body24/prop11",
+      "body30/prop04",
+      "body30/prop11"
+    ],
+    "existingBodyTallProps": [
+      "prop04",
+      "prop05",
+      "prop11",
+      "prop13",
+      "prop30"
+    ],
+    "back17": "Root scale reduction pending in these older pages; known fishtail lower clipping excluded."
+  },
+  "noOtherDefiniteFindings": [
+    "No additional detached ear root or incorrect floppy-ear orientation observed.",
+    "No additional source cell remnant or clipped new face feature observed.",
+    "No new definite three-arm/ambiguous-foot anatomy defect observed.",
+    "No additional body, ear, headwear or back asset requires deletion based on this sample."
+  ],
+  "evidence": [
+    "random-ears-detail-1.jpg",
+    "random-ears-detail-2.jpg",
+    "random-ears-mouth-detail.jpg",
+    "random-ears-mouth-intersections.json"
+  ]
+}

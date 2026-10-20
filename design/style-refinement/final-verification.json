@@ -1,0 +1,17 @@
+{
+  "capturedAt": "2026-10-20T14:04:13.175Z",
+  "browserChecks": {
+    "rendering": "모든 검증 통과",
+    "flow": "모든 흐름 검증 통과",
+    "maker": "41개 모두 통과",
+    "random": "1024/1024 완료 · 오류 0",
+    "style": "36종 전후 비교 · 소품 36조합 · 손 방향 24조합 · 오류 0",
+    "handCalibration": "324개 손·소품 조합 검수 · 오류 0"
+  },
+  "visualReview": {
+    "randomCombinations": 1024,
+    "singleHandPropCombinations": 252,
+    "twoHandPropCombinations": 72,
+    "intentionalCentralHoldingAllowed": true
+  }
+}

@@ -40,7 +40,7 @@ def render(body, ears, face, prop, color=None):
     scene = Image.new('RGBA', (SIZE, 310))
     A = body['anchors']; S = 190 / body['w']
     left, top = 75, 290 - body['h'] * S
-    U = 190 / 313 * min(1.1, max(.72, math.sqrt((A['H'] * S) / REF_H)))
+    U = 190 / 313 * A.get('earScale', min(1.1, max(.72, math.sqrt((A['H'] * S) / REF_H))))
     def P(pt): return left + pt[0] * S, top + pt[1] * S
     def put(im, w, h, rx, ry, px, py, deg=0):
         ang = math.radians(deg); c, s = math.cos(ang), math.sin(ang)
@@ -58,10 +58,12 @@ def render(body, ears, face, prop, color=None):
     body_image = tinted(body, color)
     put(body_image, body['w'] * S, body['h'] * S, 0, 0, left, top)
     k = A['face'][2] * S * 1.2 / MED_FACE;px, py = P(A['face'])
-    put(rgba(face['src']), face['w'] * k, face['h'] * k, face['w'] * k / 2, face['h'] * k / 2, px, py)
+    put(rgba(face['src']), face['w'] * k, face['h'] * k, face['w'] * k / 2, face['h'] * k / 2, px, py,
+        A['face'][3] if len(A['face']) > 3 else 0)
     px, py = P(A['prop']); size = A['prop'][2] * S
     k = min(size / prop['w'], size * 1.25 / prop['h'])
-    put(rgba(prop['src']), prop['w'] * k, prop['h'] * k, prop['w'] * k / 2, prop['h'] * k / 2, px, py)
+    put(rgba(prop['src']), prop['w'] * k, prop['h'] * k, prop['w'] * k / 2, prop['h'] * k / 2, px, py,
+        A['prop'][3] if len(A['prop']) > 3 else 0)
     if body.get('arms'):
         a = np.array(rgba(body['arms'])); h, w = a.shape[:2]
         value = a[:, :, :3].max(axis=2)

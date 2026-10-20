@@ -1,0 +1,110 @@
+[
+  {
+    "contactPointBodyPixels": [
+      66.0018,
+      182.2035
+    ],
+    "contactErrorBodyPixels": 0.000326,
+    "handleSourceFraction": [
+      0.3,
+      0.82
+    ],
+    "rotationDelta": -50,
+    "scale": 0.85,
+    "beforeGapStagePixels": 0.0,
+    "afterGapStagePixels": 22.804,
+    "body": "body_24",
+    "prop": "prop_04",
+    "before": [
+      4.7,
+      -32.5
+    ],
+    "after": [
+      -17.31,
+      -21.468,
+      -50,
+      0.85
+    ]
+  },
+  {
+    "contactPointBodyPixels": [
+      73.9951,
+      184.9956
+    ],
+    "contactErrorBodyPixels": 0.000398,
+    "handleSourceFraction": [
+      0.42,
+      0.88
+    ],
+    "rotationDelta": -45,
+    "scale": 0.85,
+    "beforeGapStagePixels": 0.0,
+    "afterGapStagePixels": 23.409,
+    "body": "body_24",
+    "prop": "prop_11",
+    "before": [
+      3.99,
+      -32.73
+    ],
+    "after": [
+      -14.583,
+      -16.717,
+      -45,
+      0.85
+    ]
+  },
+  {
+    "contactPointBodyPixels": [
+      76.5027,
+      180.199
+    ],
+    "contactErrorBodyPixels": 0.000146,
+    "handleSourceFraction": [
+      0.3,
+      0.82
+    ],
+    "rotationDelta": -60,
+    "scale": 0.85,
+    "beforeGapStagePixels": 0.0,
+    "afterGapStagePixels": 22.825,
+    "body": "body_30",
+    "prop": "prop_04",
+    "before": [
+      2.11,
+      -31.22
+    ],
+    "after": [
+      -21.058,
+      -15.739,
+      -60,
+      0.85
+    ]
+  },
+  {
+    "contactPointBodyPixels": [
+      84.5036,
+      183.0041
+    ],
+    "contactErrorBodyPixels": 0.000541,
+    "handleSourceFraction": [
+      0.42,
+      0.88
+    ],
+    "rotationDelta": -50,
+    "scale": 0.85,
+    "beforeGapStagePixels": 0.0,
+    "afterGapStagePixels": 21.19,
+    "body": "body_30",
+    "prop": "prop_11",
+    "before": [
+      1.56,
+      -30.73
+    ],
+    "after": [
+      -16.44,
+      -12.054,
+      -50,
+      0.85
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+Use case: stylized-concept
+Asset type: 16 blank modular animal mascot BODY sprites, true transparent 4x4 sheet.
+Reference1 is the MAIN POSE reference: tiny round Chiikawa, arms waving outward, one leg bent and foot lifted, whole body gently tilted. Reference2 is short sparse Rakko fur texture. Reference3 is the authentic animal family and proportions. Draw new pose variants in this same Nagano/Chiikawa-like world, overwhelmingly cute, compact and natural.
+Overall: an equal 4 columns x4 rows invisible grid, 16 independent complete sprites with at least12% transparent cell padding. Each is a faceless earless pale cream animal body, big rounded head/upper body and a little round lower tummy. Some have a clearer smaller torso, some are a charming round mochi/hamster blob like the originals: keep tasteful body variety. NO long human neck or humanoid torso. Height/width1.0–1.30, NEVER over1.40. Tiny round paws and tiny close-set/asymmetric feet, one foot may bend back or lift. Slight whole-body lean4–7degrees where specified, head and body leaning naturally together.
+HAND CONVENTION: no object is drawn. A GRIP hand is a very small dark C-shaped curve on the lower front/side of the tummy, only7–9% of head width, at about y65–78% of body height, with pale body fill inside the little C. This C is a separate short ink stroke, not touching the outer contour, so it can overlay any held item later. One-hand poses have exactly ONE such C-grip on the named left/right side. The OTHER paw can be a tiny outward waving rounded arm nub integrated into the external silhouette. Two-hand poses have only two inward-facing small C curves ready to hug an item. Do not add additional black hand marks.
+Keep a large clear blank round HEAD area, no facial features. Animal identity comes from cheeks, small chest/tummy, minimal fur and little feet. Fur = only2–3short small cheek flicks for Momonga, only6–10short fine outer ticks in total for Rakko. NOT a serrated cloud outline, NOT heavy fluff.
+Cell-by-cell poses:
+1 compact classic round body, lean right4degrees, LEFT lower C-grip, RIGHT paw waving outward, right foot bent back and raised.
+2 classic little torso, lean left4degrees, RIGHT lower C-grip, LEFT paw waving, left foot lifted a little.
+3 round mochi body, TWO front C-grips, tiny feet a little splayed as a cheerful sit.
+4 slightly longer rabbit-like body without ears, gentle right lean6degrees, RIGHT side C-grip, other paw resting near chest as a tiny outline nub, one foot lifted.
+5 Momonga big cheek head with2–3small outer fur flicks each cheek, little tummy, lean left5degrees, LEFT C-grip, RIGHT paw waving, asymmetric tiny feet.
+6 Momonga cheek head, little body, lean right5degrees, RIGHT C-grip, LEFT paw waving, one foot up.
+7 Momonga fluffy-cheek compact sitting body, TWO small front C-grips, tiny hind feet forward.
+8 small short-haired animal body, LEFT C-grip, RIGHT paw raised, little lower tummy and right heel lifted.
+9 plump HAMSTER cheek head and round small belly, sitting, TWO small front C-grips, tiny feet forward.
+10 plump HAMSTER body leaning left6degrees, RIGHT C-grip, LEFT paw waving, tiny asymmetric feet. One tiny VERY PALE BEIGE forehead spot high at the crown, #ead9be.
+11 chubby traditional round mochi/hamster body, TWO front C-grips, one tiny foot held out to side. Tiny VERY PALE BEIGE round chest patch below/between paws, #efdfc4, no outline.
+12 soft baby bear-like body without ears, LEFT side C-grip, RIGHT paw waving, tiny lifted foot. Small VERY PALE CREAM-BEIGE chest patch #efdfc4, no outline.
+13 Rakko-like OTTER body, big round head and little torso, only6–10short sparse fur ticks total, lean right5degrees, LEFT C-grip, RIGHT paw waving, bent tiny foot.
+14 Rakko-like OTTER body, sparse6–10short outer fur ticks total, lean left5degrees, RIGHT C-grip, LEFT paw waving, tiny lifted foot.
+15 round OTTER sitting body,6–10short sparse fur ticks total, TWO front C-grips, tiny feet forward.
+16 soft round mochi animal, slight diagonal floating pose like reference1, LEFT lower side C-grip and RIGHT paw waving, one bent foot, no fur or patch.
+Ink/style: dark brown-black hand-drawn slightly wobbly simple contour about2% head width, no vector-perfect geometric outline, no heavy crayon lumps. Milky ivory #fffaf0 flat fill with just faint paper softness, tiny patches only where explicitly requested. Existing modular ears, faces, hats, props and tails will be added later by our game.
+STRICTLY NO face, eyes, nose, mouth, blush, eyebrows, ears, horns, tails, wings, hair tuft on crown, clothing, scarf, weapon, accessory, held object, text, labels, grid lines, shadow or background. Genuine alpha transparency, not fake checkerboard. Keep every complete paw and foot safely INSIDE its own cell.

@@ -1,0 +1,444 @@
+{
+  "status": "implemented_and_visually_verified",
+  "counts": {
+    "reviewed": 72,
+    "replace": 4,
+    "resize": 1,
+    "remove": 0,
+    "keep": 67
+  },
+  "parts": [
+    {
+      "id": "ears_01",
+      "label": "곰",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_02",
+      "label": "햄스터",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_03",
+      "label": "토끼",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_04",
+      "label": "고양이",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_05",
+      "label": "여우",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_06",
+      "label": "쥐",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_07",
+      "label": "돼지",
+      "decision": "keep",
+      "reason": "최근 접점을 수정한 처진 귀. 길이와 합성 동작을 그대로 보존한다."
+    },
+    {
+      "id": "ears_08",
+      "label": "양",
+      "decision": "keep",
+      "reason": "최근 접점을 수정한 처진 귀. 길이와 합성 동작을 그대로 보존한다."
+    },
+    {
+      "id": "ears_09",
+      "label": "너구리",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_10",
+      "label": "판다",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_11",
+      "label": "코알라",
+      "decision": "keep",
+      "reason": "부드러운 복슬 귀를 유지한다. 손가락 같은 과한 돌출은 없다."
+    },
+    {
+      "id": "ears_12",
+      "label": "아기 수달",
+      "decision": "keep",
+      "reason": "손가락 같은 옛 귀는 아기 수달의 작은 둥근 귀로 교체 완료됐다."
+    },
+    {
+      "id": "ears_13",
+      "label": "박쥐",
+      "decision": "replace",
+      "reason": "보라색 박쥐막과 날카로운 장각형 윤곽을 작고 둥근 귀로 교체한다."
+    },
+    {
+      "id": "ears_14",
+      "label": "사막여우",
+      "decision": "resize",
+      "reason": "전체 크기를 0.72배로 축소해 과도한 높이와 면적을 줄인다."
+    },
+    {
+      "id": "ears_15",
+      "label": "짧은 토끼",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_16",
+      "label": "짝짝이 토끼",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_17",
+      "label": "갈색 곰",
+      "decision": "keep",
+      "reason": "실제 자산은 둥근 곰귀다. 손/삼지창 형태는 예전 ears_12이며 이미 교체됐다."
+    },
+    {
+      "id": "ears_18",
+      "label": "하늘 고양이",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_19",
+      "label": "솜사탕 곰",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_20",
+      "label": "동글 아기 고양이",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_21",
+      "label": "통통 토끼",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_22",
+      "label": "말랑 강아지",
+      "decision": "keep",
+      "reason": "최근 접점을 수정한 처진 귀. 길이와 합성 동작을 그대로 보존한다."
+    },
+    {
+      "id": "ears_23",
+      "label": "폭신 아기 양",
+      "decision": "keep",
+      "reason": "부드러운 복슬 귀를 유지한다. 손가락 같은 과한 돌출은 없다."
+    },
+    {
+      "id": "ears_24",
+      "label": "크림 여우",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_25",
+      "label": "동글 생쥐",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_26",
+      "label": "복슬 알파카",
+      "decision": "keep",
+      "reason": "부드러운 복슬 귀를 유지한다. 손가락 같은 과한 돌출은 없다."
+    },
+    {
+      "id": "ears_27",
+      "label": "꾸벅 토끼",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_28",
+      "label": "살구 고양이",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_29",
+      "label": "아기 양",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_30",
+      "label": "코코 스패니얼",
+      "decision": "keep",
+      "reason": "최근 접점을 수정한 처진 귀. 길이와 합성 동작을 그대로 보존한다."
+    },
+    {
+      "id": "ears_31",
+      "label": "밤톨 다람쥐",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_32",
+      "label": "구름 코알라",
+      "decision": "keep",
+      "reason": "부드러운 복슬 귀를 유지한다. 손가락 같은 과한 돌출은 없다."
+    },
+    {
+      "id": "ears_33",
+      "label": "졸린 멍멍이",
+      "decision": "keep",
+      "reason": "최근 접점을 수정한 처진 귀. 길이와 합성 동작을 그대로 보존한다."
+    },
+    {
+      "id": "ears_34",
+      "label": "폭 접힌 토끼",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_35",
+      "label": "아기 사슴",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "ears_36",
+      "label": "아기 돼지",
+      "decision": "keep",
+      "reason": "둥글고 단순한 실루엣으로, 과도하게 날카롭거나 복잡한 특징이 없다."
+    },
+    {
+      "id": "face_01",
+      "label": "기본",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_02",
+      "label": "행복",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_03",
+      "label": "울먹",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_04",
+      "label": "엉엉",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_05",
+      "label": "놀람",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_06",
+      "label": "졸림",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_07",
+      "label": "화남",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_08",
+      "label": "반짝",
+      "decision": "keep",
+      "reason": "기존 별 눈 표현은 이 한 종만 남긴다."
+    },
+    {
+      "id": "face_09",
+      "label": "하트",
+      "decision": "keep",
+      "reason": "기존 하트 눈 표현은 이 한 종만 남긴다."
+    },
+    {
+      "id": "face_10",
+      "label": "어지러움",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_11",
+      "label": "충격",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_12",
+      "label": "냠냠",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_13",
+      "label": "윙크",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_14",
+      "label": "걱정",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_15",
+      "label": "멍",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_16",
+      "label": "깔깔",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_17",
+      "label": "의기양양",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_18",
+      "label": "결의",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_19",
+      "label": "빙긋",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_20",
+      "label": "두근",
+      "decision": "replace",
+      "reason": "커다란 별 동공이 face_08/27과 중복된다. 작은 콩눈과 작은 입으로 교체한다."
+    },
+    {
+      "id": "face_21",
+      "label": "수줍",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_22",
+      "label": "눈웃음",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_23",
+      "label": "우쭐",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_24",
+      "label": "오물오물",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_25",
+      "label": "졸꾸",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_26",
+      "label": "볼콕",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_27",
+      "label": "설렘",
+      "decision": "replace",
+      "reason": "별 동공과 열린 입을 작은 동그란 눈과 미니어처 웃음으로 교체한다."
+    },
+    {
+      "id": "face_28",
+      "label": "쿨쿨",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_29",
+      "label": "헤헤",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_30",
+      "label": "뽀뽀",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_31",
+      "label": "갸웃",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_32",
+      "label": "뿌듯",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_33",
+      "label": "까꿍",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_34",
+      "label": "찡긋",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    },
+    {
+      "id": "face_35",
+      "label": "하트 콩눈",
+      "decision": "replace",
+      "reason": "거대한 하트 눈이 face_09와 중복된다. 작은 콩눈과 부드러운 윙크로 교체한다."
+    },
+    {
+      "id": "face_36",
+      "label": "콩눈 미소",
+      "decision": "keep",
+      "reason": "단순한 눈매와 작은 입 중심의 감정 표현을 유지한다."
+    }
+  ]
+}

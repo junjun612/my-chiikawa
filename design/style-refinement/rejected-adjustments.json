@@ -1,0 +1,14 @@
+{
+  "reason": "User prefers the before: central two-hand hugging/eating reads cuter than moving every item aside to keep the mouth visible.",
+  "notApplied": [
+    "body/mouth-prop-overrides.json",
+    "body/legacy-handle-overrides.json",
+    "body/two-hand-prop-overrides.json",
+    "body/remaining-handle-overrides.json"
+  ],
+  "kept": "Central two-hand poses; outstretched left/right single-hand edge grip. Final offsets: body/hand-offsets.json.",
+  "supersededByRaisedHand": [
+    "body/stem-prop-overrides.json",
+    "body/cheek-prop-overrides.json"
+  ]
+}

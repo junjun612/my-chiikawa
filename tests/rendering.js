@@ -23,6 +23,25 @@
     check("Canvas 필터 미지원 환경에서 렌더", a[3] === 255 && b[3] === 255);
     check("35% 라이팅: 흰 몸의 밤 색상 변화", redDrop >= 16 && redDrop <= 24 && b[0] >= 225, `${a} → ${b}`);
     check("PNG 인코딩", day.toDataURL("image/png").startsWith("data:image/png;base64,"));
+    const NativeImage = window.Image;
+    const source = Object.getOwnPropertyDescriptor(HTMLImageElement.prototype, 'src');
+    let interrupted = false, recovered;
+    window.Image = function () {
+      const image = new NativeImage();
+      Object.defineProperty(image, 'src', {
+        get() { return source.get.call(image); },
+        set(url) {
+          if (url.includes('_retryTest') && !interrupted) {
+            interrupted = true;
+            queueMicrotask(() => image.onerror(new Event('error')));
+          } else source.set.call(image, url);
+        },
+      });
+      return image;
+    };
+    try { recovered = await C.loadImg('parts/ears/ears_21_L_line.webp?_retryTest=1'); }
+    finally { window.Image = NativeImage; }
+    check("일시적인 이미지 로딩 실패 후 자동 복구", interrupted && recovered.naturalWidth > 0);
     check("5월 민트", window.QUIZ.months[5][0] === "#f1faf4");
     check("공룡 꼬리 제거", !C.findPart("back", "back_16") && !window.QUIZ.pools.back.T.includes(16));
     check("파스텔 랜덤 팔레트", Array.from({ length: 100 }, (_, seed) => C.randomLook(C.rng(seed))).every((r) =>
@@ -99,7 +118,7 @@
     } finally { handBody.arms = originalArms; }
     const data = [withHands, withoutProp, noHands].map((cv) => cv.getContext("2d").getImageData(0, 0, 512, 512).data);
     let covered = 0;
-    for (let y = 350; y < 402; y++) for (let x = 224; x < 288; x++) {
+    for (let y = 0; y < 512; y++) for (let x = 0; x < 512; x++) {
       const i = (y * 512 + x) * 4;
       const restored = [0, 1, 2].every((c) => Math.abs(data[0][i + c] - data[1][i + c]) < 4);
       const propWasVisible = [0, 1, 2].some((c) => Math.abs(data[2][i + c] - data[1][i + c]) > 20);

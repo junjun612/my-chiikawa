@@ -1,0 +1,40 @@
+{
+  "counts": {
+    "body": 26,
+    "ears": 36,
+    "deco": 36,
+    "face": 36,
+    "prop": 36,
+    "back": 26
+  },
+  "replacements": {
+    "body": [
+      "body/replacements.json",
+      "body/legacy-hand-replacements.json",
+      "body/raised-hand-replacements.json"
+    ],
+    "ears": "ears-face/ears-replacements.json",
+    "face": "face-simplification/face-replacements.json",
+    "deco": "accessories/deco-replacements.json",
+    "back": "accessories/back-replacements.json"
+  },
+  "propOffsets": [
+    "body/hand-offsets.json"
+  ],
+  "retired": {
+    "body": [
+      "body_18",
+      "body_22",
+      "body_26",
+      "body_31"
+    ],
+    "back": [
+      "back_10",
+      "back_11",
+      "back_12",
+      "back_30",
+      "back_31",
+      "back_32"
+    ]
+  }
+}

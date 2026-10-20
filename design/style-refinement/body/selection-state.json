@@ -1,0 +1,17 @@
+{
+  "status": "Complete: anatomy-corrected9 and independent head frames published to stable IDs; body25 left-hand switch included.",
+  "source": "pose-anatomy-fixed-sheet.png",
+  "body25_source_edit": "body25-hand-switch-source.png",
+  "final_manifest": "replacements.json",
+  "raw9": "pose-selection-nine.jpg",
+  "representative45": "pose-grip-review-final.jpg",
+  "final9_compositions": "final-nine-compositions.jpg",
+  "validation": "pose-validation.json",
+  "final_catalog": 25,
+  "keep": 16,
+  "replace": 9,
+  "remove": 5,
+  "asset_files": 36,
+  "asset_bytes": 463960,
+  "built_in_imagegen": true
+}

@@ -1,0 +1,49 @@
+Final broad-prop placement proposal, 2026-10-20.
+
+Scope:26 bodies (including restored original body04) ×31 broad props ×36 faces
+=29,016 face/prop combinations. Thin prop04/05/11/13/30 are excluded because
+root and bodyagent own those five handle placements. Only the independent
+mouth-prop-overrides.json was produced for catalog merge. No product image,
+global engine, parts catalog or shared body manifest was changed by this work.
+
+662 pair overrides:207 keep a central hold with a small downward move/shrink;
+455 use an existing outer C hand, preferentially the right hand.144 pairs remain
+unchanged. The other25 bodies' calculated results were preserved when body04's
+31 pair records were appended. A single visual QA improvement changed the
+body06 envelope from a tiny/steep right-hand candidate to a full-size envelope
+with10-degree tilt in the original left hand. All31 body25 positions, including
+the user-preferred prop15 [-39,-24], are unchanged.
+
+Geometry:every facial alpha sprite is transformed at the actual body-specific
+face anchor/rotation. All36 opaque face masks are combined, including colored
+cheeks/tears as well as dark ink. Search uses3 logicalpx clearance; final exact
+serialized-output checks require2px. Current central layouts that already clear
+the36 faces are retained. Interfering layouts first try a small move below the
+face or small shrink. Outer holds align a real prop alpha contour with an actual
+original hand ink pixel. C-hand upper/lower ends are sampled separately to avoid
+choosing a floating bbox corner. For very tall items the upper side is sometimes
+held rather than forcing its lower corner upward into the face. The other hand
+remains a resting hand. No arbitrary hand/prop shape was redrawn.
+
+Final validation after rounded offsets:806/806 pairs have0 opaque face overlap
+with2px margin; every pair retains at least6 pixels of contact with original
+hand ink. Minimum changed scale is.76; no.65 shrink remains. Maximum rotation
+is70 degrees, limited to candidates that require it. Most changes retain size1
+and angles0–30. No object was placed below the447px safety bound or outside the
+central360px stage width. These measurements are source-sprite geometry; root
+performs actual Canvas/shading verification independently.
+
+Human QA:all26 after-body_XX.jpg pages were directly viewed (all806 final pair
+compositions with their most affected baseline expression), along with the18
+worst before/after pairs. before-after-reported8.jpg shows the specifically
+reported can, drink, sandwich, cookie, teddy and gift cases, plus preservation
+of body25's user-preferred donut hold. These sheets verify natural attachment
+and object readability as well as numerical clearance. Some tall legacy items
+are held diagonally outside the head because the large original cheeks/tears
+extend down to the hand area; no90-degree forced rotation was used.
+
+Artifacts:baseline-parts.json freezes the pre-proposal metadata for reproducible
+pre/post comparisons. prepare_overrides.py reproduces the full calculation;
+append_body04.py preserves the original25 results while adding restored04 and
+the single envelope QA improvement. audit.json records all806 cases and source
+contacts; final-validation.json records the serialized final checks.

@@ -1,0 +1,7 @@
+Use case: precise-object-edit
+Edit target: Image 1, the transparent four-by-four blank creature body sheet.
+Make exactly two precise corrections to ALL sixteen sprites, keeping every other drawing, color, texture, outline thickness, grid placement and transparency unchanged.
+1. Remove the little round single bump/tuft sticking out of the TOP CENTER of the head on rows 1, 2 and 4. Replace it with one continuous softly rounded dome following the existing head curve. All sixteen bodies must have a plain smooth rounded crown with NO hair tuft or bump. Preserve the main broad rounded upper head and gently narrower lower tummy.
+2. Remove the tiny extra HAND/ARM NUB sticking OUTWARD from each LEFT and RIGHT side of the silhouette around waist height. They currently make each creature look like it has FOUR hands. Smooth the external silhouette where those nubs were, blending the broad rounded head into the slightly narrower lower body without sharp corners or neck lines.
+KEEP the two black C-shaped hands already drawn on the FRONT of the lower tummy at the exact same positions. Do NOT remove, move, enlarge or redraw these two front C-hands. The only hands must be these two FRONT C-curves, as in reference image 2. Keep the two tiny close-set feet at the exact same positions.
+Keep all sixteen body shapes and subtle proportion variants otherwise identical. No ears, faces, eyes, blush, noses, mouths, patterns, belly patches, tails, wings, accessories or text. Genuine transparent alpha backdrop. Preserve 4x4 grid layout and full clear padding around each cell.

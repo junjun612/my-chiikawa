@@ -1,0 +1,19 @@
+Use case: precise-object-edit
+Edit target: Image1, existing transparent four-by-four faceless body pose sheet.
+This is a PRECISE ANATOMY CLEANUP, NOT a redesign. Keep every character's main body/head shape, fur, tilt, color, small marking, ink style, texture, front C-grip positions and exact grid cell placement unchanged.
+CRITICAL ERROR TO FIX: a grip-side external elbow/arm bulge plus an internal C-hand currently reads as TWO hands on the SAME side. Each one-hand character must have EXACTLY TWO ARMS TOTAL: ONE existing internal C-grip, and ONE waving paw on the OPPOSITE side. NO external elbow, nub, hand, arm, hook or bump may remain on the GRIP SIDE. Smooth that entire side's contour into a continuous natural head-to-tummy curve where the false arm bulge was removed. Keep the internal C-grip exactly as it is. Do not move or redraw it.
+Specific cell assignments, numbered left-to-right top-to-bottom:
+Cell1: LEFT is grip side: remove LEFT external arm/elbow nub; keep RIGHT waving paw.
+Cell2: RIGHT is grip side: remove RIGHT external arm/elbow nub; keep LEFT waving paw.
+Cell5: LEFT grip side smooth; keep RIGHT waving paw.
+Cell6: RIGHT grip side smooth; keep LEFT waving paw.
+Cell8: LEFT grip side smooth; keep RIGHT waving paw.
+Cell10: RIGHT grip side smooth; keep LEFT waving paw; keep pale forehead spot.
+Cell12: LEFT grip side smooth; keep RIGHT waving paw; keep pale chest patch.
+Cell13: LEFT grip side smooth; keep RIGHT waving paw.
+Cell14: RIGHT grip side smooth; keep LEFT waving paw; sparse fur ticks remain small, not arm nubs.
+Cell16: LEFT grip side smooth; keep RIGHT waving paw.
+Cell4 is unused; remove its extra upper left internal C so it has only one grip and one opposite waving paw, or leave it otherwise unchanged.
+Leave TWO-HAND sitting cells3,7,9,11,15 completely UNCHANGED.
+SECOND CRITICAL FIX for all one-hand cells listed above: remove every high side/bent-back foot stub and every short detached black curve below the body. Replace with TWO unmistakable tiny CLOSED-OUTLINE rounded feet attached at the VERY BOTTOM edge of the lower tummy. Both feet must originate in the bottom10–15% of the body, close to x43% and57% of the lower tummy. A slight angle difference is fine; do NOT place any foot stub on the side at hand height. No floating foot fragment. No extra leg line. Keep whole body slightly tilted as before, but use two clear simple bottom feet. It is fine if the character now stands rather than balances on one foot.
+Final visual check: one-hand poses have ONE C mark + ONE opposite outward waving paw + TWO small bottom feet, instantly readable. Not three arms, not two hands on one side, not a foot mistaken for a hand. No face/eyes/ears/tail/accessory/held object/text/shadow added. Exact same transparent4x4 sheet, full padding, all original style and color preserved.

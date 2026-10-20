@@ -1,0 +1,892 @@
+{
+  "target_pairs": 20,
+  "changed_pairs": 19,
+  "kept_pairs": 1,
+  "face_count": 36,
+  "face_combinations_checked": 720,
+  "maximum_after_face_opaque_overlap_pixels": 0,
+  "source_images_changed": false,
+  "shared_metadata_changed": false,
+  "records": [
+    {
+      "body": "body_17",
+      "prop": "prop_04",
+      "before_offset": [
+        22.88,
+        -26.42,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 158,
+      "before_face_max_overlap_pixels": 101,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        20.758,
+        -14.828,
+        2,
+        1
+      ],
+      "after_total_rotation": 20,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 1.4,
+      "right_or_left_hand_ink_overlap_pixels": 132,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        151.0,
+        201.674
+      ],
+      "normalized_grip": [
+        0.206061,
+        0.786026
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        263,
+        351,
+        324,
+        409
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_17",
+      "prop": "prop_05",
+      "before_offset": [
+        -2.57,
+        -25.81,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 52,
+      "before_face_max_overlap_pixels": 52,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        -6.394,
+        -21.723,
+        0,
+        0.9
+      ],
+      "after_total_rotation": 18,
+      "after_scale": 0.9,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.0,
+      "right_or_left_hand_ink_overlap_pixels": 155,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        151.0,
+        201.674
+      ],
+      "normalized_grip": [
+        0.594595,
+        0.850877
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        253,
+        352,
+        300,
+        403
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_17",
+      "prop": "prop_13",
+      "before_offset": [
+        10.03,
+        -18.05,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 0,
+      "before_face_max_overlap_pixels": 0,
+      "before_face_gap_stage_px": 3.0,
+      "changed": false,
+      "after_offset": [
+        10.03,
+        -18.05,
+        0,
+        1
+      ],
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 3.0
+    },
+    {
+      "body": "body_19",
+      "prop": "prop_04",
+      "before_offset": [
+        3.82,
+        -33.72,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 342,
+      "before_face_max_overlap_pixels": 312,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        18.467,
+        -20.566,
+        4,
+        0.8
+      ],
+      "after_total_rotation": -15,
+      "after_scale": 0.8,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.0,
+      "right_or_left_hand_ink_overlap_pixels": 178,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        76.5,
+        197.589
+      ],
+      "normalized_grip": [
+        0.206061,
+        0.786026
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        207,
+        343,
+        243,
+        399
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_19",
+      "prop": "prop_05",
+      "before_offset": [
+        7.55,
+        -23.14,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 20,
+      "before_face_max_overlap_pixels": 15,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        -6.305,
+        -19.012,
+        0,
+        1
+      ],
+      "after_total_rotation": -19,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.0,
+      "right_or_left_hand_ink_overlap_pixels": 175,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        76.5,
+        197.589
+      ],
+      "normalized_grip": [
+        0.594595,
+        0.850877
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        181,
+        346,
+        232,
+        397
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_19",
+      "prop": "prop_13",
+      "before_offset": [
+        7.8,
+        -33.41,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 299,
+      "before_face_max_overlap_pixels": 225,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        20.566,
+        -23.652,
+        4,
+        0.95
+      ],
+      "after_total_rotation": -15,
+      "after_scale": 0.95,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 1.4,
+      "right_or_left_hand_ink_overlap_pixels": 196,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        76.5,
+        197.589
+      ],
+      "normalized_grip": [
+        0.236559,
+        0.801932
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        210,
+        336,
+        250,
+        400
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_21",
+      "prop": "prop_04",
+      "before_offset": [
+        6.03,
+        -19.17,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 112,
+      "before_face_max_overlap_pixels": 84,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        19.437,
+        -11.256,
+        2,
+        1
+      ],
+      "after_total_rotation": 20,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.197,
+      "right_or_left_hand_ink_overlap_pixels": 144,
+      "contact_shift_stage": [
+        0,
+        4
+      ],
+      "grip_center_source": [
+        159.5,
+        190.574
+      ],
+      "normalized_grip": [
+        0.206061,
+        0.786026
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        276,
+        349,
+        335,
+        405
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_21",
+      "prop": "prop_05",
+      "before_offset": [
+        5.64,
+        -26.67,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 144,
+      "before_face_max_overlap_pixels": 132,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        -5.562,
+        -17.604,
+        0,
+        0.9
+      ],
+      "after_total_rotation": 18,
+      "after_scale": 0.9,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.0,
+      "right_or_left_hand_ink_overlap_pixels": 168,
+      "contact_shift_stage": [
+        0,
+        4
+      ],
+      "grip_center_source": [
+        159.5,
+        190.574
+      ],
+      "normalized_grip": [
+        0.594595,
+        0.850877
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        266,
+        350,
+        312,
+        399
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_21",
+      "prop": "prop_13",
+      "before_offset": [
+        24.92,
+        -22.21,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 1,
+      "before_face_max_overlap_pixels": 1,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        18.252,
+        -10.74,
+        0,
+        1
+      ],
+      "after_total_rotation": 18,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 7.394,
+      "right_or_left_hand_ink_overlap_pixels": 152,
+      "contact_shift_stage": [
+        0,
+        4
+      ],
+      "grip_center_source": [
+        159.5,
+        190.574
+      ],
+      "normalized_grip": [
+        0.236559,
+        0.801932
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        275,
+        355,
+        338,
+        402
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_24",
+      "prop": "prop_05",
+      "before_offset": [
+        8.64,
+        -22.73,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 45,
+      "before_face_max_overlap_pixels": 44,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        -8.583,
+        -16.754,
+        -9,
+        1
+      ],
+      "after_total_rotation": -25,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.0,
+      "right_or_left_hand_ink_overlap_pixels": 157,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        74.0,
+        187.516
+      ],
+      "normalized_grip": [
+        0.594595,
+        0.850877
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        180,
+        348,
+        228,
+        398
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_24",
+      "prop": "prop_13",
+      "before_offset": [
+        8.51,
+        -32.01,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 259,
+      "before_face_max_overlap_pixels": 186,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        17.905,
+        -20.266,
+        0,
+        0.85
+      ],
+      "after_total_rotation": -16,
+      "after_scale": 0.85,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 3.597,
+      "right_or_left_hand_ink_overlap_pixels": 152,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        74.0,
+        187.516
+      ],
+      "normalized_grip": [
+        0.236559,
+        0.801932
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        211,
+        342,
+        246,
+        399
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_24",
+      "prop": "prop_30",
+      "before_offset": [
+        -7.11,
+        -27.48,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 256,
+      "before_face_max_overlap_pixels": 242,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        -16.669,
+        -15.684,
+        -34,
+        1
+      ],
+      "after_total_rotation": -50,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 1.4,
+      "right_or_left_hand_ink_overlap_pixels": 220,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        74.0,
+        187.516
+      ],
+      "normalized_grip": [
+        0.518519,
+        0.9
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        170,
+        344,
+        230,
+        405
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_28",
+      "prop": "prop_04",
+      "before_offset": [
+        5.98,
+        -19.58,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 183,
+      "before_face_max_overlap_pixels": 131,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        20.922,
+        -9.09,
+        7,
+        1
+      ],
+      "after_total_rotation": 25,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.0,
+      "right_or_left_hand_ink_overlap_pixels": 134,
+      "contact_shift_stage": [
+        0,
+        4
+      ],
+      "grip_center_source": [
+        162.5,
+        192.658
+      ],
+      "normalized_grip": [
+        0.206061,
+        0.786026
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        276,
+        352,
+        337,
+        405
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_28",
+      "prop": "prop_05",
+      "before_offset": [
+        5.38,
+        -27.14,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 224,
+      "before_face_max_overlap_pixels": 189,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        -7.214,
+        -16.642,
+        -3,
+        0.85
+      ],
+      "after_total_rotation": 15,
+      "after_scale": 0.85,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.0,
+      "right_or_left_hand_ink_overlap_pixels": 162,
+      "contact_shift_stage": [
+        0,
+        4
+      ],
+      "grip_center_source": [
+        162.5,
+        192.658
+      ],
+      "normalized_grip": [
+        0.594595,
+        0.850877
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        266,
+        352,
+        310,
+        399
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_28",
+      "prop": "prop_11",
+      "before_offset": [
+        4.33,
+        -28.52,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 493,
+      "before_face_max_overlap_pixels": 394,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        21.2,
+        -7.806,
+        27,
+        1
+      ],
+      "after_total_rotation": 45,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.0,
+      "right_or_left_hand_ink_overlap_pixels": 104,
+      "contact_shift_stage": [
+        0,
+        4
+      ],
+      "grip_center_source": [
+        162.5,
+        192.658
+      ],
+      "normalized_grip": [
+        0.345912,
+        0.833333
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        277,
+        352,
+        340,
+        400
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_28",
+      "prop": "prop_13",
+      "before_offset": [
+        24.92,
+        -22.59,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 4,
+      "before_face_max_overlap_pixels": 4,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        18.274,
+        -10.97,
+        0,
+        1
+      ],
+      "after_total_rotation": 18,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 6.0,
+      "right_or_left_hand_ink_overlap_pixels": 146,
+      "contact_shift_stage": [
+        0,
+        4
+      ],
+      "grip_center_source": [
+        162.5,
+        192.658
+      ],
+      "normalized_grip": [
+        0.236559,
+        0.801932
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        275,
+        355,
+        338,
+        402
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_28",
+      "prop": "prop_30",
+      "before_offset": [
+        9.1,
+        -27.68,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 362,
+      "before_face_max_overlap_pixels": 295,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        22.389,
+        -10.976,
+        42,
+        1
+      ],
+      "after_total_rotation": 60,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.0,
+      "right_or_left_hand_ink_overlap_pixels": 169,
+      "contact_shift_stage": [
+        2,
+        4
+      ],
+      "grip_center_source": [
+        165.079,
+        192.658
+      ],
+      "normalized_grip": [
+        0.518519,
+        0.9
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        279,
+        352,
+        342,
+        410
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_30",
+      "prop": "prop_05",
+      "before_offset": [
+        -9.18,
+        -26.41,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 206,
+      "before_face_max_overlap_pixels": 185,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        -9.032,
+        -13.301,
+        -10,
+        0.95
+      ],
+      "after_total_rotation": -30,
+      "after_scale": 0.95,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.0,
+      "right_or_left_hand_ink_overlap_pixels": 130,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        84.5,
+        185.474
+      ],
+      "normalized_grip": [
+        0.594595,
+        0.850877
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        191,
+        354,
+        237,
+        399
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_30",
+      "prop": "prop_13",
+      "before_offset": [
+        5.8,
+        -31,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 270,
+      "before_face_max_overlap_pixels": 180,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        13.163,
+        -18.82,
+        -5,
+        0.8
+      ],
+      "after_total_rotation": -25,
+      "after_scale": 0.8,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 2.197,
+      "right_or_left_hand_ink_overlap_pixels": 132,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        84.5,
+        185.474
+      ],
+      "normalized_grip": [
+        0.236559,
+        0.801932
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        220,
+        347,
+        248,
+        401
+      ],
+      "changed": true
+    },
+    {
+      "body": "body_30",
+      "prop": "prop_30",
+      "before_offset": [
+        -8.89,
+        -25.61,
+        0,
+        1
+      ],
+      "before_face_union_overlap_pixels": 345,
+      "before_face_max_overlap_pixels": 310,
+      "before_face_gap_stage_px": 0.0,
+      "after_offset": [
+        -20.023,
+        -7.827,
+        -45,
+        1
+      ],
+      "after_total_rotation": -65,
+      "after_scale": 1,
+      "after_face_opaque_overlap_pixels": 0,
+      "after_face_gap_stage_px": 4.0,
+      "right_or_left_hand_ink_overlap_pixels": 209,
+      "contact_shift_stage": [
+        0,
+        2
+      ],
+      "grip_center_source": [
+        84.5,
+        185.474
+      ],
+      "normalized_grip": [
+        0.518519,
+        0.9
+      ],
+      "grip_error_stage_px": 0.0,
+      "stage_bounds": [
+        177,
+        356,
+        236,
+        412
+      ],
+      "changed": true
+    }
+  ],
+  "minimum_changed_scale": 0.8,
+  "minimum_changed_face_gap_stage_px": 1.4,
+  "minimum_changed_hand_ink_overlap_pixels": 104,
+  "maximum_contact_shift_stage_px": 4.47213595499958,
+  "visual_compositions_inspected": 80,
+  "visual_faces": [
+    "face_04",
+    "face_19"
+  ],
+  "kept_pair": {
+    "body": "body_17",
+    "prop": "prop_13"
+  },
+  "untouched_known_small_clearance_pairs": [
+    "body_02/prop_05",
+    "body_06/prop_05",
+    "body_14/prop_05",
+    "body_14/prop_11",
+    "body_20/prop_05",
+    "body_27/prop_04",
+    "body_29/prop_11"
+  ]
+}

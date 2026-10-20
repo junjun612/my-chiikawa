@@ -1,0 +1,19 @@
+[
+  {
+    "id": "deco_08",
+    "label": "우유빛 매듭 리본",
+    "kind": "side",
+    "src": "parts/deco/deco_08.webp",
+    "w": 144,
+    "h": 98
+  },
+  {
+    "id": "deco_09",
+    "label": "깃털",
+    "kind": "top",
+    "sink": 0.2,
+    "src": "parts/deco/deco_09.webp",
+    "w": 162.5,
+    "h": 151.45
+  }
+]

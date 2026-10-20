@@ -1,0 +1,127 @@
+[
+  {
+    "id": "ears_13",
+    "label": "박쥐",
+    "src": "parts/ears/ears_13.webp",
+    "w": 335,
+    "h": 185,
+    "color": "#fadef4",
+    "line": "parts/ears/ears_13_line.webp",
+    "fill": "parts/ears/ears_13_fill.webp",
+    "L": {
+      "src": "parts/ears/ears_13_L.webp",
+      "w": 138,
+      "h": 185,
+      "color": "#fadef4",
+      "line": "parts/ears/ears_13_L_line.webp",
+      "fill": "parts/ears/ears_13_L_fill.webp",
+      "root": [
+        68,
+        179
+      ]
+    },
+    "R": {
+      "src": "parts/ears/ears_13_R.webp",
+      "w": 138,
+      "h": 185,
+      "color": "#fadef4",
+      "line": "parts/ears/ears_13_R_line.webp",
+      "fill": "parts/ears/ears_13_R_fill.webp",
+      "root": [
+        68.5,
+        179
+      ]
+    }
+  },
+  {
+    "id": "ears_14",
+    "label": "사막여우",
+    "src": "parts/ears/ears_14.webp",
+    "w": 366,
+    "h": 284,
+    "color": "#fef6df",
+    "line": "parts/ears/ears_14_line.webp",
+    "fill": "parts/ears/ears_14_fill.webp",
+    "L": {
+      "src": "parts/ears/ears_14_L.webp",
+      "w": 168,
+      "h": 284,
+      "color": "#fef6df",
+      "line": "parts/ears/ears_14_L_line.webp",
+      "fill": "parts/ears/ears_14_L_fill.webp",
+      "root": [
+        84,
+        278
+      ]
+    },
+    "R": {
+      "src": "parts/ears/ears_14_R.webp",
+      "w": 167,
+      "h": 283,
+      "color": "#fef6df",
+      "line": "parts/ears/ears_14_R_line.webp",
+      "fill": "parts/ears/ears_14_R_fill.webp",
+      "root": [
+        83.5,
+        278
+      ]
+    }
+  },
+  {
+    "id": "face_20",
+    "label": "두근",
+    "src": "parts/face/face_20.webp",
+    "w": 323,
+    "h": 137.133,
+    "cheeks": [
+      [
+        49.22,
+        98.92,
+        40.46
+      ],
+      [
+        273.22,
+        99.45,
+        40.46
+      ]
+    ]
+  },
+  {
+    "id": "face_27",
+    "label": "설렘",
+    "src": "parts/face/face_27.webp",
+    "w": 323,
+    "h": 130.067,
+    "cheeks": [
+      [
+        48.9,
+        90.18,
+        40.06
+      ],
+      [
+        272.74,
+        92.15,
+        39.61
+      ]
+    ]
+  },
+  {
+    "id": "face_35",
+    "label": "하트 콩눈",
+    "src": "parts/face/face_35.webp",
+    "w": 323,
+    "h": 159.193,
+    "cheeks": [
+      [
+        66.38,
+        93.67,
+        48.93
+      ],
+      [
+        256.1,
+        90.86,
+        48.45
+      ]
+    ]
+  }
+]

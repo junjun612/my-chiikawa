@@ -1,0 +1,858 @@
+{
+  "items": [
+    {
+      "id": "face_19",
+      "sheet": 2,
+      "cell": 1,
+      "label": "잔잔한 미소",
+      "eyeType": "dot",
+      "scale": 1.05754,
+      "sourceOrigin": [
+        163.253,
+        192.024
+      ],
+      "contentBBox": [
+        42,
+        84,
+        279,
+        157
+      ],
+      "sourceCell": [
+        323.75,
+        303.5
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            112.1,
+            172.38,
+            23.27,
+            24.32
+          ],
+          "width": 23.27,
+          "height": 24.32
+        },
+        {
+          "bbox": [
+            210.45,
+            172.38,
+            22.21,
+            23.27
+          ],
+          "width": 22.21,
+          "height": 23.27
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_20",
+      "sheet": 2,
+      "cell": 3,
+      "label": "반가워",
+      "eyeType": "bean",
+      "scale": 1.05754,
+      "sourceOrigin": [
+        161.52,
+        194.067
+      ],
+      "contentBBox": [
+        41,
+        78,
+        281,
+        157
+      ],
+      "sourceCell": [
+        323.75,
+        303.5
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            107.87,
+            169.21,
+            24.32,
+            32.78
+          ],
+          "width": 24.32,
+          "height": 32.78
+        },
+        {
+          "bbox": [
+            210.45,
+            169.21,
+            24.32,
+            32.78
+          ],
+          "width": 24.32,
+          "height": 32.78
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_21",
+      "sheet": 2,
+      "cell": 6,
+      "label": "갸우뚱",
+      "eyeType": "dot",
+      "scale": 1.05754,
+      "sourceOrigin": [
+        163.058,
+        195.464
+      ],
+      "contentBBox": [
+        41,
+        43,
+        280,
+        156
+      ],
+      "sourceCell": [
+        323.75,
+        303.5
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            106.81,
+            176.61,
+            24.32,
+            24.32
+          ],
+          "width": 24.32,
+          "height": 24.32
+        },
+        {
+          "bbox": [
+            212.57,
+            176.61,
+            23.27,
+            23.27
+          ],
+          "width": 23.27,
+          "height": 23.27
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_22",
+      "sheet": 1,
+      "cell": 4,
+      "label": "눈웃음",
+      "eyeType": "closed",
+      "scale": 1.08606,
+      "sourceOrigin": [
+        143.93,
+        202.466
+      ],
+      "contentBBox": [
+        29,
+        76,
+        296,
+        160
+      ],
+      "sourceCell": [
+        315.25,
+        311.75
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            78.2,
+            182.46,
+            47.79,
+            28.24
+          ],
+          "width": 47.79,
+          "height": 28.24
+        },
+        {
+          "bbox": [
+            192.23,
+            182.46,
+            46.7,
+            27.15
+          ],
+          "width": 46.7,
+          "height": 27.15
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_23",
+      "sheet": 1,
+      "cell": 3,
+      "label": "나른해",
+      "eyeType": "half",
+      "scale": 1.08606,
+      "sourceOrigin": [
+        155.555,
+        203.309
+      ],
+      "contentBBox": [
+        27,
+        89,
+        299,
+        161
+      ],
+      "sourceCell": [
+        315.25,
+        311.75
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            85.8,
+            197.66,
+            44.53,
+            13.03
+          ],
+          "width": 44.53,
+          "height": 13.03
+        },
+        {
+          "bbox": [
+            207.44,
+            196.58,
+            45.61,
+            13.03
+          ],
+          "width": 45.61,
+          "height": 13.03
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_24",
+      "sheet": 1,
+      "cell": 6,
+      "label": "궁금해",
+      "eyeType": "dot",
+      "scale": 1.08606,
+      "sourceOrigin": [
+        164.95,
+        190.031
+      ],
+      "contentBBox": [
+        27,
+        82,
+        297,
+        161
+      ],
+      "sourceCell": [
+        315.25,
+        311.75
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            107.52,
+            175.94,
+            24.98,
+            26.07
+          ],
+          "width": 24.98,
+          "height": 26.07
+        },
+        {
+          "bbox": [
+            225.9,
+            174.86,
+            26.07,
+            26.07
+          ],
+          "width": 26.07,
+          "height": 26.07
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_25",
+      "sheet": 1,
+      "cell": 13,
+      "label": "조심조심",
+      "eyeType": "dot",
+      "scale": 1.08606,
+      "sourceOrigin": [
+        179.545,
+        148.678
+      ],
+      "contentBBox": [
+        28,
+        36,
+        298,
+        162
+      ],
+      "sourceCell": [
+        315.25,
+        311.75
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            125.98,
+            127.07,
+            24.98,
+            26.07
+          ],
+          "width": 24.98,
+          "height": 26.07
+        },
+        {
+          "bbox": [
+            234.59,
+            125.98,
+            26.07,
+            26.07
+          ],
+          "width": 26.07,
+          "height": 26.07
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_26",
+      "sheet": 1,
+      "cell": 2,
+      "label": "수줍은 미소",
+      "eyeType": "dot",
+      "scale": 1.08606,
+      "sourceOrigin": [
+        164.304,
+        200.36
+      ],
+      "contentBBox": [
+        32,
+        84,
+        293,
+        160
+      ],
+      "sourceCell": [
+        315.25,
+        311.75
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            106.43,
+            190.06,
+            24.98,
+            26.07
+          ],
+          "width": 24.98,
+          "height": 26.07
+        },
+        {
+          "bbox": [
+            223.73,
+            187.89,
+            26.07,
+            27.15
+          ],
+          "width": 26.07,
+          "height": 27.15
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_27",
+      "sheet": 2,
+      "cell": 4,
+      "label": "만족해",
+      "eyeType": "closed",
+      "scale": 1.05754,
+      "sourceOrigin": [
+        162.215,
+        194.051
+      ],
+      "contentBBox": [
+        41,
+        78,
+        280,
+        157
+      ],
+      "sourceCell": [
+        323.75,
+        303.5
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            105.75,
+            170.26,
+            40.19,
+            23.27
+          ],
+          "width": 40.19,
+          "height": 23.27
+        },
+        {
+          "bbox": [
+            201.99,
+            170.26,
+            41.24,
+            22.21
+          ],
+          "width": 41.24,
+          "height": 22.21
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_28",
+      "sheet": 2,
+      "cell": 10,
+      "label": "쪽",
+      "eyeType": "dot",
+      "scale": 1.05754,
+      "sourceOrigin": [
+        162.545,
+        159.202
+      ],
+      "contentBBox": [
+        42,
+        78,
+        281,
+        158
+      ],
+      "sourceCell": [
+        323.75,
+        303.5
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            109.98,
+            133.25,
+            25.38,
+            27.5
+          ],
+          "width": 25.38,
+          "height": 27.5
+        },
+        {
+          "bbox": [
+            210.45,
+            133.25,
+            25.38,
+            26.44
+          ],
+          "width": 25.38,
+          "height": 26.44
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_29",
+      "sheet": 2,
+      "cell": 11,
+      "label": "소곤소곤 웃음",
+      "eyeType": "closed",
+      "scale": 1.05754,
+      "sourceOrigin": [
+        159.704,
+        160.057
+      ],
+      "contentBBox": [
+        42,
+        78,
+        281,
+        157
+      ],
+      "sourceCell": [
+        323.75,
+        303.5
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            96.24,
+            133.25,
+            41.24,
+            23.27
+          ],
+          "width": 41.24,
+          "height": 23.27
+        },
+        {
+          "bbox": [
+            205.16,
+            133.25,
+            40.19,
+            22.21
+          ],
+          "width": 40.19,
+          "height": 22.21
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_30",
+      "sheet": 2,
+      "cell": 5,
+      "label": "시무룩",
+      "eyeType": "dot",
+      "scale": 1.05754,
+      "sourceOrigin": [
+        162.928,
+        193.467
+      ],
+      "contentBBox": [
+        41,
+        79,
+        281,
+        157
+      ],
+      "sourceCell": [
+        323.75,
+        303.5
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            109.98,
+            171.32,
+            24.32,
+            24.32
+          ],
+          "width": 24.32,
+          "height": 24.32
+        },
+        {
+          "bbox": [
+            211.51,
+            170.26,
+            23.27,
+            24.32
+          ],
+          "width": 23.27,
+          "height": 24.32
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_31",
+      "sheet": 1,
+      "cell": 5,
+      "label": "어라",
+      "eyeType": "dot",
+      "scale": 1.08606,
+      "sourceOrigin": [
+        178.389,
+        189.776
+      ],
+      "contentBBox": [
+        27,
+        32,
+        298,
+        162
+      ],
+      "sourceCell": [
+        315.25,
+        311.75
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            122.72,
+            177.03,
+            24.98,
+            24.98
+          ],
+          "width": 24.98,
+          "height": 24.98
+        },
+        {
+          "bbox": [
+            234.59,
+            174.86,
+            26.07,
+            26.07
+          ],
+          "width": 26.07,
+          "height": 26.07
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_32",
+      "sheet": 1,
+      "cell": 7,
+      "label": "살짝 윙크",
+      "eyeType": "wink",
+      "scale": 1.08606,
+      "sourceOrigin": [
+        155.692,
+        191.267
+      ],
+      "contentBBox": [
+        26,
+        72,
+        298,
+        162
+      ],
+      "sourceCell": [
+        315.25,
+        311.75
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            102.09,
+            173.77,
+            24.98,
+            26.07
+          ],
+          "width": 24.98,
+          "height": 26.07
+        },
+        {
+          "bbox": [
+            198.75,
+            166.17,
+            52.13,
+            26.07
+          ],
+          "width": 52.13,
+          "height": 26.07
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_33",
+      "sheet": 1,
+      "cell": 12,
+      "label": "훌쩍",
+      "eyeType": "tear",
+      "scale": 1.08606,
+      "sourceOrigin": [
+        142.635,
+        175.535
+      ],
+      "contentBBox": [
+        26,
+        74,
+        298,
+        160
+      ],
+      "sourceCell": [
+        315.25,
+        311.75
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            79.28,
+            155.31,
+            32.58,
+            44.53
+          ],
+          "width": 32.58,
+          "height": 44.53
+        },
+        {
+          "bbox": [
+            200.92,
+            150.96,
+            29.32,
+            44.53
+          ],
+          "width": 29.32,
+          "height": 44.53
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_34",
+      "sheet": 1,
+      "cell": 9,
+      "label": "당황했어",
+      "eyeType": "dot",
+      "scale": 1.08606,
+      "sourceOrigin": [
+        178.383,
+        172.635
+      ],
+      "contentBBox": [
+        29,
+        21,
+        298,
+        162
+      ],
+      "sourceCell": [
+        315.25,
+        311.75
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            122.72,
+            160.74,
+            23.89,
+            24.98
+          ],
+          "width": 23.89,
+          "height": 24.98
+        },
+        {
+          "bbox": [
+            235.67,
+            157.48,
+            24.98,
+            24.98
+          ],
+          "width": 24.98,
+          "height": 24.98
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_35",
+      "sheet": 2,
+      "cell": 16,
+      "label": "장난스러운 윙크",
+      "eyeType": "wink",
+      "scale": 1.05754,
+      "sourceOrigin": [
+        163.594,
+        147.93
+      ],
+      "contentBBox": [
+        40,
+        69,
+        282,
+        157
+      ],
+      "sourceCell": [
+        323.75,
+        303.5
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            111.04,
+            122.68,
+            22.21,
+            24.32
+          ],
+          "width": 22.21,
+          "height": 24.32
+        },
+        {
+          "bbox": [
+            205.16,
+            112.1,
+            34.9,
+            34.9
+          ],
+          "width": 34.9,
+          "height": 34.9
+        }
+      ],
+      "edgeAlphaMax": 0
+    },
+    {
+      "id": "face_36",
+      "sheet": 2,
+      "cell": 15,
+      "label": "메롱",
+      "eyeType": "dot",
+      "scale": 1.05754,
+      "sourceOrigin": [
+        161.203,
+        146.541
+      ],
+      "contentBBox": [
+        41,
+        82,
+        281,
+        157
+      ],
+      "sourceCell": [
+        323.75,
+        303.5
+      ],
+      "rule": "shared cell scale; no per-sprite bbox normalization",
+      "eyes": [
+        {
+          "bbox": [
+            106.81,
+            123.73,
+            23.27,
+            23.27
+          ],
+          "width": 23.27,
+          "height": 23.27
+        },
+        {
+          "bbox": [
+            212.57,
+            122.68,
+            22.21,
+            23.27
+          ],
+          "width": 22.21,
+          "height": 23.27
+        }
+      ],
+      "edgeAlphaMax": 0
+    }
+  ],
+  "canvas": [
+    323,
+    230
+  ],
+  "commonCellScale": 1.06,
+  "preservedOriginalFaces": [
+    "face_01",
+    "face_02",
+    "face_03",
+    "face_04",
+    "face_05",
+    "face_06",
+    "face_07",
+    "face_08",
+    "face_09",
+    "face_10",
+    "face_11",
+    "face_12",
+    "face_13",
+    "face_14",
+    "face_15",
+    "face_16",
+    "face_17",
+    "face_18"
+  ],
+  "replacedCount": 18
+}

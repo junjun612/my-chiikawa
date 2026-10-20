@@ -1,0 +1,153 @@
+{
+  "status": "Final source and body25 hand correction published; see pose-validation.json for full checks.",
+  "bodies": [
+    {
+      "id": "body_17",
+      "size": [
+        254,
+        259
+      ],
+      "grip_count": 1,
+      "prop": [
+        158.88,
+        197.56,
+        77.18,
+        18.0
+      ],
+      "fixed_pattern_pixels": 0,
+      "asset_bytes": 54100
+    },
+    {
+      "id": "body_19",
+      "size": [
+        246,
+        264
+      ],
+      "grip_count": 1,
+      "prop": [
+        67.62,
+        193.84,
+        73.44,
+        -19.0
+      ],
+      "fixed_pattern_pixels": 0,
+      "asset_bytes": 53988
+    },
+    {
+      "id": "body_20",
+      "size": [
+        239,
+        223
+      ],
+      "grip_count": 2,
+      "prop": [
+        120.15,
+        150.81,
+        73.69,
+        -1.03
+      ],
+      "fixed_pattern_pixels": 0,
+      "asset_bytes": 49526
+    },
+    {
+      "id": "body_21",
+      "size": [
+        241,
+        250
+      ],
+      "grip_count": 1,
+      "prop": [
+        166.43,
+        184.39,
+        71.06,
+        18.0
+      ],
+      "fixed_pattern_pixels": 0,
+      "asset_bytes": 48532
+    },
+    {
+      "id": "body_23",
+      "size": [
+        252,
+        232
+      ],
+      "grip_count": 2,
+      "prop": [
+        124.03,
+        159.9,
+        63.14,
+        0.29
+      ],
+      "fixed_pattern_pixels": 0,
+      "asset_bytes": 55626
+    },
+    {
+      "id": "body_24",
+      "size": [
+        239,
+        251
+      ],
+      "grip_count": 1,
+      "prop": [
+        65.75,
+        184.0,
+        70.72,
+        -16.0
+      ],
+      "fixed_pattern_pixels": 1318,
+      "asset_bytes": 52416
+    },
+    {
+      "id": "body_25",
+      "size": [
+        252,
+        255
+      ],
+      "grip_count": 1,
+      "prop": [
+        37.0,
+        117.0,
+        72.24,
+        -12.0
+      ],
+      "fixed_pattern_pixels": 1188,
+      "asset_bytes": 51188
+    },
+    {
+      "id": "body_28",
+      "size": [
+        245,
+        253
+      ],
+      "grip_count": 1,
+      "prop": [
+        169.83,
+        186.42,
+        72.25,
+        18.0
+      ],
+      "fixed_pattern_pixels": 0,
+      "asset_bytes": 50880
+    },
+    {
+      "id": "body_30",
+      "size": [
+        235,
+        245
+      ],
+      "grip_count": 1,
+      "prop": [
+        76.6,
+        181.67,
+        68.0,
+        -20.0
+      ],
+      "fixed_pattern_pixels": 0,
+      "asset_bytes": 47704
+    }
+  ],
+  "raw_anatomy_visual_inspected": 9,
+  "two_closed_bottom_feet_each": true,
+  "exactly_two_arms_each": true,
+  "no_ambiguous_extra_arm_nubs": true
+}

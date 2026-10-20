@@ -1,0 +1,38 @@
+2026-10-20 — understated expression refinement
+
+Scope: replace newly expanded face_19 through face_36. The original face_01
+through face_18 are preserved byte-for-byte and their source hashes are recorded.
+The immediately preceding 19–36 sprites and metadata are preserved in before/
+and before-parts.json, including the three earlier style replacements.
+
+Generated with built-in image_gen, using two 4×4 genuinely transparent sprite
+atlases. Prompt text is saved as prompt-sheet-01.txt and prompt-sheet-02.txt.
+The reference screenshot e9845 and original sprites face_15 and face_01 informed
+small feature proportions and simple marker ink; no character identity copied.
+Selected nine candidates from each sheet. All eighteen expanded faces were
+replaced to make the expanded set proportionally consistent. No extra large
+heart/star pupil expression was added. Original special eyes in 01–18 remain.
+
+Every expression has logical width 323 and the same transparent 323×230 frame.
+Magnification comes from one shared atlas-cell scale, not a tight feature crop.
+Cheek centers establish alignment only, never magnification. Tall brows, sweat
+and small tears do not push the core facial features down. All four image edges
+have alpha 0. Cheek coordinates/radii were measured separately for each sprite.
+
+Visual QA performed directly on all 72 combinations: all 18 faces on body_01,
+body_17, body_20 and body_25. The QA includes current engine-style radial blush
+and face rotation. Inspect after-body_01.jpg, after-body_17.jpg,
+after-body_20.jpg, after-body_25.jpg. before-after.jpg compares the previous
+19/20/27 sprites with the smaller expressions on the same four actual bodies.
+Small open eyes, restrained brows, tiny mouths, pale pink cheeks, closed-eye
+smiles and subtle wink/tear variants remain readable at final character size.
+No detached brow, neighboring cell, clipped feature, giant eye or cheek-mouth
+collision was observed. Body25 may receive a later independent hand revision;
+these face assets and their fixed head coordinates are independent of that.
+
+Preparation/reproducibility: python3 prepare_faces.py writes candidates and QA;
+python3 prepare_faces.py --publish also replaces only parts/face/face_19.webp
+through face_36.webp and writes face-replacements.json. It never edits the global
+catalog or renderer. face-replacements.json is a category array for root merge.
+
+No global engine.js, parts.js, quiz or other category asset was modified here.

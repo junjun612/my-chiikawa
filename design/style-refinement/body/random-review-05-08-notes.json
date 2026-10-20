@@ -1,0 +1,14 @@
+{
+  "pages": ["random-review-05.jpg", "random-review-06.jpg", "random-review-07.jpg", "random-review-08.jpg"],
+  "indices": [257, 512],
+  "combinations_inspected": 256,
+  "selected_combinations_enlarged": 42,
+  "new_confirmed_geometry_failures": [],
+  "known_followups": [
+    {"index": 389, "body": "body_17", "face": "face_04", "prop": "prop_30", "note": "Known stem correction; the large original face needs a cheek-clearance check after correction."},
+    {"index": 450, "body": "body_19", "prop": "prop_11", "note": "Known lollipop stem correction."},
+    {"indices": [264,299,339], "back": "back_17", "note": "Known fish-tail clipping already being corrected by root."}
+  ],
+  "observations": "No additional unambiguous detached ears, extra arms/feet, silhouette clipping, or major relative-scale failures were found. Original large expressions and intentional asymmetric rabbit ears were retained as design variants.",
+  "review_only": true
+}

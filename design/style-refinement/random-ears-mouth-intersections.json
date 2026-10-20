@@ -1,0 +1,614 @@
+[
+  {
+    "index": 516,
+    "body": "body_11",
+    "face": "face_10",
+    "prop": "prop_29",
+    "mouthPixelsCovered": 64,
+    "mouthPixels": 144,
+    "coverage": 0.444,
+    "parts": {
+      "body": "body_11",
+      "ears": "ears_19",
+      "deco": "deco_24",
+      "face": "face_10",
+      "prop": "prop_29",
+      "back": "back_03"
+    }
+  },
+  {
+    "index": 520,
+    "body": "body_14",
+    "face": "face_04",
+    "prop": "prop_14",
+    "mouthPixelsCovered": 87,
+    "mouthPixels": 357,
+    "coverage": 0.244,
+    "parts": {
+      "body": "body_14",
+      "ears": null,
+      "deco": null,
+      "face": "face_04",
+      "prop": "prop_14",
+      "back": "back_22"
+    }
+  },
+  {
+    "index": 524,
+    "body": "body_09",
+    "face": "face_16",
+    "prop": "prop_27",
+    "mouthPixelsCovered": 99,
+    "mouthPixels": 313,
+    "coverage": 0.316,
+    "parts": {
+      "body": "body_09",
+      "ears": null,
+      "deco": "deco_17",
+      "face": "face_16",
+      "prop": "prop_27",
+      "back": "back_07"
+    }
+  },
+  {
+    "index": 529,
+    "body": "body_27",
+    "face": "face_25",
+    "prop": "prop_34",
+    "mouthPixelsCovered": 6,
+    "mouthPixels": 74,
+    "coverage": 0.081,
+    "parts": {
+      "body": "body_27",
+      "ears": null,
+      "deco": "deco_04",
+      "face": "face_25",
+      "prop": "prop_34",
+      "back": "back_21"
+    }
+  },
+  {
+    "index": 535,
+    "body": "body_11",
+    "face": "face_09",
+    "prop": "prop_10",
+    "mouthPixelsCovered": 31,
+    "mouthPixels": 232,
+    "coverage": 0.134,
+    "parts": {
+      "body": "body_11",
+      "ears": null,
+      "deco": "deco_25",
+      "face": "face_09",
+      "prop": "prop_10",
+      "back": "back_05"
+    }
+  },
+  {
+    "index": 547,
+    "body": "body_29",
+    "face": "face_13",
+    "prop": "prop_03",
+    "mouthPixelsCovered": 154,
+    "mouthPixels": 276,
+    "coverage": 0.558,
+    "parts": {
+      "body": "body_29",
+      "ears": null,
+      "deco": null,
+      "face": "face_13",
+      "prop": "prop_03",
+      "back": null
+    }
+  },
+  {
+    "index": 555,
+    "body": "body_20",
+    "face": "face_09",
+    "prop": "prop_23",
+    "mouthPixelsCovered": 26,
+    "mouthPixels": 209,
+    "coverage": 0.124,
+    "parts": {
+      "body": "body_20",
+      "ears": "ears_13",
+      "deco": null,
+      "face": "face_09",
+      "prop": "prop_23",
+      "back": "back_08"
+    }
+  },
+  {
+    "index": 557,
+    "body": "body_07",
+    "face": "face_08",
+    "prop": "prop_32",
+    "mouthPixelsCovered": 18,
+    "mouthPixels": 241,
+    "coverage": 0.075,
+    "parts": {
+      "body": "body_07",
+      "ears": "ears_18",
+      "deco": "deco_22",
+      "face": "face_08",
+      "prop": "prop_32",
+      "back": null
+    }
+  },
+  {
+    "index": 572,
+    "body": "body_27",
+    "face": "face_26",
+    "prop": "prop_34",
+    "mouthPixelsCovered": 38,
+    "mouthPixels": 85,
+    "coverage": 0.447,
+    "parts": {
+      "body": "body_27",
+      "ears": null,
+      "deco": null,
+      "face": "face_26",
+      "prop": "prop_34",
+      "back": null
+    }
+  },
+  {
+    "index": 576,
+    "body": "body_29",
+    "face": "face_24",
+    "prop": "prop_16",
+    "mouthPixelsCovered": 29,
+    "mouthPixels": 37,
+    "coverage": 0.784,
+    "parts": {
+      "body": "body_29",
+      "ears": null,
+      "deco": "deco_22",
+      "face": "face_24",
+      "prop": "prop_16",
+      "back": "back_23"
+    }
+  },
+  {
+    "index": 594,
+    "body": "body_06",
+    "face": "face_05",
+    "prop": "prop_33",
+    "mouthPixelsCovered": 1,
+    "mouthPixels": 135,
+    "coverage": 0.007,
+    "parts": {
+      "body": "body_06",
+      "ears": "ears_07",
+      "deco": "deco_18",
+      "face": "face_05",
+      "prop": "prop_33",
+      "back": null
+    }
+  },
+  {
+    "index": 597,
+    "body": "body_29",
+    "face": "face_17",
+    "prop": "prop_19",
+    "mouthPixelsCovered": 47,
+    "mouthPixels": 114,
+    "coverage": 0.412,
+    "parts": {
+      "body": "body_29",
+      "ears": null,
+      "deco": "deco_11",
+      "face": "face_17",
+      "prop": "prop_19",
+      "back": null
+    }
+  },
+  {
+    "index": 607,
+    "body": "body_11",
+    "face": "face_18",
+    "prop": "prop_17",
+    "mouthPixelsCovered": 23,
+    "mouthPixels": 145,
+    "coverage": 0.159,
+    "parts": {
+      "body": "body_11",
+      "ears": "ears_25",
+      "deco": "deco_02",
+      "face": "face_18",
+      "prop": "prop_17",
+      "back": "back_07"
+    }
+  },
+  {
+    "index": 609,
+    "body": "body_08",
+    "face": "face_02",
+    "prop": "prop_19",
+    "mouthPixelsCovered": 103,
+    "mouthPixels": 248,
+    "coverage": 0.415,
+    "parts": {
+      "body": "body_08",
+      "ears": "ears_31",
+      "deco": "deco_04",
+      "face": "face_02",
+      "prop": "prop_19",
+      "back": null
+    }
+  },
+  {
+    "index": 620,
+    "body": "body_29",
+    "face": "face_29",
+    "prop": "prop_18",
+    "mouthPixelsCovered": 51,
+    "mouthPixels": 96,
+    "coverage": 0.531,
+    "parts": {
+      "body": "body_29",
+      "ears": "ears_02",
+      "deco": null,
+      "face": "face_29",
+      "prop": "prop_18",
+      "back": "back_03"
+    }
+  },
+  {
+    "index": 629,
+    "body": "body_15",
+    "face": "face_31",
+    "prop": "prop_16",
+    "mouthPixelsCovered": 14,
+    "mouthPixels": 110,
+    "coverage": 0.127,
+    "parts": {
+      "body": "body_15",
+      "ears": "ears_03",
+      "deco": "deco_21",
+      "face": "face_31",
+      "prop": "prop_16",
+      "back": null
+    }
+  },
+  {
+    "index": 641,
+    "body": "body_07",
+    "face": "face_11",
+    "prop": "prop_33",
+    "mouthPixelsCovered": 136,
+    "mouthPixels": 198,
+    "coverage": 0.687,
+    "parts": {
+      "body": "body_07",
+      "ears": null,
+      "deco": "deco_31",
+      "face": "face_11",
+      "prop": "prop_33",
+      "back": null
+    }
+  },
+  {
+    "index": 642,
+    "body": "body_06",
+    "face": "face_30",
+    "prop": "prop_06",
+    "mouthPixelsCovered": 16,
+    "mouthPixels": 46,
+    "coverage": 0.348,
+    "parts": {
+      "body": "body_06",
+      "ears": null,
+      "deco": null,
+      "face": "face_30",
+      "prop": "prop_06",
+      "back": "back_27"
+    }
+  },
+  {
+    "index": 643,
+    "body": "body_02",
+    "face": "face_12",
+    "prop": "prop_16",
+    "mouthPixelsCovered": 8,
+    "mouthPixels": 243,
+    "coverage": 0.033,
+    "parts": {
+      "body": "body_02",
+      "ears": "ears_27",
+      "deco": "deco_32",
+      "face": "face_12",
+      "prop": "prop_16",
+      "back": null
+    }
+  },
+  {
+    "index": 645,
+    "body": "body_15",
+    "face": "face_02",
+    "prop": "prop_36",
+    "mouthPixelsCovered": 19,
+    "mouthPixels": 224,
+    "coverage": 0.085,
+    "parts": {
+      "body": "body_15",
+      "ears": "ears_17",
+      "deco": "deco_01",
+      "face": "face_02",
+      "prop": "prop_36",
+      "back": "back_26"
+    }
+  },
+  {
+    "index": 663,
+    "body": "body_14",
+    "face": "face_33",
+    "prop": "prop_03",
+    "mouthPixelsCovered": 8,
+    "mouthPixels": 89,
+    "coverage": 0.09,
+    "parts": {
+      "body": "body_14",
+      "ears": "ears_05",
+      "deco": null,
+      "face": "face_33",
+      "prop": "prop_03",
+      "back": "back_28"
+    }
+  },
+  {
+    "index": 670,
+    "body": "body_20",
+    "face": "face_11",
+    "prop": "prop_09",
+    "mouthPixelsCovered": 84,
+    "mouthPixels": 168,
+    "coverage": 0.5,
+    "parts": {
+      "body": "body_20",
+      "ears": "ears_07",
+      "deco": "deco_06",
+      "face": "face_11",
+      "prop": "prop_09",
+      "back": "back_07"
+    }
+  },
+  {
+    "index": 672,
+    "body": "body_10",
+    "face": "face_08",
+    "prop": "prop_15",
+    "mouthPixelsCovered": 16,
+    "mouthPixels": 246,
+    "coverage": 0.065,
+    "parts": {
+      "body": "body_10",
+      "ears": "ears_03",
+      "deco": null,
+      "face": "face_08",
+      "prop": "prop_15",
+      "back": "back_04"
+    }
+  },
+  {
+    "index": 674,
+    "body": "body_29",
+    "face": "face_31",
+    "prop": "prop_21",
+    "mouthPixelsCovered": 29,
+    "mouthPixels": 117,
+    "coverage": 0.248,
+    "parts": {
+      "body": "body_29",
+      "ears": "ears_34",
+      "deco": null,
+      "face": "face_31",
+      "prop": "prop_21",
+      "back": "back_04"
+    }
+  },
+  {
+    "index": 701,
+    "body": "body_09",
+    "face": "face_08",
+    "prop": "prop_29",
+    "mouthPixelsCovered": 87,
+    "mouthPixels": 245,
+    "coverage": 0.355,
+    "parts": {
+      "body": "body_09",
+      "ears": null,
+      "deco": null,
+      "face": "face_08",
+      "prop": "prop_29",
+      "back": null
+    }
+  },
+  {
+    "index": 702,
+    "body": "body_08",
+    "face": "face_29",
+    "prop": "prop_18",
+    "mouthPixelsCovered": 48,
+    "mouthPixels": 90,
+    "coverage": 0.533,
+    "parts": {
+      "body": "body_08",
+      "ears": "ears_19",
+      "deco": null,
+      "face": "face_29",
+      "prop": "prop_18",
+      "back": "back_21"
+    }
+  },
+  {
+    "index": 706,
+    "body": "body_27",
+    "face": "face_09",
+    "prop": "prop_18",
+    "mouthPixelsCovered": 234,
+    "mouthPixels": 234,
+    "coverage": 1.0,
+    "parts": {
+      "body": "body_27",
+      "ears": null,
+      "deco": "deco_12",
+      "face": "face_09",
+      "prop": "prop_18",
+      "back": "back_03"
+    }
+  },
+  {
+    "index": 718,
+    "body": "body_29",
+    "face": "face_18",
+    "prop": "prop_25",
+    "mouthPixelsCovered": 52,
+    "mouthPixels": 150,
+    "coverage": 0.347,
+    "parts": {
+      "body": "body_29",
+      "ears": "ears_06",
+      "deco": null,
+      "face": "face_18",
+      "prop": "prop_25",
+      "back": null
+    }
+  },
+  {
+    "index": 719,
+    "body": "body_14",
+    "face": "face_10",
+    "prop": "prop_18",
+    "mouthPixelsCovered": 147,
+    "mouthPixels": 147,
+    "coverage": 1.0,
+    "parts": {
+      "body": "body_14",
+      "ears": null,
+      "deco": null,
+      "face": "face_10",
+      "prop": "prop_18",
+      "back": "back_01"
+    }
+  },
+  {
+    "index": 725,
+    "body": "body_12",
+    "face": "face_11",
+    "prop": "prop_35",
+    "mouthPixelsCovered": 165,
+    "mouthPixels": 193,
+    "coverage": 0.855,
+    "parts": {
+      "body": "body_12",
+      "ears": null,
+      "deco": "deco_27",
+      "face": "face_11",
+      "prop": "prop_35",
+      "back": "back_24"
+    }
+  },
+  {
+    "index": 726,
+    "body": "body_14",
+    "face": "face_02",
+    "prop": "prop_35",
+    "mouthPixelsCovered": 92,
+    "mouthPixels": 255,
+    "coverage": 0.361,
+    "parts": {
+      "body": "body_14",
+      "ears": "ears_13",
+      "deco": null,
+      "face": "face_02",
+      "prop": "prop_35",
+      "back": "back_22"
+    }
+  },
+  {
+    "index": 738,
+    "body": "body_12",
+    "face": "face_11",
+    "prop": "prop_35",
+    "mouthPixelsCovered": 165,
+    "mouthPixels": 193,
+    "coverage": 0.855,
+    "parts": {
+      "body": "body_12",
+      "ears": null,
+      "deco": null,
+      "face": "face_11",
+      "prop": "prop_35",
+      "back": "back_24"
+    }
+  },
+  {
+    "index": 742,
+    "body": "body_14",
+    "face": "face_13",
+    "prop": "prop_15",
+    "mouthPixelsCovered": 72,
+    "mouthPixels": 274,
+    "coverage": 0.263,
+    "parts": {
+      "body": "body_14",
+      "ears": null,
+      "deco": null,
+      "face": "face_13",
+      "prop": "prop_15",
+      "back": "back_21"
+    }
+  },
+  {
+    "index": 762,
+    "body": "body_27",
+    "face": "face_02",
+    "prop": "prop_23",
+    "mouthPixelsCovered": 72,
+    "mouthPixels": 253,
+    "coverage": 0.285,
+    "parts": {
+      "body": "body_27",
+      "ears": "ears_02",
+      "deco": "deco_04",
+      "face": "face_02",
+      "prop": "prop_23",
+      "back": null
+    }
+  },
+  {
+    "index": 765,
+    "body": "body_29",
+    "face": "face_34",
+    "prop": "prop_35",
+    "mouthPixelsCovered": 17,
+    "mouthPixels": 101,
+    "coverage": 0.168,
+    "parts": {
+      "body": "body_29",
+      "ears": "ears_32",
+      "deco": "deco_02",
+      "face": "face_34",
+      "prop": "prop_35",
+      "back": "back_19"
+    }
+  },
+  {
+    "index": 766,
+    "body": "body_14",
+    "face": "face_04",
+    "prop": "prop_01",
+    "mouthPixelsCovered": 59,
+    "mouthPixels": 357,
+    "coverage": 0.165,
+    "parts": {
+      "body": "body_14",
+      "ears": "ears_13",
+      "deco": "deco_10",
+      "face": "face_04",
+      "prop": "prop_01",
+      "back": null
+    }
+  }
+]

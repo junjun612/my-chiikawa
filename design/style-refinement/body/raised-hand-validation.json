@@ -1,0 +1,289 @@
+{
+  "changed_bodies": 6,
+  "changed_asset_files": 24,
+  "single_hand_bodies": 7,
+  "preserved_body25_assets": true,
+  "body25_donut_offset_expected": [
+    -39,
+    -24
+  ],
+  "root_calibrates252_offsets": true,
+  "all_masks_same_dimensions_as_body": true,
+  "3px_transparent_padding": true,
+  "source_sheet": "raised-hand-source-sheet.png",
+  "body17_targeted_source": "raised-hand-body17-fixed-source.png",
+  "parts": [
+    {
+      "id": "body_17",
+      "size": [
+        254,
+        260
+      ],
+      "gripSide": "left",
+      "gripRegions": [
+        [
+          4,
+          126,
+          42,
+          171
+        ]
+      ],
+      "raised_palm": [
+        23.0,
+        148.5
+      ],
+      "ink_center": [
+        20.83,
+        148.06
+      ],
+      "old_low_C_removed_visual_check": true,
+      "two_arms_two_bottom_feet_visual_check": true,
+      "fixed_pattern_pixels": 0,
+      "head_rotation": 6,
+      "no_old_propOffsets_inherited": true
+    },
+    {
+      "id": "body_19",
+      "size": [
+        247,
+        262
+      ],
+      "gripSide": "right",
+      "gripRegions": [
+        [
+          211,
+          113,
+          243,
+          151
+        ]
+      ],
+      "raised_palm": [
+        227.0,
+        132.0
+      ],
+      "ink_center": [
+        227.55,
+        129.99
+      ],
+      "old_low_C_removed_visual_check": true,
+      "two_arms_two_bottom_feet_visual_check": true,
+      "fixed_pattern_pixels": 0,
+      "head_rotation": -7,
+      "no_old_propOffsets_inherited": true
+    },
+    {
+      "id": "body_21",
+      "size": [
+        244,
+        250
+      ],
+      "gripSide": "left",
+      "gripRegions": [
+        [
+          4,
+          99,
+          41,
+          142
+        ]
+      ],
+      "raised_palm": [
+        22.5,
+        120.5
+      ],
+      "ink_center": [
+        22.22,
+        118.71
+      ],
+      "old_low_C_removed_visual_check": true,
+      "two_arms_two_bottom_feet_visual_check": true,
+      "fixed_pattern_pixels": 0,
+      "head_rotation": 6,
+      "no_old_propOffsets_inherited": true
+    },
+    {
+      "id": "body_24",
+      "size": [
+        242,
+        252
+      ],
+      "gripSide": "right",
+      "gripRegions": [
+        [
+          205,
+          104,
+          238,
+          146
+        ]
+      ],
+      "raised_palm": [
+        221.5,
+        125.0
+      ],
+      "ink_center": [
+        220.85,
+        123.5
+      ],
+      "old_low_C_removed_visual_check": true,
+      "two_arms_two_bottom_feet_visual_check": true,
+      "fixed_pattern_pixels": 1327,
+      "head_rotation": -4,
+      "no_old_propOffsets_inherited": true
+    },
+    {
+      "id": "body_28",
+      "size": [
+        245,
+        256
+      ],
+      "gripSide": "left",
+      "gripRegions": [
+        [
+          4,
+          109,
+          41,
+          153
+        ]
+      ],
+      "raised_palm": [
+        22.5,
+        131.0
+      ],
+      "ink_center": [
+        22.5,
+        128.17
+      ],
+      "old_low_C_removed_visual_check": true,
+      "two_arms_two_bottom_feet_visual_check": true,
+      "fixed_pattern_pixels": 0,
+      "head_rotation": 6,
+      "no_old_propOffsets_inherited": true
+    },
+    {
+      "id": "body_30",
+      "size": [
+        237,
+        247
+      ],
+      "gripSide": "right",
+      "gripRegions": [
+        [
+          199,
+          92,
+          233,
+          136
+        ]
+      ],
+      "raised_palm": [
+        216.0,
+        114.0
+      ],
+      "ink_center": [
+        214.56,
+        113.24
+      ],
+      "old_low_C_removed_visual_check": true,
+      "two_arms_two_bottom_feet_visual_check": true,
+      "fixed_pattern_pixels": 0,
+      "head_rotation": -8,
+      "no_old_propOffsets_inherited": true
+    }
+  ],
+  "seven_mask_checks": [
+    {
+      "id": "body_17",
+      "one_palm_ink_component": true,
+      "all_alpha_and_convex_hull_inside_grip_region": true,
+      "ink_pixels": 708,
+      "ink_bbox": [
+        4,
+        126,
+        41,
+        171
+      ]
+    },
+    {
+      "id": "body_19",
+      "one_palm_ink_component": true,
+      "all_alpha_and_convex_hull_inside_grip_region": true,
+      "ink_pixels": 571,
+      "ink_bbox": [
+        211,
+        113,
+        242,
+        151
+      ]
+    },
+    {
+      "id": "body_21",
+      "one_palm_ink_component": true,
+      "all_alpha_and_convex_hull_inside_grip_region": true,
+      "ink_pixels": 743,
+      "ink_bbox": [
+        5,
+        99,
+        41,
+        142
+      ]
+    },
+    {
+      "id": "body_24",
+      "one_palm_ink_component": true,
+      "all_alpha_and_convex_hull_inside_grip_region": true,
+      "ink_pixels": 624,
+      "ink_bbox": [
+        205,
+        104,
+        237,
+        146
+      ]
+    },
+    {
+      "id": "body_28",
+      "one_palm_ink_component": true,
+      "all_alpha_and_convex_hull_inside_grip_region": true,
+      "ink_pixels": 739,
+      "ink_bbox": [
+        5,
+        109,
+        41,
+        153
+      ]
+    },
+    {
+      "id": "body_30",
+      "one_palm_ink_component": true,
+      "all_alpha_and_convex_hull_inside_grip_region": true,
+      "ink_pixels": 680,
+      "ink_bbox": [
+        199,
+        92,
+        232,
+        136
+      ]
+    },
+    {
+      "id": "body_25",
+      "one_palm_ink_component": true,
+      "all_alpha_and_convex_hull_inside_grip_region": true,
+      "ink_pixels": 654,
+      "ink_bbox": [
+        4,
+        100,
+        37,
+        139
+      ]
+    }
+  ],
+  "body25_current_donut_offset": [
+    -39,
+    -24
+  ],
+  "all_seven_masks_visual_inspected": true,
+  "head_attachment_compositions_inspected": 24,
+  "head_ear_face_alignment_visual_check": true,
+  "unmodified_seated_bodies": [
+    "body_20",
+    "body_23"
+  ],
+  "final_sprite_files_total_bytes": 288990
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "ears_13",
+    "label": "아기 햄스터",
+    "color": "#fbf5eb",
+    "L": {
+      "src": "parts/ears/ears_13_L.webp",
+      "w": 107,
+      "h": 103,
+      "root": [
+        53.5,
+        99
+      ],
+      "color": "#fbf5eb",
+      "fill": "parts/ears/ears_13_L_fill.webp",
+      "line": "parts/ears/ears_13_L_line.webp"
+    },
+    "R": {
+      "src": "parts/ears/ears_13_R.webp",
+      "w": 108,
+      "h": 103,
+      "root": [
+        54.0,
+        99
+      ],
+      "color": "#fbf5eb",
+      "fill": "parts/ears/ears_13_R_fill.webp",
+      "line": "parts/ears/ears_13_R_line.webp"
+    },
+    "src": "parts/ears/ears_13.webp",
+    "w": 253,
+    "h": 103,
+    "fill": "parts/ears/ears_13_fill.webp",
+    "line": "parts/ears/ears_13_line.webp"
+  },
+  {
+    "id": "ears_14",
+    "label": "사막여우",
+    "src": "parts/ears/ears_14.webp",
+    "w": 263.52,
+    "h": 204.48,
+    "color": "#fef6df",
+    "line": "parts/ears/ears_14_line.webp",
+    "fill": "parts/ears/ears_14_fill.webp",
+    "L": {
+      "src": "parts/ears/ears_14_L.webp",
+      "w": 120.96,
+      "h": 204.48,
+      "color": "#fef6df",
+      "line": "parts/ears/ears_14_L_line.webp",
+      "fill": "parts/ears/ears_14_L_fill.webp",
+      "root": [
+        60.48,
+        200.16
+      ]
+    },
+    "R": {
+      "src": "parts/ears/ears_14_R.webp",
+      "w": 120.24,
+      "h": 203.76,
+      "color": "#fef6df",
+      "line": "parts/ears/ears_14_R_line.webp",
+      "fill": "parts/ears/ears_14_R_fill.webp",
+      "root": [
+        60.12,
+        200.16
+      ]
+    }
+  }
+]

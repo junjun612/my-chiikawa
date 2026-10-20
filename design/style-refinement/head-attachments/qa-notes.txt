@@ -1,0 +1,34 @@
+Head attachment QA, 2026-10-20
+
+Scope: only the nine new pose bodies. No old-body head frame was imposed, no global
+catalog or renderer was edited by this reviewer. head-overrides.json contains only
+head-related anchor fields and leaves prop, torso, feet and hand masks unchanged.
+
+Metrics: head width comes from the actual face row (legacy headW / .84). The legacy
+headW remains unchanged for hat fit. Unconstrained ellipse fitting included torso
+pixels in several bodies, particularly 17, 20, 25 and 30. Reviewed head height is
+.66 * canvas height for the standing poses and .73 for seated 20 and 23. The frame
+center is aligned with the measured face x and crown y + half the reviewed height.
+Face center and rotation remain at their previously measured, visually natural
+positions; the expression width is .57 of the actual head width.
+
+Ear scale: (actual head width * 190 / body width) / 180. This normalizes ears to
+the head rather than widened waving-arm bounds and is slightly more restrained
+than the initial 160px reference. It is applied instead of the old height factor.
+Ear nominal positions are local x +/- .27 of head width, local y -.40 head height;
+the x is rotated with the head and the final y is projected onto the actual scalp.
+Attachment points sit two design pixels inside the scalp. Explicit floppy-ear
+rotations and offsets are relative to head rotation, preserving all five repairs.
+
+Visual evidence: all 36 ears on representative body_17 (fur/tilt), body_20 (seated)
+and body_24 (opposite tilt), totaling 108 combinations. Another 54 combinations
+cover all nine bodies with round/bunny/floppy/fennec ears, six expressions, a side
+clover, halo, beanie and sprout. Images use the renderer geometry and layer order,
+without scene lighting. Actual browser rendering remains the parent agent's check.
+
+Anatomy review: the earlier claim that the nubbed one-hand sources read clearly
+as two arms is withdrawn. Mask locality and anatomical readability are distinct.
+In pose-anatomy-fixed-sheet.png the selected standing poses have one waving hand,
+one grip C, no second grip-side outer nub, and two closed feet at the bottom.
+Seated poses have two grip Cs and two closed feet. The latest body_25 opposite-hand
+edit is a separate source update and must be checked once that image is available.

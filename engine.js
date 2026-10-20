@@ -19,7 +19,7 @@
     blush: { spread: 1.7, color: "255,128,150", alpha: 0.42 },
   };
   const LIGHTING_STRENGTH = 0.35;
-  const ASSET_VERSION = "20261020k";
+  const ASSET_VERSION = "20261020-style4";
   const assetUrl = (src) => /[?&]v=/.test(src) ? src : `${src}${src.includes("?") ? "&" : "?"}v=${ASSET_VERSION}`;
   // Illustrated backgrounds (backgrounds/<id>.webp + <id>_thumb.webp).
   const BG_IMAGES = { meadow: "풀밭", dusk: "저녁 들판", sunset: "노을 꽃밭", beach: "바닷가",
@@ -56,7 +56,12 @@
     const top = LAYOUT.bodyBottomY - body.h * S;
     const P = (pt) => [left + pt[0] * S, top + pt[1] * S];
     // Attachments shrink a little on low/flat bodies so ears and tails do not dwarf them.
-    const U = (LAYOUT.bodyWidth / LAYOUT.sheetBodyW) * Math.min(1.1, Math.max(0.72, Math.sqrt((A.H * S) / REF_H)));
+    const heightFactor = Math.min(1.1, Math.max(0.72, Math.sqrt((A.H * S) / REF_H)));
+    const U = (LAYOUT.bodyWidth / LAYOUT.sheetBodyW) * heightFactor;
+    // A waving arm widens the sprite without widening its head. Head attachments
+    // follow the measured head frame instead of the full body's bounding box.
+    const headU = (LAYOUT.bodyWidth / LAYOUT.sheetBodyW) * (A.earScale ?? heightFactor);
+    const headRotation = A.head?.rotation || 0;
     const H = A.H * S, crown = P(A.top);
     const out = [];
 
@@ -75,8 +80,12 @@
         // Their own attachment settings keep the hanging tip and outline visible.
         const hidden = half.sink ?? sink;
         const [dx, dy] = half.offset || [0, 0];
+        const headAngle = (cat === "ears" || cat === "deco") ? headRotation : 0;
+        const rad = headAngle * Math.PI / 180;
+        const offsetX = dx * Math.cos(rad) - dy * Math.sin(rad), offsetY = dx * Math.sin(rad) + dy * Math.cos(rad);
+        const rotation = half.rotation != null ? half.rotation + headAngle : deg || 0;
         put(cat + "." + side, cat, part, half, s, half.root[0], half.root[1] - hidden * half.h,
-          px + dx * s, py + dy * s, half.rotation ?? deg ?? 0);
+          px + offsetX * s, py + offsetY * s, rotation);
         if (half.z != null) out[out.length - 1].z = half.z;
       });
     };
@@ -89,19 +98,22 @@
         put("body", "body", part, part, S, 0, 0, left, top);
       } else if (c.id === "face") {
         const [px, py] = P(A.face);
-        put("face", "face", part, part, (A.face[2] * S * LAYOUT.faceScale) / FACE_REF, part.w / 2, part.h / 2, px, py);
+        put("face", "face", part, part, (A.face[2] * S * LAYOUT.faceScale) / FACE_REF,
+          part.w / 2, part.h / 2, px, py, A.face[3] || 0);
       } else if (c.id === "ears") {
-        pair("ears", part, U, LAYOUT.earSink, [A.earL, A.earR]);
+        pair("ears", part, headU, LAYOUT.earSink, [A.earL, A.earR]);
       } else if (c.id === "prop") {
-        const [px, py] = P(A.prop);
-        const size = A.prop[2] * S * LAYOUT.propScale;
+        const [dx, dy, rotation = 0, scale = 1] = A.propOffsets?.[part.id] || [0, 0];
+        const [px, py] = P([A.prop[0] + dx, A.prop[1] + dy]);
+        const size = A.prop[2] * S * LAYOUT.propScale * scale;
         // Fit the width to the hands, but keep tall props (wands) from towering over the face.
         const ps = Math.min(size / part.w, (size * 1.25) / part.h);
-        put("prop", "prop", part, part, ps, part.w / 2, part.h / 2, px, py);
+        // A pose can hold the item at either hand, tilted with the wrist.
+        put("prop", "prop", part, part, ps, part.w / 2, part.h / 2, px, py, (A.prop[3] || 0) + rotation);
         // Filled hand cutouts cover the prop, then their ink outlines sit on top.
         if (body.arms) put("arms", "body", body, { src: body.arms, w: body.w, h: body.h }, S, 0, 0, left, top);
       } else if (c.id === "deco") {
-        placeDeco(part, put, pair, { A, S, U, H, crown, P });
+        placeDeco(part, put, pair, { A, S, U: headU, H: A.head ? A.head.h * S : H, crown, P, headRotation });
       } else if (c.id === "back") {
         placeBack(part, put, pair, { A, S, U, P });
       }
@@ -118,40 +130,43 @@
     const face = out.find((l) => l.key === "face");
     if (face && face.part.cheeks) {
       const k = face.w / face.part.w;
+      const angle = face.rot * Math.PI / 180, cos = Math.cos(angle), sin = Math.sin(angle);
       face.part.cheeks.forEach(([cx, cy, r], i) => {
         const R = r * k * LAYOUT.blush.spread;
-        out.push({ key: "blush." + i, cat: "face", type: "blush", x: face.x + cx * k - R, y: face.y + cy * k - R * 0.7,
-          w: R * 2, h: R * 1.4, ox: 0, oy: 0, rot: 0, z: LAYOUT.z.blush });
+        const dx = cx * k - face.ox, dy = cy * k - face.oy;
+        const px = face.x + face.ox + dx * cos - dy * sin, py = face.y + face.oy + dx * sin + dy * cos;
+        out.push({ key: "blush." + i, cat: "face", type: "blush", x: px - R, y: py - R * 0.7,
+          w: R * 2, h: R * 1.4, ox: R, oy: R * 0.7, rot: face.rot, z: LAYOUT.z.blush });
       });
     }
     return out.sort((p, q) => p.z - q.z);
   }
 
-  function placeDeco(part, put, pair, { A, S, U, H, crown, P }) {
+  function placeDeco(part, put, pair, { A, S, U, H, crown, P, headRotation }) {
     U *= LAYOUT.decoScale;
     const [tx, ty] = crown;
     if (part.kind === "hat") {
       const s = (part.fit * A.headW * S * LAYOUT.decoScale) / part.w;
-      put("deco", "deco", part, part, s, part.w / 2, part.h, tx, ty + part.bot * H * LAYOUT.decoScale);
+      put("deco", "deco", part, part, s, part.w / 2, part.h, tx, ty + part.bot * H * LAYOUT.decoScale, headRotation);
     } else if (part.kind === "halo") {
-      put("deco", "deco", part, part, U, part.w / 2, part.h, tx, ty - 0.04 * H);
+      put("deco", "deco", part, part, U, part.w / 2, part.h, tx, ty - 0.04 * H, headRotation);
     } else if (part.kind === "pair") {
       pair("deco", part, U, 0.12, [A.earL, A.earR]);
     } else if (part.kind === "side") {
       // Between the crown and the right ear spot, leaning outwards.
       const [ex, ey] = P(A.earR);
-      put("deco", "deco", part, part, U * 0.85, part.w / 2, part.h * 0.65, tx + (ex - tx) * 0.75, ey + 0.02 * H, 22);
+      put("deco", "deco", part, part, U * 0.85, part.w / 2, part.h * 0.65, tx + (ex - tx) * 0.75, ey + 0.02 * H, 22 + headRotation);
     } else {
-      put("deco", "deco", part, part, U, part.w / 2, part.h * (1 - (part.sink ?? 0.25)), tx, ty);
+      put("deco", "deco", part, part, U, part.w / 2, part.h * (1 - (part.sink ?? 0.25)), tx, ty, headRotation);
     }
   }
 
   function placeBack(part, put, pair, { A, S, U, P }) {
     if (part.kind === "tail") {
       const [px, py] = P(A.tail);
-      put("back", "back", part, part, U * LAYOUT.tailScale, part.root[0], part.root[1], px, py);
+      put("back", "back", part, part, U * LAYOUT.tailScale * (part.scale ?? 1), part.root[0], part.root[1], px, py);
     } else if (part.kind === "wings") {
-      pair("back", part, U, 0, [A.sideL, A.sideR]);
+      pair("back", part, U * (part.scale ?? 1), 0, [A.sideL, A.sideR]);
     } else {
       const s = ((part.fit || 1.3) * A.W * S) / part.w;
       const [px, py] = P([A.center[0], A.top[1] + (part.fy ?? 0.45) * A.H]);
@@ -177,9 +192,19 @@
     }
     const pending = new Promise((res, rej) => {
       const im = new Image();
+      let retried = false;
       im.decoding = "async";
       im.onload = () => res(im);
-      im.onerror = () => { if (imgCache.get(src) === pending) imgCache.delete(src); rej(new Error(`Image unavailable: ${src}`)); };
+      im.onerror = () => {
+        if (!retried) {
+          retried = true;
+          const url = assetUrl(src);
+          im.src = `${url}${url.includes("?") ? "&" : "?"}retry=1`;
+          return;
+        }
+        if (imgCache.get(src) === pending) imgCache.delete(src);
+        rej(new Error(`Image unavailable: ${src}`));
+      };
       im.src = assetUrl(src);
     });
     if (imgCache.size >= 96) imgCache.delete(imgCache.keys().next().value);
@@ -227,6 +252,9 @@
       }
       if (shade) shadeCanvas(ctx, cv, w, h);
       return cv;
+    }).catch((error) => {
+      if (canvasCache.get(key) === cv) canvasCache.delete(key);
+      throw error;
     });
     return cv;
   }
@@ -387,6 +415,7 @@
         const radius = l.w / 2 * scale;
         ctx.globalCompositeOperation = "multiply";
         ctx.translate((l.x + l.w / 2) * scale, (l.y + l.h / 2) * scale);
+        ctx.rotate(l.rot * Math.PI / 180);
         ctx.scale(1, l.h / l.w);
         const g = ctx.createRadialGradient(0, 0, 0, 0, 0, radius);
         g.addColorStop(0, `rgba(${color},${alpha})`);

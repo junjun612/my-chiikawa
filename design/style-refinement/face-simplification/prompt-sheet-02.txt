@@ -1,0 +1,26 @@
+Use case: stylized-concept
+Asset type: production 4x4 sprite atlas of 16 DIFFERENT understated facial expressions for a round small cartoon animal dress-up game.
+Input images: 1 is a style-and-proportion reference of the complete animals; 2 is a reference expression sprite. Do not copy an existing character. Extract only the gentle proportions, simple dark ink marks, restrained expressions and tiny eyes.
+Generate a perfectly regular FOUR COLUMNS by FOUR ROWS atlas on a genuinely transparent background. Each cell contains ONLY one complete floating facial expression: two eyes, a small mouth, optional subtle brows and very pale cheeks. No head, no body, no ears, no outlines enclosing the face, no props, no text, no numbers, no grid lines.
+Crucial proportions: eyes are TINY round dots or small vertical beans, each eye diameter is only 5 to 7 percent of the full expression width including cheeks, not giant anime eyes. Solid dark warm-black ink; at most ONE pinprick white highlight in open eyes. Mouth similarly small. Keep the eyes rather widely separated, relaxed and naturally simple. Same eye spacing and same actual scale in every cell. Cheeks are optional tiny PALE pink watercolor smudges with NO dark enclosing outline at all, and two very fine short ink ticks. They must not look like pink buttons. Use understated pale pink, avoid heavy saturated blush.
+Hand-drawn medium: slightly wobbly charcoal-black marker contours with a subtle fuzzy paper-ink edge, as in reference, not smooth vector, no glossy rendering, no 3D, no dramatic gradients. Restrained and calm, slightly awkward animal emotions, not over-performed generic kawaii.
+Layout: generous transparent gaps; all 16 expressions centered in their equal cells, each expression width about 70 percent of its cell and height under 35 percent. The basic face midpoint of every expression is at exact center of its cell. Eyes sit a little above the center; tiny mouth just below the eyes.
+This is a SECOND candidate sheet. Draw 16 new simple variations, not large-eyed kawaii duplicates.
+Row-major expressions:
+1 tiny round dot eyes, tiny sideways cat mouth, mildly bashful.
+2 tiny dot eyes, very short slightly downturned brows, tiny w mouth; quiet determination.
+3 tiny beans with a single small white glint, tiny w mouth, calm warm.
+4 narrow closed upward u eyes and very tiny u smile.
+5 tiny open dots, tiny downward-curving mouth, nervous.
+6 tiny open dots with asymmetrical raised thin brows, tiny straight mouth; questioning.
+7 closed sleepy downturned crescent eyes, tiny o yawn.
+8 tiny dots looking up, tiny w mouth, one small blue sweat drop to side.
+9 tiny round eyes, one tiny eyelid lash curve, small smile; softly proud.
+10 two tiny plain dots and small pursed mouth, gently focused.
+11 tiny eyes that curve into quiet laughter, teeny open mouth; not a huge laughing mouth.
+12 one tiny bean eye and one very small chevron wink, tiny u smile.
+13 two small flat oval eyes, tiny slanted cat mouth; mildly unimpressed.
+14 two tiny open dot eyes and a tiny o mouth, slight shy inward brows.
+15 tiny dot eyes and tiny w mouth holding a single pale pink tongue tip, very restrained.
+16 one tiny dot and one simple wink, small curved closed smile.
+Avoid: large sparkly eyes, star pupils, heart pupils, multiple eye highlights, dramatic blush, thick eyebrow slabs, huge mouth, eyelashes, human details, character heads. The whole point is smaller simpler eyes and quiet expressions.

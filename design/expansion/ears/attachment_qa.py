@@ -36,14 +36,14 @@ def sprite(p,color='#ffffff'):
 
 
 def layer(canvas,p,scale,root,target,deg=0,color='#ffffff'):
-    im=sprite(p,color);im=im.resize((p['w'],p['h']),Image.Resampling.LANCZOS)
+    im=sprite(p,color);im=im.resize((round(p['w']),round(p['h'])),Image.Resampling.LANCZOS)
     co,si=math.cos(math.radians(deg)),math.sin(math.radians(deg))
     px,py=target;rx,ry=root
     inv=(co/scale,si/scale,rx-(co*px+si*py)/scale,-si/scale,co/scale,ry+(si*px-co*py)/scale)
     canvas.alpha_composite(im.transform((512,512),Image.Transform.AFFINE,inv,Image.Resampling.BICUBIC))
 
 
-def compose(b,p,color='#ffffff'):
+def compose(b,p,color='#ffffff',face=None):
     A=b['anchors'];S=190/b['w'];left=161;top=440-b['h']*S
     P=lambda pt:(left+pt[0]*S,top+pt[1]*S)
     U=(190/313)*min(1.1,max(.72,math.sqrt((A['H']*S)/REF_H)))
@@ -55,7 +55,7 @@ def compose(b,p,color='#ffffff'):
             px,py=P(A[anchor]);dx,dy=e.get('offset',[0,0])
             layer(canvas,e,U,[e['root'][0],e['root'][1]-e.get('sink',.36)*e['h']],[px+dx*U,py+dy*U],e.get('rotation',A[anchor][2]),color)
     ears();layer(canvas,b,S,[0,0],[left,top],color=color);ears(True)
-    f=PARTS['face'][0];fs=A['face'][2]*S*1.2/FACE_REF
+    f=face or PARTS['face'][0];fs=A['face'][2]*S*1.2/FACE_REF
     layer(canvas,f,fs,[f['w']/2,f['h']/2],P(A['face']),color=color)
     return canvas
 

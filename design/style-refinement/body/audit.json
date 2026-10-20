@@ -1,0 +1,210 @@
+{
+  "status": "Final corrected nine published; raw anatomy,9 head frames,324 prop combinations and raster/mask preservation checks passed.",
+  "counts": {
+    "keep": 16,
+    "replace": 9,
+    "remove_from_catalog": 5,
+    "final_catalog": 25
+  },
+  "parts": [
+    {
+      "id": "body_01",
+      "label": "기본 모찌",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_02",
+      "label": "몽실",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_03",
+      "label": "보송 털뭉치",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_04",
+      "label": "구름 몽실",
+      "action": "remove",
+      "reason": "루트에서 확정한 최종25종 구성에 따라 풀/메뉴에서 제외. 실제 파일 삭제와는 별개."
+    },
+    {
+      "id": "body_06",
+      "label": "볼빵빵",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_07",
+      "label": "우유 구름떡",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_08",
+      "label": "하트 배",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_09",
+      "label": "밤색 머리",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_10",
+      "label": "점박이",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_11",
+      "label": "줄무늬",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_12",
+      "label": "하트 밀크푸딩",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_13",
+      "label": "양말 발",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_14",
+      "label": "흰 입가",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_15",
+      "label": "달걀 몽실",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_16",
+      "label": "몽실 구름배",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_17",
+      "label": "동글 우유",
+      "action": "replace",
+      "reason": "중복 단순 원형을 모몽가 볼옆 짧은 털+한손 쥐기·반대손 인사로 교체."
+    },
+    {
+      "id": "body_18",
+      "label": "통통 볼살",
+      "action": "remove",
+      "reason": "루트에서 확정한 최종25종 구성에 따라 풀/메뉴에서 제외. 실제 파일 삭제와는 별개."
+    },
+    {
+      "id": "body_19",
+      "label": "몽글 식빵",
+      "action": "replace",
+      "reason": "식빵 모서리를 없애 둥근 동물형에 한손 쥐기와 반대손 인사."
+    },
+    {
+      "id": "body_20",
+      "label": "말랑 찹쌀",
+      "action": "replace",
+      "reason": "가로 납작함 대신 의도된 모찌 앉기 자세와 두 손으로 소품 안기."
+    },
+    {
+      "id": "body_21",
+      "label": "배동글 모찌",
+      "action": "replace",
+      "reason": "아래가 넓은 배 모양과 추가손처럼 보이는 돌기를 없애 반대 방향 인사+한 그립."
+    },
+    {
+      "id": "body_22",
+      "label": "구름 찹쌀",
+      "action": "remove",
+      "reason": "루트에서 확정한 최종25종 구성에 따라 풀/메뉴에서 제외. 실제 파일 삭제와는 별개."
+    },
+    {
+      "id": "body_23",
+      "label": "포근 주먹밥",
+      "action": "replace",
+      "reason": "삼각 주먹밥 체형을 통통한 햄스터 앉은형으로 교체."
+    },
+    {
+      "id": "body_24",
+      "label": "하얀 마시멜로",
+      "action": "replace",
+      "reason": "네모 쿠션 체형을 작은 가슴패치·한손 인사 동물형으로 교체."
+    },
+    {
+      "id": "body_25",
+      "label": "갸우뚱 모찌",
+      "action": "replace",
+      "reason": "가벼운기울임·이마점보존,사용자지시로소품을뻗은왼손으로이동하고오른쪽아래손은작게쉬는손으로정리."
+    },
+    {
+      "id": "body_26",
+      "label": "밀크 푸딩",
+      "action": "remove",
+      "reason": "루트에서 확정한 최종25종 구성에 따라 풀/메뉴에서 제외. 실제 파일 삭제와는 별개."
+    },
+    {
+      "id": "body_27",
+      "label": "보송 솜뭉치",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_28",
+      "label": "둥근 우유떡",
+      "action": "replace",
+      "reason": "중복 돔형을 짧은 겉잔털 수달형으로 교체."
+    },
+    {
+      "id": "body_29",
+      "label": "감자 모찌",
+      "action": "keep",
+      "reason": "기존 그림의 매력을 유지. body13 햄스터와 좋은 모찌/복슬이들을 보존하고 새 자세와 섞음."
+    },
+    {
+      "id": "body_30",
+      "label": "눈송이 모찌",
+      "action": "replace",
+      "reason": "중복 원형을 몸이 조금 기운 인사 동물형으로 교체."
+    },
+    {
+      "id": "body_31",
+      "label": "몽실 우유떡",
+      "action": "remove",
+      "reason": "루트에서 확정한 최종25종 구성에 따라 풀/메뉴에서 제외. 실제 파일 삭제와는 별개."
+    }
+  ],
+  "latest_criteria": [
+    "기존 모찌/복슬/햄스터와 새로운 동물형을 섞어 중간선 유지",
+    "한손7종은 명확한 팔2개:6종 C그립+반대손인사,body25는뻗은왼손그립+오른쪽쉬는손;추가외곽돌기금지",
+    "몸 맨 아래 닫힌 발2개; 높은 옆발돌기와 분리된 검은 발획 금지",
+    "모몽가 볼옆 짧은 털과 수달 잔털, 적은 선, 작은 연한 무늬2종",
+    "재색칠해도 고정 무늬 유지; 소품은 실제 손 위치와 회전각 사용"
+  ],
+  "source": "pose-anatomy-fixed-sheet.png",
+  "all_source_prompts": [
+    "prompt.txt",
+    "refinement-prompt.txt",
+    "head-torso-prompt.txt",
+    "pose-prompt.txt",
+    "pose-anatomy-fix-prompt.txt",
+    "body25-hand-switch-prompt.txt"
+  ],
+  "source_edits": {
+    "body_25": "body25-hand-switch-source.png"
+  }
+}

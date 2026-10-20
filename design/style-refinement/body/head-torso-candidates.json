@@ -1,0 +1,930 @@
+[
+  {
+    "id": "candidate_ht_01",
+    "label": "Head-torso cell 1",
+    "w": 245,
+    "h": 273,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        125.0,
+        6.0
+      ],
+      "headW": 200.9,
+      "earL": [
+        57.62,
+        23.0,
+        -15.0
+      ],
+      "earR": [
+        192.38,
+        24.0,
+        15.0
+      ],
+      "prop": [
+        123.68,
+        201.21,
+        61.41
+      ],
+      "face": [
+        123.68,
+        94.87,
+        139.65
+      ],
+      "tail": [
+        186.2,
+        229.32
+      ],
+      "sideL": [
+        66.15,
+        203.57
+      ],
+      "sideR": [
+        178.85,
+        203.57
+      ],
+      "center": [
+        122.5,
+        136.5
+      ],
+      "H": 261.0,
+      "W": 235.0
+    },
+    "sourceCell": 1,
+    "headBottomY": 179,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_01.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_01_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_01_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_01_arms.webp"
+  },
+  {
+    "id": "candidate_ht_02",
+    "label": "Head-torso cell 2",
+    "w": 257,
+    "h": 279,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        135.0,
+        6.0
+      ],
+      "headW": 210.74,
+      "earL": [
+        64.32,
+        22.0,
+        -15.0
+      ],
+      "earR": [
+        205.68,
+        24.0,
+        15.0
+      ],
+      "prop": [
+        132.45,
+        215.19,
+        66.04
+      ],
+      "face": [
+        132.45,
+        99.64,
+        146.49
+      ],
+      "tail": [
+        195.32,
+        234.36
+      ],
+      "sideL": [
+        69.39,
+        213.11
+      ],
+      "sideR": [
+        187.61,
+        213.11
+      ],
+      "center": [
+        128.5,
+        139.5
+      ],
+      "H": 267.0,
+      "W": 246.0
+    },
+    "sourceCell": 2,
+    "headBottomY": 188,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_02.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_02_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_02_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_02_arms.webp"
+  },
+  {
+    "id": "candidate_ht_03",
+    "label": "Head-torso cell 3",
+    "w": 260,
+    "h": 270,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        133.0,
+        6.0
+      ],
+      "headW": 213.2,
+      "earL": [
+        61.5,
+        23.0,
+        -15.0
+      ],
+      "earR": [
+        204.5,
+        24.0,
+        15.0
+      ],
+      "prop": [
+        129.33,
+        203.96,
+        68.45
+      ],
+      "face": [
+        129.33,
+        93.28,
+        148.2
+      ],
+      "tail": [
+        197.6,
+        226.8
+      ],
+      "sideL": [
+        70.2,
+        200.3
+      ],
+      "sideR": [
+        189.8,
+        200.3
+      ],
+      "center": [
+        130.0,
+        135.0
+      ],
+      "H": 258.0,
+      "W": 249.0
+    },
+    "sourceCell": 3,
+    "headBottomY": 176,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_03.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_03_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_03_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_03_arms.webp"
+  },
+  {
+    "id": "candidate_ht_04",
+    "label": "Head-torso cell 4",
+    "w": 273,
+    "h": 268,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        139.5,
+        6.0
+      ],
+      "headW": 223.86,
+      "earL": [
+        64.42,
+        26.0,
+        -15.0
+      ],
+      "earR": [
+        214.57,
+        27.0,
+        15.0
+      ],
+      "prop": [
+        138.19,
+        199.07,
+        63.55
+      ],
+      "face": [
+        138.19,
+        93.28,
+        155.61
+      ],
+      "tail": [
+        207.48,
+        225.12
+      ],
+      "sideL": [
+        73.71,
+        200.12
+      ],
+      "sideR": [
+        199.29,
+        200.12
+      ],
+      "center": [
+        136.5,
+        134.0
+      ],
+      "H": 256.0,
+      "W": 262.0
+    },
+    "sourceCell": 4,
+    "headBottomY": 176,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_04.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_04_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_04_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_04_arms.webp"
+  },
+  {
+    "id": "candidate_ht_05",
+    "label": "Head-torso cell 5",
+    "w": 282,
+    "h": 277,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        145.0,
+        5.0
+      ],
+      "headW": 231.24,
+      "earL": [
+        67.45,
+        29.0,
+        -15.0
+      ],
+      "earR": [
+        222.55,
+        33.0,
+        15.0
+      ],
+      "prop": [
+        142.01,
+        209.48,
+        63.93
+      ],
+      "face": [
+        142.01,
+        99.11,
+        160.74
+      ],
+      "tail": [
+        214.32,
+        232.68
+      ],
+      "sideL": [
+        76.14,
+        211.93
+      ],
+      "sideR": [
+        205.86,
+        211.93
+      ],
+      "center": [
+        141.0,
+        138.5
+      ],
+      "H": 266.0,
+      "W": 271.0
+    },
+    "sourceCell": 5,
+    "headBottomY": 187,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_05.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_05_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_05_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_05_arms.webp"
+  },
+  {
+    "id": "candidate_ht_06",
+    "label": "Head-torso cell 6",
+    "w": 285,
+    "h": 277,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        143.0,
+        5.0
+      ],
+      "headW": 233.7,
+      "earL": [
+        64.62,
+        31.0,
+        -15.0
+      ],
+      "earR": [
+        221.38,
+        30.0,
+        15.0
+      ],
+      "prop": [
+        144.07,
+        212.82,
+        64.35
+      ],
+      "face": [
+        144.07,
+        100.7,
+        162.45
+      ],
+      "tail": [
+        216.6,
+        232.68
+      ],
+      "sideL": [
+        76.95,
+        214.93
+      ],
+      "sideR": [
+        208.05,
+        214.93
+      ],
+      "center": [
+        142.5,
+        138.5
+      ],
+      "H": 266.0,
+      "W": 274.0
+    },
+    "sourceCell": 6,
+    "headBottomY": 190,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_06.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_06_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_06_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_06_arms.webp"
+  },
+  {
+    "id": "candidate_ht_07",
+    "label": "Head-torso cell 7",
+    "w": 273,
+    "h": 273,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        137.0,
+        5.0
+      ],
+      "headW": 223.86,
+      "earL": [
+        61.92,
+        28.0,
+        -15.0
+      ],
+      "earR": [
+        212.07,
+        31.0,
+        15.0
+      ],
+      "prop": [
+        135.37,
+        207.8,
+        62.8
+      ],
+      "face": [
+        135.37,
+        96.46,
+        155.61
+      ],
+      "tail": [
+        207.48,
+        229.32
+      ],
+      "sideL": [
+        73.71,
+        206.57
+      ],
+      "sideR": [
+        199.29,
+        206.57
+      ],
+      "center": [
+        136.5,
+        136.5
+      ],
+      "H": 262.0,
+      "W": 261.0
+    },
+    "sourceCell": 7,
+    "headBottomY": 182,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_07.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_07_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_07_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_07_arms.webp"
+  },
+  {
+    "id": "candidate_ht_08",
+    "label": "Head-torso cell 8",
+    "w": 226,
+    "h": 275,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        116.0,
+        6.0
+      ],
+      "headW": 185.32,
+      "earL": [
+        53.85,
+        25.0,
+        -15.0
+      ],
+      "earR": [
+        178.15,
+        26.0,
+        15.0
+      ],
+      "prop": [
+        113.06,
+        209.12,
+        59.56
+      ],
+      "face": [
+        113.06,
+        95.93,
+        128.82
+      ],
+      "tail": [
+        171.76,
+        231.0
+      ],
+      "sideL": [
+        61.02,
+        205.75
+      ],
+      "sideR": [
+        164.98,
+        205.75
+      ],
+      "center": [
+        113.0,
+        137.5
+      ],
+      "H": 263.0,
+      "W": 215.0
+    },
+    "sourceCell": 8,
+    "headBottomY": 181,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_08.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_08_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_08_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_08_arms.webp"
+  },
+  {
+    "id": "candidate_ht_09",
+    "label": "Head-torso cell 9",
+    "w": 273,
+    "h": 277,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        140.0,
+        5.0
+      ],
+      "headW": 223.86,
+      "earL": [
+        64.92,
+        26.0,
+        -15.0
+      ],
+      "earR": [
+        215.07,
+        29.0,
+        15.0
+      ],
+      "prop": [
+        134.13,
+        210.29,
+        65.58
+      ],
+      "face": [
+        134.13,
+        100.7,
+        155.61
+      ],
+      "tail": [
+        207.48,
+        232.68
+      ],
+      "sideL": [
+        73.71,
+        214.93
+      ],
+      "sideR": [
+        199.29,
+        214.93
+      ],
+      "center": [
+        136.5,
+        138.5
+      ],
+      "H": 267.0,
+      "W": 262.0
+    },
+    "sourceCell": 9,
+    "headBottomY": 190,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_09.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_09_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_09_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_09_arms.webp"
+  },
+  {
+    "id": "candidate_ht_10",
+    "label": "Head-torso cell 10",
+    "w": 268,
+    "h": 278,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        140.5,
+        5.0
+      ],
+      "headW": 219.76,
+      "earL": [
+        66.8,
+        24.0,
+        -15.0
+      ],
+      "earR": [
+        214.2,
+        26.0,
+        15.0
+      ],
+      "prop": [
+        135.67,
+        210.11,
+        70.66
+      ],
+      "face": [
+        135.67,
+        99.64,
+        152.76
+      ],
+      "tail": [
+        203.68,
+        233.52
+      ],
+      "sideL": [
+        72.36,
+        213.02
+      ],
+      "sideR": [
+        195.64,
+        213.02
+      ],
+      "center": [
+        134.0,
+        139.0
+      ],
+      "H": 268.0,
+      "W": 257.0
+    },
+    "sourceCell": 10,
+    "headBottomY": 188,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_10.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_10_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_10_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_10_arms.webp"
+  },
+  {
+    "id": "candidate_ht_11",
+    "label": "Head-torso cell 11",
+    "w": 273,
+    "h": 274,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        139.5,
+        6.0
+      ],
+      "headW": 223.86,
+      "earL": [
+        64.42,
+        23.0,
+        -15.0
+      ],
+      "earR": [
+        214.57,
+        25.0,
+        15.0
+      ],
+      "prop": [
+        135.09,
+        209.25,
+        68.31
+      ],
+      "face": [
+        135.09,
+        99.11,
+        155.61
+      ],
+      "tail": [
+        207.48,
+        230.16
+      ],
+      "sideL": [
+        73.71,
+        211.66
+      ],
+      "sideR": [
+        199.29,
+        211.66
+      ],
+      "center": [
+        136.5,
+        137.0
+      ],
+      "H": 263.0,
+      "W": 262.0
+    },
+    "sourceCell": 11,
+    "headBottomY": 187,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_11.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_11_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_11_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_11_arms.webp"
+  },
+  {
+    "id": "candidate_ht_12",
+    "label": "Head-torso cell 12",
+    "w": 267,
+    "h": 269,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        139.5,
+        6.0
+      ],
+      "headW": 218.94,
+      "earL": [
+        66.07,
+        25.0,
+        -15.0
+      ],
+      "earR": [
+        212.93,
+        27.0,
+        15.0
+      ],
+      "prop": [
+        134.54,
+        202.35,
+        66.42
+      ],
+      "face": [
+        134.54,
+        94.34,
+        152.19
+      ],
+      "tail": [
+        202.92,
+        225.96
+      ],
+      "sideL": [
+        72.09,
+        202.21
+      ],
+      "sideR": [
+        194.91,
+        202.21
+      ],
+      "center": [
+        133.5,
+        134.5
+      ],
+      "H": 258.0,
+      "W": 256.0
+    },
+    "sourceCell": 12,
+    "headBottomY": 178,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_12.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_12_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_12_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_12_arms.webp"
+  },
+  {
+    "id": "candidate_ht_13",
+    "label": "Head-torso cell 13",
+    "w": 262,
+    "h": 282,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        123.0,
+        5.0
+      ],
+      "headW": 214.84,
+      "earL": [
+        50.95,
+        35.0,
+        -15.0
+      ],
+      "earR": [
+        195.05,
+        24.0,
+        15.0
+      ],
+      "prop": [
+        135.54,
+        208.55,
+        68.92
+      ],
+      "face": [
+        135.54,
+        99.64,
+        149.34
+      ],
+      "tail": [
+        199.12,
+        236.88
+      ],
+      "sideL": [
+        70.74,
+        213.38
+      ],
+      "sideR": [
+        191.26,
+        213.38
+      ],
+      "center": [
+        131.0,
+        141.0
+      ],
+      "H": 272.0,
+      "W": 251.0
+    },
+    "sourceCell": 13,
+    "headBottomY": 188,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_13.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_13_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_13_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_13_arms.webp"
+  },
+  {
+    "id": "candidate_ht_14",
+    "label": "Head-torso cell 14",
+    "w": 258,
+    "h": 283,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        134.0,
+        5.0
+      ],
+      "headW": 211.56,
+      "earL": [
+        63.05,
+        28.0,
+        -15.0
+      ],
+      "earR": [
+        204.95,
+        32.0,
+        15.0
+      ],
+      "prop": [
+        73.53,
+        199.52,
+        51.85
+      ],
+      "face": [
+        73.53,
+        98.58,
+        147.06
+      ],
+      "tail": [
+        196.08,
+        237.72
+      ],
+      "sideL": [
+        69.66,
+        211.47
+      ],
+      "sideR": [
+        188.34,
+        211.47
+      ],
+      "center": [
+        129.0,
+        141.5
+      ],
+      "H": 272.0,
+      "W": 247.0
+    },
+    "sourceCell": 14,
+    "headBottomY": 186,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_14.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_14_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_14_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_14_arms.webp"
+  },
+  {
+    "id": "candidate_ht_15",
+    "label": "Head-torso cell 15",
+    "w": 268,
+    "h": 280,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        144.72,
+        5.0
+      ],
+      "headW": 219.76,
+      "earL": [
+        71.02,
+        26.0,
+        -15.0
+      ],
+      "earR": [
+        218.42,
+        35.0,
+        15.0
+      ],
+      "prop": [
+        189.93,
+        199.98,
+        55.76
+      ],
+      "face": [
+        189.93,
+        98.58,
+        152.76
+      ],
+      "tail": [
+        203.68,
+        235.2
+      ],
+      "sideL": [
+        72.36,
+        211.2
+      ],
+      "sideR": [
+        195.64,
+        211.2
+      ],
+      "center": [
+        134.0,
+        140.0
+      ],
+      "H": 269.0,
+      "W": 256.0
+    },
+    "sourceCell": 15,
+    "headBottomY": 186,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_15.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_15_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_15_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_15_arms.webp"
+  },
+  {
+    "id": "candidate_ht_16",
+    "label": "Head-torso cell 16",
+    "w": 255,
+    "h": 278,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        131.5,
+        6.0
+      ],
+      "headW": 209.1,
+      "earL": [
+        61.38,
+        23.0,
+        -15.0
+      ],
+      "earR": [
+        201.62,
+        25.0,
+        15.0
+      ],
+      "prop": [
+        124.25,
+        210.24,
+        62.06
+      ],
+      "face": [
+        124.25,
+        98.05,
+        145.35
+      ],
+      "tail": [
+        193.8,
+        233.52
+      ],
+      "sideL": [
+        68.85,
+        210.02
+      ],
+      "sideR": [
+        186.15,
+        210.02
+      ],
+      "center": [
+        127.5,
+        139.0
+      ],
+      "H": 266.0,
+      "W": 244.0
+    },
+    "sourceCell": 16,
+    "headBottomY": 185,
+    "src": "design/style-refinement/body/head-torso-candidates/cell_16.webp",
+    "line": "design/style-refinement/body/head-torso-candidates/cell_16_line.webp",
+    "fill": "design/style-refinement/body/head-torso-candidates/cell_16_fill.webp",
+    "arms": "design/style-refinement/body/head-torso-candidates/cell_16_arms.webp"
+  }
+]

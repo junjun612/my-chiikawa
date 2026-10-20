@@ -1,0 +1,25 @@
+Four isolated cheek/prop placement overrides, 2026-10-20.
+
+cheek-prop-overrides.json is the final independent proposal consumed by root.
+No shared body manifest, global catalog, engine or product image was changed.
+
+Every new center is recomputed around the existing calibrated handle point.
+The source shaft fractions are the same fractions used by root's hand fit
+calibration: prop04 (.30,.82), prop11 (.42,.88). Source-geometry contact point
+rounding error stays below .001 body pixel. Scale .85 is applied around this
+contact point. The item is tilted outward/down rather than rotating its center
+in place, so the handle does not float away from the hand.
+
+A weak 12-degree tilt/.88 scale cleared face19 but failed on the wider/lower
+original cheeks. The final outward rotations are stronger to preserve both
+original and new faces, while keeping the hand connected and the item readable.
+All four final before/after pairs were viewed directly, then all36 expressions
+on each pair were directly inspected on the four all-faces-*.jpg sheets.
+The minimum visible pink cheek-to-prop gaps across all144 combinations are
+5.657,5.385,5.657,4.0 logical stage pixels. These are source sprite geometry
+measurements, independent of browser lighting/shadow. Root will validate actual
+Canvas rendering. Detailed data is in audit.json and all-face-gaps.json.
+
+The original files named angle-* and after-original-faces.jpg are exploratory
+rejected previews. The final values are only cheek-prop-overrides.json, and the
+four final all-faces-*.jpg sheets plus before-after.jpg reflect those values.

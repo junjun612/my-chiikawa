@@ -1,0 +1,118 @@
+{
+  "coordinate_space": "body source design pixels; normalized prop point relative to full prop design size",
+  "prop_grips": {
+    "prop_04": {
+      "pixel": [
+        34,
+        180
+      ],
+      "design_size": [
+        165,
+        229
+      ],
+      "normalized": [
+        0.20606061,
+        0.7860262
+      ]
+    },
+    "prop_05": {
+      "pixel": [
+        132,
+        194
+      ],
+      "design_size": [
+        222,
+        228
+      ],
+      "normalized": [
+        0.59459459,
+        0.85087719
+      ]
+    },
+    "prop_11": {
+      "pixel": [
+        55,
+        180
+      ],
+      "design_size": [
+        159,
+        216
+      ],
+      "normalized": [
+        0.34591195,
+        0.83333333
+      ]
+    },
+    "prop_13": {
+      "pixel": [
+        44,
+        166
+      ],
+      "design_size": [
+        186,
+        207
+      ],
+      "normalized": [
+        0.23655914,
+        0.80193237
+      ]
+    },
+    "prop_30": {
+      "pixel": [
+        112,
+        216
+      ],
+      "design_size": [
+        216,
+        240
+      ],
+      "normalized": [
+        0.51851852,
+        0.9
+      ]
+    }
+  },
+  "body_grip_centers": {
+    "body_20": [
+      155,
+      151.5
+    ],
+    "body_23": [
+      154.5,
+      161
+    ]
+  },
+  "scale": {
+    "body_20": 0.78,
+    "body_23": 0.85
+  },
+  "total_rotation_degrees": {
+    "body_20": {
+      "prop_04": 80,
+      "prop_05": 115,
+      "prop_11": 90,
+      "prop_13": 55,
+      "prop_30": 135
+    },
+    "body_23": {
+      "prop_04": 65,
+      "prop_05": 110,
+      "prop_11": 80,
+      "prop_13": 55,
+      "prop_30": 120
+    }
+  },
+  "formula": [
+    "ps=min(A.prop[2]*scale*LAYOUT.propScale/prop.w,A.prop[2]*scale*LAYOUT.propScale*1.25/prop.h)",
+    "v=[(u-0.5)*prop.w*ps,(v-0.5)*prop.h*ps]",
+    "R=[v.x*cos(theta)-v.y*sin(theta),v.x*sin(theta)+v.y*cos(theta)]",
+    "center=bodyGripCenter-R",
+    "offset=[center.x-A.prop[0],center.y-A.prop[1],theta-(A.prop[3]||0),scale]"
+  ],
+  "validation": {
+    "face_combinations": 360,
+    "max_face_opaque_overlap_pixels": 0,
+    "max_grip_error_stage_pixels": 0.0046
+  },
+  "visual_note": "Right hand grips actual shafts/stems; free left C hand remains raised. Flowers angle downward/outward to clear tall legacy face sprites as well as face19."
+}

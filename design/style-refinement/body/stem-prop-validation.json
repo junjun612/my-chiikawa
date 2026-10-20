@@ -1,0 +1,134 @@
+[
+  {
+    "body": "body_17",
+    "prop": "prop_11",
+    "offset": [
+      21.57,
+      -10.67,
+      10,
+      0.96
+    ],
+    "face_gap_stage_px": 2.24,
+    "hand_coverage_pct": 7.63,
+    "stem_contact_source_pixels": 79,
+    "q": 0.55,
+    "up": -21,
+    "grasp_fraction": [
+      0.42,
+      0.94
+    ],
+    "face_count_tested": 36,
+    "minimum_gap_uses_union_of_all_drawn_face_pixels": true,
+    "important_tradeoff": "Pure upward5–9px collides with original large cheeks/tears. This final alternative tilts outward and changes vertical placement as needed while retaining actual stem-to-hand ink contact; see large-face evidence."
+  },
+  {
+    "body": "body_17",
+    "prop": "prop_30",
+    "offset": [
+      15.33,
+      -11.29,
+      10,
+      1
+    ],
+    "face_gap_stage_px": 2.24,
+    "hand_coverage_pct": 14.98,
+    "stem_contact_source_pixels": 109,
+    "q": 0.55,
+    "up": -15,
+    "grasp_fraction": [
+      0.5,
+      0.94
+    ],
+    "face_count_tested": 36,
+    "minimum_gap_uses_union_of_all_drawn_face_pixels": true,
+    "important_tradeoff": "Pure upward5–9px collides with original large cheeks/tears. This final alternative tilts outward and changes vertical placement as needed while retaining actual stem-to-hand ink contact; see large-face evidence."
+  },
+  {
+    "body": "body_19",
+    "prop": "prop_11",
+    "offset": [
+      -33.1,
+      -36.58,
+      -45,
+      1
+    ],
+    "face_gap_stage_px": 2.78,
+    "hand_coverage_pct": 1.99,
+    "stem_contact_source_pixels": 33,
+    "q": 0.7,
+    "up": 3,
+    "grasp_fraction": [
+      0.42,
+      0.94
+    ],
+    "face_count_tested": 36,
+    "minimum_gap_uses_union_of_all_drawn_face_pixels": true,
+    "important_tradeoff": "Pure upward5–9px collides with original large cheeks/tears. This final alternative tilts outward and changes vertical placement as needed while retaining actual stem-to-hand ink contact; see large-face evidence."
+  },
+  {
+    "body": "body_19",
+    "prop": "prop_30",
+    "offset": [
+      -29.94,
+      -30.87,
+      -35,
+      1
+    ],
+    "face_gap_stage_px": 2.16,
+    "hand_coverage_pct": 2.04,
+    "stem_contact_source_pixels": 86,
+    "q": 0.85,
+    "up": 3,
+    "grasp_fraction": [
+      0.5,
+      0.94
+    ],
+    "face_count_tested": 36,
+    "minimum_gap_uses_union_of_all_drawn_face_pixels": true,
+    "important_tradeoff": "Pure upward5–9px collides with original large cheeks/tears. This final alternative tilts outward and changes vertical placement as needed while retaining actual stem-to-hand ink contact; see large-face evidence."
+  },
+  {
+    "body": "body_21",
+    "prop": "prop_11",
+    "offset": [
+      22.47,
+      -8.38,
+      10,
+      0.96
+    ],
+    "face_gap_stage_px": 2.21,
+    "hand_coverage_pct": 7.5,
+    "stem_contact_source_pixels": 48,
+    "q": 0.7,
+    "up": -21,
+    "grasp_fraction": [
+      0.42,
+      0.94
+    ],
+    "face_count_tested": 36,
+    "minimum_gap_uses_union_of_all_drawn_face_pixels": true,
+    "important_tradeoff": "Pure upward5–9px collides with original large cheeks/tears. This final alternative tilts outward and changes vertical placement as needed while retaining actual stem-to-hand ink contact; see large-face evidence."
+  },
+  {
+    "body": "body_21",
+    "prop": "prop_30",
+    "offset": [
+      25.69,
+      -9.22,
+      25,
+      1
+    ],
+    "face_gap_stage_px": 2.37,
+    "hand_coverage_pct": 12.46,
+    "stem_contact_source_pixels": 68,
+    "q": 0.85,
+    "up": -18,
+    "grasp_fraction": [
+      0.5,
+      0.94
+    ],
+    "face_count_tested": 36,
+    "minimum_gap_uses_union_of_all_drawn_face_pixels": true,
+    "important_tradeoff": "Pure upward5–9px collides with original large cheeks/tears. This final alternative tilts outward and changes vertical placement as needed while retaining actual stem-to-hand ink contact; see large-face evidence."
+  }
+]

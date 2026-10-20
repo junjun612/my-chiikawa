@@ -1,0 +1,25 @@
+Use case: stylized-concept
+Asset type: production 4x4 sprite atlas of 16 DIFFERENT understated facial expressions for a round small cartoon animal dress-up game.
+Input images: 1 is a style-and-proportion reference of the complete animals; 2 and 3 are reference expression sprites. Do not copy an existing character. Extract only the gentle proportions, simple dark ink marks, restrained expressions and tiny eyes.
+Generate a perfectly regular FOUR COLUMNS by FOUR ROWS atlas on a genuinely transparent background. Each cell contains ONLY one complete floating facial expression: two eyes, a small mouth, optional subtle brows and very pale cheeks. No head, no body, no ears, no outlines enclosing the face, no props, no text, no numbers, no grid lines.
+Crucial proportions: eyes are TINY round dots or small vertical beans, each eye diameter is only 5 to 7 percent of the full expression width including cheeks, not giant anime eyes. Solid dark warm-black ink; at most ONE pinprick white highlight in open eyes. Mouth similarly small. Keep the eyes rather widely separated, relaxed and naturally simple. Same eye spacing and same actual scale in every cell. Small pale warm pink cheek ovals, very faint, each about twice an eye wide, with just two short fine ink ticks. Avoid heavy saturated pink blush.
+Hand-drawn medium: slightly wobbly charcoal-black marker contours with a subtle fuzzy paper-ink edge, as in reference, not smooth vector, no glossy rendering, no 3D, no dramatic gradients. Restrained and calm, slightly awkward animal emotions, not over-performed generic kawaii.
+Layout: generous transparent gaps; all 16 expressions centered in their equal cells, each expression width about 70 percent of its cell and height under 35 percent. The basic face midpoint of every expression is at exact center of its cell. Eyes sit a little above the center; tiny mouth just below the eyes.
+Row-major expressions:
+1 two tiny round dot eyes and a tiny closed w smile; neutral content.
+2 two tiny round dot eyes and a tiny curved u mouth; quiet pleasure.
+3 two tiny sleepy horizontal half-lidded eyes and tiny straight mouth.
+4 two small upside-down u eyes and a very small closed w smile.
+5 two tiny round dot eyes, lightly raised short brows, tiny round o mouth; mild surprise.
+6 two tiny round dot eyes with a tiny off-center mouth; shy curious.
+7 one tiny dot eye, one simple curved wink, tiny closed w mouth.
+8 two tiny round dot eyes, short inward-sloping brows, tiny determined flat mouth; gently serious.
+9 two tiny round dot eyes, subtle worried brows, tiny wavering mouth; apprehensive, only one very small pale blue sweat drop by one outer brow.
+10 two tiny round dot eyes and a tiny open rounded smile with a hint of pale pink inside, never a large open mouth.
+11 two simple closed curved eyes and a tiny sideways puckered mouth, keep subtle.
+12 two tiny round dot eyes with one tiny lower-lid pale blue tear at each eye, NOT long tear streams; tiny wavy mouth.
+13 tiny round dot eyes with short brows lifted toward the center; gentle hopeful face, tiny u mouth.
+14 tiny eyes looking slightly to one side, tiny relaxed mouth; modest skeptical curiosity.
+15 two tiny curved smiling eyes and a tiny straight sleeping mouth; peaceful.
+16 two tiny bean eyes and tiny catlike closed mouth, very faint cheeks.
+Avoid: large sparkly eyes, star pupils, heart pupils, multiple eye highlights, dramatic blush, thick eyebrow slabs, huge mouth, eyelashes, human details, character heads. The whole point is smaller simpler eyes and quiet expressions.

@@ -1,0 +1,12 @@
+Use case: precise-object-edit.
+Asset type: a square 4-by-4 sprite sheet of sixteen alternative arm corrections for ONE existing cute animal body, transparent background.
+Input 1 is the edit target: cream tilted hamster body with pale beige forehead oval, no ears or facial features. Input 2 is a construction reference for very small, soft animal paws, not a shape replacement.
+Primary request: preserve the exact body/head, slight rightward lean, forehead marking, two little closed bottom feet, warm dark-brown line weight and cream color of Input 1. Correct its two arms into a natural, comfortable holding pose. The previous screen-left raised paw was too big and too high; absolutely no paw at face/cheek height.
+Composition: exactly 16 complete sprites in a 4x4 grid. Same scale, evenly spaced, with at least 30 pixels of transparent margin around every sprite; no borders or labels. Vary ONLY left wrist/forearm placement a little between candidates so we can choose the most natural one.
+Anatomy for EVERY sprite:
+- Exactly TWO arms total, and two bottom feet.
+- Screen-left arm comes from the SIDE OF THE LOWER BELLY, around 65 to 72 percent of total body height, well below the future cheek/face area. A short gently sloping forearm extends outward left and ends in a VERY SMALL round bean-shaped paw, upturned as if supporting the bottom-right edge of a separate little cup, donut or camera. The paw is just 5 to 7 percent of body width; about one fifth of the accessory width it will hold later. Make the connection of body -> short forearm/wrist -> tiny palm readable and simple. One small rounded arc or closed bean palm is enough. The hand is not a big letter C and must not cover the center of the future item.
+- Keep screen-right arm as ONE tiny relaxed resting paw attached low to the side, simple soft curve, with no separate internal C stroke.
+- Both feet attach at the very bottom and have complete closed rounded outlines. No side leg nub at hand height.
+Keep drawing minimal: no anatomy detail, fingers, claws, detached marks, extra elbows, multiple hands, upper shoulder bumps or arm-like side stubs. No neck, humanoid proportions or long arms.
+Do not draw the accessory. No ears, face, eyes, cheeks, mouth, tail, text, shadows or backgrounds. Preserve true transparent alpha. Preserve identical character identity and forehead patch across all sixteen alternatives. The actual held object will later be added OUTSIDE the body beside the belly, its bottom-right edge resting on the tiny screen-left palm.

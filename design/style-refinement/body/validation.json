@@ -1,0 +1,131 @@
+{
+  "selected": 6,
+  "preserved": 24,
+  "actual_asset_changes": 24,
+  "raster_max": 384,
+  "asset_bytes": 291478,
+  "all_24_keep_body_files_unchanged": true,
+  "generated_candidates": 16,
+  "selected_source_cells": [
+    1,
+    3,
+    4,
+    13,
+    14,
+    16
+  ],
+  "rejected": "All long egg row2 and flat-top row3 candidates rejected. Two redundant/overwide round candidates unused.",
+  "visual_qa_combinations": 216,
+  "checked": [
+    "full source contour in expanded cells",
+    "3px transparent outer padding",
+    "src/fill/line/arms alignment",
+    "two small C hands",
+    "prop center equals mean hand center",
+    "rounded upper body with close-set small feet"
+  ],
+  "bodies": [
+    {
+      "id": "body_19",
+      "size": [
+        248,
+        257
+      ],
+      "source_cell": 1,
+      "hand_width_fraction": [
+        0.113,
+        0.117
+      ],
+      "prop_anchor": [
+        123.73,
+        178.16,
+        66.53
+      ]
+    },
+    {
+      "id": "body_20",
+      "size": [
+        258,
+        259
+      ],
+      "source_cell": 3,
+      "hand_width_fraction": [
+        0.116,
+        0.112
+      ],
+      "prop_anchor": [
+        127.17,
+        181.1,
+        71.06
+      ]
+    },
+    {
+      "id": "body_21",
+      "size": [
+        250,
+        260
+      ],
+      "source_cell": 4,
+      "hand_width_fraction": [
+        0.1,
+        0.108
+      ],
+      "prop_anchor": [
+        128.0,
+        182.81,
+        66.57
+      ]
+    },
+    {
+      "id": "body_23",
+      "size": [
+        254,
+        242
+      ],
+      "source_cell": 13,
+      "hand_width_fraction": [
+        0.114,
+        0.114
+      ],
+      "prop_anchor": [
+        128.2,
+        161.93,
+        71.82
+      ]
+    },
+    {
+      "id": "body_24",
+      "size": [
+        245,
+        240
+      ],
+      "source_cell": 14,
+      "hand_width_fraction": [
+        0.114,
+        0.118
+      ],
+      "prop_anchor": [
+        123.75,
+        161.72,
+        67.29
+      ]
+    },
+    {
+      "id": "body_25",
+      "size": [
+        254,
+        242
+      ],
+      "source_cell": 16,
+      "hand_width_fraction": [
+        0.114,
+        0.11
+      ],
+      "prop_anchor": [
+        122.65,
+        162.62,
+        69.66
+      ]
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "scope": "30 existing body sprites, conservative style refinement. Preserve all accepted fluffy variants. Only six clearly incompatible silhouettes are replaced under the same IDs.",
+  "references_inspected": [
+    "codex-clipboard-fa4fd31d-226e-4e82-8a62-058bde9c1f9b.png",
+    "codex-clipboard-35b22f1c-fda4-41c2-9b4d-5484cdeb2fcb.png",
+    "codex-clipboard-3e54002f-46ce-4ad9-ada9-ba9d498a8483.png",
+    "codex-clipboard-92b2f4d6-eb82-4c2a-99bd-12144c7de935.png",
+    "codex-clipboard-4955b3d3-a3e8-4130-aff1-c75c031c2584.png"
+  ],
+  "criteria": [
+    "둥근 큰 상체에서 아래로 살짝 좁아지는 달걀/타원 체형",
+    "작고 모인 발, 짧고 둥근 작은 C자 손",
+    "약간 떨리는 단순한 선과 밝은 크림색; 얼굴/귀/꼬리는 별도 조합",
+    "각진 식빵/네모 쿠션/삼각 주먹밥/가로 납작떡/과장된 배 형태 제외",
+    "숫자보다 스타일과 귀여움 우선; 좋은 복슬이들은 보존"
+  ],
+  "counts": {
+    "keep": 24,
+    "replace": 6,
+    "remove": 0
+  },
+  "parts": [
+    {
+      "id": "body_01",
+      "label": "기본 모찌",
+      "action": "keep",
+      "reason": "원작과 어울리는 둥근 머리/몸 실루엣과 작은 손발 유지. 기존 무늬가 귀여운 변주로 작동함."
+    },
+    {
+      "id": "body_02",
+      "label": "몽실",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_03",
+      "label": "보송 털뭉치",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_04",
+      "label": "구름 몽실",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_06",
+      "label": "볼빵빵",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_07",
+      "label": "우유 구름떡",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_08",
+      "label": "하트 배",
+      "action": "keep",
+      "reason": "원작과 어울리는 둥근 머리/몸 실루엣과 작은 손발 유지. 기존 무늬가 귀여운 변주로 작동함."
+    },
+    {
+      "id": "body_09",
+      "label": "밤색 머리",
+      "action": "keep",
+      "reason": "원작과 어울리는 둥근 머리/몸 실루엣과 작은 손발 유지. 기존 무늬가 귀여운 변주로 작동함."
+    },
+    {
+      "id": "body_10",
+      "label": "점박이",
+      "action": "keep",
+      "reason": "원작과 어울리는 둥근 머리/몸 실루엣과 작은 손발 유지. 기존 무늬가 귀여운 변주로 작동함."
+    },
+    {
+      "id": "body_11",
+      "label": "줄무늬",
+      "action": "keep",
+      "reason": "원작과 어울리는 둥근 머리/몸 실루엣과 작은 손발 유지. 기존 무늬가 귀여운 변주로 작동함."
+    },
+    {
+      "id": "body_12",
+      "label": "하트 밀크푸딩",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_13",
+      "label": "양말 발",
+      "action": "keep",
+      "reason": "원작과 어울리는 둥근 머리/몸 실루엣과 작은 손발 유지. 기존 무늬가 귀여운 변주로 작동함."
+    },
+    {
+      "id": "body_14",
+      "label": "흰 입가",
+      "action": "keep",
+      "reason": "원작과 어울리는 둥근 머리/몸 실루엣과 작은 손발 유지. 기존 무늬가 귀여운 변주로 작동함."
+    },
+    {
+      "id": "body_15",
+      "label": "달걀 몽실",
+      "action": "keep",
+      "reason": "약간 긴 달걀형과 작은 손발이 우사기 계열 비율과 잘 맞음."
+    },
+    {
+      "id": "body_16",
+      "label": "몽실 구름배",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_17",
+      "label": "동글 우유",
+      "action": "keep",
+      "reason": "단순한 둥근 기본형으로 참조의 둥근 치이카와/하치와레 체형과 충분히 가까움. 매끈하다는 이유만으로 교체하지 않음."
+    },
+    {
+      "id": "body_18",
+      "label": "통통 볼살",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_19",
+      "label": "몽글 식빵",
+      "action": "replace",
+      "reason": "모서리와 수직 옆선이 식빵처럼 보여 원작의 둥근 머리와 아래로 살짝 좁아지는 몸에서 멂."
+    },
+    {
+      "id": "body_20",
+      "label": "말랑 찹쌀",
+      "action": "replace",
+      "reason": "가로로 눌린 납작 타원. 작은 팔다리의 달걀형 캐릭터보다 떡 형태로 읽힘."
+    },
+    {
+      "id": "body_21",
+      "label": "배동글 모찌",
+      "action": "replace",
+      "reason": "머리 쪽이 좁고 아래 볼/몸이 넓어지는 배 모양으로 원작 상체 비율과 반대."
+    },
+    {
+      "id": "body_22",
+      "label": "구름 찹쌀",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_23",
+      "label": "포근 주먹밥",
+      "action": "replace",
+      "reason": "윗부분이 좁아지는 삼각 주먹밥 윤곽이 강함. 둥근 상체와 구분되는 어색한 체형."
+    },
+    {
+      "id": "body_24",
+      "label": "하얀 마시멜로",
+      "action": "replace",
+      "reason": "상단과 옆선이 네모난 마시멜로/쿠션 형태. 둥근 기본형으로 교체."
+    },
+    {
+      "id": "body_25",
+      "label": "갸우뚱 모찌",
+      "action": "replace",
+      "reason": "몸을 기울인 비대칭 콩 형태와 낮은 옆 볼이 얼굴/귀 조합의 균형을 방해함."
+    },
+    {
+      "id": "body_26",
+      "label": "밀크 푸딩",
+      "action": "keep",
+      "reason": "원작과 어울리는 둥근 머리/몸 실루엣과 작은 손발 유지. 기존 무늬가 귀여운 변주로 작동함."
+    },
+    {
+      "id": "body_27",
+      "label": "보송 솜뭉치",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_28",
+      "label": "둥근 우유떡",
+      "action": "keep",
+      "reason": "돔 형태 머리에서 작고 둥근 볼과 발로 이어지는 부드러운 윤곽. 각진 형태나 지나친 납작함 없음."
+    },
+    {
+      "id": "body_29",
+      "label": "감자 모찌",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    },
+    {
+      "id": "body_30",
+      "label": "눈송이 모찌",
+      "action": "keep",
+      "reason": "단순한 둥근 기본형으로 참조의 둥근 치이카와/하치와레 체형과 충분히 가까움. 매끈하다는 이유만으로 교체하지 않음."
+    },
+    {
+      "id": "body_31",
+      "label": "몽실 우유떡",
+      "action": "keep",
+      "reason": "복슬하거나 부드러운 볼 윤곽이 귀엽고 얼굴/소품 조합도 안정적. 사용자의 복슬이 보존 선호 반영."
+    }
+  ]
+}

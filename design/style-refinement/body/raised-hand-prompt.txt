@@ -1,0 +1,14 @@
+Use case: precise-object-edit.
+Asset type: transparent modular cute animal body sprite sheet, 4 columns by 4 rows.
+Input 1 is the EDIT TARGET, the existing 4x4 sheet. Input 2 is a construction reference: its raised side paw now holds a separate item, while the other low paw rests along the side.
+Primary request: Change ONLY the arm/paw drawing in exactly SIX cells of Input 1. Preserve all body shapes, head contours, tilt, fur ticks, pale chest marking, cream fill, forehead markings, feet and dark warm-brown line style. No new pose or body type. Keep every sprite in its exact cell and scale.
+Cells to edit, counted from 1:
+- row1 column1: change the raised screen-RIGHT paw into a tiny round gripping paw; remove its low screen-LEFT internal C.
+- row1 column2: change the raised screen-LEFT paw into a tiny round gripping paw; remove its low screen-RIGHT internal C.
+- row2 column2: change the raised screen-LEFT paw into a tiny round gripping paw; remove its low screen-RIGHT internal C. Preserve the short fluffy cheek fur.
+- row3 column4: change the raised screen-RIGHT paw into a tiny round gripping paw; remove its low screen-LEFT internal C. Preserve the pale beige chest patch exactly.
+- row4 column2: change the raised screen-LEFT paw into a tiny round gripping paw; remove its low screen-RIGHT internal C. Preserve the short fur ticks.
+- row4 column4: change the raised screen-RIGHT paw into a tiny round gripping paw; remove its low screen-LEFT internal C.
+Raised grip construction: The original outstretched paw stays at the SAME side and SAME raised height, connected by a short natural wrist. Make its palm small and softly round, about 8 to 10 percent of body width, with one simple U/C-like cupped outline suitable for supporting the lower edge of a separate item outside the body. The reference paw illustrates the natural outline connection, but make the palm a little smaller. Do not add a second internal C at the raised wrist, no fingers, no duplicate paw, no long or humanoid arm.
+Resting opposite paw construction: Erase the OLD low black C stroke from the belly entirely. At that same low side, incorporate ONE tiny relaxed resting paw into the body SIDE OUTLINE, like the right resting paw in Input 2. It is a subtle curve connected to the outer silhouette, not an extra internal hand. Exactly TWO arms per edited sprite: one raised gripping paw and one low resting paw. Exactly two original closed bottom feet. No additional side nub that reads as a third arm.
+Leave all other TEN cells completely unchanged, especially the seated two-hand sprites. No accessories, ears, eyes, mouth, cheek marks, text, labels, shadows, grid lines or backgrounds. Genuine transparent alpha. Keep generous transparent gutters so no complete outline is clipped at a cell edge. Match the original warm dark-brown line thickness; no added texture or red fringe.

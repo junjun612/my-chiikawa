@@ -1,0 +1,879 @@
+[
+  {
+    "id": "body_17",
+    "label": "솜털 인사",
+    "w": 254,
+    "h": 259,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        128.0,
+        6.0
+      ],
+      "headW": 190.68,
+      "earL": [
+        68.69,
+        23.0,
+        -9.0
+      ],
+      "earR": [
+        190.6,
+        25.0,
+        21.0
+      ],
+      "face": [
+        122.5,
+        95.83,
+        129.39,
+        6.0
+      ],
+      "prop": [
+        158.88,
+        197.56,
+        77.18,
+        18.0
+      ],
+      "tail": [
+        170.67,
+        217.56
+      ],
+      "sideL": [
+        76.8,
+        173.53
+      ],
+      "sideR": [
+        166.2,
+        173.53
+      ],
+      "center": [
+        121.5,
+        129.5
+      ],
+      "H": 247.0,
+      "W": 243.0,
+      "head": {
+        "center": [
+          122.5,
+          91.47
+        ],
+        "w": 227.0,
+        "h": 170.94,
+        "rotation": 6.0,
+        "crown": [
+          128.0,
+          6.0
+        ]
+      },
+      "earScale": 0.94335
+    },
+    "sourceCell": 6,
+    "gripRegions": [
+      [
+        135,
+        181,
+        167,
+        217
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        122.5,
+        91.47
+      ],
+      "width": 227.0,
+      "height": 170.94,
+      "angle": 6.0,
+      "crown": [
+        128.0,
+        6.0
+      ]
+    },
+    "src": "design/style-refinement/body/pose-candidates/body_17.webp",
+    "line": "design/style-refinement/body/pose-candidates/body_17_line.webp",
+    "fill": "design/style-refinement/body/pose-candidates/body_17_fill.webp",
+    "arms": "design/style-refinement/body/pose-candidates/body_17_arms.webp"
+  },
+  {
+    "id": "body_19",
+    "label": "살랑 인사",
+    "w": 246,
+    "h": 264,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        125.0,
+        5.0
+      ],
+      "headW": 181.44,
+      "earL": [
+        48.12,
+        33.0,
+        -22.0
+      ],
+      "earR": [
+        163.89,
+        15.0,
+        8.0
+      ],
+      "face": [
+        114.5,
+        95.04,
+        123.12,
+        -7.0
+      ],
+      "prop": [
+        67.62,
+        193.84,
+        73.44,
+        -19.0
+      ],
+      "tail": [
+        167.48,
+        221.76
+      ],
+      "sideL": [
+        69.2,
+        176.88
+      ],
+      "sideR": [
+        162.8,
+        176.88
+      ],
+      "center": [
+        116.0,
+        132.0
+      ],
+      "H": 253.0,
+      "W": 236.0,
+      "head": {
+        "center": [
+          114.5,
+          92.12
+        ],
+        "w": 216.0,
+        "h": 174.24,
+        "rotation": -7.0,
+        "crown": [
+          125.0,
+          5.0
+        ]
+      },
+      "earScale": 0.92683
+    },
+    "sourceCell": 1,
+    "gripRegions": [
+      [
+        60,
+        176,
+        93,
+        214
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        114.5,
+        92.12
+      ],
+      "width": 216.0,
+      "height": 174.24,
+      "angle": -7.0,
+      "crown": [
+        125.0,
+        5.0
+      ]
+    },
+    "src": "design/style-refinement/body/pose-candidates/body_19.webp",
+    "line": "design/style-refinement/body/pose-candidates/body_19_line.webp",
+    "fill": "design/style-refinement/body/pose-candidates/body_19_fill.webp",
+    "arms": "design/style-refinement/body/pose-candidates/body_19_arms.webp"
+  },
+  {
+    "id": "body_20",
+    "label": "동글 앉기",
+    "w": 239,
+    "h": 223,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        126.0,
+        6.0
+      ],
+      "headW": 189.0,
+      "earL": [
+        58.25,
+        26.0,
+        -15.0
+      ],
+      "earR": [
+        179.75,
+        20.0,
+        15.0
+      ],
+      "face": [
+        119.0,
+        93.66,
+        128.25,
+        0.0
+      ],
+      "prop": [
+        120.15,
+        150.81,
+        73.69,
+        -1.03
+      ],
+      "tail": [
+        183.5,
+        187.32
+      ],
+      "sideL": [
+        57.5,
+        149.41
+      ],
+      "sideR": [
+        177.5,
+        149.41
+      ],
+      "center": [
+        117.5,
+        111.5
+      ],
+      "H": 211.0,
+      "W": 228.0,
+      "head": {
+        "center": [
+          119.0,
+          87.39
+        ],
+        "w": 225.0,
+        "h": 162.79,
+        "rotation": 0.0,
+        "crown": [
+          126.0,
+          6.0
+        ]
+      },
+      "earScale": 0.99372
+    },
+    "sourceCell": 3,
+    "gripRegions": [
+      [
+        70,
+        134,
+        102,
+        170
+      ],
+      [
+        139,
+        133,
+        171,
+        169
+      ]
+    ],
+    "gripCount": 2,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        119.0,
+        87.39
+      ],
+      "width": 225.0,
+      "height": 162.79,
+      "angle": 0.0,
+      "crown": [
+        126.0,
+        6.0
+      ]
+    },
+    "src": "design/style-refinement/body/pose-candidates/body_20.webp",
+    "line": "design/style-refinement/body/pose-candidates/body_20_line.webp",
+    "fill": "design/style-refinement/body/pose-candidates/body_20_fill.webp",
+    "arms": "design/style-refinement/body/pose-candidates/body_20_arms.webp"
+  },
+  {
+    "id": "body_21",
+    "label": "반짝 인사",
+    "w": 241,
+    "h": 250,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        128.5,
+        5.0
+      ],
+      "headW": 175.56,
+      "earL": [
+        81.78,
+        16.0,
+        -9.0
+      ],
+      "earR": [
+        194.02,
+        26.0,
+        21.0
+      ],
+      "face": [
+        131.0,
+        92.5,
+        119.13,
+        6.0
+      ],
+      "prop": [
+        166.43,
+        184.39,
+        71.06,
+        18.0
+      ],
+      "tail": [
+        170.86,
+        210.0
+      ],
+      "sideL": [
+        81.4,
+        167.5
+      ],
+      "sideR": [
+        166.6,
+        167.5
+      ],
+      "center": [
+        124.0,
+        125.0
+      ],
+      "H": 240.0,
+      "W": 231.0,
+      "head": {
+        "center": [
+          131.0,
+          87.5
+        ],
+        "w": 209.0,
+        "h": 165.0,
+        "rotation": 6.0,
+        "crown": [
+          128.5,
+          5.0
+        ]
+      },
+      "earScale": 0.9154
+    },
+    "sourceCell": 2,
+    "gripRegions": [
+      [
+        143,
+        167,
+        176,
+        204
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        131.0,
+        87.5
+      ],
+      "width": 209.0,
+      "height": 165.0,
+      "angle": 6.0,
+      "crown": [
+        128.5,
+        5.0
+      ]
+    },
+    "src": "design/style-refinement/body/pose-candidates/body_21.webp",
+    "line": "design/style-refinement/body/pose-candidates/body_21_line.webp",
+    "fill": "design/style-refinement/body/pose-candidates/body_21_fill.webp",
+    "arms": "design/style-refinement/body/pose-candidates/body_21_arms.webp"
+  },
+  {
+    "id": "body_23",
+    "label": "통통 햄스터",
+    "w": 252,
+    "h": 232,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        129.5,
+        6.0
+      ],
+      "headW": 196.56,
+      "earL": [
+        61.57,
+        25.0,
+        -15.0
+      ],
+      "earR": [
+        187.93,
+        22.0,
+        15.0
+      ],
+      "face": [
+        124.75,
+        95.12,
+        133.38,
+        0.0
+      ],
+      "prop": [
+        124.03,
+        159.9,
+        63.14,
+        0.29
+      ],
+      "tail": [
+        199.42,
+        194.88
+      ],
+      "sideL": [
+        58.3,
+        155.44
+      ],
+      "sideR": [
+        192.7,
+        155.44
+      ],
+      "center": [
+        125.5,
+        116.0
+      ],
+      "H": 220.0,
+      "W": 240.0,
+      "head": {
+        "center": [
+          124.75,
+          90.68
+        ],
+        "w": 234.0,
+        "h": 169.36,
+        "rotation": 0.0,
+        "crown": [
+          129.5,
+          6.0
+        ]
+      },
+      "earScale": 0.98016
+    },
+    "sourceCell": 9,
+    "gripRegions": [
+      [
+        78,
+        143,
+        111,
+        179
+      ],
+      [
+        138,
+        143,
+        171,
+        179
+      ]
+    ],
+    "gripCount": 2,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        124.75,
+        90.68
+      ],
+      "width": 234.0,
+      "height": 169.36,
+      "angle": 0.0,
+      "crown": [
+        129.5,
+        6.0
+      ]
+    },
+    "src": "design/style-refinement/body/pose-candidates/body_23.webp",
+    "line": "design/style-refinement/body/pose-candidates/body_23_line.webp",
+    "fill": "design/style-refinement/body/pose-candidates/body_23_fill.webp",
+    "arms": "design/style-refinement/body/pose-candidates/body_23_arms.webp"
+  },
+  {
+    "id": "body_24",
+    "label": "가슴 점 친구",
+    "w": 239,
+    "h": 251,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        115.5,
+        6.0
+      ],
+      "headW": 174.72,
+      "earL": [
+        48.85,
+        27.0,
+        -19.0
+      ],
+      "earR": [
+        160.9,
+        18.0,
+        11.0
+      ],
+      "face": [
+        109.5,
+        92.87,
+        118.56,
+        -4.0
+      ],
+      "prop": [
+        65.75,
+        184.0,
+        70.72,
+        -16.0
+      ],
+      "tail": [
+        160.66,
+        210.84
+      ],
+      "sideL": [
+        64.9,
+        168.17
+      ],
+      "sideR": [
+        156.1,
+        168.17
+      ],
+      "center": [
+        110.5,
+        125.5
+      ],
+      "H": 239.0,
+      "W": 228.0,
+      "head": {
+        "center": [
+          109.5,
+          88.83
+        ],
+        "w": 208.0,
+        "h": 165.66,
+        "rotation": -4.0,
+        "crown": [
+          115.5,
+          6.0
+        ]
+      },
+      "earScale": 0.91864
+    },
+    "sourceCell": 12,
+    "gripRegions": [
+      [
+        57,
+        166,
+        91,
+        204
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 1318,
+    "headFrame": {
+      "center": [
+        109.5,
+        88.83
+      ],
+      "width": 208.0,
+      "height": 165.66,
+      "angle": -4.0,
+      "crown": [
+        115.5,
+        6.0
+      ]
+    },
+    "src": "design/style-refinement/body/pose-candidates/body_24.webp",
+    "line": "design/style-refinement/body/pose-candidates/body_24_line.webp",
+    "fill": "design/style-refinement/body/pose-candidates/body_24_fill.webp",
+    "arms": "design/style-refinement/body/pose-candidates/body_24_arms.webp"
+  },
+  {
+    "id": "body_25",
+    "label": "이마 점 햄스터",
+    "w": 252,
+    "h": 255,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        134.0,
+        4.0
+      ],
+      "headW": 178.47529411764705,
+      "earL": [
+        87.15247058823529,
+        15.0,
+        -9.0
+      ],
+      "earR": [
+        201.264,
+        24.0,
+        21.0
+      ],
+      "face": [
+        137.36470588235295,
+        94.35000000000001,
+        121.10823529411765,
+        6.0
+      ],
+      "prop": [
+        37.0,
+        117.0,
+        72.24,
+        -12.0
+      ],
+      "tail": [
+        177.83,
+        214.2
+      ],
+      "sideL": [
+        82.7,
+        170.85
+      ],
+      "sideR": [
+        173.3,
+        170.85
+      ],
+      "center": [
+        128.0,
+        127.5
+      ],
+      "H": 247.0,
+      "W": 244.0,
+      "head": {
+        "center": [
+          137.36470588235295,
+          90.24561752988048
+        ],
+        "w": 212.47058823529412,
+        "h": 168.29999999999998,
+        "rotation": 6.0,
+        "crown": [
+          134.0,
+          4.0
+        ]
+      },
+      "earScale": 0.88998
+    },
+    "sourceCell": 10,
+    "gripRegions": [
+      [
+        2,
+        100,
+        37,
+        139
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 1188,
+    "headFrame": {
+      "center": [
+        137.36470588235295,
+        90.24561752988048
+      ],
+      "width": 212.47058823529412,
+      "height": 168.29999999999998,
+      "angle": 6.0,
+      "crown": [
+        134.0,
+        4.0
+      ]
+    },
+    "sourceEdit": "body25-hand-switch-source.png",
+    "src": "design/style-refinement/body/pose-candidates/body_25.webp",
+    "line": "design/style-refinement/body/pose-candidates/body_25_line.webp",
+    "fill": "design/style-refinement/body/pose-candidates/body_25_fill.webp",
+    "arms": "design/style-refinement/body/pose-candidates/body_25_arms.webp"
+  },
+  {
+    "id": "body_28",
+    "label": "잔털 수달",
+    "w": 245,
+    "h": 253,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        125.0,
+        6.0
+      ],
+      "headW": 178.5,
+      "earL": [
+        78.67,
+        18.0,
+        -9.0
+      ],
+      "earR": [
+        192.79,
+        29.0,
+        21.0
+      ],
+      "face": [
+        128.75,
+        96.14,
+        121.12,
+        6.0
+      ],
+      "prop": [
+        169.83,
+        186.42,
+        72.25,
+        18.0
+      ],
+      "tail": [
+        173.18,
+        212.52
+      ],
+      "sideL": [
+        81.2,
+        169.51
+      ],
+      "sideR": [
+        168.8,
+        169.51
+      ],
+      "center": [
+        125.0,
+        126.5
+      ],
+      "H": 241.0,
+      "W": 233.0,
+      "head": {
+        "center": [
+          128.75,
+          89.49
+        ],
+        "w": 212.5,
+        "h": 166.98,
+        "rotation": 6.0,
+        "crown": [
+          125.0,
+          6.0
+        ]
+      },
+      "earScale": 0.91553
+    },
+    "sourceCell": 14,
+    "gripRegions": [
+      [
+        146,
+        169,
+        179,
+        206
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        128.75,
+        89.49
+      ],
+      "width": 212.5,
+      "height": 166.98,
+      "angle": 6.0,
+      "crown": [
+        125.0,
+        6.0
+      ]
+    },
+    "src": "design/style-refinement/body/pose-candidates/body_28.webp",
+    "line": "design/style-refinement/body/pose-candidates/body_28_line.webp",
+    "fill": "design/style-refinement/body/pose-candidates/body_28_fill.webp",
+    "arms": "design/style-refinement/body/pose-candidates/body_28_arms.webp"
+  },
+  {
+    "id": "body_30",
+    "label": "동동 모찌",
+    "w": 235,
+    "h": 245,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        114.5,
+        6.0
+      ],
+      "headW": 168.0,
+      "earL": [
+        43.02,
+        33.0,
+        -23.0
+      ],
+      "earR": [
+        149.97,
+        15.0,
+        7.0
+      ],
+      "face": [
+        105.5,
+        95.55,
+        114.0,
+        -8.0
+      ],
+      "prop": [
+        76.6,
+        181.67,
+        68.0,
+        -20.0
+      ],
+      "tail": [
+        161.85,
+        205.8
+      ],
+      "sideL": [
+        70.5,
+        164.15
+      ],
+      "sideR": [
+        157.5,
+        164.15
+      ],
+      "center": [
+        114.0,
+        122.5
+      ],
+      "H": 233.0,
+      "W": 224.0,
+      "head": {
+        "center": [
+          105.5,
+          86.85
+        ],
+        "w": 200.0,
+        "h": 161.7,
+        "rotation": -8.0,
+        "crown": [
+          114.5,
+          6.0
+        ]
+      },
+      "earScale": 0.89835
+    },
+    "sourceCell": 16,
+    "gripRegions": [
+      [
+        68,
+        164,
+        101,
+        202
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        105.5,
+        86.85
+      ],
+      "width": 200.0,
+      "height": 161.7,
+      "angle": -8.0,
+      "crown": [
+        114.5,
+        6.0
+      ]
+    },
+    "src": "design/style-refinement/body/pose-candidates/body_30.webp",
+    "line": "design/style-refinement/body/pose-candidates/body_30_line.webp",
+    "fill": "design/style-refinement/body/pose-candidates/body_30_fill.webp",
+    "arms": "design/style-refinement/body/pose-candidates/body_30_arms.webp"
+  }
+]

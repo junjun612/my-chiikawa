@@ -1,0 +1,121 @@
+[
+  {
+    "id": "back_05",
+    "label": "작은 하트 꼬리",
+    "kind": "tail",
+    "src": "parts/back/back_05.webp",
+    "w": 144,
+    "h": 134,
+    "root": [
+      17.3,
+      111.2
+    ],
+    "fill": "parts/back/back_05_fill.webp",
+    "line": "parts/back/back_05_line.webp",
+    "color": "#fbf8f0"
+  },
+  {
+    "id": "back_07",
+    "label": "동글 보라 날개",
+    "kind": "wings",
+    "L": {
+      "src": "parts/back/back_07_L.webp",
+      "w": 88,
+      "h": 76,
+      "root": [
+        82,
+        47.1
+      ]
+    },
+    "R": {
+      "src": "parts/back/back_07_R.webp",
+      "w": 88,
+      "h": 79,
+      "root": [
+        6,
+        49
+      ]
+    },
+    "src": "parts/back/back_07.webp",
+    "w": 208,
+    "h": 79
+  },
+  {
+    "id": "back_14",
+    "label": "우유빛 작은 날개",
+    "kind": "wings",
+    "L": {
+      "src": "parts/back/back_14_L.webp",
+      "w": 98,
+      "h": 94,
+      "root": [
+        92,
+        58.3
+      ],
+      "fill": "parts/back/back_14_L_fill.webp",
+      "line": "parts/back/back_14_L_line.webp",
+      "color": "#fbf5e3"
+    },
+    "R": {
+      "src": "parts/back/back_14_R.webp",
+      "w": 100,
+      "h": 94,
+      "root": [
+        6,
+        58.3
+      ],
+      "fill": "parts/back/back_14_R_fill.webp",
+      "line": "parts/back/back_14_R_line.webp",
+      "color": "#fbf5e3"
+    },
+    "src": "parts/back/back_14.webp",
+    "w": 230,
+    "h": 94,
+    "fill": "parts/back/back_14_fill.webp",
+    "line": "parts/back/back_14_line.webp",
+    "color": "#fbf5e3"
+  },
+  {
+    "id": "back_17",
+    "label": "물고기 꼬리",
+    "kind": "tail",
+    "src": "parts/back/back_17.webp",
+    "w": 263,
+    "h": 220,
+    "color": "#d3ecfd",
+    "line": "parts/back/back_17_line.webp",
+    "fill": "parts/back/back_17_fill.webp",
+    "root": [
+      32,
+      26
+    ],
+    "scale": 0.62
+  },
+  {
+    "id": "back_08",
+    "label": "요정 날개",
+    "kind": "wings",
+    "src": "parts/back/back_08.webp",
+    "w": 331,
+    "h": 166,
+    "L": {
+      "src": "parts/back/back_08_L.webp",
+      "w": 125,
+      "h": 166,
+      "root": [
+        116,
+        120
+      ]
+    },
+    "R": {
+      "src": "parts/back/back_08_R.webp",
+      "w": 124,
+      "h": 166,
+      "root": [
+        8,
+        122
+      ]
+    },
+    "scale": 0.72
+  }
+]

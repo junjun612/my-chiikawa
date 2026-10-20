@@ -1,0 +1,656 @@
+[
+  {
+    "id": "body_17",
+    "label": "솜털 인사",
+    "w": 254,
+    "h": 260,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        131.0,
+        4
+      ],
+      "headW": 188.16,
+      "earL": [
+        71.53,
+        22.0,
+        -9
+      ],
+      "earR": [
+        191.82,
+        23.0,
+        21
+      ],
+      "face": [
+        124.5,
+        96.2,
+        127.68,
+        6
+      ],
+      "prop": [
+        23.0,
+        148.5,
+        76.16,
+        -12
+      ],
+      "tail": [
+        170.67,
+        218.4
+      ],
+      "sideL": [
+        76.8,
+        174.2
+      ],
+      "sideR": [
+        166.2,
+        174.2
+      ],
+      "center": [
+        121.5,
+        130.0
+      ],
+      "H": 252,
+      "W": 246,
+      "head": {
+        "center": [
+          124.5,
+          89.8
+        ],
+        "w": 224.0,
+        "h": 171.6,
+        "rotation": 6,
+        "crown": [
+          131.0,
+          4
+        ]
+      },
+      "earScale": 0.93088
+    },
+    "sourceCell": 6,
+    "gripRegions": [
+      [
+        4,
+        126,
+        42,
+        171
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        124.5,
+        89.8
+      ],
+      "width": 224.0,
+      "height": 171.6,
+      "angle": 6,
+      "crown": [
+        131.0,
+        4
+      ]
+    },
+    "src": "parts/body/body_17.webp",
+    "line": "parts/body/body_17_line.webp",
+    "fill": "parts/body/body_17_fill.webp",
+    "arms": "parts/body/body_17_arms.webp",
+    "gripSide": "left",
+    "raisedHand": {
+      "side": "left",
+      "palm": [
+        23.0,
+        148.5
+      ],
+      "inkCenter": [
+        20.83,
+        148.06
+      ]
+    },
+    "sourceEdit": "raised-hand-body17-fixed-source.png"
+  },
+  {
+    "id": "body_19",
+    "label": "살랑 인사",
+    "w": 247,
+    "h": 262,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        126.0,
+        6
+      ],
+      "headW": 181.02,
+      "earL": [
+        48.57,
+        33.0,
+        -22
+      ],
+      "earR": [
+        164.07,
+        15.0,
+        8
+      ],
+      "face": [
+        114.75,
+        94.32,
+        122.83,
+        -7
+      ],
+      "prop": [
+        227.0,
+        132.0,
+        73.27,
+        12
+      ],
+      "tail": [
+        168.16,
+        220.08
+      ],
+      "sideL": [
+        69.48,
+        175.54
+      ],
+      "sideR": [
+        163.46,
+        175.54
+      ],
+      "center": [
+        116.47,
+        131.0
+      ],
+      "H": 251,
+      "W": 236,
+      "head": {
+        "center": [
+          114.75,
+          92.46
+        ],
+        "w": 215.5,
+        "h": 172.92,
+        "rotation": -7,
+        "crown": [
+          126.0,
+          6
+        ]
+      },
+      "earScale": 0.92094
+    },
+    "sourceCell": 1,
+    "gripRegions": [
+      [
+        211,
+        113,
+        243,
+        151
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        114.75,
+        92.46
+      ],
+      "width": 215.5,
+      "height": 172.92,
+      "angle": -7,
+      "crown": [
+        126.0,
+        6
+      ]
+    },
+    "src": "parts/body/body_19.webp",
+    "line": "parts/body/body_19_line.webp",
+    "fill": "parts/body/body_19_fill.webp",
+    "arms": "parts/body/body_19_arms.webp",
+    "gripSide": "right",
+    "raisedHand": {
+      "side": "right",
+      "palm": [
+        227.0,
+        132.0
+      ],
+      "inkCenter": [
+        227.55,
+        129.99
+      ]
+    },
+    "sourceEdit": "raised-hand-source-sheet.png"
+  },
+  {
+    "id": "body_21",
+    "label": "반짝 인사",
+    "w": 244,
+    "h": 250,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        131.0,
+        6
+      ],
+      "headW": 176.4,
+      "earL": [
+        83.01,
+        18.0,
+        -9
+      ],
+      "earR": [
+        195.79,
+        26.0,
+        21
+      ],
+      "face": [
+        132.5,
+        92.5,
+        119.7,
+        6
+      ],
+      "prop": [
+        22.5,
+        120.5,
+        71.4,
+        -12
+      ],
+      "tail": [
+        172.99,
+        210.0
+      ],
+      "sideL": [
+        82.41,
+        167.5
+      ],
+      "sideR": [
+        168.67,
+        167.5
+      ],
+      "center": [
+        125.54,
+        125.0
+      ],
+      "H": 239,
+      "W": 234,
+      "head": {
+        "center": [
+          132.5,
+          88.5
+        ],
+        "w": 210.0,
+        "h": 165.0,
+        "rotation": 6,
+        "crown": [
+          131.0,
+          6
+        ]
+      },
+      "earScale": 0.90847
+    },
+    "sourceCell": 2,
+    "gripRegions": [
+      [
+        4,
+        99,
+        41,
+        142
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        132.5,
+        88.5
+      ],
+      "width": 210.0,
+      "height": 165.0,
+      "angle": 6,
+      "crown": [
+        131.0,
+        6
+      ]
+    },
+    "src": "parts/body/body_21.webp",
+    "line": "parts/body/body_21_line.webp",
+    "fill": "parts/body/body_21_fill.webp",
+    "arms": "parts/body/body_21_arms.webp",
+    "gripSide": "left",
+    "raisedHand": {
+      "side": "left",
+      "palm": [
+        22.5,
+        120.5
+      ],
+      "inkCenter": [
+        22.22,
+        118.71
+      ]
+    },
+    "sourceEdit": "raised-hand-source-sheet.png"
+  },
+  {
+    "id": "body_24",
+    "label": "가슴 점 친구",
+    "w": 242,
+    "h": 252,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        116.5,
+        6
+      ],
+      "headW": 175.56,
+      "earL": [
+        49.07,
+        27.0,
+        -19
+      ],
+      "earR": [
+        161.65,
+        18.0,
+        11
+      ],
+      "face": [
+        110.0,
+        93.24,
+        119.13,
+        -4
+      ],
+      "prop": [
+        221.5,
+        125.0,
+        71.06,
+        12
+      ],
+      "tail": [
+        162.68,
+        211.68
+      ],
+      "sideL": [
+        65.71,
+        168.84
+      ],
+      "sideR": [
+        158.06,
+        168.84
+      ],
+      "center": [
+        111.89,
+        126.0
+      ],
+      "H": 240,
+      "W": 230,
+      "head": {
+        "center": [
+          110.0,
+          89.16
+        ],
+        "w": 209.0,
+        "h": 166.32,
+        "rotation": -4,
+        "crown": [
+          116.5,
+          6
+        ]
+      },
+      "earScale": 0.91162
+    },
+    "sourceCell": 12,
+    "gripRegions": [
+      [
+        205,
+        104,
+        238,
+        146
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 1327,
+    "headFrame": {
+      "center": [
+        110.0,
+        89.16
+      ],
+      "width": 209.0,
+      "height": 166.32,
+      "angle": -4,
+      "crown": [
+        116.5,
+        6
+      ]
+    },
+    "src": "parts/body/body_24.webp",
+    "line": "parts/body/body_24_line.webp",
+    "fill": "parts/body/body_24_fill.webp",
+    "arms": "parts/body/body_24_arms.webp",
+    "gripSide": "right",
+    "raisedHand": {
+      "side": "right",
+      "palm": [
+        221.5,
+        125.0
+      ],
+      "inkCenter": [
+        220.85,
+        123.5
+      ]
+    },
+    "sourceEdit": "raised-hand-source-sheet.png"
+  },
+  {
+    "id": "body_28",
+    "label": "잔털 수달",
+    "w": 245,
+    "h": 256,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        126.0,
+        6
+      ],
+      "headW": 178.5,
+      "earL": [
+        80.25,
+        18.0,
+        -9
+      ],
+      "earR": [
+        194.38,
+        30.0,
+        21
+      ],
+      "face": [
+        130.25,
+        97.28,
+        121.12,
+        6
+      ],
+      "prop": [
+        22.5,
+        131.0,
+        72.25,
+        -12
+      ],
+      "tail": [
+        173.18,
+        215.04
+      ],
+      "sideL": [
+        81.2,
+        171.52
+      ],
+      "sideR": [
+        168.8,
+        171.52
+      ],
+      "center": [
+        125.0,
+        128.0
+      ],
+      "H": 244,
+      "W": 234,
+      "head": {
+        "center": [
+          130.25,
+          90.48
+        ],
+        "w": 212.5,
+        "h": 168.96,
+        "rotation": 6,
+        "crown": [
+          126.0,
+          6
+        ]
+      },
+      "earScale": 0.91553
+    },
+    "sourceCell": 14,
+    "gripRegions": [
+      [
+        4,
+        109,
+        41,
+        153
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        130.25,
+        90.48
+      ],
+      "width": 212.5,
+      "height": 168.96,
+      "angle": 6,
+      "crown": [
+        126.0,
+        6
+      ]
+    },
+    "src": "parts/body/body_28.webp",
+    "line": "parts/body/body_28_line.webp",
+    "fill": "parts/body/body_28_fill.webp",
+    "arms": "parts/body/body_28_arms.webp",
+    "gripSide": "left",
+    "raisedHand": {
+      "side": "left",
+      "palm": [
+        22.5,
+        131.0
+      ],
+      "inkCenter": [
+        22.5,
+        128.17
+      ]
+    },
+    "sourceEdit": "raised-hand-source-sheet.png"
+  },
+  {
+    "id": "body_30",
+    "label": "동동 모찌",
+    "w": 237,
+    "h": 247,
+    "color": "#fffaf0",
+    "anchors": {
+      "top": [
+        114.5,
+        5
+      ],
+      "headW": 169.68,
+      "earL": [
+        42.92,
+        32.0,
+        -23
+      ],
+      "earR": [
+        150.93,
+        14.0,
+        7
+      ],
+      "face": [
+        106.0,
+        96.33,
+        115.14,
+        -8
+      ],
+      "prop": [
+        216.0,
+        114.0,
+        68.68,
+        12
+      ],
+      "tail": [
+        163.23,
+        207.48
+      ],
+      "sideL": [
+        71.1,
+        165.49
+      ],
+      "sideR": [
+        158.84,
+        165.49
+      ],
+      "center": [
+        114.97,
+        123.5
+      ],
+      "H": 236,
+      "W": 227,
+      "head": {
+        "center": [
+          106.0,
+          86.51
+        ],
+        "w": 202.0,
+        "h": 163.02,
+        "rotation": -8,
+        "crown": [
+          114.5,
+          5
+        ]
+      },
+      "earScale": 0.89967
+    },
+    "sourceCell": 16,
+    "gripRegions": [
+      [
+        199,
+        92,
+        233,
+        136
+      ]
+    ],
+    "gripCount": 1,
+    "fixedPatternPixels": 0,
+    "headFrame": {
+      "center": [
+        106.0,
+        86.51
+      ],
+      "width": 202.0,
+      "height": 163.02,
+      "angle": -8,
+      "crown": [
+        114.5,
+        5
+      ]
+    },
+    "src": "parts/body/body_30.webp",
+    "line": "parts/body/body_30_line.webp",
+    "fill": "parts/body/body_30_fill.webp",
+    "arms": "parts/body/body_30_arms.webp",
+    "gripSide": "right",
+    "raisedHand": {
+      "side": "right",
+      "palm": [
+        216.0,
+        114.0
+      ],
+      "inkCenter": [
+        214.56,
+        113.24
+      ]
+    },
+    "sourceEdit": "raised-hand-source-sheet.png"
+  }
+]

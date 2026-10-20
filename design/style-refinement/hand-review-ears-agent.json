@@ -1,0 +1,20 @@
+{
+  "scope": {"body": ["body_24", "body_28", "body_30"], "propRange": [1, 36], "combinationsViewed": 108},
+  "method": "Direct visual review of actual Canvas contact sheets and enlarged grip/cheek crops. No product code, anchors or assets changed.",
+  "findings": [
+    {"body": "body_30", "prop": "prop_04", "severity": "adjust", "reason": "Star tip touches the lower ink of the screen-left cheek; cheek and prop contours visually merge.", "suggestion": "Move the upper part away from the cheek while retaining contact with the actual wand shaft. A slight outward tilt or smaller shaft-to-head scale can achieve this without shifting the hand."},
+    {"body": "body_30", "prop": "prop_11", "severity": "adjust", "reason": "Upper lollipop contour contacts/occludes the lower edge of the screen-left cheek.", "suggestion": "Create a small visible gap below the cheek while preserving shaft contact at the grip."},
+    {"body": "body_24", "prop": "prop_11", "severity": "adjust", "reason": "Lollipop upper contour touches the bottom pink/ink area of the screen-left cheek.", "suggestion": "Create a small visible cheek-to-prop gap, preserving the stem hold."},
+    {"body": "body_24", "prop": "prop_04", "severity": "minor", "reason": "Star tip is very close to the lower cheek. Less severe than body_30, but its silhouette would read more cleanly with a little air."}
+  ],
+  "otherObservations": [
+    "All three silhouettes read as one waving hand plus one gripping hand, with two clear bottom feet.",
+    "No prop covers the mouth or eyes on these pages.",
+    "body_28 preserves cheek clearance even with wand, lollipop and popsicle.",
+    "The popsicles on body_24 and body_30 are close to the cheek glow but their ink does not merge with the drawn cheek; no definite defect.",
+    "Flower stems and wand/popsicle shafts remain connected to the grip. Cameras, envelopes, gifts and food remain identifiable with clear centers.",
+    "body_28 + prop_16 reports 19.6 percent occlusion, but the local lower-carrot hold remains visually readable; not a defect based on percentage alone.",
+    "No additional definite contact, occlusion or anatomy defect was found in the remaining 104 combinations."
+  ],
+  "detailImages": ["hand-detailed-24.jpg", "hand-detailed-28.jpg", "hand-detailed-30.jpg", "hand-cheek-contact-detail.jpg"]
+}

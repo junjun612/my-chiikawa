@@ -880,573 +880,1470 @@ window.PARTS = {
   },
   {
    "id": "body_17",
-   "label": "동글 우유",
-   "src": "parts/body/body_17.webp",
-   "fill": "parts/body/body_17_fill.webp",
-   "line": "parts/body/body_17_line.webp",
-   "arms": "parts/body/body_17_arms.webp",
-   "w": 274,
-   "h": 244,
-   "color": "#fff9eb",
+   "label": "솜털 인사",
+   "w": 254,
+   "h": 260,
+   "color": "#fffaf0",
    "anchors": {
     "top": [
-     140.5,
-     5
+     131,
+     4
     ],
-    "headW": 224.68,
+    "headW": 188.16,
     "earL": [
-     65.15,
+     71.53,
+     22,
+     -9
+    ],
+    "earR": [
+     191.82,
+     23,
+     21
+    ],
+    "face": [
+     124.5,
+     96.2,
+     127.68,
+     6
+    ],
+    "prop": [
+     23,
+     148.5,
+     76.16,
+     -12
+    ],
+    "tail": [
+     170.67,
+     218.4
+    ],
+    "sideL": [
+     76.8,
+     174.2
+    ],
+    "sideR": [
+     166.2,
+     174.2
+    ],
+    "center": [
+     121.5,
+     130
+    ],
+    "H": 252,
+    "W": 246,
+    "head": {
+     "center": [
+      124.5,
+      89.8
+     ],
+     "w": 224,
+     "h": 171.6,
+     "rotation": 6,
+     "crown": [
+      131,
+      4
+     ]
+    },
+    "earScale": 0.93088,
+    "propOffsets": {
+     "prop_01": [
+      -36,
+      -22.32
+     ],
+     "prop_02": [
+      -24,
+      -14.88
+     ],
+     "prop_03": [
+      -28,
+      -17.36
+     ],
+     "prop_04": [
+      -0.91,
+      -35.45
+     ],
+     "prop_05": [
+      -14.18,
+      -31.87
+     ],
+     "prop_06": [
+      -14.33,
+      -32.6
+     ],
+     "prop_07": [
+      -28,
+      -17.36
+     ],
+     "prop_08": [
+      -32,
+      -19.84
+     ],
+     "prop_09": [
+      -28,
+      -17.36
+     ],
+     "prop_10": [
+      -28,
+      -17.36
+     ],
+     "prop_11": [
+      1.96,
+      -35.15
+     ],
+     "prop_12": [
+      -28,
+      -17.36
+     ],
+     "prop_13": [
+      3.14,
+      -34.63
+     ],
+     "prop_14": [
+      -32,
+      -19.84
+     ],
+     "prop_15": [
+      -32,
+      -19.84
+     ],
+     "prop_16": [
+      -2.14,
+      -30.16
+     ],
+     "prop_17": [
+      -32,
+      -19.84
+     ],
+     "prop_18": [
+      -32,
+      -19.84
+     ],
+     "prop_19": [
+      -32,
+      -19.84
+     ],
+     "prop_20": [
+      -32,
+      -19.84
+     ],
+     "prop_21": [
+      -32,
+      -19.84
+     ],
+     "prop_22": [
+      -32,
+      -19.84
+     ],
+     "prop_23": [
+      -36,
+      -22.32
+     ],
+     "prop_24": [
+      -32,
+      -19.84
+     ],
+     "prop_25": [
+      -32,
+      -19.84
+     ],
+     "prop_26": [
+      -36,
+      -22.32
+     ],
+     "prop_27": [
+      -36,
+      -22.32
+     ],
+     "prop_28": [
+      -32,
+      -19.84
+     ],
+     "prop_29": [
+      -36,
+      -22.32
+     ],
+     "prop_30": [
+      -13.98,
+      -30.94
+     ],
+     "prop_31": [
+      -32,
+      -19.84
+     ],
+     "prop_32": [
+      -32,
+      -19.84
+     ],
+     "prop_33": [
+      -36,
+      -22.32
+     ],
+     "prop_34": [
+      -36,
+      -22.32
+     ],
+     "prop_35": [
+      -32,
+      -19.84
+     ],
+     "prop_36": [
+      -36,
+      -22.32
+     ]
+    }
+   },
+   "sourceCell": 6,
+   "gripRegions": [
+    [
+     4,
+     126,
+     42,
+     171
+    ]
+   ],
+   "gripCount": 1,
+   "fixedPatternPixels": 0,
+   "headFrame": {
+    "center": [
+     124.5,
+     89.8
+    ],
+    "width": 224,
+    "height": 171.6,
+    "angle": 6,
+    "crown": [
+     131,
+     4
+    ]
+   },
+   "src": "parts/body/body_17.webp",
+   "line": "parts/body/body_17_line.webp",
+   "fill": "parts/body/body_17_fill.webp",
+   "arms": "parts/body/body_17_arms.webp",
+   "gripSide": "left",
+   "raisedHand": {
+    "side": "left",
+    "palm": [
+     23,
+     148.5
+    ],
+    "inkCenter": [
+     20.83,
+     148.06
+    ]
+   },
+   "sourceEdit": "raised-hand-body17-fixed-source.png"
+  },
+  {
+   "id": "body_19",
+   "label": "살랑 인사",
+   "w": 247,
+   "h": 262,
+   "color": "#fffaf0",
+   "anchors": {
+    "top": [
+     126,
+     6
+    ],
+    "headW": 181.02,
+    "earL": [
+     48.57,
+     33,
+     -22
+    ],
+    "earR": [
+     164.07,
+     15,
+     8
+    ],
+    "face": [
+     114.75,
+     94.32,
+     122.83,
+     -7
+    ],
+    "prop": [
+     227,
+     132,
+     73.27,
+     12
+    ],
+    "tail": [
+     168.16,
+     220.08
+    ],
+    "sideL": [
+     69.48,
+     175.54
+    ],
+    "sideR": [
+     163.46,
+     175.54
+    ],
+    "center": [
+     116.47,
+     131
+    ],
+    "H": 251,
+    "W": 236,
+    "head": {
+     "center": [
+      114.75,
+      92.46
+     ],
+     "w": 215.5,
+     "h": 172.92,
+     "rotation": -7,
+     "crown": [
+      126,
+      6
+     ]
+    },
+    "earScale": 0.92094,
+    "propOffsets": {
+     "prop_01": [
+      32,
+      -19.84
+     ],
+     "prop_02": [
+      28,
+      -17.36
+     ],
+     "prop_03": [
+      32,
+      -19.84
+     ],
+     "prop_04": [
+      27,
+      -28.72
+     ],
+     "prop_05": [
+      9.95,
+      -29.37
+     ],
+     "prop_06": [
+      14.09,
+      -31.47
+     ],
+     "prop_07": [
+      28,
+      -17.36
+     ],
+     "prop_08": [
+      28,
+      -17.36
+     ],
+     "prop_09": [
+      24,
+      -14.88
+     ],
+     "prop_10": [
+      28,
+      -17.36
+     ],
+     "prop_11": [
+      8.51,
+      -31.52
+     ],
+     "prop_12": [
+      28,
+      -17.36
+     ],
+     "prop_13": [
+      30.25,
+      -26.41
+     ],
+     "prop_14": [
+      28,
+      -17.36
+     ],
+     "prop_15": [
+      28,
+      -17.36
+     ],
+     "prop_16": [
+      23.86,
+      -24.55
+     ],
+     "prop_17": [
+      28,
+      -17.36
+     ],
+     "prop_18": [
+      28,
+      -17.36
+     ],
+     "prop_19": [
+      32,
+      -19.84
+     ],
+     "prop_20": [
+      28,
+      -17.36
+     ],
+     "prop_21": [
+      28,
+      -17.36
+     ],
+     "prop_22": [
+      28,
+      -17.36
+     ],
+     "prop_23": [
+      32,
+      -19.84
+     ],
+     "prop_24": [
+      28,
+      -17.36
+     ],
+     "prop_25": [
+      28,
+      -17.36
+     ],
+     "prop_26": [
+      32,
+      -19.84
+     ],
+     "prop_27": [
+      36,
+      -22.32
+     ],
+     "prop_28": [
+      32,
+      -19.84
+     ],
+     "prop_29": [
+      32,
+      -19.84
+     ],
+     "prop_30": [
+      13.75,
+      -29.87
+     ],
+     "prop_31": [
+      32,
+      -19.84
+     ],
+     "prop_32": [
+      28,
+      -17.36
+     ],
+     "prop_33": [
+      28,
+      -17.36
+     ],
+     "prop_34": [
+      28,
+      -17.36
+     ],
+     "prop_35": [
+      32,
+      -19.84
+     ],
+     "prop_36": [
+      32,
+      -19.84
+     ]
+    }
+   },
+   "sourceCell": 1,
+   "gripRegions": [
+    [
+     211,
+     113,
+     243,
+     151
+    ]
+   ],
+   "gripCount": 1,
+   "fixedPatternPixels": 0,
+   "headFrame": {
+    "center": [
+     114.75,
+     92.46
+    ],
+    "width": 215.5,
+    "height": 172.92,
+    "angle": -7,
+    "crown": [
+     126,
+     6
+    ]
+   },
+   "src": "parts/body/body_19.webp",
+   "line": "parts/body/body_19_line.webp",
+   "fill": "parts/body/body_19_fill.webp",
+   "arms": "parts/body/body_19_arms.webp",
+   "gripSide": "right",
+   "raisedHand": {
+    "side": "right",
+    "palm": [
+     227,
+     132
+    ],
+    "inkCenter": [
+     227.55,
+     129.99
+    ]
+   },
+   "sourceEdit": "raised-hand-source-sheet.png"
+  },
+  {
+   "id": "body_20",
+   "label": "동글 앉기",
+   "w": 239,
+   "h": 223,
+   "color": "#fffaf0",
+   "anchors": {
+    "top": [
+     126,
+     6
+    ],
+    "headW": 189,
+    "earL": [
+     58.25,
      26,
      -15
     ],
     "earR": [
-     215.85,
-     29,
+     179.75,
+     20,
      15
     ],
-    "prop": [
-     138.53,
-     166.46,
-     88.71
-    ],
     "face": [
-     138.53,
-     112.24,
-     156.18
+     119,
+     93.66,
+     128.25,
+     0
+    ],
+    "prop": [
+     120.15,
+     150.81,
+     73.69,
+     -1.03
     ],
     "tail": [
-     227.42,
-     180.56
+     183.5,
+     187.32
     ],
     "sideL": [
-     46.58,
-     104.92
+     57.5,
+     149.41
     ],
     "sideR": [
-     227.42,
-     104.92
+     177.5,
+     149.41
     ],
     "center": [
-     137,
-     122
+     117.5,
+     111.5
     ],
-    "H": 234,
-    "W": 263
+    "H": 211,
+    "W": 228,
+    "head": {
+     "center": [
+      119,
+      87.39
+     ],
+     "w": 225,
+     "h": 162.79,
+     "rotation": 0,
+     "crown": [
+      126,
+      6
+     ]
+    },
+    "earScale": 0.99372
    },
-   "sourceCell": 1
-  },
-  {
-   "id": "body_18",
-   "label": "통통 볼살",
-   "src": "parts/body/body_18.webp",
-   "fill": "parts/body/body_18_fill.webp",
-   "line": "parts/body/body_18_line.webp",
-   "arms": "parts/body/body_18_arms.webp",
-   "w": 297,
-   "h": 252,
-   "color": "#fff9eb",
-   "anchors": {
-    "top": [
-     151.5,
+   "sourceCell": 3,
+   "gripRegions": [
+    [
+     70,
+     134,
+     102,
+     170
+    ],
+    [
+     139,
+     133,
+     171,
+     169
+    ]
+   ],
+   "gripCount": 2,
+   "fixedPatternPixels": 0,
+   "headFrame": {
+    "center": [
+     119,
+     87.39
+    ],
+    "width": 225,
+    "height": 162.79,
+    "angle": 0,
+    "crown": [
+     126,
      6
-    ],
-    "headW": 243.54,
-    "earL": [
-     69.82,
-     31,
-     -15
-    ],
-    "earR": [
-     233.18,
-     34,
-     15
-    ],
-    "prop": [
-     146.32,
-     173.77,
-     88.84
-    ],
-    "face": [
-     146.32,
-     115.92,
-     169.29
-    ],
-    "tail": [
-     246.51,
-     186.48
-    ],
-    "sideL": [
-     50.49,
-     108.36
-    ],
-    "sideR": [
-     246.51,
-     108.36
-    ],
-    "center": [
-     148.5,
-     126
-    ],
-    "H": 241,
-    "W": 286
+    ]
    },
-   "sourceCell": 2
-  },
-  {
-   "id": "body_19",
-   "label": "몽글 식빵",
-   "src": "parts/body/body_19.webp",
-   "fill": "parts/body/body_19_fill.webp",
-   "line": "parts/body/body_19_line.webp",
-   "arms": "parts/body/body_19_arms.webp",
-   "w": 265,
-   "h": 245,
-   "color": "#fff9eb",
-   "anchors": {
-    "top": [
-     135,
-     6
-    ],
-    "headW": 217.3,
-    "earL": [
-     62.12,
-     16,
-     -15
-    ],
-    "earR": [
-     207.88,
-     17,
-     15
-    ],
-    "prop": [
-     133.39,
-     167.33,
-     86.87
-    ],
-    "face": [
-     133.39,
-     112.7,
-     151.05
-    ],
-    "tail": [
-     219.95,
-     181.3
-    ],
-    "sideL": [
-     45.05,
-     105.35
-    ],
-    "sideR": [
-     219.95,
-     105.35
-    ],
-    "center": [
-     132.5,
-     122.5
-    ],
-    "H": 234,
-    "W": 253
-   },
-   "sourceCell": 3
-  },
-  {
-   "id": "body_20",
-   "label": "말랑 찹쌀",
    "src": "parts/body/body_20.webp",
-   "fill": "parts/body/body_20_fill.webp",
    "line": "parts/body/body_20_line.webp",
-   "arms": "parts/body/body_20_arms.webp",
-   "w": 298,
-   "h": 237,
-   "color": "#fff9eb",
-   "anchors": {
-    "top": [
-     156,
-     6
-    ],
-    "headW": 244.36,
-    "earL": [
-     74.05,
-     29,
-     -15
-    ],
-    "earR": [
-     237.95,
-     31,
-     15
-    ],
-    "prop": [
-     147.37,
-     160.66,
-     95.01
-    ],
-    "face": [
-     147.37,
-     109.02,
-     169.86
-    ],
-    "tail": [
-     247.34,
-     175.38
-    ],
-    "sideL": [
-     50.66,
-     101.91
-    ],
-    "sideR": [
-     247.34,
-     101.91
-    ],
-    "center": [
-     149,
-     118.5
-    ],
-    "H": 226,
-    "W": 286
-   },
-   "sourceCell": 4
+   "fill": "parts/body/body_20_fill.webp",
+   "arms": "parts/body/body_20_arms.webp"
   },
   {
    "id": "body_21",
-   "label": "배동글 모찌",
+   "label": "반짝 인사",
+   "w": 244,
+   "h": 250,
+   "color": "#fffaf0",
+   "anchors": {
+    "top": [
+     131,
+     6
+    ],
+    "headW": 176.4,
+    "earL": [
+     83.01,
+     18,
+     -9
+    ],
+    "earR": [
+     195.79,
+     26,
+     21
+    ],
+    "face": [
+     132.5,
+     92.5,
+     119.7,
+     6
+    ],
+    "prop": [
+     22.5,
+     120.5,
+     71.4,
+     -12
+    ],
+    "tail": [
+     172.99,
+     210
+    ],
+    "sideL": [
+     82.41,
+     167.5
+    ],
+    "sideR": [
+     168.67,
+     167.5
+    ],
+    "center": [
+     125.54,
+     125
+    ],
+    "H": 239,
+    "W": 234,
+    "head": {
+     "center": [
+      132.5,
+      88.5
+     ],
+     "w": 210,
+     "h": 165,
+     "rotation": 6,
+     "crown": [
+      131,
+      6
+     ]
+    },
+    "earScale": 0.90847,
+    "propOffsets": {
+     "prop_01": [
+      -32,
+      -19.84
+     ],
+     "prop_02": [
+      -24,
+      -14.88
+     ],
+     "prop_03": [
+      -28,
+      -17.36
+     ],
+     "prop_04": [
+      -1.36,
+      -33.41
+     ],
+     "prop_05": [
+      -13.79,
+      -30.06
+     ],
+     "prop_06": [
+      -13.94,
+      -30.74
+     ],
+     "prop_07": [
+      -28,
+      -17.36
+     ],
+     "prop_08": [
+      -32,
+      -19.84
+     ],
+     "prop_09": [
+      -28,
+      -17.36
+     ],
+     "prop_10": [
+      -28,
+      -17.36
+     ],
+     "prop_11": [
+      -5.91,
+      -35.67
+     ],
+     "prop_12": [
+      -28,
+      -17.36
+     ],
+     "prop_13": [
+      2.45,
+      -32.64
+     ],
+     "prop_14": [
+      -32,
+      -19.84
+     ],
+     "prop_15": [
+      -32,
+      -19.84
+     ],
+     "prop_16": [
+      -2.5,
+      -28.45
+     ],
+     "prop_17": [
+      -32,
+      -19.84
+     ],
+     "prop_18": [
+      -32,
+      -19.84
+     ],
+     "prop_19": [
+      -32,
+      -19.84
+     ],
+     "prop_20": [
+      -32,
+      -19.84
+     ],
+     "prop_21": [
+      -32,
+      -19.84
+     ],
+     "prop_22": [
+      -28,
+      -17.36
+     ],
+     "prop_23": [
+      -36,
+      -22.32
+     ],
+     "prop_24": [
+      -32,
+      -19.84
+     ],
+     "prop_25": [
+      -32,
+      -19.84
+     ],
+     "prop_26": [
+      -36,
+      -22.32
+     ],
+     "prop_27": [
+      -36,
+      -22.32
+     ],
+     "prop_28": [
+      -32,
+      -19.84
+     ],
+     "prop_29": [
+      -36,
+      -22.32
+     ],
+     "prop_30": [
+      -13.61,
+      -29.18
+     ],
+     "prop_31": [
+      -32,
+      -19.84
+     ],
+     "prop_32": [
+      -32,
+      -19.84
+     ],
+     "prop_33": [
+      -32,
+      -19.84
+     ],
+     "prop_34": [
+      -32,
+      -19.84
+     ],
+     "prop_35": [
+      -32,
+      -19.84
+     ],
+     "prop_36": [
+      -36,
+      -22.32
+     ]
+    }
+   },
+   "sourceCell": 2,
+   "gripRegions": [
+    [
+     4,
+     99,
+     41,
+     142
+    ]
+   ],
+   "gripCount": 1,
+   "fixedPatternPixels": 0,
+   "headFrame": {
+    "center": [
+     132.5,
+     88.5
+    ],
+    "width": 210,
+    "height": 165,
+    "angle": 6,
+    "crown": [
+     131,
+     6
+    ]
+   },
    "src": "parts/body/body_21.webp",
-   "fill": "parts/body/body_21_fill.webp",
    "line": "parts/body/body_21_line.webp",
+   "fill": "parts/body/body_21_fill.webp",
    "arms": "parts/body/body_21_arms.webp",
-   "w": 289,
-   "h": 260,
-   "color": "#fff9eb",
-   "anchors": {
-    "top": [
-     149,
-     5
+   "gripSide": "left",
+   "raisedHand": {
+    "side": "left",
+    "palm": [
+     22.5,
+     120.5
     ],
-    "headW": 202.3,
-    "earL": [
-     85.42,
-     27,
-     -15
-    ],
-    "earR": [
-     212.58,
-     31,
-     15
-    ],
-    "prop": [
-     144.89,
-     181.59,
-     94.1
-    ],
-    "face": [
-     144.89,
-     119.6,
-     164.73
-    ],
-    "tail": [
-     239.87,
-     192.4
-    ],
-    "sideL": [
-     49.13,
-     111.8
-    ],
-    "sideR": [
-     239.87,
-     111.8
-    ],
-    "center": [
-     144.5,
-     130
-    ],
-    "H": 249,
-    "W": 277
+    "inkCenter": [
+     22.22,
+     118.71
+    ]
    },
-   "sourceCell": 5
-  },
-  {
-   "id": "body_22",
-   "label": "구름 찹쌀",
-   "src": "parts/body/body_22.webp",
-   "fill": "parts/body/body_22_fill.webp",
-   "line": "parts/body/body_22_line.webp",
-   "arms": "parts/body/body_22_arms.webp",
-   "w": 306,
-   "h": 260,
-   "color": "#fff9eb",
-   "anchors": {
-    "top": [
-     156.5,
-     5
-    ],
-    "headW": 250.92,
-    "earL": [
-     72.35,
-     38,
-     -15
-    ],
-    "earR": [
-     240.65,
-     37,
-     15
-    ],
-    "prop": [
-     151.54,
-     176.54,
-     94.05
-    ],
-    "face": [
-     151.54,
-     119.6,
-     174.42
-    ],
-    "tail": [
-     253.98,
-     192.4
-    ],
-    "sideL": [
-     52.02,
-     111.8
-    ],
-    "sideR": [
-     253.98,
-     111.8
-    ],
-    "center": [
-     153,
-     130
-    ],
-    "H": 250,
-    "W": 294
-   },
-   "sourceCell": 6
+   "sourceEdit": "raised-hand-source-sheet.png"
   },
   {
    "id": "body_23",
-   "label": "포근 주먹밥",
-   "src": "parts/body/body_23.webp",
-   "fill": "parts/body/body_23_fill.webp",
-   "line": "parts/body/body_23_line.webp",
-   "arms": "parts/body/body_23_arms.webp",
-   "w": 292,
-   "h": 246,
-   "color": "#fff9eb",
+   "label": "통통 햄스터",
+   "w": 252,
+   "h": 232,
+   "color": "#fffaf0",
    "anchors": {
     "top": [
-     148.5,
-     5
+     129.5,
+     6
     ],
-    "headW": 239.44,
+    "headW": 196.56,
     "earL": [
-     68.2,
-     37,
+     61.57,
+     25,
      -15
     ],
     "earR": [
-     228.8,
-     42,
+     187.93,
+     22,
      15
     ],
-    "prop": [
-     145.2,
-     165.13,
-     92.82
-    ],
     "face": [
-     145.2,
-     113.16,
-     166.44
+     124.75,
+     95.12,
+     133.38,
+     0
+    ],
+    "prop": [
+     124.03,
+     159.9,
+     63.14,
+     0.29
     ],
     "tail": [
-     242.36,
-     182.04
+     199.42,
+     194.88
     ],
     "sideL": [
-     49.64,
-     105.78
+     58.3,
+     155.44
     ],
     "sideR": [
-     242.36,
-     105.78
+     192.7,
+     155.44
     ],
     "center": [
-     146,
-     123
+     125.5,
+     116
     ],
-    "H": 236,
-    "W": 281
+    "H": 220,
+    "W": 240,
+    "head": {
+     "center": [
+      124.75,
+      90.68
+     ],
+     "w": 234,
+     "h": 169.36,
+     "rotation": 0,
+     "crown": [
+      129.5,
+      6
+     ]
+    },
+    "earScale": 0.98016
    },
-   "sourceCell": 7
+   "sourceCell": 9,
+   "gripRegions": [
+    [
+     78,
+     143,
+     111,
+     179
+    ],
+    [
+     138,
+     143,
+     171,
+     179
+    ]
+   ],
+   "gripCount": 2,
+   "fixedPatternPixels": 0,
+   "headFrame": {
+    "center": [
+     124.75,
+     90.68
+    ],
+    "width": 234,
+    "height": 169.36,
+    "angle": 0,
+    "crown": [
+     129.5,
+     6
+    ]
+   },
+   "src": "parts/body/body_23.webp",
+   "line": "parts/body/body_23_line.webp",
+   "fill": "parts/body/body_23_fill.webp",
+   "arms": "parts/body/body_23_arms.webp"
   },
   {
    "id": "body_24",
-   "label": "하얀 마시멜로",
-   "src": "parts/body/body_24.webp",
-   "fill": "parts/body/body_24_fill.webp",
-   "line": "parts/body/body_24_line.webp",
-   "arms": "parts/body/body_24_arms.webp",
-   "w": 287,
-   "h": 247,
-   "color": "#fff9eb",
+   "label": "가슴 점 친구",
+   "w": 242,
+   "h": 252,
+   "color": "#fffaf0",
    "anchors": {
     "top": [
-     145,
+     116.5,
      6
     ],
-    "headW": 235.34,
+    "headW": 175.56,
     "earL": [
-     66.07,
-     25,
-     -15
+     49.07,
+     27,
+     -19
     ],
     "earR": [
-     223.93,
-     25,
-     15
-    ],
-    "prop": [
-     141.37,
-     167.24,
-     96.12
+     161.65,
+     18,
+     11
     ],
     "face": [
-     141.37,
-     113.62,
-     163.59
+     110,
+     93.24,
+     119.13,
+     -4
+    ],
+    "prop": [
+     221.5,
+     125,
+     71.06,
+     12
     ],
     "tail": [
-     238.21,
-     182.78
+     162.68,
+     211.68
     ],
     "sideL": [
-     48.79,
-     106.21
+     65.71,
+     168.84
     ],
     "sideR": [
-     238.21,
-     106.21
+     158.06,
+     168.84
     ],
     "center": [
-     143.5,
-     123.5
+     111.89,
+     126
     ],
-    "H": 236,
-    "W": 275
+    "H": 240,
+    "W": 230,
+    "head": {
+     "center": [
+      110,
+      89.16
+     ],
+     "w": 209,
+     "h": 166.32,
+     "rotation": -4,
+     "crown": [
+      116.5,
+      6
+     ]
+    },
+    "earScale": 0.91162,
+    "propOffsets": {
+     "prop_01": [
+      32,
+      -19.84
+     ],
+     "prop_02": [
+      28,
+      -17.36
+     ],
+     "prop_03": [
+      32,
+      -19.84
+     ],
+     "prop_04": [
+      26.43,
+      -27.94
+     ],
+     "prop_05": [
+      9.77,
+      -28.53
+     ],
+     "prop_06": [
+      13.91,
+      -30.6
+     ],
+     "prop_07": [
+      28,
+      -17.36
+     ],
+     "prop_08": [
+      28,
+      -17.36
+     ],
+     "prop_09": [
+      24,
+      -14.88
+     ],
+     "prop_10": [
+      28,
+      -17.36
+     ],
+     "prop_11": [
+      8.13,
+      -30.53
+     ],
+     "prop_12": [
+      28,
+      -17.36
+     ],
+     "prop_13": [
+      29.58,
+      -25.7
+     ],
+     "prop_14": [
+      28,
+      -17.36
+     ],
+     "prop_15": [
+      28,
+      -17.36
+     ],
+     "prop_16": [
+      23.38,
+      -23.89
+     ],
+     "prop_17": [
+      28,
+      -17.36
+     ],
+     "prop_18": [
+      28,
+      -17.36
+     ],
+     "prop_19": [
+      32,
+      -19.84
+     ],
+     "prop_20": [
+      28,
+      -17.36
+     ],
+     "prop_21": [
+      28,
+      -17.36
+     ],
+     "prop_22": [
+      28,
+      -17.36
+     ],
+     "prop_23": [
+      32,
+      -19.84
+     ],
+     "prop_24": [
+      28,
+      -17.36
+     ],
+     "prop_25": [
+      28,
+      -17.36
+     ],
+     "prop_26": [
+      32,
+      -19.84
+     ],
+     "prop_27": [
+      36,
+      -22.32
+     ],
+     "prop_28": [
+      32,
+      -19.84
+     ],
+     "prop_29": [
+      32,
+      -19.84
+     ],
+     "prop_30": [
+      13.58,
+      -29.06
+     ],
+     "prop_31": [
+      28,
+      -17.36
+     ],
+     "prop_32": [
+      28,
+      -17.36
+     ],
+     "prop_33": [
+      28,
+      -17.36
+     ],
+     "prop_34": [
+      28,
+      -17.36
+     ],
+     "prop_35": [
+      28,
+      -17.36
+     ],
+     "prop_36": [
+      32,
+      -19.84
+     ]
+    }
    },
-   "sourceCell": 8
+   "sourceCell": 12,
+   "gripRegions": [
+    [
+     205,
+     104,
+     238,
+     146
+    ]
+   ],
+   "gripCount": 1,
+   "fixedPatternPixels": 1327,
+   "headFrame": {
+    "center": [
+     110,
+     89.16
+    ],
+    "width": 209,
+    "height": 166.32,
+    "angle": -4,
+    "crown": [
+     116.5,
+     6
+    ]
+   },
+   "src": "parts/body/body_24.webp",
+   "line": "parts/body/body_24_line.webp",
+   "fill": "parts/body/body_24_fill.webp",
+   "arms": "parts/body/body_24_arms.webp",
+   "gripSide": "right",
+   "raisedHand": {
+    "side": "right",
+    "palm": [
+     221.5,
+     125
+    ],
+    "inkCenter": [
+     220.85,
+     123.5
+    ]
+   },
+   "sourceEdit": "raised-hand-source-sheet.png"
   },
   {
    "id": "body_25",
-   "label": "갸우뚱 모찌",
-   "src": "parts/body/body_25.webp",
-   "fill": "parts/body/body_25_fill.webp",
-   "line": "parts/body/body_25_line.webp",
-   "arms": "parts/body/body_25_arms.webp",
-   "w": 282,
+   "label": "이마 점 햄스터",
+   "w": 252,
    "h": 255,
-   "color": "#fff9eb",
+   "color": "#fffaf0",
    "anchors": {
     "top": [
-     141.5,
-     6
+     134,
+     4
     ],
-    "headW": 231.24,
+    "headW": 178.47529411764705,
     "earL": [
-     63.95,
-     30,
-     -15
+     87.15247058823529,
+     15,
+     -9
     ],
     "earR": [
-     219.05,
-     32,
-     15
-    ],
-    "prop": [
-     160.55,
-     164.08,
-     84.54
+     201.264,
+     24,
+     21
     ],
     "face": [
-     160.55,
-     117.3,
-     160.74
+     137.36470588235295,
+     94.35000000000001,
+     121.10823529411765,
+     6
+    ],
+    "prop": [
+     37,
+     117,
+     72.24,
+     -12
     ],
     "tail": [
-     234.06,
-     188.7
+     177.83,
+     214.2
     ],
     "sideL": [
-     47.94,
-     109.65
+     82.7,
+     170.85
     ],
     "sideR": [
-     234.06,
-     109.65
+     173.3,
+     170.85
     ],
     "center": [
-     141,
+     128,
      127.5
     ],
-    "H": 244,
-    "W": 270
+    "H": 247,
+    "W": 244,
+    "head": {
+     "center": [
+      137.36470588235295,
+      90.24561752988048
+     ],
+     "w": 212.47058823529412,
+     "h": 168.29999999999998,
+     "rotation": 6,
+     "crown": [
+      134,
+      4
+     ]
+    },
+    "earScale": 0.88998,
+    "propOffsets": {
+     "prop_01": [
+      -44,
+      -27.28
+     ],
+     "prop_02": [
+      -32,
+      -19.84
+     ],
+     "prop_03": [
+      -40,
+      -24.8
+     ],
+     "prop_04": [
+      -18.78,
+      -31.27
+     ],
+     "prop_05": [
+      -31.36,
+      -27.88
+     ],
+     "prop_06": [
+      -27.51,
+      -27.16
+     ],
+     "prop_07": [
+      -36,
+      -22.32
+     ],
+     "prop_08": [
+      -36,
+      -22.32
+     ],
+     "prop_09": [
+      -40,
+      -24.8
+     ],
+     "prop_10": [
+      -36,
+      -22.32
+     ],
+     "prop_11": [
+      -19.43,
+      -32.17
+     ],
+     "prop_12": [
+      -36,
+      -22.32
+     ],
+     "prop_13": [
+      -14.93,
+      -30.49
+     ],
+     "prop_14": [
+      -44,
+      -27.28
+     ],
+     "prop_15": [
+      -39,
+      -24
+     ],
+     "prop_16": [
+      -19.94,
+      -26.25
+     ],
+     "prop_17": [
+      -40,
+      -24.8
+     ],
+     "prop_18": [
+      -44,
+      -27.28
+     ],
+     "prop_19": [
+      -44,
+      -27.28
+     ],
+     "prop_20": [
+      -44,
+      -27.28
+     ],
+     "prop_21": [
+      -40,
+      -24.8
+     ],
+     "prop_22": [
+      -36,
+      -22.32
+     ],
+     "prop_23": [
+      -44,
+      -27.28
+     ],
+     "prop_24": [
+      -40,
+      -24.8
+     ],
+     "prop_25": [
+      -40,
+      -24.8
+     ],
+     "prop_26": [
+      -44,
+      -27.28
+     ],
+     "prop_27": [
+      -44,
+      -27.28
+     ],
+     "prop_28": [
+      -44,
+      -27.28
+     ],
+     "prop_29": [
+      -44,
+      -27.28
+     ],
+     "prop_30": [
+      -31.17,
+      -26.99
+     ],
+     "prop_31": [
+      -40,
+      -24.8
+     ],
+     "prop_32": [
+      -40,
+      -24.8
+     ],
+     "prop_33": [
+      -44,
+      -27.28
+     ],
+     "prop_34": [
+      -44,
+      -27.28
+     ],
+     "prop_35": [
+      -44,
+      -27.28
+     ],
+     "prop_36": [
+      -44,
+      -27.28
+     ]
+    }
    },
-   "sourceCell": 9
-  },
-  {
-   "id": "body_26",
-   "label": "밀크 푸딩",
-   "src": "parts/body/body_26.webp",
-   "fill": "parts/body/body_26_fill.webp",
-   "line": "parts/body/body_26_line.webp",
-   "arms": "parts/body/body_26_arms.webp",
-   "w": 287,
-   "h": 252,
-   "color": "#fff9eb",
-   "anchors": {
-    "top": [
-     149.5,
-     6
-    ],
-    "headW": 235.34,
-    "earL": [
-     70.57,
-     27,
-     -15
-    ],
-    "earR": [
-     228.43,
-     28,
-     15
-    ],
-    "prop": [
-     144.45,
-     168.84,
-     92.15
-    ],
-    "face": [
-     144.45,
-     115.92,
-     163.59
-    ],
-    "tail": [
-     238.21,
-     186.48
-    ],
-    "sideL": [
-     48.79,
-     108.36
-    ],
-    "sideR": [
-     238.21,
-     108.36
-    ],
+   "sourceCell": 10,
+   "gripRegions": [
+    [
+     2,
+     100,
+     37,
+     139
+    ]
+   ],
+   "gripCount": 1,
+   "fixedPatternPixels": 1188,
+   "headFrame": {
     "center": [
-     143.5,
-     126
+     137.36470588235295,
+     90.24561752988048
     ],
-    "H": 241,
-    "W": 276
+    "width": 212.47058823529412,
+    "height": 168.29999999999998,
+    "angle": 6,
+    "crown": [
+     134,
+     4
+    ]
    },
-   "sourceCell": 10
+   "sourceEdit": "body25-hand-switch-source.png",
+   "src": "parts/body/body_25.webp",
+   "line": "parts/body/body_25_line.webp",
+   "fill": "parts/body/body_25_fill.webp",
+   "arms": "parts/body/body_25_arms.webp"
   },
   {
    "id": "body_27",
@@ -1507,60 +2404,258 @@ window.PARTS = {
   },
   {
    "id": "body_28",
-   "label": "둥근 우유떡",
-   "src": "parts/body/body_28.webp",
-   "fill": "parts/body/body_28_fill.webp",
-   "line": "parts/body/body_28_line.webp",
-   "arms": "parts/body/body_28_arms.webp",
-   "w": 285,
-   "h": 238,
-   "color": "#fff9eb",
+   "label": "잔털 수달",
+   "w": 245,
+   "h": 256,
+   "color": "#fffaf0",
    "anchors": {
     "top": [
-     144.5,
+     126,
      6
     ],
-    "headW": 233.7,
+    "headW": 178.5,
     "earL": [
-     66.12,
-     32,
-     -15
+     80.25,
+     18,
+     -9
     ],
     "earR": [
-     222.88,
-     33,
-     15
-    ],
-    "prop": [
-     137.76,
-     156.32,
-     90.09
+     194.38,
+     30,
+     21
     ],
     "face": [
-     137.76,
-     109.48,
-     162.45
+     130.25,
+     97.28,
+     121.12,
+     6
+    ],
+    "prop": [
+     22.5,
+     131,
+     72.25,
+     -12
     ],
     "tail": [
-     236.55,
-     176.12
+     173.18,
+     215.04
     ],
     "sideL": [
-     48.45,
-     102.34
+     81.2,
+     171.52
     ],
     "sideR": [
-     236.55,
-     102.34
+     168.8,
+     171.52
     ],
     "center": [
-     142.5,
-     119
+     125,
+     128
     ],
-    "H": 227,
-    "W": 275
+    "H": 244,
+    "W": 234,
+    "head": {
+     "center": [
+      130.25,
+      90.48
+     ],
+     "w": 212.5,
+     "h": 168.96,
+     "rotation": 6,
+     "crown": [
+      126,
+      6
+     ]
+    },
+    "earScale": 0.91553,
+    "propOffsets": {
+     "prop_01": [
+      -36,
+      -22.32
+     ],
+     "prop_02": [
+      -28,
+      -17.36
+     ],
+     "prop_03": [
+      -28,
+      -17.36
+     ],
+     "prop_04": [
+      -1.28,
+      -33.77
+     ],
+     "prop_05": [
+      -13.86,
+      -30.38
+     ],
+     "prop_06": [
+      -14.01,
+      -31.07
+     ],
+     "prop_07": [
+      -28,
+      -17.36
+     ],
+     "prop_08": [
+      -32,
+      -19.84
+     ],
+     "prop_09": [
+      -32,
+      -19.84
+     ],
+     "prop_10": [
+      -32,
+      -19.84
+     ],
+     "prop_11": [
+      -5.93,
+      -36.07
+     ],
+     "prop_12": [
+      -32,
+      -19.84
+     ],
+     "prop_13": [
+      2.57,
+      -33
+     ],
+     "prop_14": [
+      -36,
+      -22.32
+     ],
+     "prop_15": [
+      -32,
+      -19.84
+     ],
+     "prop_16": [
+      -2.44,
+      -28.75
+     ],
+     "prop_17": [
+      -32,
+      -19.84
+     ],
+     "prop_18": [
+      -32,
+      -19.84
+     ],
+     "prop_19": [
+      -36,
+      -22.32
+     ],
+     "prop_20": [
+      -32,
+      -19.84
+     ],
+     "prop_21": [
+      -32,
+      -19.84
+     ],
+     "prop_22": [
+      -32,
+      -19.84
+     ],
+     "prop_23": [
+      -36,
+      -22.32
+     ],
+     "prop_24": [
+      -32,
+      -19.84
+     ],
+     "prop_25": [
+      -32,
+      -19.84
+     ],
+     "prop_26": [
+      -36,
+      -22.32
+     ],
+     "prop_27": [
+      -36,
+      -22.32
+     ],
+     "prop_28": [
+      -36,
+      -22.32
+     ],
+     "prop_29": [
+      -36,
+      -22.32
+     ],
+     "prop_30": [
+      -13.67,
+      -29.5
+     ],
+     "prop_31": [
+      -32,
+      -19.84
+     ],
+     "prop_32": [
+      -32,
+      -19.84
+     ],
+     "prop_33": [
+      -36,
+      -22.32
+     ],
+     "prop_34": [
+      -36,
+      -22.32
+     ],
+     "prop_35": [
+      -32,
+      -19.84
+     ],
+     "prop_36": [
+      -36,
+      -22.32
+     ]
+    }
    },
-   "sourceCell": 12
+   "sourceCell": 14,
+   "gripRegions": [
+    [
+     4,
+     109,
+     41,
+     153
+    ]
+   ],
+   "gripCount": 1,
+   "fixedPatternPixels": 0,
+   "headFrame": {
+    "center": [
+     130.25,
+     90.48
+    ],
+    "width": 212.5,
+    "height": 168.96,
+    "angle": 6,
+    "crown": [
+     126,
+     6
+    ]
+   },
+   "src": "parts/body/body_28.webp",
+   "line": "parts/body/body_28_line.webp",
+   "fill": "parts/body/body_28_fill.webp",
+   "arms": "parts/body/body_28_arms.webp",
+   "gripSide": "left",
+   "raisedHand": {
+    "side": "left",
+    "palm": [
+     22.5,
+     131
+    ],
+    "inkCenter": [
+     22.5,
+     128.17
+    ]
+   },
+   "sourceEdit": "raised-hand-source-sheet.png"
   },
   {
    "id": "body_29",
@@ -1621,117 +2716,258 @@ window.PARTS = {
   },
   {
    "id": "body_30",
-   "label": "눈송이 모찌",
-   "src": "parts/body/body_30.webp",
-   "fill": "parts/body/body_30_fill.webp",
-   "line": "parts/body/body_30_line.webp",
-   "arms": "parts/body/body_30_arms.webp",
-   "w": 276,
-   "h": 256,
-   "color": "#fff9eb",
+   "label": "동동 모찌",
+   "w": 237,
+   "h": 247,
+   "color": "#fffaf0",
    "anchors": {
     "top": [
-     139,
-     6
-    ],
-    "headW": 226.32,
-    "earL": [
-     63.1,
-     31,
-     -15
-    ],
-    "earR": [
-     214.9,
-     32,
-     15
-    ],
-    "prop": [
-     133.88,
-     171.11,
-     87.14
-    ],
-    "face": [
-     133.88,
-     117.76,
-     157.32
-    ],
-    "tail": [
-     229.08,
-     189.44
-    ],
-    "sideL": [
-     46.92,
-     110.08
-    ],
-    "sideR": [
-     229.08,
-     110.08
-    ],
-    "center": [
-     138,
-     128
-    ],
-    "H": 244,
-    "W": 265
-   },
-   "sourceCell": 15
-  },
-  {
-   "id": "body_31",
-   "label": "몽실 우유떡",
-   "src": "parts/body/body_31.webp",
-   "fill": "parts/body/body_31_fill.webp",
-   "line": "parts/body/body_31_line.webp",
-   "arms": "parts/body/body_31_arms.webp",
-   "w": 302,
-   "h": 257,
-   "color": "#fff9eb",
-   "anchors": {
-    "top": [
-     144.5,
+     114.5,
      5
     ],
-    "headW": 247.64,
+    "headW": 169.68,
     "earL": [
-     61.45,
-     49,
-     -15
+     42.92,
+     32,
+     -23
     ],
     "earR": [
-     227.55,
-     31,
-     15
-    ],
-    "prop": [
-     151.63,
-     174.13,
-     90.13
+     150.93,
+     14,
+     7
     ],
     "face": [
-     151.63,
-     118.22,
-     172.14
+     106,
+     96.33,
+     115.14,
+     -8
+    ],
+    "prop": [
+     216,
+     114,
+     68.68,
+     12
     ],
     "tail": [
-     250.66,
-     190.18
+     163.23,
+     207.48
     ],
     "sideL": [
-     51.34,
-     110.51
+     71.1,
+     165.49
     ],
     "sideR": [
-     250.66,
-     110.51
+     158.84,
+     165.49
     ],
     "center": [
-     151,
-     128.5
+     114.97,
+     123.5
     ],
-    "H": 247,
-    "W": 291
+    "H": 236,
+    "W": 227,
+    "head": {
+     "center": [
+      106,
+      86.51
+     ],
+     "w": 202,
+     "h": 163.02,
+     "rotation": -8,
+     "crown": [
+      114.5,
+      5
+     ]
+    },
+    "earScale": 0.89967,
+    "propOffsets": {
+     "prop_01": [
+      28,
+      -17.36
+     ],
+     "prop_02": [
+      28,
+      -17.36
+     ],
+     "prop_03": [
+      32,
+      -19.84
+     ],
+     "prop_04": [
+      25.81,
+      -27.1
+     ],
+     "prop_05": [
+      9.57,
+      -27.62
+     ],
+     "prop_06": [
+      13.71,
+      -29.67
+     ],
+     "prop_07": [
+      28,
+      -17.36
+     ],
+     "prop_08": [
+      28,
+      -17.36
+     ],
+     "prop_09": [
+      24,
+      -14.88
+     ],
+     "prop_10": [
+      28,
+      -17.36
+     ],
+     "prop_11": [
+      3.73,
+      -28.06
+     ],
+     "prop_12": [
+      24,
+      -14.88
+     ],
+     "prop_13": [
+      28.85,
+      -24.94
+     ],
+     "prop_14": [
+      28,
+      -17.36
+     ],
+     "prop_15": [
+      28,
+      -17.36
+     ],
+     "prop_16": [
+      22.87,
+      -23.19
+     ],
+     "prop_17": [
+      28,
+      -17.36
+     ],
+     "prop_18": [
+      28,
+      -17.36
+     ],
+     "prop_19": [
+      28,
+      -17.36
+     ],
+     "prop_20": [
+      28,
+      -17.36
+     ],
+     "prop_21": [
+      28,
+      -17.36
+     ],
+     "prop_22": [
+      28,
+      -17.36
+     ],
+     "prop_23": [
+      32,
+      -19.84
+     ],
+     "prop_24": [
+      28,
+      -17.36
+     ],
+     "prop_25": [
+      28,
+      -17.36
+     ],
+     "prop_26": [
+      32,
+      -19.84
+     ],
+     "prop_27": [
+      32,
+      -19.84
+     ],
+     "prop_28": [
+      28,
+      -17.36
+     ],
+     "prop_29": [
+      32,
+      -19.84
+     ],
+     "prop_30": [
+      13.39,
+      -28.18
+     ],
+     "prop_31": [
+      28,
+      -17.36
+     ],
+     "prop_32": [
+      28,
+      -17.36
+     ],
+     "prop_33": [
+      28,
+      -17.36
+     ],
+     "prop_34": [
+      28,
+      -17.36
+     ],
+     "prop_35": [
+      28,
+      -17.36
+     ],
+     "prop_36": [
+      32,
+      -19.84
+     ]
+    }
    },
-   "sourceCell": 16
+   "sourceCell": 16,
+   "gripRegions": [
+    [
+     199,
+     92,
+     233,
+     136
+    ]
+   ],
+   "gripCount": 1,
+   "fixedPatternPixels": 0,
+   "headFrame": {
+    "center": [
+     106,
+     86.51
+    ],
+    "width": 202,
+    "height": 163.02,
+    "angle": -8,
+    "crown": [
+     114.5,
+     5
+    ]
+   },
+   "src": "parts/body/body_30.webp",
+   "line": "parts/body/body_30_line.webp",
+   "fill": "parts/body/body_30_fill.webp",
+   "arms": "parts/body/body_30_arms.webp",
+   "gripSide": "right",
+   "raisedHand": {
+    "side": "right",
+    "palm": [
+     216,
+     114
+    ],
+    "inkCenter": [
+     214.56,
+     113.24
+    ]
+   },
+   "sourceEdit": "raised-hand-source-sheet.png"
   }
  ],
  "ears": [
@@ -2162,69 +3398,69 @@ window.PARTS = {
   },
   {
    "id": "ears_13",
-   "label": "박쥐",
-   "src": "parts/ears/ears_13.webp",
-   "w": 335,
-   "h": 185,
-   "color": "#fadef4",
-   "line": "parts/ears/ears_13_line.webp",
-   "fill": "parts/ears/ears_13_fill.webp",
+   "label": "아기 햄스터",
+   "color": "#fbf5eb",
    "L": {
     "src": "parts/ears/ears_13_L.webp",
-    "w": 138,
-    "h": 185,
-    "color": "#fadef4",
-    "line": "parts/ears/ears_13_L_line.webp",
-    "fill": "parts/ears/ears_13_L_fill.webp",
+    "w": 107,
+    "h": 103,
     "root": [
-     68,
-     179
-    ]
+     53.5,
+     99
+    ],
+    "color": "#fbf5eb",
+    "fill": "parts/ears/ears_13_L_fill.webp",
+    "line": "parts/ears/ears_13_L_line.webp"
    },
    "R": {
     "src": "parts/ears/ears_13_R.webp",
-    "w": 138,
-    "h": 185,
-    "color": "#fadef4",
-    "line": "parts/ears/ears_13_R_line.webp",
-    "fill": "parts/ears/ears_13_R_fill.webp",
+    "w": 108,
+    "h": 103,
     "root": [
-     68.5,
-     179
-    ]
-   }
+     54,
+     99
+    ],
+    "color": "#fbf5eb",
+    "fill": "parts/ears/ears_13_R_fill.webp",
+    "line": "parts/ears/ears_13_R_line.webp"
+   },
+   "src": "parts/ears/ears_13.webp",
+   "w": 253,
+   "h": 103,
+   "fill": "parts/ears/ears_13_fill.webp",
+   "line": "parts/ears/ears_13_line.webp"
   },
   {
    "id": "ears_14",
    "label": "사막여우",
    "src": "parts/ears/ears_14.webp",
-   "w": 366,
-   "h": 284,
+   "w": 263.52,
+   "h": 204.48,
    "color": "#fef6df",
    "line": "parts/ears/ears_14_line.webp",
    "fill": "parts/ears/ears_14_fill.webp",
    "L": {
     "src": "parts/ears/ears_14_L.webp",
-    "w": 168,
-    "h": 284,
+    "w": 120.96,
+    "h": 204.48,
     "color": "#fef6df",
     "line": "parts/ears/ears_14_L_line.webp",
     "fill": "parts/ears/ears_14_L_fill.webp",
     "root": [
-     84,
-     278
+     60.48,
+     200.16
     ]
    },
    "R": {
     "src": "parts/ears/ears_14_R.webp",
-    "w": 167,
-    "h": 283,
+    "w": 120.24,
+    "h": 203.76,
     "color": "#fef6df",
     "line": "parts/ears/ears_14_R_line.webp",
     "fill": "parts/ears/ears_14_R_fill.webp",
     "root": [
-     83.5,
-     278
+     60.12,
+     200.16
     ]
    }
   },
@@ -3078,29 +4314,11 @@ window.PARTS = {
   },
   {
    "id": "deco_08",
-   "label": "양 뿔",
-   "kind": "pair",
+   "label": "우유빛 매듭 리본",
+   "kind": "side",
    "src": "parts/deco/deco_08.webp",
-   "w": 366,
-   "h": 146,
-   "L": {
-    "src": "parts/deco/deco_08_L.webp",
-    "w": 153,
-    "h": 146,
-    "root": [
-     76.5,
-     140
-    ]
-   },
-   "R": {
-    "src": "parts/deco/deco_08_R.webp",
-    "w": 151,
-    "h": 145,
-    "root": [
-     74.5,
-     139
-    ]
-   }
+   "w": 144,
+   "h": 98
   },
   {
    "id": "deco_09",
@@ -3108,8 +4326,8 @@ window.PARTS = {
    "kind": "top",
    "sink": 0.2,
    "src": "parts/deco/deco_09.webp",
-   "w": 250,
-   "h": 233
+   "w": 162.5,
+   "h": 151.45
   },
   {
    "id": "deco_10",
@@ -3700,58 +4918,58 @@ window.PARTS = {
   },
   {
    "id": "face_19",
-   "label": "빙긋",
+   "label": "잔잔한 미소",
    "src": "parts/face/face_19.webp",
    "w": 323,
-   "h": 133.389,
+   "h": 230,
    "cheeks": [
     [
-     50.1,
-     95.65,
-     40.28
+     75.37,
+     131.61,
+     30.14
     ],
     [
-     274.24,
-     96.66,
-     38.89
+     247.63,
+     131.26,
+     29.08
     ]
    ]
   },
   {
    "id": "face_20",
-   "label": "두근",
+   "label": "반가워",
    "src": "parts/face/face_20.webp",
    "w": 323,
-   "h": 137.133,
+   "h": 230,
    "cheeks": [
     [
-     49.22,
-     98.92,
-     40.46
+     73.22,
+     131.17,
+     29.61
     ],
     [
-     273.22,
-     99.45,
-     40.46
+     249.78,
+     131.7,
+     29.08
     ]
    ]
   },
   {
    "id": "face_21",
-   "label": "수줍",
+   "label": "갸우뚱",
    "src": "parts/face/face_21.webp",
    "w": 323,
-   "h": 122.831,
+   "h": 230,
    "cheeks": [
     [
-     49.68,
-     85.33,
-     40.12
+     73.77,
+     131.42,
+     30.14
     ],
     [
-     272.53,
-     85.13,
-     40.6
+     249.23,
+     131.45,
+     29.08
     ]
    ]
   },
@@ -3760,283 +4978,283 @@ window.PARTS = {
    "label": "눈웃음",
    "src": "parts/face/face_22.webp",
    "w": 323,
-   "h": 116.928,
+   "h": 230,
    "cheeks": [
     [
-     52,
-     75.76,
-     41.33
+     65.23,
+     131.18,
+     34.75
     ],
     [
-     269.55,
-     76.07,
-     41.82
+     257.77,
+     131.68,
+     35.84
     ]
    ]
   },
   {
    "id": "face_23",
-   "label": "우쭐",
+   "label": "나른해",
    "src": "parts/face/face_23.webp",
    "w": 323,
-   "h": 105.469,
+   "h": 230,
    "cheeks": [
     [
-     50.33,
-     66.83,
-     40.14
+     61.36,
+     132.8,
+     34.21
     ],
     [
-     271.83,
-     67.44,
-     40.14
+     261.64,
+     130.07,
+     34.75
     ]
    ]
   },
   {
    "id": "face_24",
-   "label": "오물오물",
+   "label": "궁금해",
    "src": "parts/face/face_24.webp",
    "w": 323,
-   "h": 128.3,
+   "h": 230,
    "cheeks": [
     [
-     50.12,
-     88.87,
-     40.65
+     64.74,
+     131.88,
+     36.93
     ],
     [
-     271.8,
-     89.3,
-     41.12
+     258.26,
+     130.99,
+     37.47
     ]
    ]
   },
   {
    "id": "face_25",
-   "label": "졸꾸",
+   "label": "조심조심",
    "src": "parts/face/face_25.webp",
    "w": 323,
-   "h": 109.933,
+   "h": 230,
    "cheeks": [
     [
-     51.61,
-     70.92,
-     40.94
+     65.58,
+     133.27,
+     36.38
     ],
     [
-     270.59,
-     69.17,
-     41.41
+     257.42,
+     129.6,
+     37.47
     ]
    ]
   },
   {
    "id": "face_26",
-   "label": "볼콕",
+   "label": "수줍은 미소",
    "src": "parts/face/face_26.webp",
    "w": 323,
-   "h": 133.733,
+   "h": 230,
    "cheeks": [
     [
-     51.04,
-     95.37,
-     41.89
+     68.03,
+     131.14,
+     34.21
     ],
     [
-     270.41,
-     94.11,
-     41.89
+     254.97,
+     131.73,
+     36.38
     ]
    ]
   },
   {
    "id": "face_27",
-   "label": "설렘",
+   "label": "만족해",
    "src": "parts/face/face_27.webp",
    "w": 323,
-   "h": 130.067,
+   "h": 230,
    "cheeks": [
     [
-     48.9,
-     90.18,
-     40.06
+     73.89,
+     131.49,
+     30.14
     ],
     [
-     272.74,
-     92.15,
-     39.61
+     249.11,
+     131.38,
+     29.08
     ]
    ]
   },
   {
    "id": "face_28",
-   "label": "쿨쿨",
+   "label": "쪽",
    "src": "parts/face/face_28.webp",
    "w": 323,
-   "h": 110.293,
+   "h": 230,
    "cheeks": [
     [
-     50.98,
-     70.24,
-     40.65
+     73.61,
+     131.06,
+     30.14
     ],
     [
-     270.91,
-     69.04,
-     40.65
+     249.39,
+     131.81,
+     29.61
     ]
    ]
   },
   {
    "id": "face_29",
-   "label": "헤헤",
+   "label": "소곤소곤 웃음",
    "src": "parts/face/face_29.webp",
    "w": 323,
-   "h": 126.049,
+   "h": 230,
    "cheeks": [
     [
-     51.39,
-     87.02,
-     41.12
+     74.7,
+     131.57,
+     30.14
     ],
     [
-     271.56,
-     87.51,
-     41.6
+     248.3,
+     131.29,
+     29.61
     ]
    ]
   },
   {
    "id": "face_30",
-   "label": "뽀뽀",
+   "label": "시무룩",
    "src": "parts/face/face_30.webp",
    "w": 323,
-   "h": 130.574,
+   "h": 230,
    "cheeks": [
     [
-     50.94,
-     91.71,
-     40.89
+     74,
+     131.12,
+     30.67
     ],
     [
-     270.68,
-     89.91,
-     41.85
+     249,
+     131.74,
+     29.61
     ]
    ]
   },
   {
    "id": "face_31",
-   "label": "갸웃",
+   "label": "어라",
    "src": "parts/face/face_31.webp",
    "w": 323,
-   "h": 135.883,
+   "h": 230,
    "cheeks": [
     [
-     51.27,
-     96.57,
-     41.17
+     65.61,
+     133.18,
+     36.38
     ],
     [
-     270.2,
-     96.78,
-     41.63
+     257.39,
+     129.69,
+     38.01
     ]
    ]
   },
   {
    "id": "face_32",
-   "label": "뿌듯",
+   "label": "살짝 윙크",
    "src": "parts/face/face_32.webp",
    "w": 323,
-   "h": 110.997,
+   "h": 230,
    "cheeks": [
     [
-     50.97,
-     72.27,
-     40.56
+     62.68,
+     132.59,
+     35.3
     ],
     [
-     270.82,
-     72.27,
-     41.02
+     260.32,
+     130.28,
+     36.93
     ]
    ]
   },
   {
    "id": "face_33",
-   "label": "까꿍",
+   "label": "훌쩍",
    "src": "parts/face/face_33.webp",
    "w": 323,
-   "h": 133.846,
+   "h": 230,
    "cheeks": [
     [
-     48.88,
-     96.43,
-     40.42
+     61.37,
+     131.91,
+     34.75
     ],
     [
-     272.19,
-     95.23,
-     41.35
+     261.63,
+     130.96,
+     34.75
     ]
    ]
   },
   {
    "id": "face_34",
-   "label": "찡긋",
+   "label": "당황했어",
    "src": "parts/face/face_34.webp",
    "w": 323,
-   "h": 138.592,
+   "h": 230,
    "cheeks": [
     [
-     51,
-     99.42,
-     40.89
+     64.78,
+     134.25,
+     34.75
     ],
     [
-     270.63,
-     98.2,
-     41.37
+     258.22,
+     128.61,
+     37.47
     ]
    ]
   },
   {
    "id": "face_35",
-   "label": "하트 콩눈",
+   "label": "장난스러운 윙크",
    "src": "parts/face/face_35.webp",
    "w": 323,
-   "h": 159.193,
+   "h": 230,
    "cheeks": [
     [
-     66.38,
-     93.67,
-     48.93
+     72.71,
+     131.7,
+     30.14
     ],
     [
-     256.1,
-     90.86,
-     48.45
+     250.29,
+     131.17,
+     29.61
     ]
    ]
   },
   {
    "id": "face_36",
-   "label": "콩눈 미소",
+   "label": "메롱",
    "src": "parts/face/face_36.webp",
    "w": 323,
-   "h": 157.989,
+   "h": 230,
    "cheeks": [
     [
-     52.17,
-     119.21,
-     42.27
+     72.86,
+     131.38,
+     30.14
     ],
     [
-     269.69,
-     118.4,
-     41.78
+     250.14,
+     131.48,
+     29.61
     ]
    ]
   }
@@ -4358,15 +5576,18 @@ window.PARTS = {
   },
   {
    "id": "back_05",
-   "label": "악마 꼬리",
+   "label": "작은 하트 꼬리",
    "kind": "tail",
    "src": "parts/back/back_05.webp",
-   "w": 151,
-   "h": 143,
+   "w": 144,
+   "h": 134,
    "root": [
-    8,
-    122
-   ]
+    17.3,
+    111.2
+   ],
+   "fill": "parts/back/back_05_fill.webp",
+   "line": "parts/back/back_05_line.webp",
+   "color": "#fbf8f0"
   },
   {
    "id": "back_06",
@@ -4396,29 +5617,29 @@ window.PARTS = {
   },
   {
    "id": "back_07",
-   "label": "박쥐 날개",
+   "label": "동글 보라 날개",
    "kind": "wings",
-   "src": "parts/back/back_07.webp",
-   "w": 363,
-   "h": 127,
    "L": {
     "src": "parts/back/back_07_L.webp",
-    "w": 138,
-    "h": 127,
+    "w": 88,
+    "h": 76,
     "root": [
-     132,
-     76
+     82,
+     47.1
     ]
    },
    "R": {
     "src": "parts/back/back_07_R.webp",
-    "w": 138,
-    "h": 127,
+    "w": 88,
+    "h": 79,
     "root": [
-     5,
-     76
+     6,
+     49
     ]
-   }
+   },
+   "src": "parts/back/back_07.webp",
+   "w": 208,
+   "h": 79
   },
   {
    "id": "back_08",
@@ -4444,7 +5665,8 @@ window.PARTS = {
      8,
      122
     ]
-   }
+   },
+   "scale": 0.72
   },
   {
    "id": "back_09",
@@ -4454,34 +5676,6 @@ window.PARTS = {
    "src": "parts/back/back_09.webp",
    "w": 350,
    "h": 330
-  },
-  {
-   "id": "back_10",
-   "label": "구름 갈기",
-   "kind": "around",
-   "fit": 1.35,
-   "src": "parts/back/back_10.webp",
-   "w": 356,
-   "h": 336
-  },
-  {
-   "id": "back_11",
-   "label": "해바라기",
-   "kind": "around",
-   "fit": 1.35,
-   "src": "parts/back/back_11.webp",
-   "w": 362,
-   "h": 347
-  },
-  {
-   "id": "back_12",
-   "label": "하트 쿠션",
-   "kind": "around",
-   "fit": 1.25,
-   "fy": 0.16,
-   "src": "parts/back/back_12.webp",
-   "w": 280,
-   "h": 223
   },
   {
    "id": "back_13",
@@ -4495,29 +5689,38 @@ window.PARTS = {
   },
   {
    "id": "back_14",
-   "label": "벌 날개",
+   "label": "우유빛 작은 날개",
    "kind": "wings",
-   "src": "parts/back/back_14.webp",
-   "w": 336,
-   "h": 207,
    "L": {
     "src": "parts/back/back_14_L.webp",
-    "w": 168,
-    "h": 207,
+    "w": 98,
+    "h": 94,
     "root": [
-     152,
-     76
-    ]
+     92,
+     58.3
+    ],
+    "fill": "parts/back/back_14_L_fill.webp",
+    "line": "parts/back/back_14_L_line.webp",
+    "color": "#fbf5e3"
    },
    "R": {
     "src": "parts/back/back_14_R.webp",
-    "w": 168,
-    "h": 207,
+    "w": 100,
+    "h": 94,
     "root": [
-     14,
-     79
-    ]
-   }
+     6,
+     58.3
+    ],
+    "fill": "parts/back/back_14_R_fill.webp",
+    "line": "parts/back/back_14_R_line.webp",
+    "color": "#fbf5e3"
+   },
+   "src": "parts/back/back_14.webp",
+   "w": 230,
+   "h": 94,
+   "fill": "parts/back/back_14_fill.webp",
+   "line": "parts/back/back_14_line.webp",
+   "color": "#fbf5e3"
   },
   {
    "id": "back_15",
@@ -4547,7 +5750,8 @@ window.PARTS = {
    "root": [
     32,
     26
-   ]
+   ],
+   "scale": 0.62
   },
   {
    "id": "back_18",
@@ -4790,36 +5994,6 @@ window.PARTS = {
    "src": "parts/back/back_29.webp",
    "w": 286,
    "h": 163
-  },
-  {
-   "id": "back_30",
-   "label": "동그란 구름 후드",
-   "kind": "around",
-   "fit": 1.23,
-   "fy": 0.45,
-   "src": "parts/back/back_30.webp",
-   "w": 284,
-   "h": 258
-  },
-  {
-   "id": "back_31",
-   "label": "벚꽃 후드",
-   "kind": "around",
-   "fit": 1.25,
-   "fy": 0.45,
-   "src": "parts/back/back_31.webp",
-   "w": 284,
-   "h": 275
-  },
-  {
-   "id": "back_32",
-   "label": "별 쿠션",
-   "kind": "around",
-   "fit": 1.26,
-   "fy": 0.49,
-   "src": "parts/back/back_32.webp",
-   "w": 284,
-   "h": 261
   },
   {
    "id": "back_33",

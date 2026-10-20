@@ -32,8 +32,13 @@ def inspect(part):
 for cat,values in parts.items():
     total+=len(values)
     for part in values:inspect(part)
-expected={'body':30,'ears':36,'deco':36,'face':36,'prop':36,'back':32}
+style_file=ROOT/'design/style-refinement/catalog.json'
+style=json.loads(style_file.read_text()) if style_file.exists() else {}
+expected=style.get('counts',{'body':30,'ears':36,'deco':36,'face':36,'prop':36,'back':32})
 counts={k:len(v) for k,v in parts.items()}
 if counts!=expected:errors.append(f'counts {counts}')
+for cat,ids in style.get('retired',{}).items():
+    for part in parts.get(cat,[]):
+        if part['id'] in ids:errors.append(f'retired part {part["id"]}')
 print(json.dumps({'parts':total,'counts':counts,'images':len(checked),'errors':errors},ensure_ascii=False,indent=2))
 raise SystemExit(bool(errors))

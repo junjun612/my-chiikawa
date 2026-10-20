@@ -1,0 +1,478 @@
+[
+  {
+    "category": "deco",
+    "id": "deco_01",
+    "label": "새싹",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_02",
+    "label": "양털",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_03",
+    "label": "분홍 리본",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_04",
+    "label": "파랑 리본",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_05",
+    "label": "왕관",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_06",
+    "label": "분홍 수면 모자",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_07",
+    "label": "꽃",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_08",
+    "label": "양 뿔",
+    "recommendation": "replace",
+    "reason": "굵은 양 뿔이 귀를 덮고 판타지 코스튬처럼 읽힘; 작은 우유빛 매듭 리본으로 교체 제안"
+  },
+  {
+    "category": "deco",
+    "id": "deco_09",
+    "label": "깃털",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_10",
+    "label": "바보털",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_11",
+    "label": "비니",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_12",
+    "label": "밀짚모자",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_13",
+    "label": "요리사 모자",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_14",
+    "label": "버섯",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_15",
+    "label": "체리",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_16",
+    "label": "별 핀",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_17",
+    "label": "천사 링",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_18",
+    "label": "단풍잎",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_19",
+    "label": "딸기 모자",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_20",
+    "label": "푸딩 모자",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_21",
+    "label": "데이지 핀",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_22",
+    "label": "체크 리본",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_23",
+    "label": "별 리본",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_24",
+    "label": "튤립",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_25",
+    "label": "수련 모자",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_26",
+    "label": "라벤더 베레모",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_27",
+    "label": "만두 모자",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_28",
+    "label": "네잎클로버",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_29",
+    "label": "초승달 핀",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_30",
+    "label": "구름 핀",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_31",
+    "label": "병아리",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_32",
+    "label": "조개 핀",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_33",
+    "label": "종이배 모자",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_34",
+    "label": "도토리 모자",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_35",
+    "label": "하트 간호 모자",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "deco",
+    "id": "deco_36",
+    "label": "살구 나비 핀",
+    "recommendation": "keep",
+    "reason": "현재 합성 크기에서 작고 단순하며 본체/귀/얼굴을 가리지 않음"
+  },
+  {
+    "category": "back",
+    "id": "back_01",
+    "label": "방울 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_02",
+    "label": "다람쥐 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_03",
+    "label": "여우 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_04",
+    "label": "너구리 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_05",
+    "label": "악마 꼬리",
+    "recommendation": "replace",
+    "reason": "검정 화살촉과 가는 검정 줄이 날카롭고 파스텔 인상을 끊음; 짧은 크림 곡선 꼬리와 작은 하트 끝으로 교체 제안"
+  },
+  {
+    "category": "back",
+    "id": "back_06",
+    "label": "천사 날개",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_07",
+    "label": "박쥐 날개",
+    "recommendation": "replace",
+    "reason": "뾰족한 박쥐 날개가 본체보다 강한 판타지 인상을 줌; 작은 둥근 연보라 날개로 교체 제안"
+  },
+  {
+    "category": "back",
+    "id": "back_08",
+    "label": "요정 날개",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_09",
+    "label": "사자 갈기",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_10",
+    "label": "구름 갈기",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_11",
+    "label": "해바라기",
+    "recommendation": "remove",
+    "reason": "몸 전체를 해바라기 코스튬으로 바꿔 원래 작은 동물 실루엣이 약해짐"
+  },
+  {
+    "category": "back",
+    "id": "back_12",
+    "label": "하트 쿠션",
+    "recommendation": "remove",
+    "reason": "큰 하트의 윗부분만 머리 뒤에 남아 배너/헤드폰 같은 별도 실루엣이 생김"
+  },
+  {
+    "category": "back",
+    "id": "back_13",
+    "label": "망토",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_14",
+    "label": "벌 날개",
+    "recommendation": "replace",
+    "reason": "큰 검정/노랑 줄무늬가 몸 양옆을 지배함; 작은 반투명 우유빛 날개로 교체 제안"
+  },
+  {
+    "category": "back",
+    "id": "back_15",
+    "label": "고양이 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_17",
+    "label": "물고기 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_18",
+    "label": "양털 방울 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_19",
+    "label": "하트 솜 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_20",
+    "label": "물방울 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_21",
+    "label": "솜사탕 말림 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_22",
+    "label": "하트 끝 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_23",
+    "label": "별 끝 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_24",
+    "label": "포근 여우 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_25",
+    "label": "짧은 줄무늬 꼬리",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_26",
+    "label": "작은 천사 날개",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_27",
+    "label": "동글 나비 날개",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_28",
+    "label": "구름 날개",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_29",
+    "label": "꽃잎 날개",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_30",
+    "label": "동그란 구름 후드",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  },
+  {
+    "category": "back",
+    "id": "back_31",
+    "label": "벚꽃 후드",
+    "recommendation": "remove",
+    "reason": "넓은 꽃 틀에 몸을 끼운 모양으로 원작의 단순 동물 인상에서 벗어남"
+  },
+  {
+    "category": "back",
+    "id": "back_32",
+    "label": "별 쿠션",
+    "recommendation": "remove",
+    "reason": "별 쿠션이 몸 전체를 프레임처럼 감싸 캐릭터보다 코스튬을 먼저 읽게 함"
+  },
+  {
+    "category": "back",
+    "id": "back_33",
+    "label": "미니 담요 망토",
+    "recommendation": "keep",
+    "reason": "작은 곡선 꼬리/둥근 날개/부드러운 복슬 윤곽으로 주인공 실루엣과 양립함"
+  }
+]

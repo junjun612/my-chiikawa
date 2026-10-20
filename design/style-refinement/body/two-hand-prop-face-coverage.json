@@ -1,0 +1,276 @@
+[
+  {
+    "body": "body_20",
+    "prop": "prop_04",
+    "angle": 65,
+    "variant": 0,
+    "max_overlap": 11,
+    "overlap_faces": [
+      [
+        "face_04",
+        11
+      ]
+    ]
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_04",
+    "angle": 80,
+    "variant": 1,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_04",
+    "angle": 95,
+    "variant": 2,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_05",
+    "angle": 110,
+    "variant": 0,
+    "max_overlap": 11,
+    "overlap_faces": [
+      [
+        "face_04",
+        11
+      ]
+    ]
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_05",
+    "angle": 115,
+    "variant": 1,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_05",
+    "angle": 120,
+    "variant": 2,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_11",
+    "angle": 80,
+    "variant": 0,
+    "max_overlap": 16,
+    "overlap_faces": [
+      [
+        "face_04",
+        16
+      ],
+      [
+        "face_11",
+        12
+      ]
+    ]
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_11",
+    "angle": 90,
+    "variant": 1,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_11",
+    "angle": 100,
+    "variant": 2,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_13",
+    "angle": 55,
+    "variant": 0,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_13",
+    "angle": 60,
+    "variant": 1,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_13",
+    "angle": 65,
+    "variant": 2,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_30",
+    "angle": 120,
+    "variant": 0,
+    "max_overlap": 27,
+    "overlap_faces": [
+      [
+        "face_11",
+        27
+      ]
+    ]
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_30",
+    "angle": 125,
+    "variant": 1,
+    "max_overlap": 16,
+    "overlap_faces": [
+      [
+        "face_11",
+        16
+      ]
+    ]
+  },
+  {
+    "body": "body_20",
+    "prop": "prop_30",
+    "angle": 130,
+    "variant": 2,
+    "max_overlap": 2,
+    "overlap_faces": [
+      [
+        "face_11",
+        2
+      ]
+    ]
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_04",
+    "angle": 65,
+    "variant": 0,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_04",
+    "angle": 80,
+    "variant": 1,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_04",
+    "angle": 95,
+    "variant": 2,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_05",
+    "angle": 110,
+    "variant": 0,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_05",
+    "angle": 115,
+    "variant": 1,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_05",
+    "angle": 120,
+    "variant": 2,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_11",
+    "angle": 80,
+    "variant": 0,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_11",
+    "angle": 90,
+    "variant": 1,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_11",
+    "angle": 100,
+    "variant": 2,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_13",
+    "angle": 55,
+    "variant": 0,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_13",
+    "angle": 60,
+    "variant": 1,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_13",
+    "angle": 65,
+    "variant": 2,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_30",
+    "angle": 120,
+    "variant": 0,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_30",
+    "angle": 125,
+    "variant": 1,
+    "max_overlap": 0,
+    "overlap_faces": []
+  },
+  {
+    "body": "body_23",
+    "prop": "prop_30",
+    "angle": 130,
+    "variant": 2,
+    "max_overlap": 0,
+    "overlap_faces": []
+  }
+]

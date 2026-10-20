@@ -1,8 +1,8 @@
 (async () => {
-  const attachments = new URLSearchParams(location.search).has('attachments');
-  const C = window.Creature, total = attachments ? 6 : 192, manifest = [], errors = [];
-  const bgs = Object.keys(C.BG_IMAGES), cols = attachments ? 3 : 6, rows = attachments ? 2 : 8;
-  const tile = attachments ? 320 : 200, step = tile + 30, capacity = cols * rows;
+  const query = new URLSearchParams(location.search), attachments = query.has('attachments'), stress = query.has('stress');
+  const C = window.Creature, total = attachments ? 6 : stress ? 1024 : 192, manifest = [], errors = [];
+  const bgs = Object.keys(C.BG_IMAGES), cols = attachments ? 3 : stress ? 8 : 6, rows = attachments ? 2 : 8;
+  const tile = attachments ? 320 : stress ? 180 : 200, step = tile + 30, capacity = cols * rows;
   const pages = Array.from({ length: Math.ceil(total / capacity) }, () => {
     const canvas = document.createElement('canvas');canvas.width = cols * tile;canvas.height = rows * step;
     const ctx = canvas.getContext('2d');ctx.fillStyle = '#fff8ea';ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -13,7 +13,7 @@
     if (attachments) {
       look.parts = { body: i < 3 ? 'body_01' : 'body_29', ears: ['ears_22', 'ears_30', 'ears_33'][i % 3], face: 'face_19' };
       look.bodyColor = '#ffffff';
-    } else if (i < 72) for (const [cat, stride] of [['body', 1], ['ears', 1], ['deco', 5], ['face', 7], ['prop', 11], ['back', 13]]) {
+    } else if (i < 72) for (const [cat, stride] of [['body', 1], ['ears', 1], ['deco', 5], ['face', 7], ['prop', 11], ['back', 15]]) {
       look.parts[cat] = C.PARTS[cat][i * stride % C.PARTS[cat].length].id;
     }
     const bg = attachments ? 'meadow' : bgs[i % bgs.length], page = Math.floor(i / capacity), at = i % capacity;

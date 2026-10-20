@@ -1,0 +1,1114 @@
+{
+  "body": [
+    {
+      "id": "body_17",
+      "label": "동글 우유",
+      "src": "design/style-refinement/baseline/body/body_17.webp",
+      "fill": "design/style-refinement/baseline/body/body_17_fill.webp",
+      "line": "design/style-refinement/baseline/body/body_17_line.webp",
+      "arms": "design/style-refinement/baseline/body/body_17_arms.webp",
+      "w": 274,
+      "h": 244,
+      "color": "#fff9eb",
+      "anchors": {
+        "top": [
+          140.5,
+          5
+        ],
+        "headW": 224.68,
+        "earL": [
+          65.15,
+          26,
+          -15
+        ],
+        "earR": [
+          215.85,
+          29,
+          15
+        ],
+        "prop": [
+          138.53,
+          166.46,
+          88.71
+        ],
+        "face": [
+          138.53,
+          112.24,
+          156.18
+        ],
+        "tail": [
+          227.42,
+          180.56
+        ],
+        "sideL": [
+          46.58,
+          104.92
+        ],
+        "sideR": [
+          227.42,
+          104.92
+        ],
+        "center": [
+          137,
+          122
+        ],
+        "H": 234,
+        "W": 263
+      },
+      "sourceCell": 1
+    },
+    {
+      "id": "body_19",
+      "label": "몽글 식빵",
+      "src": "design/style-refinement/baseline/body/body_19.webp",
+      "fill": "design/style-refinement/baseline/body/body_19_fill.webp",
+      "line": "design/style-refinement/baseline/body/body_19_line.webp",
+      "arms": "design/style-refinement/baseline/body/body_19_arms.webp",
+      "w": 265,
+      "h": 245,
+      "color": "#fff9eb",
+      "anchors": {
+        "top": [
+          135,
+          6
+        ],
+        "headW": 217.3,
+        "earL": [
+          62.12,
+          16,
+          -15
+        ],
+        "earR": [
+          207.88,
+          17,
+          15
+        ],
+        "prop": [
+          133.39,
+          167.33,
+          86.87
+        ],
+        "face": [
+          133.39,
+          112.7,
+          151.05
+        ],
+        "tail": [
+          219.95,
+          181.3
+        ],
+        "sideL": [
+          45.05,
+          105.35
+        ],
+        "sideR": [
+          219.95,
+          105.35
+        ],
+        "center": [
+          132.5,
+          122.5
+        ],
+        "H": 234,
+        "W": 253
+      },
+      "sourceCell": 3
+    },
+    {
+      "id": "body_20",
+      "label": "말랑 찹쌀",
+      "src": "design/style-refinement/baseline/body/body_20.webp",
+      "fill": "design/style-refinement/baseline/body/body_20_fill.webp",
+      "line": "design/style-refinement/baseline/body/body_20_line.webp",
+      "arms": "design/style-refinement/baseline/body/body_20_arms.webp",
+      "w": 298,
+      "h": 237,
+      "color": "#fff9eb",
+      "anchors": {
+        "top": [
+          156,
+          6
+        ],
+        "headW": 244.36,
+        "earL": [
+          74.05,
+          29,
+          -15
+        ],
+        "earR": [
+          237.95,
+          31,
+          15
+        ],
+        "prop": [
+          147.37,
+          160.66,
+          95.01
+        ],
+        "face": [
+          147.37,
+          109.02,
+          169.86
+        ],
+        "tail": [
+          247.34,
+          175.38
+        ],
+        "sideL": [
+          50.66,
+          101.91
+        ],
+        "sideR": [
+          247.34,
+          101.91
+        ],
+        "center": [
+          149,
+          118.5
+        ],
+        "H": 226,
+        "W": 286
+      },
+      "sourceCell": 4
+    },
+    {
+      "id": "body_21",
+      "label": "배동글 모찌",
+      "src": "design/style-refinement/baseline/body/body_21.webp",
+      "fill": "design/style-refinement/baseline/body/body_21_fill.webp",
+      "line": "design/style-refinement/baseline/body/body_21_line.webp",
+      "arms": "design/style-refinement/baseline/body/body_21_arms.webp",
+      "w": 289,
+      "h": 260,
+      "color": "#fff9eb",
+      "anchors": {
+        "top": [
+          149,
+          5
+        ],
+        "headW": 202.3,
+        "earL": [
+          85.42,
+          27,
+          -15
+        ],
+        "earR": [
+          212.58,
+          31,
+          15
+        ],
+        "prop": [
+          144.89,
+          181.59,
+          94.1
+        ],
+        "face": [
+          144.89,
+          119.6,
+          164.73
+        ],
+        "tail": [
+          239.87,
+          192.4
+        ],
+        "sideL": [
+          49.13,
+          111.8
+        ],
+        "sideR": [
+          239.87,
+          111.8
+        ],
+        "center": [
+          144.5,
+          130
+        ],
+        "H": 249,
+        "W": 277
+      },
+      "sourceCell": 5
+    },
+    {
+      "id": "body_23",
+      "label": "포근 주먹밥",
+      "src": "design/style-refinement/baseline/body/body_23.webp",
+      "fill": "design/style-refinement/baseline/body/body_23_fill.webp",
+      "line": "design/style-refinement/baseline/body/body_23_line.webp",
+      "arms": "design/style-refinement/baseline/body/body_23_arms.webp",
+      "w": 292,
+      "h": 246,
+      "color": "#fff9eb",
+      "anchors": {
+        "top": [
+          148.5,
+          5
+        ],
+        "headW": 239.44,
+        "earL": [
+          68.2,
+          37,
+          -15
+        ],
+        "earR": [
+          228.8,
+          42,
+          15
+        ],
+        "prop": [
+          145.2,
+          165.13,
+          92.82
+        ],
+        "face": [
+          145.2,
+          113.16,
+          166.44
+        ],
+        "tail": [
+          242.36,
+          182.04
+        ],
+        "sideL": [
+          49.64,
+          105.78
+        ],
+        "sideR": [
+          242.36,
+          105.78
+        ],
+        "center": [
+          146,
+          123
+        ],
+        "H": 236,
+        "W": 281
+      },
+      "sourceCell": 7
+    },
+    {
+      "id": "body_24",
+      "label": "하얀 마시멜로",
+      "src": "design/style-refinement/baseline/body/body_24.webp",
+      "fill": "design/style-refinement/baseline/body/body_24_fill.webp",
+      "line": "design/style-refinement/baseline/body/body_24_line.webp",
+      "arms": "design/style-refinement/baseline/body/body_24_arms.webp",
+      "w": 287,
+      "h": 247,
+      "color": "#fff9eb",
+      "anchors": {
+        "top": [
+          145,
+          6
+        ],
+        "headW": 235.34,
+        "earL": [
+          66.07,
+          25,
+          -15
+        ],
+        "earR": [
+          223.93,
+          25,
+          15
+        ],
+        "prop": [
+          141.37,
+          167.24,
+          96.12
+        ],
+        "face": [
+          141.37,
+          113.62,
+          163.59
+        ],
+        "tail": [
+          238.21,
+          182.78
+        ],
+        "sideL": [
+          48.79,
+          106.21
+        ],
+        "sideR": [
+          238.21,
+          106.21
+        ],
+        "center": [
+          143.5,
+          123.5
+        ],
+        "H": 236,
+        "W": 275
+      },
+      "sourceCell": 8
+    },
+    {
+      "id": "body_25",
+      "label": "갸우뚱 모찌",
+      "src": "design/style-refinement/baseline/body/body_25.webp",
+      "fill": "design/style-refinement/baseline/body/body_25_fill.webp",
+      "line": "design/style-refinement/baseline/body/body_25_line.webp",
+      "arms": "design/style-refinement/baseline/body/body_25_arms.webp",
+      "w": 282,
+      "h": 255,
+      "color": "#fff9eb",
+      "anchors": {
+        "top": [
+          141.5,
+          6
+        ],
+        "headW": 231.24,
+        "earL": [
+          63.95,
+          30,
+          -15
+        ],
+        "earR": [
+          219.05,
+          32,
+          15
+        ],
+        "prop": [
+          160.55,
+          164.08,
+          84.54
+        ],
+        "face": [
+          160.55,
+          117.3,
+          160.74
+        ],
+        "tail": [
+          234.06,
+          188.7
+        ],
+        "sideL": [
+          47.94,
+          109.65
+        ],
+        "sideR": [
+          234.06,
+          109.65
+        ],
+        "center": [
+          141,
+          127.5
+        ],
+        "H": 244,
+        "W": 270
+      },
+      "sourceCell": 9
+    },
+    {
+      "id": "body_28",
+      "label": "둥근 우유떡",
+      "src": "design/style-refinement/baseline/body/body_28.webp",
+      "fill": "design/style-refinement/baseline/body/body_28_fill.webp",
+      "line": "design/style-refinement/baseline/body/body_28_line.webp",
+      "arms": "design/style-refinement/baseline/body/body_28_arms.webp",
+      "w": 285,
+      "h": 238,
+      "color": "#fff9eb",
+      "anchors": {
+        "top": [
+          144.5,
+          6
+        ],
+        "headW": 233.7,
+        "earL": [
+          66.12,
+          32,
+          -15
+        ],
+        "earR": [
+          222.88,
+          33,
+          15
+        ],
+        "prop": [
+          137.76,
+          156.32,
+          90.09
+        ],
+        "face": [
+          137.76,
+          109.48,
+          162.45
+        ],
+        "tail": [
+          236.55,
+          176.12
+        ],
+        "sideL": [
+          48.45,
+          102.34
+        ],
+        "sideR": [
+          236.55,
+          102.34
+        ],
+        "center": [
+          142.5,
+          119
+        ],
+        "H": 227,
+        "W": 275
+      },
+      "sourceCell": 12
+    },
+    {
+      "id": "body_30",
+      "label": "눈송이 모찌",
+      "src": "design/style-refinement/baseline/body/body_30.webp",
+      "fill": "design/style-refinement/baseline/body/body_30_fill.webp",
+      "line": "design/style-refinement/baseline/body/body_30_line.webp",
+      "arms": "design/style-refinement/baseline/body/body_30_arms.webp",
+      "w": 276,
+      "h": 256,
+      "color": "#fff9eb",
+      "anchors": {
+        "top": [
+          139,
+          6
+        ],
+        "headW": 226.32,
+        "earL": [
+          63.1,
+          31,
+          -15
+        ],
+        "earR": [
+          214.9,
+          32,
+          15
+        ],
+        "prop": [
+          133.88,
+          171.11,
+          87.14
+        ],
+        "face": [
+          133.88,
+          117.76,
+          157.32
+        ],
+        "tail": [
+          229.08,
+          189.44
+        ],
+        "sideL": [
+          46.92,
+          110.08
+        ],
+        "sideR": [
+          229.08,
+          110.08
+        ],
+        "center": [
+          138,
+          128
+        ],
+        "H": 244,
+        "W": 265
+      },
+      "sourceCell": 15
+    }
+  ],
+  "ears": [
+    {
+      "id": "ears_13",
+      "label": "박쥐",
+      "src": "design/style-refinement/baseline/ears/ears_13.webp",
+      "w": 335,
+      "h": 185,
+      "color": "#fadef4",
+      "line": "design/style-refinement/baseline/ears/ears_13_line.webp",
+      "fill": "design/style-refinement/baseline/ears/ears_13_fill.webp",
+      "L": {
+        "src": "design/style-refinement/baseline/ears/ears_13_L.webp",
+        "w": 138,
+        "h": 185,
+        "color": "#fadef4",
+        "line": "design/style-refinement/baseline/ears/ears_13_L_line.webp",
+        "fill": "design/style-refinement/baseline/ears/ears_13_L_fill.webp",
+        "root": [
+          68,
+          179
+        ]
+      },
+      "R": {
+        "src": "design/style-refinement/baseline/ears/ears_13_R.webp",
+        "w": 138,
+        "h": 185,
+        "color": "#fadef4",
+        "line": "design/style-refinement/baseline/ears/ears_13_R_line.webp",
+        "fill": "design/style-refinement/baseline/ears/ears_13_R_fill.webp",
+        "root": [
+          68.5,
+          179
+        ]
+      }
+    },
+    {
+      "id": "ears_14",
+      "label": "사막여우",
+      "src": "design/style-refinement/baseline/ears/ears_14.webp",
+      "w": 366,
+      "h": 284,
+      "color": "#fef6df",
+      "line": "design/style-refinement/baseline/ears/ears_14_line.webp",
+      "fill": "design/style-refinement/baseline/ears/ears_14_fill.webp",
+      "L": {
+        "src": "design/style-refinement/baseline/ears/ears_14_L.webp",
+        "w": 168,
+        "h": 284,
+        "color": "#fef6df",
+        "line": "design/style-refinement/baseline/ears/ears_14_L_line.webp",
+        "fill": "design/style-refinement/baseline/ears/ears_14_L_fill.webp",
+        "root": [
+          84,
+          278
+        ]
+      },
+      "R": {
+        "src": "design/style-refinement/baseline/ears/ears_14_R.webp",
+        "w": 167,
+        "h": 283,
+        "color": "#fef6df",
+        "line": "design/style-refinement/baseline/ears/ears_14_R_line.webp",
+        "fill": "design/style-refinement/baseline/ears/ears_14_R_fill.webp",
+        "root": [
+          83.5,
+          278
+        ]
+      }
+    }
+  ],
+  "face": [
+    {
+      "id": "face_20",
+      "label": "두근",
+      "src": "design/style-refinement/baseline/face/face_20.webp",
+      "w": 323,
+      "h": 137.133,
+      "cheeks": [
+        [
+          49.22,
+          98.92,
+          40.46
+        ],
+        [
+          273.22,
+          99.45,
+          40.46
+        ]
+      ]
+    },
+    {
+      "id": "face_27",
+      "label": "설렘",
+      "src": "design/style-refinement/baseline/face/face_27.webp",
+      "w": 323,
+      "h": 130.067,
+      "cheeks": [
+        [
+          48.9,
+          90.18,
+          40.06
+        ],
+        [
+          272.74,
+          92.15,
+          39.61
+        ]
+      ]
+    },
+    {
+      "id": "face_35",
+      "label": "하트 콩눈",
+      "src": "design/style-refinement/baseline/face/face_35.webp",
+      "w": 323,
+      "h": 159.193,
+      "cheeks": [
+        [
+          66.38,
+          93.67,
+          48.93
+        ],
+        [
+          256.1,
+          90.86,
+          48.45
+        ]
+      ]
+    },
+    {
+      "id": "face_19",
+      "label": "빙긋",
+      "src": "design/style-refinement/baseline/parts/face/face_19.webp",
+      "w": 323,
+      "h": 133.389,
+      "cheeks": [
+        [
+          50.1,
+          95.65,
+          40.28
+        ],
+        [
+          274.24,
+          96.66,
+          38.89
+        ]
+      ]
+    },
+    {
+      "id": "face_21",
+      "label": "수줍",
+      "src": "design/style-refinement/baseline/parts/face/face_21.webp",
+      "w": 323,
+      "h": 122.831,
+      "cheeks": [
+        [
+          49.68,
+          85.33,
+          40.12
+        ],
+        [
+          272.53,
+          85.13,
+          40.6
+        ]
+      ]
+    },
+    {
+      "id": "face_22",
+      "label": "눈웃음",
+      "src": "design/style-refinement/baseline/parts/face/face_22.webp",
+      "w": 323,
+      "h": 116.928,
+      "cheeks": [
+        [
+          52,
+          75.76,
+          41.33
+        ],
+        [
+          269.55,
+          76.07,
+          41.82
+        ]
+      ]
+    },
+    {
+      "id": "face_23",
+      "label": "우쭐",
+      "src": "design/style-refinement/baseline/parts/face/face_23.webp",
+      "w": 323,
+      "h": 105.469,
+      "cheeks": [
+        [
+          50.33,
+          66.83,
+          40.14
+        ],
+        [
+          271.83,
+          67.44,
+          40.14
+        ]
+      ]
+    },
+    {
+      "id": "face_24",
+      "label": "오물오물",
+      "src": "design/style-refinement/baseline/parts/face/face_24.webp",
+      "w": 323,
+      "h": 128.3,
+      "cheeks": [
+        [
+          50.12,
+          88.87,
+          40.65
+        ],
+        [
+          271.8,
+          89.3,
+          41.12
+        ]
+      ]
+    },
+    {
+      "id": "face_25",
+      "label": "졸꾸",
+      "src": "design/style-refinement/baseline/parts/face/face_25.webp",
+      "w": 323,
+      "h": 109.933,
+      "cheeks": [
+        [
+          51.61,
+          70.92,
+          40.94
+        ],
+        [
+          270.59,
+          69.17,
+          41.41
+        ]
+      ]
+    },
+    {
+      "id": "face_26",
+      "label": "볼콕",
+      "src": "design/style-refinement/baseline/parts/face/face_26.webp",
+      "w": 323,
+      "h": 133.733,
+      "cheeks": [
+        [
+          51.04,
+          95.37,
+          41.89
+        ],
+        [
+          270.41,
+          94.11,
+          41.89
+        ]
+      ]
+    },
+    {
+      "id": "face_28",
+      "label": "쿨쿨",
+      "src": "design/style-refinement/baseline/parts/face/face_28.webp",
+      "w": 323,
+      "h": 110.293,
+      "cheeks": [
+        [
+          50.98,
+          70.24,
+          40.65
+        ],
+        [
+          270.91,
+          69.04,
+          40.65
+        ]
+      ]
+    },
+    {
+      "id": "face_29",
+      "label": "헤헤",
+      "src": "design/style-refinement/baseline/parts/face/face_29.webp",
+      "w": 323,
+      "h": 126.049,
+      "cheeks": [
+        [
+          51.39,
+          87.02,
+          41.12
+        ],
+        [
+          271.56,
+          87.51,
+          41.6
+        ]
+      ]
+    },
+    {
+      "id": "face_30",
+      "label": "뽀뽀",
+      "src": "design/style-refinement/baseline/parts/face/face_30.webp",
+      "w": 323,
+      "h": 130.574,
+      "cheeks": [
+        [
+          50.94,
+          91.71,
+          40.89
+        ],
+        [
+          270.68,
+          89.91,
+          41.85
+        ]
+      ]
+    },
+    {
+      "id": "face_31",
+      "label": "갸웃",
+      "src": "design/style-refinement/baseline/parts/face/face_31.webp",
+      "w": 323,
+      "h": 135.883,
+      "cheeks": [
+        [
+          51.27,
+          96.57,
+          41.17
+        ],
+        [
+          270.2,
+          96.78,
+          41.63
+        ]
+      ]
+    },
+    {
+      "id": "face_32",
+      "label": "뿌듯",
+      "src": "design/style-refinement/baseline/parts/face/face_32.webp",
+      "w": 323,
+      "h": 110.997,
+      "cheeks": [
+        [
+          50.97,
+          72.27,
+          40.56
+        ],
+        [
+          270.82,
+          72.27,
+          41.02
+        ]
+      ]
+    },
+    {
+      "id": "face_33",
+      "label": "까꿍",
+      "src": "design/style-refinement/baseline/parts/face/face_33.webp",
+      "w": 323,
+      "h": 133.846,
+      "cheeks": [
+        [
+          48.88,
+          96.43,
+          40.42
+        ],
+        [
+          272.19,
+          95.23,
+          41.35
+        ]
+      ]
+    },
+    {
+      "id": "face_34",
+      "label": "찡긋",
+      "src": "design/style-refinement/baseline/parts/face/face_34.webp",
+      "w": 323,
+      "h": 138.592,
+      "cheeks": [
+        [
+          51,
+          99.42,
+          40.89
+        ],
+        [
+          270.63,
+          98.2,
+          41.37
+        ]
+      ]
+    },
+    {
+      "id": "face_36",
+      "label": "콩눈 미소",
+      "src": "design/style-refinement/baseline/parts/face/face_36.webp",
+      "w": 323,
+      "h": 157.989,
+      "cheeks": [
+        [
+          52.17,
+          119.21,
+          42.27
+        ],
+        [
+          269.69,
+          118.4,
+          41.78
+        ]
+      ]
+    }
+  ],
+  "deco": [
+    {
+      "id": "deco_08",
+      "label": "양 뿔",
+      "kind": "pair",
+      "src": "design/style-refinement/baseline/deco/deco_08.webp",
+      "w": 366,
+      "h": 146,
+      "L": {
+        "src": "design/style-refinement/baseline/deco/deco_08_L.webp",
+        "w": 153,
+        "h": 146,
+        "root": [
+          76.5,
+          140
+        ]
+      },
+      "R": {
+        "src": "design/style-refinement/baseline/deco/deco_08_R.webp",
+        "w": 151,
+        "h": 145,
+        "root": [
+          74.5,
+          139
+        ]
+      }
+    },
+    {
+      "id": "deco_09",
+      "label": "깃털",
+      "kind": "top",
+      "sink": 0.2,
+      "src": "parts/deco/deco_09.webp",
+      "w": 250,
+      "h": 233
+    }
+  ],
+  "back": [
+    {
+      "id": "back_05",
+      "label": "악마 꼬리",
+      "kind": "tail",
+      "src": "design/style-refinement/baseline/back/back_05.webp",
+      "w": 151,
+      "h": 143,
+      "root": [
+        8,
+        122
+      ]
+    },
+    {
+      "id": "back_07",
+      "label": "박쥐 날개",
+      "kind": "wings",
+      "src": "design/style-refinement/baseline/back/back_07.webp",
+      "w": 363,
+      "h": 127,
+      "L": {
+        "src": "design/style-refinement/baseline/back/back_07_L.webp",
+        "w": 138,
+        "h": 127,
+        "root": [
+          132,
+          76
+        ]
+      },
+      "R": {
+        "src": "design/style-refinement/baseline/back/back_07_R.webp",
+        "w": 138,
+        "h": 127,
+        "root": [
+          5,
+          76
+        ]
+      }
+    },
+    {
+      "id": "back_11",
+      "label": "해바라기",
+      "kind": "around",
+      "fit": 1.35,
+      "src": "design/style-refinement/baseline/back/back_11.webp",
+      "w": 362,
+      "h": 347
+    },
+    {
+      "id": "back_12",
+      "label": "하트 쿠션",
+      "kind": "around",
+      "fit": 1.25,
+      "fy": 0.16,
+      "src": "design/style-refinement/baseline/back/back_12.webp",
+      "w": 280,
+      "h": 223
+    },
+    {
+      "id": "back_14",
+      "label": "벌 날개",
+      "kind": "wings",
+      "src": "design/style-refinement/baseline/back/back_14.webp",
+      "w": 336,
+      "h": 207,
+      "L": {
+        "src": "design/style-refinement/baseline/back/back_14_L.webp",
+        "w": 168,
+        "h": 207,
+        "root": [
+          152,
+          76
+        ]
+      },
+      "R": {
+        "src": "design/style-refinement/baseline/back/back_14_R.webp",
+        "w": 168,
+        "h": 207,
+        "root": [
+          14,
+          79
+        ]
+      }
+    },
+    {
+      "id": "back_31",
+      "label": "벚꽃 후드",
+      "kind": "around",
+      "fit": 1.25,
+      "fy": 0.45,
+      "src": "design/style-refinement/baseline/back/back_31.webp",
+      "w": 284,
+      "h": 275
+    },
+    {
+      "id": "back_32",
+      "label": "별 쿠션",
+      "kind": "around",
+      "fit": 1.26,
+      "fy": 0.49,
+      "src": "design/style-refinement/baseline/back/back_32.webp",
+      "w": 284,
+      "h": 261
+    },
+    {
+      "id": "back_17",
+      "label": "물고기 꼬리",
+      "kind": "tail",
+      "src": "parts/back/back_17.webp",
+      "w": 263,
+      "h": 220,
+      "color": "#d3ecfd",
+      "line": "parts/back/back_17_line.webp",
+      "fill": "parts/back/back_17_fill.webp",
+      "root": [
+        32,
+        26
+      ]
+    },
+    {
+      "id": "back_08",
+      "label": "요정 날개",
+      "kind": "wings",
+      "src": "parts/back/back_08.webp",
+      "w": 331,
+      "h": 166,
+      "L": {
+        "src": "parts/back/back_08_L.webp",
+        "w": 125,
+        "h": 166,
+        "root": [
+          116,
+          120
+        ]
+      },
+      "R": {
+        "src": "parts/back/back_08_R.webp",
+        "w": 124,
+        "h": 166,
+        "root": [
+          8,
+          122
+        ]
+      }
+    }
+  ]
+}

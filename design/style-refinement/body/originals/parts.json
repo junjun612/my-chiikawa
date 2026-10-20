@@ -1,0 +1,344 @@
+[
+  {
+    "id": "body_19",
+    "label": "몽글 식빵",
+    "src": "parts/body/body_19.webp",
+    "fill": "parts/body/body_19_fill.webp",
+    "line": "parts/body/body_19_line.webp",
+    "arms": "parts/body/body_19_arms.webp",
+    "w": 265,
+    "h": 245,
+    "color": "#fff9eb",
+    "anchors": {
+      "top": [
+        135,
+        6
+      ],
+      "headW": 217.3,
+      "earL": [
+        62.12,
+        16,
+        -15
+      ],
+      "earR": [
+        207.88,
+        17,
+        15
+      ],
+      "prop": [
+        133.39,
+        167.33,
+        86.87
+      ],
+      "face": [
+        133.39,
+        112.7,
+        151.05
+      ],
+      "tail": [
+        219.95,
+        181.3
+      ],
+      "sideL": [
+        45.05,
+        105.35
+      ],
+      "sideR": [
+        219.95,
+        105.35
+      ],
+      "center": [
+        132.5,
+        122.5
+      ],
+      "H": 234,
+      "W": 253
+    },
+    "sourceCell": 3
+  },
+  {
+    "id": "body_20",
+    "label": "말랑 찹쌀",
+    "src": "parts/body/body_20.webp",
+    "fill": "parts/body/body_20_fill.webp",
+    "line": "parts/body/body_20_line.webp",
+    "arms": "parts/body/body_20_arms.webp",
+    "w": 298,
+    "h": 237,
+    "color": "#fff9eb",
+    "anchors": {
+      "top": [
+        156,
+        6
+      ],
+      "headW": 244.36,
+      "earL": [
+        74.05,
+        29,
+        -15
+      ],
+      "earR": [
+        237.95,
+        31,
+        15
+      ],
+      "prop": [
+        147.37,
+        160.66,
+        95.01
+      ],
+      "face": [
+        147.37,
+        109.02,
+        169.86
+      ],
+      "tail": [
+        247.34,
+        175.38
+      ],
+      "sideL": [
+        50.66,
+        101.91
+      ],
+      "sideR": [
+        247.34,
+        101.91
+      ],
+      "center": [
+        149,
+        118.5
+      ],
+      "H": 226,
+      "W": 286
+    },
+    "sourceCell": 4
+  },
+  {
+    "id": "body_21",
+    "label": "배동글 모찌",
+    "src": "parts/body/body_21.webp",
+    "fill": "parts/body/body_21_fill.webp",
+    "line": "parts/body/body_21_line.webp",
+    "arms": "parts/body/body_21_arms.webp",
+    "w": 289,
+    "h": 260,
+    "color": "#fff9eb",
+    "anchors": {
+      "top": [
+        149,
+        5
+      ],
+      "headW": 202.3,
+      "earL": [
+        85.42,
+        27,
+        -15
+      ],
+      "earR": [
+        212.58,
+        31,
+        15
+      ],
+      "prop": [
+        144.89,
+        181.59,
+        94.1
+      ],
+      "face": [
+        144.89,
+        119.6,
+        164.73
+      ],
+      "tail": [
+        239.87,
+        192.4
+      ],
+      "sideL": [
+        49.13,
+        111.8
+      ],
+      "sideR": [
+        239.87,
+        111.8
+      ],
+      "center": [
+        144.5,
+        130
+      ],
+      "H": 249,
+      "W": 277
+    },
+    "sourceCell": 5
+  },
+  {
+    "id": "body_23",
+    "label": "포근 주먹밥",
+    "src": "parts/body/body_23.webp",
+    "fill": "parts/body/body_23_fill.webp",
+    "line": "parts/body/body_23_line.webp",
+    "arms": "parts/body/body_23_arms.webp",
+    "w": 292,
+    "h": 246,
+    "color": "#fff9eb",
+    "anchors": {
+      "top": [
+        148.5,
+        5
+      ],
+      "headW": 239.44,
+      "earL": [
+        68.2,
+        37,
+        -15
+      ],
+      "earR": [
+        228.8,
+        42,
+        15
+      ],
+      "prop": [
+        145.2,
+        165.13,
+        92.82
+      ],
+      "face": [
+        145.2,
+        113.16,
+        166.44
+      ],
+      "tail": [
+        242.36,
+        182.04
+      ],
+      "sideL": [
+        49.64,
+        105.78
+      ],
+      "sideR": [
+        242.36,
+        105.78
+      ],
+      "center": [
+        146,
+        123
+      ],
+      "H": 236,
+      "W": 281
+    },
+    "sourceCell": 7
+  },
+  {
+    "id": "body_24",
+    "label": "하얀 마시멜로",
+    "src": "parts/body/body_24.webp",
+    "fill": "parts/body/body_24_fill.webp",
+    "line": "parts/body/body_24_line.webp",
+    "arms": "parts/body/body_24_arms.webp",
+    "w": 287,
+    "h": 247,
+    "color": "#fff9eb",
+    "anchors": {
+      "top": [
+        145,
+        6
+      ],
+      "headW": 235.34,
+      "earL": [
+        66.07,
+        25,
+        -15
+      ],
+      "earR": [
+        223.93,
+        25,
+        15
+      ],
+      "prop": [
+        141.37,
+        167.24,
+        96.12
+      ],
+      "face": [
+        141.37,
+        113.62,
+        163.59
+      ],
+      "tail": [
+        238.21,
+        182.78
+      ],
+      "sideL": [
+        48.79,
+        106.21
+      ],
+      "sideR": [
+        238.21,
+        106.21
+      ],
+      "center": [
+        143.5,
+        123.5
+      ],
+      "H": 236,
+      "W": 275
+    },
+    "sourceCell": 8
+  },
+  {
+    "id": "body_25",
+    "label": "갸우뚱 모찌",
+    "src": "parts/body/body_25.webp",
+    "fill": "parts/body/body_25_fill.webp",
+    "line": "parts/body/body_25_line.webp",
+    "arms": "parts/body/body_25_arms.webp",
+    "w": 282,
+    "h": 255,
+    "color": "#fff9eb",
+    "anchors": {
+      "top": [
+        141.5,
+        6
+      ],
+      "headW": 231.24,
+      "earL": [
+        63.95,
+        30,
+        -15
+      ],
+      "earR": [
+        219.05,
+        32,
+        15
+      ],
+      "prop": [
+        160.55,
+        164.08,
+        84.54
+      ],
+      "face": [
+        160.55,
+        117.3,
+        160.74
+      ],
+      "tail": [
+        234.06,
+        188.7
+      ],
+      "sideL": [
+        47.94,
+        109.65
+      ],
+      "sideR": [
+        234.06,
+        109.65
+      ],
+      "center": [
+        141,
+        127.5
+      ],
+      "H": 244,
+      "W": 270
+    },
+    "sourceCell": 9
+  }
+]
