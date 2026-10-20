@@ -30,7 +30,7 @@
     await until(() => el("result").classList.contains("on") && el("resultStage").dataset.render === "ready");
     const color = () => el("rBirth").querySelector("i").style.background;
     const initial = color();
-    report("5월 최초 결과는 민트", initial === "rgb(226, 245, 233)");
+    report("5월 최초 결과는 민트", initial === "rgb(241, 250, 244)");
     report("설명·태그·탄생 컬러 폰트 유지", ["rDesc", "rTags", "rBirth"].every((id) => win.getComputedStyle(el(id)).fontFamily.startsWith('"MJ Body"')));
     report("이름에 감자꽃마을 적용", win.getComputedStyle(el("rName")).fontFamily.startsWith('"Gamja Flower"'));
     report("배지와 이름을 그림 안 상단에 배치", el("resultWrap").contains(el("rType")) && el("resultWrap").contains(el("rName")));
@@ -107,7 +107,7 @@
     report("저장 설명도 화면처럼 문장별 두 줄", descriptionRows.length === 2 && descriptionRows[0].y < descriptionRows[1].y);
     report("저장 설명의 두 문장 모두 가운데 정렬", descriptionRows.length === 2 && Math.abs(descriptionRows[0].center - descriptionRows[1].center) < 1);
     report("저장 이미지에 성향 태그 4개 모두 포함", [...el("rTags").children].every((tag) => text.some((run) => run.value === tag.textContent)));
-    report("저장 이미지에 탄생 컬러 안내와 색상 칩 포함", text.some((run) => run.value === el("rBirth").textContent) && fills.includes("#e2f5e9"));
+    report("저장 이미지에 탄생 컬러 안내와 색상 칩 포함", text.some((run) => run.value === el("rBirth").textContent) && fills.includes("#f1faf4"));
     report("저장 하단에 배경 선택 목록·별도 로고 없음", !text.some((run) => Object.values(win.Creature.BG_IMAGES).includes(run.value) || run.value === "나만의 먼작귀 만들기"));
 
     reroll("any");

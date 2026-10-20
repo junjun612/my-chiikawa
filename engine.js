@@ -2,7 +2,8 @@
 // Requires parts.js. Exposes window.Creature.
 //
 // A "look" describes one character:
-//   { parts: {body, ears, deco, face, prop, back}, bodyColor: "#rrggbb" | null, sync: bool }
+//   { parts: {body, ears, deco, face, prop, back}, bodyColor: "#rrggbb" | null, syncEars: bool, syncTail: bool }
+// Legacy sync remains the fallback for both categories when individual flags are absent.
 (() => {
   // Stage geometry (512 logical px). The body is scaled to bodyWidth; every other part is
   // placed on the body's anchors (computed per body by tools/slice_sheets.py).
@@ -24,10 +25,16 @@
   const BG_IMAGES = { meadow: "풀밭", dusk: "저녁 들판", sunset: "노을 꽃밭", beach: "바닷가",
     night: "별밤", sakura: "벚꽃", snow: "눈밭", room: "아늑한 방" };
   const bgImage = (b) => assetUrl(`backgrounds/${BG_IMAGES[b] ? b : "meadow"}.webp`);
-  // Milky pastels: snow, ivory, lemon, mint, sky, blush, lavender, peach and pistachio.
-  const BODY_COLORS = ["#ffffff", "#fffaf0", "#fff4c7", "#e2f5e9", "#dff1fa", "#fbe5ec",
+  // Mix each pastel with 50% white. Keep old URL colors mapped to the softer palette.
+  const ORIGINAL_BODY_COLORS = ["#ffffff", "#fffaf0", "#fff4c7", "#e2f5e9", "#dff1fa", "#fbe5ec",
     "#eee5fa", "#ffe9da", "#edf5d9", "#f5edf3", "#e8f6f3"];
-  const SYNC_CATS = ["ears", "back"]; // follow the body color when sync is on
+  const BODY_COLORS = ORIGINAL_BODY_COLORS.map((color) => "#" + color.slice(1).match(/../g)
+    .map((channel) => Math.round((parseInt(channel, 16) + 255) / 2).toString(16).padStart(2, "0")).join(""));
+  function resolveBodyColor(color) {
+    const index = ORIGINAL_BODY_COLORS.indexOf(color?.toLowerCase());
+    return index < 0 ? color : BODY_COLORS[index];
+  }
+  const SYNC_CATS = { ears: "syncEars", back: "syncTail" }; // individual body-color matching
 
   const CATS = window.PART_CATEGORIES || [];
   const PARTS = window.PARTS || {};
@@ -157,7 +164,7 @@
     if (!img.fill) return null;
     let col = null;
     if (cat === "body") col = look.bodyColor;
-    else if (look.sync !== false && SYNC_CATS.includes(cat)) col = look.bodyColor || body.color;
+    else if (SYNC_CATS[cat] && (look[SYNC_CATS[cat]] ?? look.sync) !== false) col = look.bodyColor || body.color;
     return col && col.toLowerCase() !== (img.color || "").toLowerCase() ? col : null;
   }
 
@@ -539,7 +546,7 @@
   }
 
   window.Creature = {
-    LAYOUT, BG_IMAGES, BODY_COLORS, CATS, PARTS, bgImage, findPart, computeLayout,
+    LAYOUT, BG_IMAGES, BODY_COLORS, resolveBodyColor, CATS, PARTS, bgImage, findPart, computeLayout,
     LIGHTS, LIGHTING_STRENGTH, assetUrl, loadImg, renderCanvas, mountStage, preloadAssets, randomLook, hashString, rng,
   };
 })();

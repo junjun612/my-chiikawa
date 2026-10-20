@@ -16,8 +16,11 @@
   }
   const load = (path) => new Promise((resolve) => {
     frame.onload = resolve;
-    if (frame.contentWindow.location.href === new URL(path, document.baseURI).href) frame.contentWindow.location.reload();
-    else frame.src = path;
+    const target = new URL(path, document.baseURI);
+    if (frame.contentWindow.location.pathname === target.pathname) {
+      frame.contentWindow.history.replaceState(null, "", target.href);
+      frame.contentWindow.location.reload();
+    } else frame.src = path;
   });
   try {
     localStorage.removeItem(storeKey);
@@ -36,11 +39,14 @@
     report("파츠 탭 방향키 선택과 초점 이동", doc.activeElement.id === "tabs-ears" && el("tabs-ears").getAttribute("aria-selected") === "true" && el("grid").getAttribute("aria-labelledby") === "tabs-ears");
     el("mode-colors").click();
     const soda = el("bodyColors").querySelector('[aria-label="소다"]'); soda.click();
-    report("몸 색 선택과 접근 가능한 라디오 상태", !el("colorsPanel").hidden && el("partsPanel").hidden && soda.getAttribute("aria-checked") === "true" && hash().get("color") === "dff1fa");
+    report("몸 색 선택과 접근 가능한 라디오 상태", !el("colorsPanel").hidden && el("partsPanel").hidden && soda.getAttribute("aria-checked") === "true" && hash().get("color") === "eff8fd");
     key(soda, "ArrowRight");
-    report("색상 방향키 선택과 초점 유지", doc.activeElement.getAttribute("aria-checked") === "true" && hash().get("color") === "fbe5ec");
-    el("syncChk").click();
-    report("귀·꼬리 색 동기화 설정 저장", hash().get("sync") === "0");
+    report("색상 방향키 선택과 초점 유지", doc.activeElement.getAttribute("aria-checked") === "true" && hash().get("color") === "fdf2f6");
+    el("syncEarsChk").click();
+    report("귀 색만 따로 해제 · 꼬리 설정 유지", hash().get("syncEars") === "0" && !hash().has("syncTail") && el("syncTailChk").checked);
+    el("syncTailChk").click();
+    el("syncEarsChk").click();
+    report("꼬리 색만 따로 해제 · 귀 설정 유지", hash().get("syncTail") === "0" && !hash().has("syncEars") && el("syncEarsChk").checked);
     el("mode-backgrounds").click();
     el("swatches").querySelector('[aria-label="별밤"]').click();
     report("기존 배경 8개 유지·선택 배경 반영", el("swatches").children.length === 8 && hash().get("bg") === "night" && el("stage").style.backgroundImage.includes("night.webp"));
@@ -71,6 +77,9 @@
       const footer = doc.querySelector(".actions").getBoundingClientRect(), preview = el("stageWrap").getBoundingClientRect(), grid = el("grid").getBoundingClientRect();
       report(`${width}×${height} · 미리보기·버튼·선택 목록이 화면 안에 표시`, footer.bottom <= height + 1 && preview.top >= 0 && preview.bottom < footer.top && grid.height >= 60 && doc.documentElement.scrollWidth <= width && doc.documentElement.scrollHeight <= height + 1);
       report(`${width}×${height} · 주요 터치 영역 44px 이상`, [...doc.querySelectorAll(".mode-tabs button, .tabs button, .actions button, .cell")].filter((b) => b.getBoundingClientRect().height > 0).every((b) => b.getBoundingClientRect().width >= 44 && b.getBoundingClientRect().height >= 44));
+      el("mode-colors").click();
+      const options = doc.querySelector(".sync-options").getBoundingClientRect(), palette = el("bodyColors").getBoundingClientRect();
+      report(`${width}×${height} · 두 색 맞추기 옵션을 항상 표시`, options.bottom <= footer.top && options.top >= palette.bottom && palette.height >= 40 && [...doc.querySelectorAll(".sync")].every((label) => label.getBoundingClientRect().height >= 44));
     }
     // Exercise the actual PNG handler without creating a download in the test run.
     let saved;
@@ -83,7 +92,16 @@
     const savedHash = win.location.hash;
     await load(`maker.html${savedHash}`);
     await until(() => frame.contentDocument.getElementById("stage").dataset.render === "ready");
-    report("새로 열어도 파츠·색·배경·동기화 유지", frame.contentWindow.location.hash === savedHash);
+    report("새로 열어도 파츠·색·배경·개별 색 맞추기 유지", frame.contentWindow.location.hash === savedHash && frame.contentDocument.getElementById("syncEarsChk").checked && !frame.contentDocument.getElementById("syncTailChk").checked);
+    await load("maker.html#color=fbe5ec");
+    await until(() => frame.contentDocument.getElementById("stage").dataset.render === "ready");
+    report("기존 컬러 링크도 50% 흰색을 섞은 색으로 갱신", frame.contentDocument.querySelector('#bodyColors [aria-checked="true"]').dataset.value === "#fdf2f6");
+    await load("maker.html#sync=0");
+    await until(() => frame.contentDocument.getElementById("stage").dataset.render === "ready");
+    report("기존 sync=0 링크는 귀·꼬리 모두 해제로 복원", !frame.contentDocument.getElementById("syncEarsChk").checked && !frame.contentDocument.getElementById("syncTailChk").checked);
+    await load("maker.html#sync=0&syncEars=1");
+    await until(() => frame.contentDocument.getElementById("stage").dataset.render === "ready");
+    report("기존 링크에서도 개별 설정을 우선 적용", frame.contentDocument.getElementById("syncEarsChk").checked && !frame.contentDocument.getElementById("syncTailChk").checked);
     await load("index.html");
     const intro = frame.contentDocument;
     report("첫 화면 내맘대로 메뉴는 메이커로 연결", intro.querySelector('.intro-actions a[href="maker.html"]').textContent === "내맘대로" && intro.getElementById("startBtn"));

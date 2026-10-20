@@ -1,18 +1,18 @@
 // Maker: a persistent preview with touch and keyboard friendly editing tools.
 (() => {
-  const { LAYOUT, BG_IMAGES, BODY_COLORS, CATS, PARTS, bgImage, assetUrl, findPart, renderCanvas, mountStage, randomLook } = window.Creature;
+  const { LAYOUT, BG_IMAGES, BODY_COLORS, resolveBodyColor, CATS, PARTS, bgImage, assetUrl, findPart, renderCanvas, mountStage, randomLook } = window.Creature;
   const STORE_KEY = "my-chiikawa-adjust", DEFAULT_BG = "meadow";
   const COLOR_NAMES = ["화이트", "아이보리", "레몬", "민트", "소다", "딸기 우유", "라벤더", "복숭아", "피스타치오", "솜사탕", "눈꽃 민트"];
   const $ = (id) => document.getElementById(id);
   const stage = $("stage"), wrap = $("stageWrap"), preview = wrap.closest(".preview");
   let state = {}, activeCat = CATS[0]?.id, activeView = "parts", editMode = false;
-  let bg = DEFAULT_BG, bodyColor = BODY_COLORS[0], sync = true, stored = {};
+  let bg = DEFAULT_BG, bodyColor = BODY_COLORS[0], syncEars = true, syncTail = true, stored = {};
   try { stored = JSON.parse(localStorage.getItem(STORE_KEY) || "{}") || {}; } catch (e) {}
 
   const getAdjust = (id) => Object.assign({ dx: 0, dy: 0, s: 1 }, (window.PART_ADJUST || {})[id], stored[id]);
   const allAdjust = () => Object.assign({}, window.PART_ADJUST, stored);
   const saveStored = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(stored)); } catch (e) {} };
-  const look = () => ({ parts: state, bodyColor, sync });
+  const look = () => ({ parts: state, bodyColor, syncEars, syncTail });
   const selectedPart = () => findPart(activeCat, state[activeCat]);
   const announce = (message) => { $("makerStatus").textContent = message; };
   const view = mountStage(stage, {
@@ -115,7 +115,8 @@
         b.classList.toggle("on", on); b.setAttribute("aria-checked", on); b.tabIndex = on ? 0 : -1;
       }
     }
-    $("syncChk").checked = sync;
+    $("syncEarsChk").checked = syncEars;
+    $("syncTailChk").checked = syncTail;
   }
 
   function setView(next) {
@@ -165,7 +166,8 @@
     for (const c of CATS) if (state[c.id]) p.set(c.id, state[c.id]);
     if (bg !== DEFAULT_BG) p.set("bg", bg);
     if (bodyColor) p.set("color", bodyColor.slice(1));
-    if (!sync) p.set("sync", "0");
+    if (!syncEars) p.set("syncEars", "0");
+    if (!syncTail) p.set("syncTail", "0");
     history.replaceState(null, "", "#" + p.toString());
   }
   function readHash() {
@@ -177,8 +179,12 @@
     }
     bg = BG_IMAGES[p.get("bg")] ? p.get("bg") : DEFAULT_BG;
     const col = p.get("color");
-    bodyColor = col && /^[0-9a-f]{6}$/i.test(col) ? "#" + col.toLowerCase() : BODY_COLORS[0];
-    sync = p.get("sync") !== "0"; state = next;
+    bodyColor = col && /^[0-9a-f]{6}$/i.test(col) ? resolveBodyColor("#" + col.toLowerCase()) : BODY_COLORS[0];
+    // Old shared links use one sync flag; explicit individual flags take priority.
+    const legacySync = p.get("sync") !== "0";
+    syncEars = p.has("syncEars") ? p.get("syncEars") !== "0" : legacySync;
+    syncTail = p.has("syncTail") ? p.get("syncTail") !== "0" : legacySync;
+    state = next;
   }
   function commit() { writeHash(); renderGrid(); renderStage(); view.pop(); }
   function randomize() {
@@ -263,7 +269,8 @@
     const p = selectedPart(); if (!p) return;
     delete stored[p.id]; saveStored(); renderStage(); announce(`${p.label}의 위치와 크기를 되돌렸어.`);
   };
-  $("syncChk").onchange = (e) => { sync = e.target.checked; writeHash(); renderStage(); };
+  $("syncEarsChk").onchange = (e) => { syncEars = e.target.checked; writeHash(); renderStage(); };
+  $("syncTailChk").onchange = (e) => { syncTail = e.target.checked; writeHash(); renderStage(); };
   $("randomBtn").onclick = randomize; $("saveBtn").onclick = savePng;
   window.addEventListener("hashchange", () => { readHash(); renderSwatches(); renderGrid(); renderStage(); });
   if (window.ResizeObserver) new ResizeObserver(fitStage).observe(preview);

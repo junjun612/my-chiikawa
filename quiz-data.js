@@ -55,9 +55,9 @@ window.QUIZ = {
   // Birth month -> body color ("탄생 컬러") and season backgrounds.
   months: [
     null,
-    ["#ffffff", "눈송이 화이트"], ["#fbe5ec", "딸기 우유"], ["#fffaf0", "찹쌀 아이보리"], ["#fff4c7", "레몬 크림"],
-    ["#e2f5e9", "우유 민트"], ["#dff1fa", "구름 소다"], ["#eee5fa", "라벤더 우유"], ["#ffe9da", "복숭아 크림"],
-    ["#edf5d9", "피스타치오"], ["#f5edf3", "솜사탕 핑크"], ["#fffaf0", "바닐라 밀크"], ["#e8f6f3", "눈꽃 민트"],
+    ["#ffffff", "눈송이 화이트"], ["#fdf2f6", "딸기 우유"], ["#fffdf8", "찹쌀 아이보리"], ["#fffae3", "레몬 크림"],
+    ["#f1faf4", "우유 민트"], ["#eff8fd", "구름 소다"], ["#f7f2fd", "라벤더 우유"], ["#fff4ed", "복숭아 크림"],
+    ["#f6faec", "피스타치오"], ["#faf6f9", "솜사탕 핑크"], ["#fffdf8", "바닐라 밀크"], ["#f4fbf9", "눈꽃 민트"],
   ],
   seasons: { spring: ["sakura", "meadow"], summer: ["beach", "meadow", "sunset"], autumn: ["sunset", "dusk"], winter: ["snow", "night"] },
   nightOwls: ["night", "room", "dusk"], // extra choices for I types

@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="fonts.css?v=20261020k">
 <link rel="stylesheet" href="creature.css?v=20261020k">
 <link rel="stylesheet" href="test.css?v=20261020s">
-<link rel="stylesheet" href="style.css?v=20261020s">
+<link rel="stylesheet" href="style.css?v=20261020t">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -61,7 +61,10 @@
       <section class="editor-view" id="colorsPanel" role="tabpanel" aria-labelledby="mode-colors" hidden>
         <div class="view-heading"><h2>어떤 색으로 물들일까?</h2><p>좋아하는 파스텔 색을 골라줘.</p></div>
         <div class="swatches colors" id="bodyColors" role="radiogroup" aria-label="몸 색"></div>
-        <label class="sync"><input type="checkbox" id="syncChk" checked><span>귀·꼬리도 같은 색으로</span></label>
+        <div class="sync-options" role="group" aria-label="몸 색에 맞추기">
+          <label class="sync"><input type="checkbox" id="syncEarsChk" checked><span>귀도 같은 색으로</span></label>
+          <label class="sync"><input type="checkbox" id="syncTailChk" checked><span>꼬리도 같은 색으로</span></label>
+        </div>
       </section>
       <section class="editor-view" id="backgroundsPanel" role="tabpanel" aria-labelledby="mode-backgrounds" hidden>
         <div class="view-heading"><h2>어디로 놀러 갈까?</h2><p>배경을 고르면 분위기도 달라져!</p></div>
@@ -99,7 +102,7 @@
   <p class="sr-only" id="makerStatus" role="status" aria-live="polite" aria-atomic="true"></p>
 </main>
 <script src="parts.js?v=20261020k"></script>
-<script src="engine.js?v=20261020k"></script>
-<script src="app.js?v=20261020s"></script>
+<script src="engine.js?v=20261020u"></script>
+<script src="app.js?v=20261020u"></script>
 </body>
 </html>
