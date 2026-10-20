@@ -155,8 +155,8 @@ button, input { font: inherit; color: inherit; }
 
 /* Text made from the user's input (may contain syllables Jua lacks). */
 .owner, .cname { font-family: var(--name); }
-/* Both input fields share the body font (it has all 11,172 syllables). */
-.field input, .field input::placeholder { font-family: var(--body); }
+/* Both input fields use the name font (cute, and has all 11,172 syllables). */
+.field input, .field input::placeholder { font-family: var(--name); font-size: 22px; }
 
 .btn:disabled { opacity: .7; cursor: progress; }
 
