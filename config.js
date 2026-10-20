@@ -2,5 +2,5 @@
 // (내 애플리케이션 > 앱 키) to enable KakaoTalk sharing; empty = share via the OS share sheet.
 window.SITE = {
   url: "https://junjun612.github.io/my-chiikawa/",
-  kakaoKey: "",
+  kakaoKey: "421c2b753e6c9592aa0d94926a62d35d",
 };
