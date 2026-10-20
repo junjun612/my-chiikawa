@@ -1,5 +1,7 @@
-/* Self-hosted fonts with all 11,172 Hangul syllables (OFL, see fonts/). Dongle draws small,
-   so size-adjust brings it to the size the layout was designed with. */
+/* Self-hosted fonts (OFL, see fonts/). Jua is the cute UI font but only has 2,367 Hangul
+   syllables, so anything built from the user's name uses Dongle (all 11,172) instead.
+   Dongle draws small; size-adjust brings it to the layout size. */
+@font-face { font-family: "MJ Cute"; src: url("fonts/Jua.woff2") format("woff2"); font-display: swap; }
 @font-face { font-family: "MJ Round"; src: url("fonts/Dongle-Bold.woff2") format("woff2"); font-display: swap; size-adjust: 150%; }
 @font-face { font-family: "MJ Body"; src: url("fonts/GowunDodum.woff2") format("woff2"); font-display: swap; }
 /* Personality test pages — soft picture-book look (see design/landing_mockup.png). */
@@ -11,7 +13,8 @@
   --pink-deep: #f59ab4;
   --mint: #c9eed9;
   --sky: #cfeaf8;
-  --round: "MJ Round", "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --round: "MJ Cute", "MJ Round", "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --name: "MJ Round", "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   --body: "MJ Body", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 * { box-sizing: border-box; }
@@ -154,3 +157,7 @@ button, input { font: inherit; color: inherit; }
 .seg button { border: 0; background: none; padding: 7px 16px; border-radius: 999px; cursor: pointer; font-family: var(--round); font-size: 16px; color: var(--ink-soft); }
 .seg button[aria-pressed="true"] { background: var(--mint); color: var(--ink); }
 .seg button:focus-visible { outline: 3px dashed var(--pink-deep); outline-offset: 2px; }
+
+/* Text made from the user's input (may contain syllables Jua lacks). */
+.field input#nameIn, .owner, .cname { font-family: var(--name); }
+.field input#nameIn { font-size: 22px; }

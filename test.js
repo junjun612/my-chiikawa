@@ -229,7 +229,7 @@
   $("saveBtn").onclick = async () => {
     try {
       const allText = [profile.name, current.name, current.title, current.desc, "나만의 먼작귀 만들기의 · "].join("");
-      await Promise.all([document.fonts.load('60px "MJ Round"', allText), document.fonts.load('30px "MJ Body"', allText)]);
+      await Promise.all([document.fonts.load('60px "MJ Cute"', allText), document.fonts.load('60px "MJ Round"', allText), document.fonts.load('30px "MJ Body"', allText)]);
       const art = await C.renderCanvas(current.look, { size: 1024, bg: current.look.bg });
       const W = 1080, H = 1440, M = 56, R = 48;
       const cv = document.createElement("canvas");
@@ -250,15 +250,24 @@
 
       ctx.textAlign = "center";
       ctx.fillStyle = "#7d6152";
+      // Line 1 mixes the user's name (Dongle) and the fixed type title (Jua).
+      const owner = `${profile.name}의 먼작귀 · `;
       ctx.font = '38px "MJ Round", sans-serif';
-      ctx.fillText(`${profile.name}의 먼작귀 · ${current.title}`, W / 2, W + 50);
+      const ow = ctx.measureText(owner).width;
+      ctx.font = '38px "MJ Cute", sans-serif';
+      const tw = ctx.measureText(current.title).width;
+      ctx.textAlign = "left";
+      ctx.fillText(current.title, W / 2 - (ow + tw) / 2 + ow, W + 50);
+      ctx.font = '38px "MJ Round", sans-serif';
+      ctx.fillText(owner, W / 2 - (ow + tw) / 2, W + 50);
+      ctx.textAlign = "center";
       ctx.fillStyle = "#5a3d30";
       ctx.font = '84px "MJ Round", sans-serif';
       ctx.fillText(current.name, W / 2, W + 150);
       ctx.fillStyle = "#7d6152";
       ctx.font = '32px "MJ Body", sans-serif';
       wrapText(ctx, current.desc, W / 2, W + 245, W - 2 * M - 40, 46);
-      ctx.font = '28px "MJ Round", sans-serif';
+      ctx.font = '28px "MJ Cute", sans-serif';
       ctx.fillStyle = "#c9a58a";
       ctx.fillText("나만의 먼작귀 만들기", W / 2, H - 30);
 
